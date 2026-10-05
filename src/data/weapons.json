@@ -1,0 +1,6720 @@
+{
+  "weapons": [
+    {
+      "id": "battle-wrench",
+      "name": "Battle Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 32,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["drill-wrench", "true-battle-wrench"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 8,
+        "fl": 2,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 5,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 20,
+        "fl": 19,
+        "ch": 19,
+        "li": 19,
+        "cy": 19,
+        "sm": 19,
+        "ex": 19,
+        "be": 19,
+        "sc": 19
+      },
+      "maxDu": 19
+    },
+    {
+      "id": "big-bucks-hammer",
+      "name": "Big Bucks Hammer",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["wealth"],
+      "buildsUpTo": [],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 44,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 125,
+        "ch": 130,
+        "li": 125,
+        "cy": 125,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "cubic-hammer",
+      "name": "Cubic Hammer",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["durable"],
+      "buildsUpTo": ["digi-hammer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 57,
+        "fl": 0,
+        "ch": 50,
+        "li": 0,
+        "cy": 0,
+        "sm": 44,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 109,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 73
+    },
+    {
+      "id": "digi-hammer",
+      "name": "Digi Hammer",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["heavy-hammer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 90,
+        "fl": 0,
+        "ch": 88,
+        "li": 0,
+        "cy": 0,
+        "sm": 88,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 130,
+        "li": 125,
+        "cy": 125,
+        "sm": 130,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 85
+    },
+    {
+      "id": "drill-wrench",
+      "name": "Drill Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["smash-wrench"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 16,
+        "fl": 2,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 10,
+        "ex": 0,
+        "be": 5,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 35,
+        "fl": 34,
+        "ch": 34,
+        "li": 34,
+        "cy": 34,
+        "sm": 34,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 34
+    },
+    {
+      "id": "frozen-tuna",
+      "name": "Frozen Tuna",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["cubic-hammer", "big-bucks-hammer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 33,
+        "fl": 0,
+        "ch": 25,
+        "li": 0,
+        "cy": 0,
+        "sm": 25,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 61,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 61
+    },
+    {
+      "id": "grade-zero",
+      "name": "Grade Zero",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5b",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Bundy", "Moonflowephant", "Toy Rock"],
+      "baseStats": {
+        "at": 150,
+        "fl": 100,
+        "ch": 0,
+        "li": 150,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 150,
+        "sc": 100
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "heavy-hammer",
+      "name": "Heavy Hammer",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["legend"],
+      "requiresKills": ["Iron Mask", "Pirate Eye"],
+      "baseStats": {
+        "at": 101,
+        "fl": 0,
+        "ch": 130,
+        "li": 0,
+        "cy": 0,
+        "sm": 110,
+        "ex": 110,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "kuberas-hand",
+      "name": "Kubera's Hand",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": ["steal"],
+      "buildsUpTo": ["big-bucks-hammer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 22,
+        "fl": 0,
+        "ch": 0,
+        "li": 10,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 45,
+        "fl": 46,
+        "ch": 45,
+        "li": 45,
+        "cy": 46,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 44
+    },
+    {
+      "id": "legend",
+      "name": "LEGEND",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Evil Nail", "Guardia", "Lancer"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 150,
+        "li": 0,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 500,
+        "fl": 250,
+        "ch": 250,
+        "li": 250,
+        "cy": 250,
+        "sm": 250,
+        "ex": 250,
+        "be": 250,
+        "sc": 250
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "poison-wrench",
+      "name": "Poison Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["poison"],
+      "buildsUpTo": ["sigma-breaker"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 0,
+        "li": 80,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 75,
+        "sc": 50
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 130,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "smash-wrench",
+      "name": "Smash Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["stinger-wrench", "cubic-hammer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 35,
+        "fl": 20,
+        "ch": 0,
+        "li": 10,
+        "cy": 0,
+        "sm": 20,
+        "ex": 0,
+        "be": 0,
+        "sc": 5
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 60,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 60
+    },
+    {
+      "id": "sigma-breaker",
+      "name": "Sigma Breaker",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5b",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["grade-zero"],
+      "requiresKills": ["Sylph", "Star Tortoise"],
+      "baseStats": {
+        "at": 101,
+        "fl": 0,
+        "ch": 0,
+        "li": 120,
+        "cy": 120,
+        "sm": 0,
+        "ex": 0,
+        "be": 100,
+        "sc": 95
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "stinger-wrench",
+      "name": "Stinger Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["steal"],
+      "buildsUpTo": ["poison-wrench"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 55,
+        "fl": 0,
+        "ch": 0,
+        "li": 44,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 30,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "true-battle-wrench",
+      "name": "True Battle Wrench",
+      "character": "max",
+      "type": "wrench",
+      "combo": "5",
+      "baseAbs": 32,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["drill-wrench"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 14,
+        "fl": 2,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 5,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 20,
+        "fl": 19,
+        "ch": 19,
+        "li": 19,
+        "cy": 19,
+        "sm": 19,
+        "ex": 19,
+        "be": 19,
+        "sc": 19
+      },
+      "maxDu": 19
+    },
+    {
+      "id": "turtle-shell-hammer",
+      "name": "Turtle Shell Hammer",
+      "character": "max",
+      "type": "wrench",
+      "combo": "4",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["frozen-tuna"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 11,
+        "fl": 0,
+        "ch": 10,
+        "li": 0,
+        "cy": 0,
+        "sm": 10,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 36,
+        "fl": 30,
+        "ch": 36,
+        "li": 34,
+        "cy": 34,
+        "sm": 36,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 35
+    },
+    {
+      "id": "albatross",
+      "name": "Albatross",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 77,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 80,
+        "sm": 0,
+        "ex": 0,
+        "be": 80,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 120,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 75
+    },
+    {
+      "id": "falcon",
+      "name": "Falcon",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["critical"],
+      "buildsUpTo": ["albatross"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 50,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 55,
+        "sm": 0,
+        "ex": 0,
+        "be": 40,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 108,
+        "fl": 108,
+        "ch": 108,
+        "li": 110,
+        "cy": 110,
+        "sm": 108,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 70
+    },
+    {
+      "id": "flamingo",
+      "name": "Flamingo",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["falcon"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 32,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 20,
+        "sm": 0,
+        "ex": 0,
+        "be": 10,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 61,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 55
+    },
+    {
+      "id": "handy-stick",
+      "name": "Handy Stick",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 32,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 3,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 19,
+        "fl": 19,
+        "ch": 19,
+        "li": 19,
+        "cy": 19,
+        "sm": 19,
+        "ex": 19,
+        "be": 19,
+        "sc": 19
+      },
+      "maxDu": 19
+    },
+    {
+      "id": "swan",
+      "name": "Swan",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": ["fragile"],
+      "buildsUpTo": ["flamingo"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 24,
+        "fl": 0,
+        "ch": 10,
+        "li": 0,
+        "cy": 10,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "character": "max",
+      "type": "club",
+      "combo": "5",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["flamingo"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 25,
+        "fl": 10,
+        "ch": 0,
+        "li": 0,
+        "cy": 10,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 45,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 44
+    },
+    {
+      "id": "bell-trigger",
+      "name": "Bell Trigger",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 165,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["magic-gun", "star-breaker"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 24,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 21,
+        "sm": 0,
+        "ex": 15,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "classic-gun",
+      "name": "Classic Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 52,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["trumpet-gun"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 7,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 24,
+        "fl": 19,
+        "ch": 19,
+        "li": 19,
+        "cy": 25,
+        "sm": 19,
+        "ex": 25,
+        "be": 19,
+        "sc": 19
+      },
+      "maxDu": 19
+    },
+    {
+      "id": "dark-viper",
+      "name": "Dark Viper",
+      "character": "max",
+      "type": "gun",
+      "gunType": "G",
+      "baseAbs": 265,
+      "spPerLevel": 4,
+      "abilities": ["absorb"],
+      "buildsUpTo": ["soul-breaker", "twin-buster"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 0,
+        "li": 0,
+        "cy": 45,
+        "sm": 45,
+        "ex": 0,
+        "be": 30,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "desperado",
+      "name": "Desperado",
+      "character": "max",
+      "type": "gun",
+      "gunType": "M",
+      "baseAbs": 430,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["last-resort"],
+      "requiresKills": ["Spirit Flyer", "Living Armor"],
+      "baseStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 0,
+        "li": 90,
+        "cy": 110,
+        "sm": 95,
+        "ex": 100,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 89
+    },
+    {
+      "id": "dryer-gun",
+      "name": "Dryer Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 52,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["bell-trigger"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 12,
+        "fl": 5,
+        "ch": 0,
+        "li": 0,
+        "cy": 5,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 25,
+        "fl": 30,
+        "ch": 30,
+        "li": 30,
+        "cy": 30,
+        "sm": 30,
+        "ex": 30,
+        "be": 30,
+        "sc": 30
+      },
+      "maxDu": 30
+    },
+    {
+      "id": "grenade-launcher",
+      "name": "Grenade Launcher",
+      "character": "max",
+      "type": "gun",
+      "gunType": "G",
+      "baseAbs": 165,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["dark-viper"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 25,
+        "fl": 15,
+        "ch": 0,
+        "li": 0,
+        "cy": 21,
+        "sm": 21,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "jurak-gun",
+      "name": "Jurak Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "B",
+      "baseAbs": 165,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["question-shooter"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 42,
+        "fl": 0,
+        "ch": 30,
+        "li": 30,
+        "cy": 30,
+        "sm": 0,
+        "ex": 15,
+        "be": 0,
+        "sc": 30
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 60,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 44
+    },
+    {
+      "id": "last-resort",
+      "name": "Last Resort",
+      "character": "max",
+      "type": "gun",
+      "gunType": "M",
+      "baseAbs": 510,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Joker", "Heart", "Spade"],
+      "baseStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 100,
+        "li": 0,
+        "cy": 145,
+        "sm": 135,
+        "ex": 0,
+        "be": 125,
+        "sc": 50
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 301,
+        "fl": 200,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "magic-gun",
+      "name": "Magic Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 210,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["question-shooter", "soul-breaker"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 34,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 25,
+        "sm": 25,
+        "ex": 0,
+        "be": 25,
+        "sc": 25
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 60,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 75,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 60
+    },
+    {
+      "id": "question-shooter",
+      "name": "Question Shooter",
+      "character": "max",
+      "type": "gun",
+      "gunType": "B",
+      "baseAbs": 265,
+      "spPerLevel": 4,
+      "abilities": ["poverty"],
+      "buildsUpTo": ["steal-gun"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 50,
+        "fl": 0,
+        "ch": 0,
+        "li": 45,
+        "cy": 0,
+        "sm": 0,
+        "ex": 45,
+        "be": 0,
+        "sc": 45
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "sexy-panther",
+      "name": "Sexy Panther",
+      "character": "max",
+      "type": "gun",
+      "gunType": "M",
+      "baseAbs": 330,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["desperado"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 77,
+        "fl": 80,
+        "ch": 0,
+        "li": 0,
+        "cy": 95,
+        "sm": 95,
+        "ex": 0,
+        "be": 85,
+        "sc": 95
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 120,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 75
+    },
+    {
+      "id": "sigma-bazooka",
+      "name": "Sigma Bazooka",
+      "character": "max",
+      "type": "gun",
+      "gunType": "G",
+      "baseAbs": 510,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Silver Gear", "Skull Chief", "Evil Performer"],
+      "baseStats": {
+        "at": 149,
+        "fl": 140,
+        "ch": 0,
+        "li": 0,
+        "cy": 135,
+        "sm": 140,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 312,
+        "fl": 200,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "soul-breaker",
+      "name": "Soul Breaker",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 330,
+      "spPerLevel": 4,
+      "abilities": ["dark"],
+      "buildsUpTo": ["desperado"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 60,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 75,
+        "sm": 60,
+        "ex": 0,
+        "be": 60,
+        "sc": 45
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 120,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 75
+    },
+    {
+      "id": "star-breaker",
+      "name": "Star Breaker",
+      "character": "max",
+      "type": "gun",
+      "gunType": "M",
+      "baseAbs": 210,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["wild-cat"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 34,
+        "fl": 40,
+        "ch": 0,
+        "li": 0,
+        "cy": 30,
+        "sm": 45,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 60,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 62
+    },
+    {
+      "id": "steal-gun",
+      "name": "Steal Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "B",
+      "baseAbs": 430,
+      "spPerLevel": 6,
+      "abilities": ["steal"],
+      "buildsUpTo": ["supernova"],
+      "requiresKills": ["Heat Fairy", "Rifle Wolf"],
+      "baseStats": {
+        "at": 105,
+        "fl": 0,
+        "ch": 0,
+        "li": 95,
+        "cy": 0,
+        "sm": 0,
+        "ex": 95,
+        "be": 0,
+        "sc": 85
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 90
+    },
+    {
+      "id": "supernova",
+      "name": "Supernova",
+      "character": "max",
+      "type": "gun",
+      "gunType": "B",
+      "baseAbs": 510,
+      "spPerLevel": 6,
+      "abilities": ["steal"],
+      "buildsUpTo": [],
+      "requiresKills": ["Moonflowephant", "Vanguard Mk 2", "Diamond"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 100,
+        "li": 150,
+        "cy": 0,
+        "sm": 150,
+        "ex": 150,
+        "be": 140,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 500,
+        "fl": 250,
+        "ch": 250,
+        "li": 250,
+        "cy": 250,
+        "sm": 250,
+        "ex": 250,
+        "be": 250,
+        "sc": 250
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "trumpet-gun",
+      "name": "Trumpet Gun",
+      "character": "max",
+      "type": "gun",
+      "gunType": "N",
+      "baseAbs": 101,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["bell-trigger", "grenade-launcher"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 15,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 12,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 34,
+        "fl": 34,
+        "ch": 34,
+        "li": 34,
+        "cy": 34,
+        "sm": 34,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 34
+    },
+    {
+      "id": "twin-buster",
+      "name": "Twin Buster",
+      "character": "max",
+      "type": "gun",
+      "gunType": "G",
+      "baseAbs": 430,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["sigma-bazooka"],
+      "requiresKills": ["Pirate Eye", "Triple Cracker"],
+      "baseStats": {
+        "at": 101,
+        "fl": 85,
+        "ch": 0,
+        "li": 0,
+        "cy": 85,
+        "sm": 95,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 88
+    },
+    {
+      "id": "wild-cat",
+      "name": "Wild Cat",
+      "character": "max",
+      "type": "gun",
+      "gunType": "M",
+      "baseAbs": 265,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["sexy-panther"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 57,
+        "fl": 60,
+        "ch": 0,
+        "li": 0,
+        "cy": 60,
+        "sm": 60,
+        "ex": 0,
+        "be": 0,
+        "sc": 60
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 109,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 73
+    },
+    {
+      "id": "7-branch-sword",
+      "name": "7 Branch Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 50,
+        "ch": 50,
+        "li": 0,
+        "cy": 0,
+        "sm": 50,
+        "ex": 50,
+        "be": 50,
+        "sc": 50
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 170,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "7th-heaven",
+      "name": "7th Heaven",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["island-king"],
+      "requiresKills": ["Heart", "S. Heart", "Lancer"],
+      "baseStats": {
+        "at": 123,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "ama-no-murakumo",
+      "name": "Ama no Murakumo",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["muramasa", "dark-cloud"],
+      "requiresKills": ["Flaming Nail", "Sleeber"],
+      "baseStats": {
+        "at": 99,
+        "fl": 0,
+        "ch": 0,
+        "li": 120,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 100,
+        "sc": 120
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 155,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "antique-sword",
+      "name": "Antique Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["stop"],
+      "buildsUpTo": ["7-branch-sword", "halloween-blade"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 55,
+        "fl": 50,
+        "ch": 0,
+        "li": 50,
+        "cy": 0,
+        "sm": 0,
+        "ex": 50,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 73
+    },
+    {
+      "id": "atlamillia-sword",
+      "name": "Atlamillia Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Storm Ghost", "Rain Ghost", "Thunder Ghost"],
+      "baseStats": {
+        "at": 149,
+        "fl": 150,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 100,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 220,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 220,
+        "sc": 220
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "baselard",
+      "name": "Baselard",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["broad-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 21,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 10,
+        "sm": 0,
+        "ex": 10,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 35,
+        "fl": 30,
+        "ch": 36,
+        "li": 34,
+        "cy": 34,
+        "sm": 36,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 35
+    },
+    {
+      "id": "bastard-sword",
+      "name": "Bastard Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["shamshir", "sand-breaker"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 23,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 21,
+        "ex": 0,
+        "be": 15,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 46,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "big-bang",
+      "name": "Big Bang",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["atlamillia-sword"],
+      "requiresKills": ["Fire Spirit", "Ice Spirit"],
+      "baseStats": {
+        "at": 101,
+        "fl": 120,
+        "ch": 0,
+        "li": 120,
+        "cy": 0,
+        "sm": 120,
+        "ex": 120,
+        "be": 0,
+        "sc": 60
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 152,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "bone-rapier",
+      "name": "Bone Rapier",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": ["poison"],
+      "buildsUpTo": ["evilcise"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 22,
+        "fl": 0,
+        "ch": 21,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 45,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 42
+    },
+    {
+      "id": "brave-ark",
+      "name": "Brave Ark",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["claymore", "rulers-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 52,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 60,
+        "sm": 0,
+        "ex": 60,
+        "be": 50,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 112,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "broad-sword",
+      "name": "Broad Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["sax", "kitchen-knife", "wise-owl-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 22,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 21,
+        "sm": 0,
+        "ex": 21,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 45,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 44
+    },
+    {
+      "id": "choora",
+      "name": "Choora",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["small-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 55,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 55,
+        "sm": 0,
+        "ex": 0,
+        "be": 55,
+        "sc": 45
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 111,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "chopper",
+      "name": "Chopper",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["dusack", "choora"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 33,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 30,
+        "sm": 0,
+        "ex": 0,
+        "be": 40,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 61,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 60
+    },
+    {
+      "id": "chronicle-2",
+      "name": "Chronicle 2",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": ["critical", "stop"],
+      "buildsUpTo": [],
+      "requiresKills": ["Moon Goyone", "Moon Joe", "Evil Nail"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 220,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 200,
+        "ex": 250,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "chronicle-sword",
+      "name": "Chronicle Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": ["stop"],
+      "buildsUpTo": ["chronicle-2"],
+      "requiresKills": ["Triple Cracker", "Arthur"],
+      "baseStats": {
+        "at": 111,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 99,
+        "ex": 120,
+        "be": 99,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 152,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "claymore",
+      "name": "Claymore",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["cross-heinder"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 89,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 110,
+        "ex": 0,
+        "be": 90,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 123,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 80
+    },
+    {
+      "id": "cliff-knife",
+      "name": "Cliff Knife",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["sand-breaker", "chopper"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 20,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 15,
+        "sm": 0,
+        "ex": 0,
+        "be": 15,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 42,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 40
+    },
+    {
+      "id": "cross-heinder",
+      "name": "Cross Heinder",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": ["durable"],
+      "buildsUpTo": ["sword-of-zeus"],
+      "requiresKills": ["Blumo"],
+      "baseStats": {
+        "at": 100,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 120,
+        "ex": 99,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 155,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "dark-cloud",
+      "name": "Dark Cloud",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Castle Eater", "Count Balloon", "Bundy"],
+      "baseStats": {
+        "at": 150,
+        "fl": 99,
+        "ch": 99,
+        "li": 0,
+        "cy": 150,
+        "sm": 150,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 300,
+        "ch": 300,
+        "li": 300,
+        "cy": 300,
+        "sm": 300,
+        "ex": 300,
+        "be": 300,
+        "sc": 300
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "dark-excalibur",
+      "name": "Dark Excalibur",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": ["dark"],
+      "buildsUpTo": ["griffon-fork"],
+      "requiresKills": ["Blackbeard", "Fat Naga"],
+      "baseStats": {
+        "at": 102,
+        "fl": 0,
+        "ch": 120,
+        "li": 0,
+        "cy": 0,
+        "sm": 120,
+        "ex": 0,
+        "be": 120,
+        "sc": 120
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 153,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "drain-seeker",
+      "name": "Drain Seeker",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["absorb", "poison"],
+      "buildsUpTo": ["sargatanas"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 52,
+        "fl": 0,
+        "ch": 60,
+        "li": 0,
+        "cy": 0,
+        "sm": 50,
+        "ex": 0,
+        "be": 55,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 70
+    },
+    {
+      "id": "dusack",
+      "name": "Dusack",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["claymore"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 54,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 45,
+        "ex": 0,
+        "be": 55,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 109,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 71
+    },
+    {
+      "id": "evilcise",
+      "name": "Evilcise",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": ["poison"],
+      "buildsUpTo": ["drain-seeker"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 33,
+        "fl": 0,
+        "ch": 25,
+        "li": 10,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 25,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 61,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 62
+    },
+    {
+      "id": "garayan-sword",
+      "name": "Garayan Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["mardan-garayan"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 42,
+        "fl": 50,
+        "ch": 0,
+        "li": 50,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 60
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 111,
+        "fl": 110,
+        "ch": 120,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 73
+    },
+    {
+      "id": "gladius",
+      "name": "Gladius",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["cliff-knife"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 20,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 10,
+        "sm": 0,
+        "ex": 0,
+        "be": 5,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 34,
+        "fl": 34,
+        "ch": 34,
+        "li": 34,
+        "cy": 34,
+        "sm": 34,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 34
+    },
+    {
+      "id": "griffon-fork",
+      "name": "Griffon Fork",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["island-king"],
+      "requiresKills": ["Clock Knight", "Guardia", "Miss Gourgon"],
+      "baseStats": {
+        "at": 148,
+        "fl": 0,
+        "ch": 150,
+        "li": 0,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 250,
+        "li": 200,
+        "cy": 200,
+        "sm": 250,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "halloween-blade",
+      "name": "Halloween Blade",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["stop"],
+      "buildsUpTo": ["shining-bravado"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 89,
+        "fl": 0,
+        "ch": 0,
+        "li": 95,
+        "cy": 0,
+        "sm": 80,
+        "ex": 80,
+        "be": 80,
+        "sc": 80
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 123,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 80
+    },
+    {
+      "id": "holy-daedalus-blade",
+      "name": "Holy Daedalus Blade",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["rulers-sword", "sun-sword", "7-branch-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 56,
+        "fl": 50,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 50,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 4,
+      "maxStats": {
+        "at": 112,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "island-king",
+      "name": "Island King",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Lancer", "S. Club", "S. Joker"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 500,
+        "fl": 250,
+        "ch": 250,
+        "li": 250,
+        "cy": 250,
+        "sm": 250,
+        "ex": 250,
+        "be": 250,
+        "sc": 250
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "kitchen-knife",
+      "name": "Kitchen Knife",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["serpent-slicer"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 32,
+        "fl": 0,
+        "ch": 5,
+        "li": 15,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 30
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 61,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 62
+    },
+    {
+      "id": "lambs-sword",
+      "name": "Lamb's Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "attackVariesByTime": true,
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["ama-no-murakumo", "7th-heaven"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 89,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 85,
+        "sm": 0,
+        "ex": 0,
+        "be": 85,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 123,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 80
+    },
+    {
+      "id": "long-sword",
+      "name": "Long Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["bastard-sword", "broad-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 15,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 10,
+        "ex": 0,
+        "be": 10,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 36,
+        "fl": 34,
+        "ch": 34,
+        "li": 34,
+        "cy": 34,
+        "sm": 34,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 34
+    },
+    {
+      "id": "maneater",
+      "name": "Maneater",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["dark-cloud", "griffon-fork"],
+      "requiresKills": ["Mummy", "Blackbeard"],
+      "baseStats": {
+        "at": 101,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 120,
+        "sm": 0,
+        "ex": 0,
+        "be": 120,
+        "sc": 99
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "mardan-garayan",
+      "name": "Mardan Garayan",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": ["heal"],
+      "buildsUpTo": [],
+      "requiresKills": ["Arthur", "Flaming Nail"],
+      "baseStats": {
+        "at": 79,
+        "fl": 120,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 120
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 151,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "mardan-sword",
+      "name": "Mardan Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["garayan-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 21,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 53,
+        "fl": 53,
+        "ch": 53,
+        "li": 53,
+        "cy": 53,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 60
+      },
+      "maxDu": 53
+    },
+    {
+      "id": "muramasa",
+      "name": "Muramasa",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Joker", "Evil Performer", "Castle Eater"],
+      "baseStats": {
+        "at": 149,
+        "fl": 0,
+        "ch": 150,
+        "li": 150,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 220,
+        "li": 220,
+        "cy": 200,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 220
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "royal-sword",
+      "name": "Royal Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 22,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 21,
+        "sm": 0,
+        "ex": 21,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 45,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 44
+    },
+    {
+      "id": "rulers-sword",
+      "name": "Ruler's Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5F",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["abs-up"],
+      "buildsUpTo": ["cross-heinder", "chronicle-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 99,
+        "sm": 0,
+        "ex": 99,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 124,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "sand-breaker",
+      "name": "Sand Breaker",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": ["fragile"],
+      "buildsUpTo": ["antique-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 34,
+        "fl": 25,
+        "ch": 0,
+        "li": 10,
+        "cy": 0,
+        "sm": 0,
+        "ex": 10,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 60,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 61
+    },
+    {
+      "id": "sargatanas",
+      "name": "Sargatanas",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["dark"],
+      "buildsUpTo": ["dark-excalibur"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 90,
+        "fl": 0,
+        "ch": 90,
+        "li": 0,
+        "cy": 0,
+        "sm": 90,
+        "ex": 0,
+        "be": 0,
+        "sc": 80
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 82
+    },
+    {
+      "id": "sax",
+      "name": "Sax",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["brave-ark", "antique-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 32,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 30,
+        "sm": 0,
+        "ex": 0,
+        "be": 30,
+        "sc": 10
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 62,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 62
+    },
+    {
+      "id": "serpent-slicer",
+      "name": "Serpent Slicer",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["7-branch-sword", "tsukikage", "sargatanas"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 54,
+        "fl": 0,
+        "ch": 0,
+        "li": 55,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 55
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 111,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "shamshir",
+      "name": "Shamshir",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["dusack"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 33,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 25,
+        "ex": 0,
+        "be": 25,
+        "sc": 10
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 62,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 61
+    },
+    {
+      "id": "shining-bravado",
+      "name": "Shining Bravado",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": ["heal"],
+      "buildsUpTo": ["island-king", "atlamillia-sword"],
+      "requiresKills": ["Arthur", "Rolling Rocks"],
+      "baseStats": {
+        "at": 99,
+        "fl": 120,
+        "ch": 0,
+        "li": 120,
+        "cy": 0,
+        "sm": 0,
+        "ex": 99,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 150,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "small-sword",
+      "name": "Small Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "6",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": ["critical"],
+      "buildsUpTo": ["maneater"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 89,
+        "fl": 0,
+        "ch": 0,
+        "li": 60,
+        "cy": 60,
+        "sm": 0,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 82
+    },
+    {
+      "id": "sun-sword",
+      "name": "Sun Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["chronicle-sword", "big-bang", "shining-bravado"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 90,
+        "fl": 99,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 85,
+        "ex": 85,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 82
+    },
+    {
+      "id": "sword-of-zeus",
+      "name": "Sword of Zeus",
+      "character": "monica",
+      "type": "sword",
+      "combo": "4",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["island-king"],
+      "requiresKills": ["Fire Drake", "Ice Drake", "Thunder Ghost"],
+      "baseStats": {
+        "at": 147,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 200,
+        "li": 200,
+        "cy": 200,
+        "sm": 250,
+        "ex": 210,
+        "be": 220,
+        "sc": 220
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "tsukikage",
+      "name": "Tsukikage",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 288,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["ama-no-murakumo"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 0,
+        "li": 99,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 99
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 124,
+        "fl": 125,
+        "ch": 125,
+        "li": 125,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "wise-owl-sword",
+      "name": "Wise Owl Sword",
+      "character": "monica",
+      "type": "sword",
+      "combo": "5",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": ["poverty"],
+      "buildsUpTo": ["lambs-sword", "small-sword"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 30,
+        "fl": 15,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 15,
+        "be": 25,
+        "sc": 15
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 89,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 85,
+        "sm": 60,
+        "ex": 60,
+        "be": 85,
+        "sc": 60
+      },
+      "maxDu": 61
+    },
+    {
+      "id": "angel-shooter",
+      "name": "Angel Shooter",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["love"],
+      "requiresKills": ["Evil Performer", "Evil Nail", "Skull Chief"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 150,
+        "li": 0,
+        "cy": 170,
+        "sm": 0,
+        "ex": 0,
+        "be": 150,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 200,
+        "ch": 220,
+        "li": 200,
+        "cy": 150,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "athenas-armlet",
+      "name": "Athena's Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["sun-armlet"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 99,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 99,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 130,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "bandit-brassard",
+      "name": "Bandit Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": ["steal"],
+      "buildsUpTo": ["crystal-brassard", "thorn-armlet"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 24,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 18,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "crystal-brassard",
+      "name": "Crystal Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["platinum-brassard", "pocklekul"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 35,
+        "fl": 31,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 60,
+        "fl": 60,
+        "ch": 60,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 60
+    },
+    {
+      "id": "destruction-brassard",
+      "name": "Destruction Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["satan-brassard"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 0,
+        "li": 99,
+        "cy": 0,
+        "sm": 99,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 130,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "five-star-armlet",
+      "name": "Five-Star Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": [],
+      "requiresKills": ["Moon Joe", "Clock Knight", "Moon Goyone"],
+      "baseStats": {
+        "at": 150,
+        "fl": 100,
+        "ch": 100,
+        "li": 100,
+        "cy": 100,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 500,
+        "fl": 300,
+        "ch": 300,
+        "li": 300,
+        "cy": 300,
+        "sm": 250,
+        "ex": 250,
+        "be": 250,
+        "sc": 250
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "goddess-brassard",
+      "name": "Goddess Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["angel-shooter"],
+      "requiresKills": ["Sylph", "Fat Naga"],
+      "baseStats": {
+        "at": 101,
+        "fl": 0,
+        "ch": 0,
+        "li": 125,
+        "cy": 125,
+        "sm": 0,
+        "ex": 60,
+        "be": 110,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 150,
+        "cy": 170,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "gold-brassard",
+      "name": "Gold Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 128,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["crystal-brassard"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 24,
+        "fl": 18,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 44,
+        "fl": 45,
+        "ch": 45,
+        "li": 45,
+        "cy": 45,
+        "sm": 45,
+        "ex": 45,
+        "be": 45,
+        "sc": 45
+      },
+      "maxDu": 45
+    },
+    {
+      "id": "love",
+      "name": "Love",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": ["heal"],
+      "buildsUpTo": [],
+      "requiresKills": ["S. Heart", "Miss Gourgon", "Silver Gear"],
+      "baseStats": {
+        "at": 150,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 500,
+        "fl": 250,
+        "ch": 250,
+        "li": 250,
+        "cy": 250,
+        "sm": 250,
+        "ex": 250,
+        "be": 250,
+        "sc": 250
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "magic-brassard",
+      "name": "Magic Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 64,
+      "spPerLevel": 3,
+      "abilities": [],
+      "buildsUpTo": ["gold-brassard", "bandit-brassard"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 14,
+        "fl": 10,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 1,
+      "maxStats": {
+        "at": 35,
+        "fl": 34,
+        "ch": 34,
+        "li": 34,
+        "cy": 34,
+        "sm": 34,
+        "ex": 34,
+        "be": 34,
+        "sc": 34
+      },
+      "maxDu": 34
+    },
+    {
+      "id": "mobius-bangle",
+      "name": "Mobius Bangle",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 416,
+      "spPerLevel": 6,
+      "abilities": ["durable"],
+      "buildsUpTo": ["love"],
+      "requiresKills": ["Crow Priest", "Diamond", "S. Diamond"],
+      "baseStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 0,
+        "li": 150,
+        "cy": 0,
+        "sm": 0,
+        "ex": 150,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 300,
+        "fl": 220,
+        "ch": 200,
+        "li": 220,
+        "cy": 220,
+        "sm": 200,
+        "ex": 200,
+        "be": 200,
+        "sc": 200
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "moon-armlet",
+      "name": "Moon Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["star-armlet"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 99,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 60
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 130,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "platinum-brassard",
+      "name": "Platinum Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["wealth"],
+      "buildsUpTo": ["athenas-armlet", "spirit-brassard", "destruction-brassard"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 55,
+        "fl": 60,
+        "ch": 0,
+        "li": 0,
+        "cy": 0,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "pocklekul",
+      "name": "Pocklekul",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": ["wealth"],
+      "buildsUpTo": ["athenas-armlet", "spirit-brassard", "moon-armlet"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 55,
+        "fl": 0,
+        "ch": 60,
+        "li": 0,
+        "cy": 60,
+        "sm": 0,
+        "ex": 35,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 110,
+        "fl": 110,
+        "ch": 110,
+        "li": 110,
+        "cy": 110,
+        "sm": 110,
+        "ex": 110,
+        "be": 110,
+        "sc": 110
+      },
+      "maxDu": 72
+    },
+    {
+      "id": "satan-brassard",
+      "name": "Satan Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["mobius-bangle", "five-star-armlet"],
+      "requiresKills": ["Zombie Pirate", "Sleeber"],
+      "baseStats": {
+        "at": 101,
+        "fl": 100,
+        "ch": 0,
+        "li": 125,
+        "cy": 0,
+        "sm": 110,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 150,
+        "li": 170,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "spirit-brassard",
+      "name": "Spirit Brassard",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 224,
+      "spPerLevel": 4,
+      "abilities": [],
+      "buildsUpTo": ["goddess-brassard"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 88,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 99,
+        "sm": 0,
+        "ex": 0,
+        "be": 99,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 125,
+        "fl": 125,
+        "ch": 125,
+        "li": 130,
+        "cy": 125,
+        "sm": 125,
+        "ex": 125,
+        "be": 125,
+        "sc": 125
+      },
+      "maxDu": 81
+    },
+    {
+      "id": "star-armlet",
+      "name": "Star Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["five-star-armlet"],
+      "requiresKills": ["Star Tortoise", "Rolling Rocks"],
+      "baseStats": {
+        "at": 101,
+        "fl": 115,
+        "ch": 125,
+        "li": 0,
+        "cy": 0,
+        "sm": 50,
+        "ex": 0,
+        "be": 0,
+        "sc": 110
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 150,
+        "ch": 170,
+        "li": 150,
+        "cy": 150,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "sun-armlet",
+      "name": "Sun Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 352,
+      "spPerLevel": 6,
+      "abilities": [],
+      "buildsUpTo": ["mobius-bangle", "angel-shooter"],
+      "requiresKills": ["Balalla", "Heat Fairy"],
+      "baseStats": {
+        "at": 101,
+        "fl": 125,
+        "ch": 0,
+        "li": 0,
+        "cy": 100,
+        "sm": 0,
+        "ex": 101,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 150,
+        "fl": 170,
+        "ch": 150,
+        "li": 150,
+        "cy": 170,
+        "sm": 150,
+        "ex": 150,
+        "be": 150,
+        "sc": 150
+      },
+      "maxDu": 99
+    },
+    {
+      "id": "thorn-armlet",
+      "name": "Thorn Armlet",
+      "character": "monica",
+      "type": "armband",
+      "baseAbs": 160,
+      "spPerLevel": 4,
+      "abilities": ["poverty", "abs-up"],
+      "buildsUpTo": ["pocklekul", "moon-armlet"],
+      "requiresKills": [],
+      "baseStats": {
+        "at": 35,
+        "fl": 0,
+        "ch": 0,
+        "li": 0,
+        "cy": 31,
+        "sm": 0,
+        "ex": 0,
+        "be": 0,
+        "sc": 0
+      },
+      "baseSp": 2,
+      "maxStats": {
+        "at": 88,
+        "fl": 60,
+        "ch": 99,
+        "li": 60,
+        "cy": 60,
+        "sm": 60,
+        "ex": 60,
+        "be": 60,
+        "sc": 60
+      },
+      "maxDu": 60
+    }
+  ],
+  "synthItems": [
+    {
+      "name": "Amethyst",
+      "category": "Gems",
+      "gains": {
+        "at": 10,
+        "li": 10,
+        "sm": 5
+      }
+    },
+    {
+      "name": "Aquamarine",
+      "category": "Gems",
+      "gains": {
+        "ch": 10,
+        "cy": 10,
+        "sc": 5,
+        "du": 5
+      }
+    },
+    {
+      "name": "Diamond",
+      "category": "Gems",
+      "gains": {
+        "at": 5,
+        "fl": 5,
+        "ch": 5,
+        "li": 5,
+        "cy": 5,
+        "sm": 10,
+        "ex": 5,
+        "be": 5,
+        "sc": 5,
+        "du": 5
+      }
+    },
+    {
+      "name": "Emerald",
+      "category": "Gems",
+      "gains": {
+        "fl": 10,
+        "ex": 10,
+        "be": 10
+      }
+    },
+    {
+      "name": "Garnet",
+      "category": "Gems",
+      "gains": {
+        "ch": 10,
+        "ex": 10,
+        "sc": 10
+      }
+    },
+    {
+      "name": "Moon Stone",
+      "category": "Gems",
+      "gains": {
+        "at": 8,
+        "ch": 15,
+        "li": 8,
+        "cy": 8,
+        "sm": 8,
+        "ex": 8,
+        "be": 8,
+        "sc": 8,
+        "du": 8
+      }
+    },
+    {
+      "name": "Opal",
+      "category": "Gems",
+      "gains": {
+        "li": 10,
+        "sm": 10
+      }
+    },
+    {
+      "name": "Pearl",
+      "category": "Gems",
+      "gains": {
+        "li": 10,
+        "ex": 10,
+        "du": 10
+      }
+    },
+    {
+      "name": "Peridot",
+      "category": "Gems",
+      "gains": {
+        "at": 5,
+        "fl": 8,
+        "ex": 8,
+        "be": 8
+      }
+    },
+    {
+      "name": "Ruby",
+      "category": "Gems",
+      "gains": {
+        "fl": 15,
+        "sm": 15
+      }
+    },
+    {
+      "name": "Sapphire",
+      "category": "Gems",
+      "gains": {
+        "fl": 5,
+        "cy": 15,
+        "ex": 5,
+        "du": 5
+      }
+    },
+    {
+      "name": "Sun Stone",
+      "category": "Gems",
+      "gains": {
+        "at": 8,
+        "fl": 15,
+        "li": 8,
+        "cy": 8,
+        "sm": 8,
+        "ex": 8,
+        "be": 8,
+        "sc": 8,
+        "du": 8
+      }
+    },
+    {
+      "name": "Topaz",
+      "category": "Gems",
+      "gains": {
+        "ch": 10,
+        "cy": 10,
+        "sc": 10
+      }
+    },
+    {
+      "name": "Turquoise",
+      "category": "Gems",
+      "gains": {
+        "at": 5,
+        "li": 5,
+        "be": 10,
+        "sc": 10
+      }
+    },
+    {
+      "name": "Level Up Powder",
+      "category": "Attack",
+      "gains": {
+        "at": 1
+      }
+    },
+    {
+      "name": "Knight Boots",
+      "category": "Attack",
+      "gains": {
+        "at": 2
+      }
+    },
+    {
+      "name": "Missile Pod Arm",
+      "category": "Attack",
+      "gains": {
+        "at": 2
+      }
+    },
+    {
+      "name": "Missile Pod Arm II",
+      "category": "Attack",
+      "gains": {
+        "at": 2
+      }
+    },
+    {
+      "name": "Power Crystal",
+      "category": "Attack",
+      "gains": {
+        "at": 2
+      }
+    },
+    {
+      "name": "Stamina Drink",
+      "category": "Attack",
+      "gains": {
+        "at": 1
+      }
+    },
+    {
+      "name": "Anti-Goo Amulet",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Antidote Amulet",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Clown Foot",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Crunchy Bread",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Explorer's Helmet",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Green Overalls",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Gun Repair Powder",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Life Element",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Mellow Banana",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Mighty Healing",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Non-Stop Amulet",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Protector Crystal",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Repair Powder",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Sticky Clay",
+      "category": "Durable",
+      "gains": {
+        "du": 2
+      }
+    },
+    {
+      "name": "Barrel Cannon II",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Bomb",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Bomb Nut",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Bread",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Energy Pack",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Fire Element",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Flame Crystal",
+      "category": "Flame",
+      "gains": {
+        "fl": 3
+      }
+    },
+    {
+      "name": "Flame Stone",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Gunpowder",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Improved Bomb",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Potato Cake",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Ridepod Fuel",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Sugar Cane",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Super Hot Pepper",
+      "category": "Flame",
+      "gains": {
+        "fl": 2
+      }
+    },
+    {
+      "name": "Armband Repair Powder",
+      "category": "Chill",
+      "gains": {
+        "ch": 1
+      }
+    },
+    {
+      "name": "Chill Crystal",
+      "category": "Chill",
+      "gains": {
+        "ch": 3
+      }
+    },
+    {
+      "name": "Chill Element",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Chill Stone",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Glass Material",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Soap",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Tasty Water",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Water Element",
+      "category": "Chill",
+      "gains": {
+        "ch": 2
+      }
+    },
+    {
+      "name": "Hunk of Copper",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Lightning Crystal",
+      "category": "Lightning",
+      "gains": {
+        "li": 3
+      }
+    },
+    {
+      "name": "Lightning Stone",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Machine Gun Arm II",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Poison",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Scrap of Metal",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Silver Ball",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Thunder Element",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Yellow Ribbon",
+      "category": "Lightning",
+      "gains": {
+        "li": 2
+      }
+    },
+    {
+      "name": "Buggy",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Bundle of Hay",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Forest Dew",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Roasted Chestnut",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Wind Crystal",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 3
+      }
+    },
+    {
+      "name": "Wind Element",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Wind Stone",
+      "category": "Cyclone",
+      "gains": {
+        "cy": 2
+      }
+    },
+    {
+      "name": "Cannonball Arm",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Cannonball Arm II",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Carrot",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Caterpillar",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Destruction Crystal",
+      "category": "Smash",
+      "gains": {
+        "sm": 3
+      }
+    },
+    {
+      "name": "Earth Element",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Iron Leg",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Rolling Log",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Rough Rock",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Stone",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Stone Berry",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Sturdy Rock",
+      "category": "Smash",
+      "gains": {
+        "sm": 2
+      }
+    },
+    {
+      "name": "Escape Powder",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Flour",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Holy Crystal",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 3
+      }
+    },
+    {
+      "name": "Holy Element",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Holy Stone",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Holy Water",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Light Element",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Samurai Arm",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Unknown Bone",
+      "category": "Exorcism",
+      "gains": {
+        "ex": 2
+      }
+    },
+    {
+      "name": "Battan",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Cheese",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Gooey Peach",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Hunter Crystal",
+      "category": "Beast",
+      "gains": {
+        "be": 3
+      }
+    },
+    {
+      "name": "Mimi",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Minon",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Premium Chicken",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Prickly",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Sturdy Cloth",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Thick Hide",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Treasure Chest Key",
+      "category": "Beast",
+      "gains": {
+        "be": 2
+      }
+    },
+    {
+      "name": "Antidote Drink",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Baku Baku",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Evy",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Gummy",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Heart-Throb Cherry",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Medusa's Tear",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Niler",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Nonky",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Petite Fish",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Priscleen",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    },
+    {
+      "name": "Sea Dragon Crystal",
+      "category": "Scale",
+      "gains": {
+        "sc": 3
+      }
+    },
+    {
+      "name": "Tarton",
+      "category": "Scale",
+      "gains": {
+        "sc": 2
+      }
+    }
+  ],
+  "shops": [
+    {
+      "chapter": 1,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 1,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 1,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 1,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 2,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 2,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 2,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 2,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 2,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 2,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 3,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 3,
+      "shop": "Gerald's Guns",
+      "weaponId": "grenade-launcher",
+      "price": 500
+    },
+    {
+      "chapter": 3,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 3,
+      "shop": "Julia's Ringware",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "kuberas-hand",
+      "price": 500
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 3,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 3,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 3,
+      "shop": "Jurak Arms",
+      "weaponId": "bell-trigger",
+      "price": 400
+    },
+    {
+      "chapter": 3,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 3,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 3,
+      "shop": "Starlight Weapons",
+      "weaponId": "swan",
+      "price": 450
+    },
+    {
+      "chapter": 3,
+      "shop": "Starlight Weapons",
+      "weaponId": "sand-breaker",
+      "price": 900
+    },
+    {
+      "chapter": 3,
+      "shop": "Starlight Weapons",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 3,
+      "shop": "Starlight Weapons",
+      "weaponId": "bandit-brassard",
+      "price": 700
+    },
+    {
+      "chapter": 4,
+      "shop": "Gerald's Guns",
+      "weaponId": "turkey",
+      "price": 460
+    },
+    {
+      "chapter": 4,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 4,
+      "shop": "Gerald's Guns",
+      "weaponId": "magic-gun",
+      "price": 560
+    },
+    {
+      "chapter": 4,
+      "shop": "Gerald's Guns",
+      "weaponId": "grenade-launcher",
+      "price": 500
+    },
+    {
+      "chapter": 4,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 4,
+      "shop": "Julia's Ringware",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 4,
+      "shop": "Julia's Ringware",
+      "weaponId": "crystal-brassard",
+      "price": 740
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "smash-wrench",
+      "price": 600
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "kuberas-hand",
+      "price": 500
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "shamshir",
+      "price": 600
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 4,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "thorn-armlet",
+      "price": 820
+    },
+    {
+      "chapter": 4,
+      "shop": "Starlight Weapons",
+      "weaponId": "swan",
+      "price": 450
+    },
+    {
+      "chapter": 4,
+      "shop": "Starlight Weapons",
+      "weaponId": "wise-owl-sword",
+      "price": 600
+    },
+    {
+      "chapter": 4,
+      "shop": "Starlight Weapons",
+      "weaponId": "sand-breaker",
+      "price": 900
+    },
+    {
+      "chapter": 4,
+      "shop": "Starlight Weapons",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 4,
+      "shop": "Starlight Weapons",
+      "weaponId": "bandit-brassard",
+      "price": 700
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "frozen-tuna",
+      "price": 700
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "bell-trigger",
+      "price": 400
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "kitchen-knife",
+      "price": 440
+    },
+    {
+      "chapter": 4,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 5,
+      "shop": "Gerald's Guns",
+      "weaponId": "turkey",
+      "price": 460
+    },
+    {
+      "chapter": 5,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 5,
+      "shop": "Gerald's Guns",
+      "weaponId": "magic-gun",
+      "price": 560
+    },
+    {
+      "chapter": 5,
+      "shop": "Gerald's Guns",
+      "weaponId": "grenade-launcher",
+      "price": 500
+    },
+    {
+      "chapter": 5,
+      "shop": "Gerald's Guns",
+      "weaponId": "wild-cat",
+      "price": 900
+    },
+    {
+      "chapter": 5,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 5,
+      "shop": "Julia's Ringware",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 5,
+      "shop": "Julia's Ringware",
+      "weaponId": "crystal-brassard",
+      "price": 740
+    },
+    {
+      "chapter": 5,
+      "shop": "Julia's Ringware",
+      "weaponId": "pocklekul",
+      "price": 860
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "smash-wrench",
+      "price": 600
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "kuberas-hand",
+      "price": 500
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "shamshir",
+      "price": 600
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 5,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "thorn-armlet",
+      "price": 820
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "swan",
+      "price": 450
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "wise-owl-sword",
+      "price": 600
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "sand-breaker",
+      "price": 900
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "bandit-brassard",
+      "price": 700
+    },
+    {
+      "chapter": 5,
+      "shop": "Starlight Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "frozen-tuna",
+      "price": 700
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "bell-trigger",
+      "price": 400
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "antique-sword",
+      "price": 880
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "kitchen-knife",
+      "price": 440
+    },
+    {
+      "chapter": 5,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "cubic-hammer",
+      "price": 950
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "falcon",
+      "price": 900
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "question-shooter",
+      "price": 900
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "choora",
+      "price": 960
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "dusack",
+      "price": 860
+    },
+    {
+      "chapter": 5,
+      "shop": "G-Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "Gerald's Guns",
+      "weaponId": "turkey",
+      "price": 460
+    },
+    {
+      "chapter": 6,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 6,
+      "shop": "Gerald's Guns",
+      "weaponId": "magic-gun",
+      "price": 560
+    },
+    {
+      "chapter": 6,
+      "shop": "Gerald's Guns",
+      "weaponId": "grenade-launcher",
+      "price": 500
+    },
+    {
+      "chapter": 6,
+      "shop": "Gerald's Guns",
+      "weaponId": "wild-cat",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 6,
+      "shop": "Julia's Ringware",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 6,
+      "shop": "Julia's Ringware",
+      "weaponId": "crystal-brassard",
+      "price": 740
+    },
+    {
+      "chapter": 6,
+      "shop": "Julia's Ringware",
+      "weaponId": "pocklekul",
+      "price": 860
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "smash-wrench",
+      "price": 600
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "kuberas-hand",
+      "price": 500
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "shamshir",
+      "price": 600
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 6,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "thorn-armlet",
+      "price": 820
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "swan",
+      "price": 450
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "wise-owl-sword",
+      "price": 600
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "sand-breaker",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "bandit-brassard",
+      "price": 700
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "Starlight Weapons",
+      "weaponId": "moon-armlet",
+      "price": 1800
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "frozen-tuna",
+      "price": 700
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "bell-trigger",
+      "price": 400
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "antique-sword",
+      "price": 880
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "kitchen-knife",
+      "price": 440
+    },
+    {
+      "chapter": 6,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "cubic-hammer",
+      "price": 950
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "digi-hammer",
+      "price": 1100
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "falcon",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "question-shooter",
+      "price": 900
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "choora",
+      "price": 960
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "claymore",
+      "price": 1100
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "dusack",
+      "price": 860
+    },
+    {
+      "chapter": 6,
+      "shop": "G-Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "Gerald's Guns",
+      "weaponId": "turkey",
+      "price": 460
+    },
+    {
+      "chapter": 7,
+      "shop": "Gerald's Guns",
+      "weaponId": "trumpet-gun",
+      "price": 300
+    },
+    {
+      "chapter": 7,
+      "shop": "Gerald's Guns",
+      "weaponId": "magic-gun",
+      "price": 560
+    },
+    {
+      "chapter": 7,
+      "shop": "Gerald's Guns",
+      "weaponId": "grenade-launcher",
+      "price": 500
+    },
+    {
+      "chapter": 7,
+      "shop": "Gerald's Guns",
+      "weaponId": "wild-cat",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "Julia's Ringware",
+      "weaponId": "magic-brassard",
+      "price": 200
+    },
+    {
+      "chapter": 7,
+      "shop": "Julia's Ringware",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 7,
+      "shop": "Julia's Ringware",
+      "weaponId": "crystal-brassard",
+      "price": 740
+    },
+    {
+      "chapter": 7,
+      "shop": "Julia's Ringware",
+      "weaponId": "pocklekul",
+      "price": 860
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "battle-wrench",
+      "price": 200
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "drill-wrench",
+      "price": 350
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "smash-wrench",
+      "price": 600
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "turtle-shell-hammer",
+      "price": 300
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "kuberas-hand",
+      "price": 500
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "classic-gun",
+      "price": 150
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "baselard",
+      "price": 250
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gladius",
+      "price": 300
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "shamshir",
+      "price": 600
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 7,
+      "shop": "Milane's Weapon Shop",
+      "weaponId": "thorn-armlet",
+      "price": 820
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "swan",
+      "price": 450
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "wise-owl-sword",
+      "price": 600
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "sand-breaker",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "gold-brassard",
+      "price": 350
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "bandit-brassard",
+      "price": 700
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "Starlight Weapons",
+      "weaponId": "moon-armlet",
+      "price": 1800
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "frozen-tuna",
+      "price": 700
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "dryer-gun",
+      "price": 160
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "bell-trigger",
+      "price": 400
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "long-sword",
+      "price": 250
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "antique-sword",
+      "price": 880
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "kitchen-knife",
+      "price": 440
+    },
+    {
+      "chapter": 7,
+      "shop": "Jurak Arms",
+      "weaponId": "bone-rapier",
+      "price": 500
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "cubic-hammer",
+      "price": 950
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "digi-hammer",
+      "price": 1100
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "falcon",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "question-shooter",
+      "price": 900
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "choora",
+      "price": 960
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "claymore",
+      "price": 1100
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "dusack",
+      "price": 860
+    },
+    {
+      "chapter": 7,
+      "shop": "G-Weapons",
+      "weaponId": "platinum-brassard",
+      "price": 900
+    }
+  ],
+  "invented": [
+    {
+      "weaponId": "cubic-hammer",
+      "ideas": [["Dresser"], ["Gold Store"], ["Work Equipment"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        },
+        {
+          "name": "Light Element",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "weaponId": "digi-hammer",
+      "ideas": [["Computer"], ["Constructor"], ["Decorative Lights"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "weaponId": "heavy-hammer",
+      "ideas": [["Drum Can"], ["Paznos", "Gigantor Paznos"], ["Power Arm"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        },
+        {
+          "name": "Power Crystal",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "weaponId": "poison-wrench",
+      "ideas": [["Deer Horn"], ["Mushroom"], ["Sulphur-Colored Juice"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        },
+        {
+          "name": "Poison",
+          "qty": 5
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "weaponId": "smash-wrench",
+      "ideas": [["Constructor"], ["Rock"], ["Star Lamp"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "weaponId": "stinger-wrench",
+      "ideas": [["Air Cleaner"], ["Pipe"], ["Wheel"]],
+      "materials": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        },
+        {
+          "name": "Bandit Coin",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "weaponId": "albatross",
+      "ideas": [["Fire Squall"], ["Geyser"], ["Tree"]],
+      "materials": [
+        {
+          "name": "Rolling Log",
+          "qty": 7
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        },
+        {
+          "name": "Holy Element",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "weaponId": "falcon",
+      "ideas": [["Hammer"], ["Large Crane"], ["Withered Jurak"]],
+      "materials": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Hunter Crystal",
+          "qty": 3
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "weaponId": "flamingo",
+      "ideas": [["Light of Luna Stone"], ["Palm Tree"], ["Tiny Hammer"]],
+      "materials": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Paint (Pink)",
+          "qty": 3
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "weaponId": "swan",
+      "ideas": [["Boat"], ["Tiny Hammer"], ["Tree"]],
+      "materials": [
+        {
+          "name": "Rolling Log",
+          "qty": 3
+        },
+        {
+          "name": "Wind Element",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "weaponId": "turkey",
+      "ideas": [["Special Peking Duck"], ["Tree"], ["Windmill Feather"]],
+      "materials": [
+        {
+          "name": "Rolling Log",
+          "qty": 3
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "weaponId": "bell-trigger",
+      "ideas": [["Fountain"], ["Phone"], ["Tree"]],
+      "materials": [
+        {
+          "name": "Wind Element",
+          "qty": 2
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "weaponId": "dark-viper",
+      "ideas": [["Night Stalker"], ["Puppet Shingala"], ["Rifle"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 6
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 3
+        },
+        {
+          "name": "Unknown Bone",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "weaponId": "grenade-launcher",
+      "ideas": [["Chimney"], ["Egg"], ["Fountain"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 2
+        },
+        {
+          "name": "Bomb",
+          "qty": 2
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "weaponId": "magic-gun",
+      "ideas": [["Fountain"], ["Moon Crystal"], ["The Sun or The Moon"]],
+      "materials": [
+        {
+          "name": "Holy Crystal",
+          "qty": 3
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        },
+        {
+          "name": "Glass Material",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "weaponId": "question-shooter",
+      "ideas": [["Brave Little Linda"], ["Fountain"], ["Neo-Projector"]],
+      "materials": [
+        {
+          "name": "Silver Ball",
+          "qty": 3
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "weaponId": "sexy-panther",
+      "ideas": [["Elena's Portrait"], ["Flower Bathed in Light"], ["Rifle"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 15
+        },
+        {
+          "name": "Ruby",
+          "qty": 1
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 14
+        }
+      ]
+    },
+    {
+      "weaponId": "soul-breaker",
+      "ideas": [["Energy Pipe"], ["Geyser"], ["Transmission Device"]],
+      "materials": [
+        {
+          "name": "Destruction Crystal",
+          "qty": 5
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Glass Material",
+          "qty": 7
+        }
+      ]
+    },
+    {
+      "weaponId": "star-breaker",
+      "ideas": [["Chimney"], ["Fire House"], ["Phantom Memo-Eater"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 6
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "weaponId": "steal-gun",
+      "ideas": [["Book"], ["Fountain"], ["Work Crane"]],
+      "materials": [
+        {
+          "name": "Light Element",
+          "qty": 10
+        },
+        {
+          "name": "Bandit Coin",
+          "qty": 1
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "weaponId": "trumpet-gun",
+      "ideas": [["Fountain"], ["Rapper"], ["Tree"]],
+      "materials": [
+        {
+          "name": "Wind Element",
+          "qty": 1
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "weaponId": "twin-buster",
+      "ideas": [["Flower Chandelier"], ["Jurak's Nose"], ["Rifle"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 15
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "weaponId": "wild-cat",
+      "ideas": [["Charging Ram"], ["Rifle"], ["Work Equipment"]],
+      "materials": [
+        {
+          "name": "Gunpowder",
+          "qty": 10
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 15
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 8
+        }
+      ]
+    },
+    {
+      "weaponId": "bone-rapier",
+      "ideas": [["Bone"], ["Cloth"], ["Withered Jurak"]],
+      "materials": [
+        {
+          "name": "Life Element",
+          "qty": 5
+        },
+        {
+          "name": "Unknown Bone",
+          "qty": 30
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "weaponId": "rulers-sword",
+      "ideas": [["Figure"], ["Iron Maiden"], ["Paznos", "Gigantor Paznos"]],
+      "materials": [
+        {
+          "name": "Holy Element",
+          "qty": 20
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        },
+        {
+          "name": "Light Element",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "weaponId": "sand-breaker",
+      "ideas": [["Hand-Sewn Silk Flag"], ["Horn"], ["Spinning Ivanoff"]],
+      "materials": [
+        {
+          "name": "Rough Rock",
+          "qty": 20
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 5
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "weaponId": "wise-owl-sword",
+      "ideas": [["Charging Ram"], ["Grass"], ["Tree"]],
+      "materials": [
+        {
+          "name": "Hunter Crystal",
+          "qty": 4
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "weaponId": "bandit-brassard",
+      "ideas": [["Clock"], ["Gold Store"], ["Show Window"]],
+      "materials": [
+        {
+          "name": "Wind Element",
+          "qty": 10
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        },
+        {
+          "name": "Bandit Coin",
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "weaponId": "jurak-gun",
+      "how": "Complete 100% of the Sindain Georama (one-of-a-kind)."
+    },
+    {
+      "weaponId": "serpent-slicer",
+      "how": "Complete 100% of the Balance Valley Georama."
+    },
+    {
+      "weaponId": "holy-daedalus-blade",
+      "how": "Complete 100% of the Heim Rada Georama (one-of-a-kind)."
+    },
+    {
+      "weaponId": "ama-no-murakumo",
+      "how": "Spheda prize in 'Something Rare Here!' (Rainbow Butterfly Wood star path, Chapter 6+)."
+    },
+    {
+      "weaponId": "mardan-sword",
+      "how": "First place, Beginner class, Finny Frenzy (one-of-a-kind)."
+    },
+    {
+      "weaponId": "garayan-sword",
+      "how": "First place, Junior class, Finny Frenzy; also reachable by building up the Mardan Sword."
+    }
+  ],
+  "dungeonWeapons": [
+    {
+      "dungeon": "Underground Channel",
+      "weaponIds": ["battle-wrench", "classic-gun", "dryer-gun"]
+    },
+    {
+      "dungeon": "Rainbow Butterfly Wood",
+      "weaponIds": [
+        "battle-wrench",
+        "drill-wrench",
+        "turtle-shell-hammer",
+        "classic-gun",
+        "baselard",
+        "bone-rapier",
+        "gladius",
+        "long-sword",
+        "magic-brassard"
+      ]
+    },
+    {
+      "dungeon": "Starlight Canyon",
+      "weaponIds": [
+        "frozen-tuna",
+        "kuberas-hand",
+        "turtle-shell-hammer",
+        "bell-trigger",
+        "trumpet-gun",
+        "bastard-sword",
+        "bone-rapier",
+        "bandit-brassard",
+        "gold-brassard"
+      ]
+    },
+    {
+      "dungeon": "Ocean's Roar Cave",
+      "weaponIds": [
+        "smash-wrench",
+        "flamingo",
+        "grenade-launcher",
+        "star-breaker",
+        "sax",
+        "shamshir",
+        "crystal-brassard"
+      ]
+    },
+    {
+      "dungeon": "Mount Gundor",
+      "weaponIds": [
+        "cubic-hammer",
+        "grenade-launcher",
+        "magic-gun",
+        "antique-sword",
+        "broad-sword",
+        "crystal-brassard"
+      ]
+    },
+    {
+      "dungeon": "Star Path",
+      "weaponIds": [
+        "stinger-wrench",
+        "falcon",
+        "star-breaker",
+        "wild-cat",
+        "7-branch-sword",
+        "dusack",
+        "serpent-slicer",
+        "platinum-brassard",
+        "pocklekul",
+        "thorn-armlet"
+      ]
+    },
+    {
+      "dungeon": "Moon Flower Palace",
+      "weaponIds": [
+        "digi-hammer",
+        "stinger-wrench",
+        "falcon",
+        "flamingo",
+        "dark-viper",
+        "wild-cat",
+        "antique-sword",
+        "brave-ark",
+        "claymore",
+        "lambs-sword",
+        "tsukikage",
+        "destruction-brassard",
+        "moon-armlet",
+        "spirit-brassard",
+        "sun-armlet",
+        "thorn-armlet"
+      ]
+    },
+    {
+      "dungeon": "Zelmite Mine",
+      "weaponIds": [
+        "big-bucks-hammer",
+        "heavy-hammer",
+        "sigma-breaker",
+        "falcon",
+        "desperado",
+        "steal-gun",
+        "twin-buster",
+        "antique-sword",
+        "rulers-sword",
+        "sargatanas",
+        "star-armlet"
+      ]
+    }
+  ],
+  "killEnemies": [
+    {
+      "name": "Arthur",
+      "chapter": 6
+    },
+    {
+      "name": "Balalla",
+      "chapter": 6
+    },
+    {
+      "name": "Blackbeard",
+      "chapter": 6
+    },
+    {
+      "name": "Blumo",
+      "chapter": 6
+    },
+    {
+      "name": "Bundy",
+      "chapter": 7
+    },
+    {
+      "name": "Castle Eater",
+      "chapter": 7
+    },
+    {
+      "name": "Clock Knight",
+      "chapter": 7
+    },
+    {
+      "name": "Count Balloon",
+      "chapter": 7
+    },
+    {
+      "name": "Crow Priest",
+      "chapter": 7
+    },
+    {
+      "name": "Diamond",
+      "chapter": 7
+    },
+    {
+      "name": "Evil Nail",
+      "chapter": 7
+    },
+    {
+      "name": "Evil Performer",
+      "chapter": 7
+    },
+    {
+      "name": "Fat Naga",
+      "chapter": 6
+    },
+    {
+      "name": "Fire Drake",
+      "chapter": 7
+    },
+    {
+      "name": "Fire Spirit",
+      "chapter": 6
+    },
+    {
+      "name": "Flaming Nail",
+      "chapter": 6
+    },
+    {
+      "name": "Guardia",
+      "chapter": 7
+    },
+    {
+      "name": "Heart",
+      "chapter": 7
+    },
+    {
+      "name": "Heat Fairy",
+      "chapter": 6
+    },
+    {
+      "name": "Ice Drake",
+      "chapter": 7
+    },
+    {
+      "name": "Ice Spirit",
+      "chapter": 6
+    },
+    {
+      "name": "Iron Mask",
+      "chapter": 6
+    },
+    {
+      "name": "Joker",
+      "chapter": 7
+    },
+    {
+      "name": "Lancer",
+      "chapter": 7
+    },
+    {
+      "name": "Living Armor",
+      "chapter": 6
+    },
+    {
+      "name": "Miss Gourgon",
+      "chapter": 7
+    },
+    {
+      "name": "Moon Goyone",
+      "chapter": 7
+    },
+    {
+      "name": "Moon Joe",
+      "chapter": 7
+    },
+    {
+      "name": "Moonflowephant",
+      "chapter": 7
+    },
+    {
+      "name": "Mummy",
+      "chapter": 6
+    },
+    {
+      "name": "Pirate Eye",
+      "chapter": 6
+    },
+    {
+      "name": "Rain Ghost",
+      "chapter": 7
+    },
+    {
+      "name": "Rifle Wolf",
+      "chapter": 5
+    },
+    {
+      "name": "Rolling Rocks",
+      "chapter": 6
+    },
+    {
+      "name": "S. Club",
+      "chapter": 7
+    },
+    {
+      "name": "S. Diamond",
+      "chapter": 7
+    },
+    {
+      "name": "S. Heart",
+      "chapter": 7
+    },
+    {
+      "name": "S. Joker",
+      "chapter": 7
+    },
+    {
+      "name": "Silver Gear",
+      "chapter": 7
+    },
+    {
+      "name": "Skull Chief",
+      "chapter": 7
+    },
+    {
+      "name": "Sleeber",
+      "chapter": 6
+    },
+    {
+      "name": "Spade",
+      "chapter": 7
+    },
+    {
+      "name": "Spirit Flyer",
+      "chapter": 6
+    },
+    {
+      "name": "Star Tortoise",
+      "chapter": 6
+    },
+    {
+      "name": "Storm Ghost",
+      "chapter": 7
+    },
+    {
+      "name": "Sylph",
+      "chapter": 6
+    },
+    {
+      "name": "Thunder Ghost",
+      "chapter": 7
+    },
+    {
+      "name": "Toy Rock",
+      "chapter": 7
+    },
+    {
+      "name": "Triple Cracker",
+      "chapter": 6
+    },
+    {
+      "name": "Vanguard Mk 2",
+      "chapter": 7
+    },
+    {
+      "name": "Zombie Pirate",
+      "chapter": 6
+    }
+  ]
+}

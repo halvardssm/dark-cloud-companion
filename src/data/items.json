@@ -1,0 +1,1052 @@
+[
+  {
+    "name": "Absorption Coin",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Amethyst",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Anti-Curse Amulet",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Rosa's Amulets"]
+  },
+  {
+    "name": "Anti-Goo Amulet",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Rosa's Amulets"]
+  },
+  {
+    "name": "Anti-Petrify Amulet",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Rosa's Amulets"]
+  },
+  {
+    "name": "Antidote Amulet",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Rosa's Amulets"]
+  },
+  {
+    "name": "Antidote Drink",
+    "price": 40,
+    "fromChapter": 1,
+    "shops": ["Donny Mart", "Morton's Sundries", "House of Healing", "Star Items"]
+  },
+  {
+    "name": "Antique Sword",
+    "price": 880,
+    "fromChapter": 5,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Aquamarine",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Bandit Brassard",
+    "price": 700,
+    "fromChapter": 1,
+    "shops": ["Starlight Weapons"]
+  },
+  {
+    "name": "Bandit Coin",
+    "price": 7000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Baselard",
+    "price": 250,
+    "fromChapter": 1,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Battan",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop", "Mushroom Burgers"]
+  },
+  {
+    "name": "Battle Wrench",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Bell Trigger",
+    "price": 400,
+    "fromChapter": 1,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Bomb",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Bomb Nut",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Mushroom Burgers"]
+  },
+  {
+    "name": "Bone Rapier",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Bread",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Donny Mart", "Polly's Bakery", "Mushroom Burgers"]
+  },
+  {
+    "name": "Bull's-Eye Coin",
+    "price": 6500,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Bundle of Hay",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Carrot",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop", "Mushroom Burgers"]
+  },
+  {
+    "name": "Cheese",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Star Items", "G-Tools"]
+  },
+  {
+    "name": "Chill Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Chill Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Choora",
+    "price": 960,
+    "fromChapter": 1,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Classic Gun",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Claymore",
+    "price": 1100,
+    "fromChapter": 6,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Cooking Stove",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Crystal Brassard",
+    "price": 740,
+    "fromChapter": 4,
+    "shops": ["Julia's Ringware"]
+  },
+  {
+    "name": "Cubic Hammer",
+    "price": 950,
+    "fromChapter": 1,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Dark Coin",
+    "price": 1500,
+    "fromChapter": 1,
+    "shops": ["Woody Tailor", "Jurak Arms"]
+  },
+  {
+    "name": "Denim Overalls",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Donny Mart", "Woody Tailor"]
+  },
+  {
+    "name": "Destruction Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Diamond",
+    "price": 30000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Digi Hammer",
+    "price": 1100,
+    "fromChapter": 6,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Dragon Shoes",
+    "price": 250,
+    "fromChapter": 1,
+    "shops": ["Stewart's Shoes"]
+  },
+  {
+    "name": "Drill Wrench",
+    "price": 350,
+    "fromChapter": 2,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Dryer Gun",
+    "price": 160,
+    "fromChapter": 1,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Dusack",
+    "price": 860,
+    "fromChapter": 1,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Earth Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Emerald",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Evy",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop"]
+  },
+  {
+    "name": "Experience Coin",
+    "price": 12000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Falcon",
+    "price": 900,
+    "fromChapter": 1,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Fashionable Cap",
+    "price": 220,
+    "fromChapter": 5,
+    "shops": ["Donny Mart"]
+  },
+  {
+    "name": "Final Bomb",
+    "price": 3600,
+    "fromChapter": 6,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Fire Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Flame Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Flour",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Polly's Bakery", "Conda's Goods", "Mushroom Burgers"]
+  },
+  {
+    "name": "Forest Dew",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Gordon's Bonsai"]
+  },
+  {
+    "name": "Fork Lure",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Olivie's Lures"]
+  },
+  {
+    "name": "Frog Lure",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Olivie's Lures"]
+  },
+  {
+    "name": "Frozen Tuna",
+    "price": 700,
+    "fromChapter": 4,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Garnet",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Gift Capsule",
+    "price": 400,
+    "fromChapter": 1,
+    "shops": ["Claire's Place", "Woody Tailor"]
+  },
+  {
+    "name": "Gladius",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Glass Material",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Gold Bar",
+    "price": 1000,
+    "fromChapter": 1,
+    "shops": ["Borneo's Fine Ore", "Conda's Goods"]
+  },
+  {
+    "name": "Gold Brassard",
+    "price": 350,
+    "fromChapter": 1,
+    "shops": ["Milane's Weapon Shop", "Julia's Ringware", "Starlight Weapons"]
+  },
+  {
+    "name": "Gold Paint",
+    "price": 1000,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries", "Woody Tailor"]
+  },
+  {
+    "name": "Gooey Peach",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Adel's Fruits", "Mushroom Burgers"]
+  },
+  {
+    "name": "Green Overalls",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Woody Tailor"]
+  },
+  {
+    "name": "Grenade Launcher",
+    "price": 500,
+    "fromChapter": 3,
+    "shops": ["Gerald's Guns"]
+  },
+  {
+    "name": "Gunpowder",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries", "Erik's Gunpowder", "Conda's Goods"]
+  },
+  {
+    "name": "Healing Coin",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Heart-Throb Cherry",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Adel's Fruits", "Mushroom Burgers"]
+  },
+  {
+    "name": "Himarra Badge",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Woody Tailor"]
+  },
+  {
+    "name": "Holy Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Holy Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Holy Water",
+    "price": 40,
+    "fromChapter": 1,
+    "shops": ["House of Healing"]
+  },
+  {
+    "name": "Hunk of Copper",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Borneo's Fine Ore", "Conda's Goods"]
+  },
+  {
+    "name": "Hunter Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Hunting Cap",
+    "price": 200,
+    "fromChapter": 4,
+    "shops": ["Donny Mart"]
+  },
+  {
+    "name": "Improved Bomb",
+    "price": 1000,
+    "fromChapter": 4,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Indestructible Coin",
+    "price": 1500,
+    "fromChapter": 1,
+    "shops": ["Julia's Ringware", "Woody Tailor"]
+  },
+  {
+    "name": "Kitchen Knife",
+    "price": 440,
+    "fromChapter": 4,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Knight Boots",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel"]
+  },
+  {
+    "name": "Kubera's Hand",
+    "price": 500,
+    "fromChapter": 3,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Leather Shoes",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Stewart's Shoes"]
+  },
+  {
+    "name": "Life Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Light Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Lightning Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Long Sword",
+    "price": 250,
+    "fromChapter": 1,
+    "shops": ["Jurak Arms"]
+  },
+  {
+    "name": "Magic Brassard",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Julia's Ringware"]
+  },
+  {
+    "name": "Magic Gun",
+    "price": 560,
+    "fromChapter": 4,
+    "shops": ["Gerald's Guns"]
+  },
+  {
+    "name": "Maintenance Cap",
+    "price": 200,
+    "fromChapter": 6,
+    "shops": ["Donny Mart"]
+  },
+  {
+    "name": "Medusa's Tear",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["House of Healing"]
+  },
+  {
+    "name": "Mellow Banana",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Adel's Fruits", "Mushroom Burgers"]
+  },
+  {
+    "name": "Metal Boots",
+    "price": 240,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel"]
+  },
+  {
+    "name": "Mighty Healing",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Dell's Clinic", "Star Items"]
+  },
+  {
+    "name": "Mimi",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop", "Mushroom Burgers"]
+  },
+  {
+    "name": "Minnow Lure",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Olivie's Lures"]
+  },
+  {
+    "name": "Minon",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop"]
+  },
+  {
+    "name": "Monster Notes",
+    "price": 1000,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Moon Armlet",
+    "price": 1800,
+    "fromChapter": 6,
+    "shops": ["Starlight Weapons"]
+  },
+  {
+    "name": "Non-Stop Amulet",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Rosa's Amulets"]
+  },
+  {
+    "name": "Opal",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Paint (Black)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Blue)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Green)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Orange)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Pink)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Purple)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Red)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Paint (Yellow)",
+    "price": 30,
+    "fromChapter": 1,
+    "shops": ["Parn's Paints"]
+  },
+  {
+    "name": "Pearl",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Peridot",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Petite Fish",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop"]
+  },
+  {
+    "name": "Platinum Brassard",
+    "price": 900,
+    "fromChapter": 1,
+    "shops": ["Starlight Weapons", "G-Weapons"]
+  },
+  {
+    "name": "Plum Rice Ball",
+    "price": 800,
+    "fromChapter": 5,
+    "shops": ["Gordon's Bonsai"]
+  },
+  {
+    "name": "Pocklekul",
+    "price": 860,
+    "fromChapter": 5,
+    "shops": ["Julia's Ringware"]
+  },
+  {
+    "name": "Poison",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Poison Apple",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Adel's Fruits", "Mushroom Burgers"]
+  },
+  {
+    "name": "Poison Coin",
+    "price": 4000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Potato Cake",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop", "Mushroom Burgers"]
+  },
+  {
+    "name": "Power Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Premium Chicken",
+    "price": 120,
+    "fromChapter": 1,
+    "shops": ["Ferdinand's Takeout"]
+  },
+  {
+    "name": "Prickly",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Fabio's Bait Shop"]
+  },
+  {
+    "name": "Protector Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Pumpkin Shorts",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel", "Woody Tailor"]
+  },
+  {
+    "name": "Question Shooter",
+    "price": 900,
+    "fromChapter": 1,
+    "shops": ["G-Weapons"]
+  },
+  {
+    "name": "Red Vest",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Woody Tailor"]
+  },
+  {
+    "name": "Ridepod Fuel",
+    "price": 2000,
+    "fromChapter": 5,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Roasted Chestnut",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Mushroom Burgers"]
+  },
+  {
+    "name": "Rolling Log",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Gordon's Bonsai"]
+  },
+  {
+    "name": "Rough Rock",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Borneo's Fine Ore", "Conda's Goods"]
+  },
+  {
+    "name": "Ruby",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Sand Breaker",
+    "price": 900,
+    "fromChapter": 1,
+    "shops": ["Starlight Weapons"]
+  },
+  {
+    "name": "Sapphire",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Scrap of Metal",
+    "price": 10,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries", "Conda's Goods"]
+  },
+  {
+    "name": "Sea Dragon Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Seal-Breaking Scroll",
+    "price": 1500,
+    "fromChapter": 3,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Shamshir",
+    "price": 600,
+    "fromChapter": 4,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Silver Ball",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Silver Ore",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Borneo's Fine Ore"]
+  },
+  {
+    "name": "Smash Wrench",
+    "price": 600,
+    "fromChapter": 4,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Soap",
+    "price": 40,
+    "fromChapter": 1,
+    "shops": ["House of Healing"]
+  },
+  {
+    "name": "Spike Boots",
+    "price": 260,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel"]
+  },
+  {
+    "name": "Spinner\tLure",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Olivie's Lures"]
+  },
+  {
+    "name": "Star Leotard",
+    "price": 600,
+    "fromChapter": 1,
+    "shops": ["Star Items"]
+  },
+  {
+    "name": "Starglass",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Star Items"]
+  },
+  {
+    "name": "Sticky Clay",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Stone Berry",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Adel's Fruits"]
+  },
+  {
+    "name": "Striped Dress",
+    "price": 250,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel"]
+  },
+  {
+    "name": "Striped Ribbon",
+    "price": 220,
+    "fromChapter": 1,
+    "shops": ["Corrine's Hiarpins"]
+  },
+  {
+    "name": "Sturdy Cloth",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Sturdy Rock",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Gordon's Bonsai"]
+  },
+  {
+    "name": "Sugar Cane",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Polly's Bakery", "Conda's Goods", "Mushroom Burgers"]
+  },
+  {
+    "name": "Super Hot Pepper",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Polly's Bakery", "Conda's Goods"]
+  },
+  {
+    "name": "Swallowtail",
+    "price": 240,
+    "fromChapter": 1,
+    "shops": ["Corrine's Hiarpins"]
+  },
+  {
+    "name": "Swan",
+    "price": 450,
+    "fromChapter": 1,
+    "shops": ["Starlight Weapons"]
+  },
+  {
+    "name": "Tasty Water",
+    "price": 80,
+    "fromChapter": 1,
+    "shops": ["Polly's Bakery", "Adel's Fruits", "Mushroom Burgers", "Star Items", "G-Tools"]
+  },
+  {
+    "name": "Thick Hide",
+    "price": 50,
+    "fromChapter": 1,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Thorn Armlet",
+    "price": 820,
+    "fromChapter": 4,
+    "shops": ["Milane's Weapon Shop"]
+  },
+  {
+    "name": "Thunder Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Time Coin",
+    "price": 6500,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Topaz",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Treasure Chest Key",
+    "price": 500,
+    "fromChapter": 1,
+    "shops": ["Donny Mart"]
+  },
+  {
+    "name": "Trumpet Gun",
+    "price": 300,
+    "fromChapter": 1,
+    "shops": ["Gerald's Guns"]
+  },
+  {
+    "name": "Turkey",
+    "price": 460,
+    "fromChapter": 4,
+    "shops": ["Gerald's Guns"]
+  },
+  {
+    "name": "Turquoise",
+    "price": 10000,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Two-Tone Beret",
+    "price": 240,
+    "fromChapter": 7,
+    "shops": ["Donny Mart"]
+  },
+  {
+    "name": "Unknown Bone",
+    "price": 20,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods"]
+  },
+  {
+    "name": "Water Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Wealth Coin",
+    "price": 4500,
+    "fromChapter": 8,
+    "shops": ["Morton's Sundries"]
+  },
+  {
+    "name": "Wild Cat",
+    "price": 900,
+    "fromChapter": 5,
+    "shops": ["Gerald's Guns"]
+  },
+  {
+    "name": "Wind Crystal",
+    "price": 150,
+    "fromChapter": 1,
+    "shops": ["Rufio's Elements", "Star Items"]
+  },
+  {
+    "name": "Wind Element",
+    "price": 60,
+    "fromChapter": 1,
+    "shops": ["Conda's Goods", "Rufio's Elements"]
+  },
+  {
+    "name": "Wing Boots",
+    "price": 260,
+    "fromChapter": 1,
+    "shops": ["Mena's Apparel"]
+  },
+  {
+    "name": "Wing Shoes",
+    "price": 225,
+    "fromChapter": 1,
+    "shops": ["Stewart's Shoes"]
+  },
+  {
+    "name": "Wise Owl Sword",
+    "price": 600,
+    "fromChapter": 4,
+    "shops": ["Starlight Weapons"]
+  },
+  {
+    "name": "Work Shoes",
+    "price": 210,
+    "fromChapter": 1,
+    "shops": ["Stewart's Shoes"]
+  },
+  {
+    "name": "Yellow Ribbon",
+    "price": 200,
+    "fromChapter": 1,
+    "shops": ["Corrine's Hiarpins"]
+  },
+  {
+    "name": "Zipangu Comb",
+    "price": 350,
+    "fromChapter": 1,
+    "shops": ["Corrine's Hiarpins"]
+  }
+]
