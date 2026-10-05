@@ -2680,12 +2680,13 @@
     "sectionId": "c3-memo"
   },
   {
-    "id": "c3-idea-peeping-pole",
+    "id": "c3-idea-peeping-hole",
     "chapterId": "c3",
     "category": "idea",
-    "name": "Peeping Pole",
+    "name": "Peeping Hole",
     "missable": false,
-    "postgame": false
+    "postgame": false,
+    "sectionId": "c3-saving"
   },
   {
     "id": "c3-idea-pork-dumpling",
@@ -3178,7 +3179,7 @@
         "scoop": false
       },
       {
-        "name": "Peeping Pole",
+        "name": "Peeping Hole",
         "scoop": false
       }
     ]

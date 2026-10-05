@@ -1,0 +1,2464 @@
+{
+  "parts": [
+    {
+      "id": "cannonball-arm",
+      "name": "Cannonball Arm",
+      "category": "short",
+      "capacity": 15,
+      "whp": 40,
+      "invent": [
+        {
+          "name": "Manhole",
+          "scoop": false
+        },
+        {
+          "name": "Old-Style Robot",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 60,
+        "Smash": 50
+      }
+    },
+    {
+      "id": "cannonball-arm-ii",
+      "name": "Cannonball Arm II",
+      "category": "short",
+      "capacity": 43,
+      "whp": 53,
+      "invent": [
+        {
+          "name": "Constructor",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        },
+        {
+          "name": "Rock",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 100,
+        "Smash": 80
+      }
+    },
+    {
+      "id": "cannonball-arm-iii",
+      "name": "Cannonball Arm III",
+      "category": "short",
+      "capacity": 70,
+      "whp": 64,
+      "invent": [
+        {
+          "name": "Constructor",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        },
+        {
+          "name": "Moon Crystal",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 2
+        }
+      ],
+      "stats": {
+        "Attack": 145,
+        "Smash": 100
+      }
+    },
+    {
+      "id": "cannonball-arm-iv",
+      "name": "Cannonball Arm IV",
+      "category": "short",
+      "capacity": 110,
+      "whp": 70,
+      "invent": [
+        {
+          "name": "Constructor",
+          "scoop": false
+        },
+        {
+          "name": "Egg Chair",
+          "scoop": false
+        },
+        {
+          "name": "Rock",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Gold Bar",
+          "qty": 3
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 4
+        }
+      ],
+      "stats": {
+        "Attack": 190,
+        "Smash": 100
+      }
+    },
+    {
+      "id": "clown-hand",
+      "name": "Clown Hand",
+      "category": "short",
+      "capacity": 23,
+      "whp": 52,
+      "invent": [
+        {
+          "name": "Parasol",
+          "scoop": false
+        },
+        {
+          "name": "Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        },
+        {
+          "name": "Paint (Black)",
+          "qty": 10
+        },
+        {
+          "name": "Paint (Green)",
+          "qty": 5
+        }
+      ],
+      "stats": {
+        "Attack": 100,
+        "Chill": 50
+      }
+    },
+    {
+      "id": "clown-hand-ii",
+      "name": "Clown Hand II",
+      "category": "short",
+      "capacity": 50,
+      "whp": 60,
+      "invent": [
+        {
+          "name": "Parasol",
+          "scoop": false
+        },
+        {
+          "name": "Scale",
+          "scoop": false
+        },
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Hunk of Copper",
+          "qty": 12
+        },
+        {
+          "name": "Paint (Red)",
+          "qty": 10
+        },
+        {
+          "name": "Paint (Yellow)",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 140,
+        "Chill": 80
+      }
+    },
+    {
+      "id": "clown-hand-iii",
+      "name": "Clown Hand III",
+      "category": "short",
+      "capacity": 80,
+      "whp": 70,
+      "invent": [
+        {
+          "name": "Flag",
+          "scoop": false
+        },
+        {
+          "name": "Work Arm",
+          "scoop": false
+        },
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Paint (Purple)",
+          "qty": 20
+        },
+        {
+          "name": "Paint (Green)",
+          "qty": 20
+        }
+      ],
+      "stats": {
+        "Attack": 180,
+        "Chill": 100
+      }
+    },
+    {
+      "id": "clown-hand-iv",
+      "name": "Clown Hand IV",
+      "category": "short",
+      "capacity": 120,
+      "whp": 82,
+      "invent": [
+        {
+          "name": "Paints",
+          "scoop": false
+        },
+        {
+          "name": "Power Arm",
+          "scoop": false
+        },
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        },
+        {
+          "name": "Paint (Red)",
+          "qty": 6
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 2
+        }
+      ],
+      "stats": {
+        "Attack": 245,
+        "Chill": 100
+      }
+    },
+    {
+      "id": "samurai-arm",
+      "name": "Samurai Arm",
+      "category": "short",
+      "buyExp": 1100,
+      "capacity": 30,
+      "whp": 63,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Crescent-Shaped Light",
+          "scoop": false
+        },
+        {
+          "name": "Weapon",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 145,
+        "Lightning": 50,
+        "Scale": 50
+      }
+    },
+    {
+      "id": "samurai-arm-ii",
+      "name": "Samurai Arm II",
+      "category": "short",
+      "capacity": 70,
+      "whp": 80,
+      "invent": [
+        {
+          "name": "Runaway Dragon",
+          "scoop": false
+        },
+        {
+          "name": "Weapon",
+          "scoop": false
+        },
+        {
+          "name": "Work Crane",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 15
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        }
+      ],
+      "stats": {
+        "Attack": 260,
+        "Lightning": 50,
+        "Beast": 50,
+        "Scale": 50
+      }
+    },
+    {
+      "id": "samurai-arm-iii",
+      "name": "Samurai Arm III",
+      "category": "short",
+      "capacity": 130,
+      "whp": 99,
+      "invent": [
+        {
+          "name": "Deer Horn",
+          "scoop": false
+        },
+        {
+          "name": "Moon Column",
+          "scoop": false
+        },
+        {
+          "name": "Weapon",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 20
+        },
+        {
+          "name": "Life Element",
+          "qty": 30
+        }
+      ],
+      "stats": {
+        "Attack": 460,
+        "Lightning": 50,
+        "Beast": 50,
+        "Scale": 50
+      }
+    },
+    {
+      "id": "samurai-arm-iv",
+      "name": "Samurai Arm IV",
+      "category": "short",
+      "capacity": 160,
+      "whp": 100,
+      "invent": [
+        {
+          "name": "A Surviving Soldier",
+          "scoop": true
+        },
+        {
+          "name": "Flotsam, Revived!",
+          "scoop": true
+        },
+        {
+          "name": "Legend of the Moon",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Diamond",
+          "qty": 2
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 25
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 25
+        }
+      ],
+      "stats": {
+        "Attack": 1800,
+        "Lightning": 50,
+        "Beast": 50,
+        "Scale": 50
+      }
+    },
+    {
+      "id": "hammer-arm",
+      "name": "Hammer Arm",
+      "category": "short",
+      "buyExp": 800,
+      "capacity": 40,
+      "whp": 70,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        },
+        {
+          "name": "Work Robot",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 192,
+        "Smash": 50
+      }
+    },
+    {
+      "id": "hammer-arm-ii",
+      "name": "Hammer Arm II",
+      "category": "short",
+      "capacity": 70,
+      "whp": 83,
+      "invent": [
+        {
+          "name": "Hammer",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        },
+        {
+          "name": "Work Arm",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Rough Rock",
+          "qty": 20
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 250,
+        "Smash": 80
+      }
+    },
+    {
+      "id": "hammer-arm-iii",
+      "name": "Hammer Arm III",
+      "category": "short",
+      "capacity": 100,
+      "whp": 80,
+      "invent": [
+        {
+          "name": "Chimney",
+          "scoop": false
+        },
+        {
+          "name": "Hammer",
+          "scoop": false
+        },
+        {
+          "name": "Earth Gem Altar",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 30
+        },
+        {
+          "name": "Protector Crystal",
+          "qty": 5
+        }
+      ],
+      "stats": {
+        "Attack": 315,
+        "Smash": 100
+      }
+    },
+    {
+      "id": "hammer-arm-iv",
+      "name": "Hammer Arm IV",
+      "category": "short",
+      "capacity": 140,
+      "whp": 99,
+      "invent": [
+        {
+          "name": "Moon Column",
+          "scoop": false
+        },
+        {
+          "name": "Power Arm",
+          "scoop": false
+        },
+        {
+          "name": "Tiny Hammer",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Protector Crystal",
+          "qty": 7
+        },
+        {
+          "name": "Diamond",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 450,
+        "Smash": 100
+      }
+    },
+    {
+      "id": "drill-arm",
+      "name": "Drill Arm",
+      "category": "short",
+      "capacity": 40,
+      "whp": 72,
+      "invent": [
+        {
+          "name": "Auto Book Reader",
+          "scoop": false
+        },
+        {
+          "name": "Fan",
+          "scoop": false
+        },
+        {
+          "name": "Windmill",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 3
+        },
+        {
+          "name": "Protector Crystal",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 80,
+        "Smash": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "drill-arm-ii",
+      "name": "Drill Arm II",
+      "category": "short",
+      "capacity": 70,
+      "whp": 82,
+      "invent": [
+        {
+          "name": "Electric Sesame",
+          "scoop": false
+        },
+        {
+          "name": "Horn",
+          "scoop": false
+        },
+        {
+          "name": "Work Arm",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 4
+        },
+        {
+          "name": "Power Crystal",
+          "qty": 2
+        }
+      ],
+      "stats": {
+        "Attack": 128,
+        "Smash": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "drill-arm-iii",
+      "name": "Drill Arm III",
+      "category": "short",
+      "capacity": 100,
+      "whp": 90,
+      "invent": [
+        {
+          "name": "Luna Stone Shards",
+          "scoop": false
+        },
+        {
+          "name": "Work Arm",
+          "scoop": false
+        },
+        {
+          "name": "Ixion",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Gold Bar",
+          "qty": 2
+        },
+        {
+          "name": "Destruction Crystal",
+          "qty": 5
+        },
+        {
+          "name": "Power Crystal",
+          "qty": 4
+        }
+      ],
+      "stats": {
+        "Attack": 155,
+        "Smash": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "drill-arm-iv",
+      "name": "Drill Arm IV",
+      "category": "short",
+      "capacity": 140,
+      "whp": 98,
+      "invent": [
+        {
+          "name": "Deer Horn",
+          "scoop": false
+        },
+        {
+          "name": "Work Arm",
+          "scoop": false
+        },
+        {
+          "name": "Flower of the Sun",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 15
+        },
+        {
+          "name": "Diamond",
+          "qty": 1
+        },
+        {
+          "name": "Indestructible Coin",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 225,
+        "Smash": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "barrel-cannon",
+      "name": "Barrel Cannon",
+      "category": "long",
+      "buyExp": 400,
+      "capacity": 23,
+      "whp": 50,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Fountain",
+          "scoop": false
+        },
+        {
+          "name": "Mushroom",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 95,
+        "Exorcism": 50
+      }
+    },
+    {
+      "id": "barrel-cannon-ii",
+      "name": "Barrel Cannon II",
+      "category": "long",
+      "capacity": 50,
+      "whp": 60,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Fountain",
+          "scoop": false
+        },
+        {
+          "name": "Well",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 20
+        },
+        {
+          "name": "Sturdy Cloth",
+          "qty": 4
+        }
+      ],
+      "stats": {
+        "Attack": 140,
+        "Exorcism": 80
+      }
+    },
+    {
+      "id": "barrel-cannon-iii",
+      "name": "Barrel Cannon III",
+      "category": "long",
+      "capacity": 80,
+      "whp": 72,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Water Tank",
+          "scoop": false
+        },
+        {
+          "name": "Waterfall",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 17
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 25
+        },
+        {
+          "name": "Hunter Crystal",
+          "qty": 4
+        }
+      ],
+      "stats": {
+        "Attack": 180,
+        "Exorcism": 100
+      }
+    },
+    {
+      "id": "barrel-cannon-iv",
+      "name": "Barrel Cannon IV",
+      "category": "long",
+      "capacity": 120,
+      "whp": 81,
+      "invent": [
+        {
+          "name": "Air Cleaner",
+          "scoop": false
+        },
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Fire Squall",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 20
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 40
+        },
+        {
+          "name": "Bull's-Eye Coin",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 240,
+        "Exorcism": 100
+      }
+    },
+    {
+      "id": "machine-gun-arm",
+      "name": "Machine Gun Arm",
+      "category": "long",
+      "buyExp": 900,
+      "capacity": 30,
+      "whp": 62,
+      "invent": [
+        {
+          "name": "Fan",
+          "scoop": false
+        },
+        {
+          "name": "Rifle",
+          "scoop": false
+        },
+        {
+          "name": "Runaway Dragon",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 15
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 15
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 138,
+        "Flame": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "machine-gun-arm-ii",
+      "name": "Machine Gun Arm II",
+      "category": "long",
+      "capacity": 60,
+      "whp": 71,
+      "invent": [
+        {
+          "name": "Fan",
+          "scoop": false
+        },
+        {
+          "name": "Telescope",
+          "scoop": false
+        },
+        {
+          "name": "Windmill",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 8
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 15
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 15
+        }
+      ],
+      "stats": {
+        "Attack": 180,
+        "Flame": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "machine-gun-arm-iii",
+      "name": "Machine Gun Arm III",
+      "category": "long",
+      "capacity": 90,
+      "whp": 80,
+      "invent": [
+        {
+          "name": "Propeller",
+          "scoop": false
+        },
+        {
+          "name": "Rifle",
+          "scoop": false
+        },
+        {
+          "name": "Windmill",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Thunder Element",
+          "qty": 30
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 230,
+        "Flame": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "machine-gun-arm-iv",
+      "name": "Machine Gun Arm IV",
+      "category": "long",
+      "capacity": 130,
+      "whp": 90,
+      "invent": [
+        {
+          "name": "Drum Can",
+          "scoop": false
+        },
+        {
+          "name": "Propeller",
+          "scoop": false
+        },
+        {
+          "name": "Wind Gem Altar",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        },
+        {
+          "name": "Thunder Element",
+          "qty": 40
+        },
+        {
+          "name": "Ruby",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 295,
+        "Flame": 50,
+        "Cyclone": 50
+      }
+    },
+    {
+      "id": "missile-pod-arm",
+      "name": "Missile Pod Arm",
+      "category": "long",
+      "capacity": 30,
+      "whp": 61,
+      "invent": [
+        {
+          "name": "Mushroom",
+          "scoop": false
+        },
+        {
+          "name": "Rotating Sign",
+          "scoop": false
+        },
+        {
+          "name": "Wooden Box",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 20
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 138,
+        "Flame": 50
+      }
+    },
+    {
+      "id": "missile-pod-arm-ii",
+      "name": "Missile Pod Arm II",
+      "category": "long",
+      "capacity": 60,
+      "whp": 70,
+      "invent": [
+        {
+          "name": "Fountain",
+          "scoop": false
+        },
+        {
+          "name": "Wooden Box",
+          "scoop": false
+        },
+        {
+          "name": "Symbol of Luna Lab",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Hunk of Copper",
+          "qty": 20
+        },
+        {
+          "name": "Gunpowder",
+          "qty": 30
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 185,
+        "Flame": 80
+      }
+    },
+    {
+      "id": "missile-pod-arm-iii",
+      "name": "Missile Pod Arm III",
+      "category": "long",
+      "capacity": 90,
+      "whp": 81,
+      "invent": [
+        {
+          "name": "Deer Horn",
+          "scoop": false
+        },
+        {
+          "name": "Generator",
+          "scoop": false
+        },
+        {
+          "name": "Gold Store",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Flame Stone",
+          "qty": 3
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        }
+      ],
+      "stats": {
+        "Attack": 242,
+        "Flame": 100
+      }
+    },
+    {
+      "id": "missile-pod-arm-iv",
+      "name": "Missile Pod Arm IV",
+      "category": "long",
+      "capacity": 130,
+      "whp": 91,
+      "invent": [
+        {
+          "name": "Gold Store",
+          "scoop": false
+        },
+        {
+          "name": "Mount Gundor",
+          "scoop": false
+        },
+        {
+          "name": "Fire Gem Altar",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Gold Bar",
+          "qty": 3
+        },
+        {
+          "name": "Flame Stone",
+          "qty": 8
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 3
+        }
+      ],
+      "stats": {
+        "Attack": 300,
+        "Flame": 100
+      }
+    },
+    {
+      "id": "nova-cannon",
+      "name": "Nova Cannon",
+      "category": "long",
+      "capacity": 50,
+      "whp": 83,
+      "invent": [
+        {
+          "name": "Generator",
+          "scoop": false
+        },
+        {
+          "name": "Rapper",
+          "scoop": false
+        },
+        {
+          "name": "The Sun",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 10
+        },
+        {
+          "name": "Sun Stone",
+          "qty": 1
+        },
+        {
+          "name": "Fire Element",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 240,
+        "Chill": 50,
+        "Lightning": 50
+      }
+    },
+    {
+      "id": "nova-cannon-ii",
+      "name": "Nova Cannon II",
+      "category": "long",
+      "capacity": 80,
+      "whp": 91,
+      "invent": [
+        {
+          "name": "Streetlight",
+          "scoop": false
+        },
+        {
+          "name": "The Sun",
+          "scoop": false
+        },
+        {
+          "name": "Fire Gem Altar",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 12
+        },
+        {
+          "name": "Holy Element",
+          "qty": 50
+        },
+        {
+          "name": "Fire Element",
+          "qty": 20
+        }
+      ],
+      "stats": {
+        "Attack": 300,
+        "Chill": 50,
+        "Lightning": 50
+      }
+    },
+    {
+      "id": "nova-cannon-iii",
+      "name": "Nova Cannon III",
+      "category": "long",
+      "capacity": 110,
+      "whp": 99,
+      "invent": [
+        {
+          "name": "Moon Column",
+          "scoop": false
+        },
+        {
+          "name": "Stove",
+          "scoop": false
+        },
+        {
+          "name": "The Sun",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 14
+        },
+        {
+          "name": "Holy Element",
+          "qty": 99
+        },
+        {
+          "name": "Holy Stone",
+          "qty": 3
+        }
+      ],
+      "stats": {
+        "Attack": 435,
+        "Chill": 50,
+        "Lightning": 50
+      }
+    },
+    {
+      "id": "nova-cannon-iv",
+      "name": "Nova Cannon IV",
+      "category": "long",
+      "capacity": 165,
+      "whp": 100,
+      "invent": [
+        {
+          "name": "Pot Torch",
+          "scoop": false
+        },
+        {
+          "name": "The Sun",
+          "scoop": false
+        },
+        {
+          "name": "Flotsam, Revived!",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sun Stone",
+          "qty": 1
+        },
+        {
+          "name": "Holy Stone",
+          "qty": 5
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 15
+        }
+      ],
+      "stats": {
+        "Attack": 1600,
+        "Chill": 50,
+        "Lightning": 50
+      }
+    },
+    {
+      "id": "laser-arm",
+      "name": "Laser Arm",
+      "category": "long",
+      "capacity": 50,
+      "whp": 80,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Energy Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Geyser",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Light Element",
+          "qty": 10
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        }
+      ],
+      "stats": {
+        "Attack": 235,
+        "Exorcism": 50
+      }
+    },
+    {
+      "id": "laser-arm-ii",
+      "name": "Laser Arm II",
+      "category": "long",
+      "capacity": 80,
+      "whp": 92,
+      "invent": [
+        {
+          "name": "Crescent-Shaped Light",
+          "scoop": false
+        },
+        {
+          "name": "Energy Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Ixion",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Light Element",
+          "qty": 20
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 12
+        }
+      ],
+      "stats": {
+        "Attack": 295,
+        "Exorcism": 80
+      }
+    },
+    {
+      "id": "laser-arm-iii",
+      "name": "Laser Arm III",
+      "category": "long",
+      "capacity": 115,
+      "whp": 98,
+      "invent": [
+        {
+          "name": "Energy Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Relaxation Fountain",
+          "scoop": false
+        },
+        {
+          "name": "Search Light",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 9
+        },
+        {
+          "name": "Light Element",
+          "qty": 15
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 20
+        }
+      ],
+      "stats": {
+        "Attack": 430,
+        "Exorcism": 100
+      }
+    },
+    {
+      "id": "laser-arm-iv",
+      "name": "Laser Arm IV",
+      "category": "long",
+      "capacity": 140,
+      "whp": 100,
+      "invent": [
+        {
+          "name": "Blue Lantern",
+          "scoop": false
+        },
+        {
+          "name": "Energy Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Legend of the Moon",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Gold Bar",
+          "qty": 4
+        },
+        {
+          "name": "Holy Stone",
+          "qty": 4
+        },
+        {
+          "name": "Diamond",
+          "qty": 1
+        }
+      ],
+      "stats": {
+        "Attack": 800,
+        "Exorcism": 100
+      }
+    },
+    {
+      "id": "drum-can-body",
+      "name": "Drum Can Body",
+      "category": "armor",
+      "capacity": 10,
+      "armor": 6,
+      "invent": [
+        {
+          "name": "Chair",
+          "scoop": false
+        },
+        {
+          "name": "Drum Can",
+          "scoop": false
+        },
+        {
+          "name": "Lamp",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 40
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Glass Material",
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "id": "milk-can-body",
+      "name": "Milk Can Body",
+      "category": "armor",
+      "capacity": 14,
+      "armor": 12,
+      "invent": [
+        {
+          "name": "Chimney",
+          "scoop": false
+        },
+        {
+          "name": "Milk Can",
+          "scoop": false
+        },
+        {
+          "name": "Peeping Hole",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Glass Material",
+          "qty": 10
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 40
+        }
+      ]
+    },
+    {
+      "id": "clown-body",
+      "name": "Clown Body",
+      "category": "armor",
+      "capacity": 19,
+      "armor": 12,
+      "invent": [
+        {
+          "name": "Cup",
+          "scoop": false
+        },
+        {
+          "name": "Paints",
+          "scoop": false
+        },
+        {
+          "name": "Parasol",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 25
+        },
+        {
+          "name": "Paint (Green)",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "wooden-box-body",
+      "name": "Wooden Box Body",
+      "category": "armor",
+      "buyExp": 800,
+      "capacity": 20,
+      "armor": 18,
+      "invent": [
+        {
+          "name": "Giant Yorda Tree",
+          "scoop": false
+        },
+        {
+          "name": "Wooden Box",
+          "scoop": false
+        },
+        {
+          "name": "Hmmmm! Jurak",
+          "scoop": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 20
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "samurai-body",
+      "name": "Samurai Body",
+      "category": "armor",
+      "capacity": 24,
+      "armor": 19,
+      "invent": [
+        {
+          "name": "Cedric's Shop Sign",
+          "scoop": false
+        },
+        {
+          "name": "Crescent-Shaped Light",
+          "scoop": false
+        },
+        {
+          "name": "Telescope",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Paint (Red)",
+          "qty": 10
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 40
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": "refrigerator-body",
+      "name": "Refrigerator Body",
+      "category": "armor",
+      "buyExp": 700,
+      "capacity": 24,
+      "armor": 22,
+      "invent": [
+        {
+          "name": "Refrigerator",
+          "scoop": false
+        },
+        {
+          "name": "Small Generator",
+          "scoop": false
+        },
+        {
+          "name": "Traffic Light",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        },
+        {
+          "name": "Chill Crystal",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": "super-alloy-body",
+      "name": "Super-Alloy Body",
+      "category": "armor",
+      "buyExp": 1100,
+      "capacity": 30,
+      "armor": 24,
+      "invent": [
+        {
+          "name": "Gold Store",
+          "scoop": false
+        },
+        {
+          "name": "Search Light",
+          "scoop": false
+        },
+        {
+          "name": "Work Equipment",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 5
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "sun-moon-armor",
+      "name": "Sun & Moon Armor",
+      "category": "armor",
+      "capacity": 40,
+      "armor": 30,
+      "invent": [
+        {
+          "name": "The Sun",
+          "scoop": false
+        },
+        {
+          "name": "The Moon",
+          "scoop": false
+        },
+        {
+          "name": "Electric Sesame",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Light Element",
+          "qty": 50
+        },
+        {
+          "name": "Holy Element",
+          "qty": 50
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "id": "iron-leg",
+      "name": "Iron Leg",
+      "category": "legs",
+      "capacity": 10,
+      "speed": "Slow",
+      "invent": [
+        {
+          "name": "Fence",
+          "scoop": false
+        },
+        {
+          "name": "Old-style Robot",
+          "scoop": false
+        },
+        {
+          "name": "Trashcan",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "id": "caterpillar",
+      "name": "Caterpillar",
+      "category": "legs",
+      "buyExp": 600,
+      "capacity": 15,
+      "speed": "Slow",
+      "invent": [
+        {
+          "name": "Car",
+          "scoop": false
+        },
+        {
+          "name": "Cart",
+          "scoop": false
+        },
+        {
+          "name": "Wheel",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "id": "bucket-leg",
+      "name": "Bucket Leg",
+      "category": "legs",
+      "capacity": 15,
+      "speed": "Slow",
+      "invent": [
+        {
+          "name": "Can",
+          "scoop": false
+        },
+        {
+          "name": "River",
+          "scoop": false
+        },
+        {
+          "name": "Well",
+          "scoop": false
+        }
+      ],
+      "alternate": [
+        {
+          "name": "River",
+          "scoop": false
+        },
+        {
+          "name": "Trashcan",
+          "scoop": false
+        },
+        {
+          "name": "Water Tank",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Water Element",
+          "qty": 5
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "id": "clown-foot",
+      "name": "Clown Foot",
+      "category": "legs",
+      "capacity": 20,
+      "speed": "Slow",
+      "invent": [
+        {
+          "name": "Eyeball",
+          "scoop": false
+        },
+        {
+          "name": "Paints",
+          "scoop": false
+        },
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": true
+        }
+      ],
+      "alternate": [
+        {
+          "name": "Clown Robo's Attack",
+          "scoop": false
+        },
+        {
+          "name": "Egg",
+          "scoop": false
+        },
+        {
+          "name": "Scale",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Paint (Red)",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "roller-foot",
+      "name": "Roller Foot",
+      "category": "legs",
+      "buyExp": 700,
+      "capacity": 20,
+      "speed": "Average",
+      "invent": [
+        {
+          "name": "Freight Train",
+          "scoop": false
+        },
+        {
+          "name": "Rotating Sign",
+          "scoop": false
+        },
+        {
+          "name": "Wheel",
+          "scoop": false
+        }
+      ],
+      "alternate": [
+        {
+          "name": "Freight Train",
+          "scoop": false
+        },
+        {
+          "name": "Ventilation",
+          "scoop": false
+        },
+        {
+          "name": "Wheel",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "multi-feet",
+      "name": "Multi Feet",
+      "category": "legs",
+      "capacity": 20,
+      "speed": "Average",
+      "invent": [
+        {
+          "name": "Deer Horn",
+          "scoop": false
+        },
+        {
+          "name": "Post",
+          "scoop": false
+        },
+        {
+          "name": "Work Robot",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 15
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "id": "buggy",
+      "name": "Buggy",
+      "category": "legs",
+      "buyExp": 800,
+      "capacity": 30,
+      "speed": "Very Fast",
+      "invent": [
+        {
+          "name": "Belt",
+          "scoop": false
+        },
+        {
+          "name": "Car",
+          "scoop": false
+        },
+        {
+          "name": "System 5WP2",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        },
+        {
+          "name": "Fire Element",
+          "qty": 7
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 8
+        }
+      ]
+    },
+    {
+      "id": "propeller-leg",
+      "name": "Propeller Leg",
+      "category": "legs",
+      "buyExp": 900,
+      "capacity": 35,
+      "speed": "Fast",
+      "invent": [
+        {
+          "name": "Fan",
+          "scoop": false
+        },
+        {
+          "name": "Cart",
+          "scoop": false
+        },
+        {
+          "name": "Windmill Feather",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Silver Ball",
+          "qty": 10
+        },
+        {
+          "name": "Wind Element",
+          "qty": 7
+        }
+      ]
+    },
+    {
+      "id": "jet-hover",
+      "name": "Jet Hover",
+      "category": "legs",
+      "capacity": 40,
+      "speed": "Very Fast",
+      "invent": [
+        {
+          "name": "Candle",
+          "scoop": false
+        },
+        {
+          "name": "Fire House",
+          "scoop": false
+        },
+        {
+          "name": "Relaxation Fountain",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 30
+        },
+        {
+          "name": "Fire Element",
+          "qty": 6
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 15
+        }
+      ]
+    },
+    {
+      "id": "energy-pack",
+      "name": "Energy Pack",
+      "category": "pack",
+      "capacity": 15,
+      "energy": 80,
+      "invent": [
+        {
+          "name": "Belt",
+          "scoop": false
+        },
+        {
+          "name": "Milk Can",
+          "scoop": false
+        },
+        {
+          "name": "Pipe",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 1
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "id": "energy-pack-barrel",
+      "name": "Energy Pack (Barrel)",
+      "category": "pack",
+      "buyExp": 600,
+      "capacity": 30,
+      "energy": 120,
+      "invent": [
+        {
+          "name": "Barrel",
+          "scoop": false
+        },
+        {
+          "name": "Belt",
+          "scoop": false
+        },
+        {
+          "name": "Tree",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Rolling Log",
+          "qty": 10
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "id": "bucket-pack",
+      "name": "Bucket Pack",
+      "category": "pack",
+      "capacity": 35,
+      "energy": 160,
+      "invent": [
+        {
+          "name": "Mailbox",
+          "scoop": false
+        },
+        {
+          "name": "Trashcan",
+          "scoop": false
+        },
+        {
+          "name": "Warehouse",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 40
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 2
+        },
+        {
+          "name": "Paint (Red)",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "id": "cleaner-pack",
+      "name": "Cleaner Pack",
+      "category": "pack",
+      "capacity": 45,
+      "energy": 200,
+      "invent": [
+        {
+          "name": "Air Cleaner",
+          "scoop": false
+        },
+        {
+          "name": "Belt",
+          "scoop": false
+        },
+        {
+          "name": "Vacuum",
+          "scoop": false
+        }
+      ],
+      "alternate": [
+        {
+          "name": "Can",
+          "scoop": false
+        },
+        {
+          "name": "Vacuum Bag",
+          "scoop": false
+        },
+        {
+          "name": "Water Tank",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 50
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 4
+        },
+        {
+          "name": "Silver Ball",
+          "qty": 8
+        }
+      ]
+    },
+    {
+      "id": "energy-pack-urn",
+      "name": "Energy Pack (Urn)",
+      "category": "pack",
+      "capacity": 50,
+      "energy": 240,
+      "invent": [
+        {
+          "name": "Energy Pipe",
+          "scoop": false
+        },
+        {
+          "name": "Generator",
+          "scoop": false
+        },
+        {
+          "name": "Pot",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 20
+        },
+        {
+          "name": "Sturdy Rock",
+          "qty": 20
+        },
+        {
+          "name": "Earth Element",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "id": "triple-urn-pack",
+      "name": "Triple-Urn Pack",
+      "category": "pack",
+      "capacity": 60,
+      "energy": 300,
+      "invent": [
+        {
+          "name": "Flower Chandelier",
+          "scoop": false
+        },
+        {
+          "name": "Light of Luna Stone",
+          "scoop": false
+        },
+        {
+          "name": "Pot",
+          "scoop": false
+        }
+      ],
+      "resources": [
+        {
+          "name": "Sticky Clay",
+          "qty": 40
+        },
+        {
+          "name": "Earth Element",
+          "qty": 20
+        },
+        {
+          "name": "Sturdy Rock",
+          "qty": 40
+        }
+      ]
+    }
+  ],
+  "cores": [
+    {
+      "name": "Core",
+      "exp": 0,
+      "capacity": 60,
+      "armor": 12
+    },
+    {
+      "name": "Improved Core",
+      "exp": 900,
+      "capacity": 90,
+      "armor": 24
+    },
+    {
+      "name": "Core II",
+      "exp": 1400,
+      "capacity": 120,
+      "armor": 36
+    },
+    {
+      "name": "Core III",
+      "exp": 2000,
+      "capacity": 160,
+      "armor": 48
+    },
+    {
+      "name": "Super Core",
+      "exp": 3500,
+      "capacity": 200,
+      "armor": 60
+    },
+    {
+      "name": "Hyper Core",
+      "exp": 5000,
+      "capacity": 240,
+      "armor": 72
+    },
+    {
+      "name": "Master Grade Core",
+      "exp": 6500,
+      "capacity": 300,
+      "armor": 84
+    }
+  ],
+  "shieldKitCosts": [
+    600, 660, 726, 798, 878, 966, 1062, 1169, 1286, 1414, 1556, 1711, 1883, 2071, 2278, 2506, 2756,
+    3032, 3335, 3669, 4036
+  ]
+}

@@ -1,0 +1,472 @@
+[
+  {
+    "id": "flora",
+    "name": "Flora",
+    "badge": "Buy from Woody Tailor",
+    "forms": [
+      {
+        "name": "Himarra",
+        "atk": 27,
+        "def": 34,
+        "evolvesTo": ["Balalla"],
+        "depth": 0
+      },
+      {
+        "name": "Balalla",
+        "atk": 69,
+        "def": 42,
+        "evolvesTo": ["Stormflower", "Mallone"],
+        "depth": 1
+      },
+      {
+        "name": "Stormflower",
+        "atk": 195,
+        "def": 54,
+        "evolvesTo": ["Mandora"],
+        "depth": 2
+      },
+      {
+        "name": "Mandora",
+        "atk": 297,
+        "def": 72,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Mallone",
+        "atk": 177,
+        "def": 60,
+        "evolvesTo": ["Scarecrow"],
+        "depth": 2
+      },
+      {
+        "name": "Scarecrow",
+        "atk": 264,
+        "def": 80,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "beast",
+    "name": "Beast",
+    "badge": "Rat varieties (Give 3 Cheese)",
+    "forms": [
+      {
+        "name": "Sewer Rat",
+        "atk": 24,
+        "def": 34,
+        "evolvesTo": ["Beach Rat", "Ram"],
+        "depth": 0
+      },
+      {
+        "name": "Beach Rat",
+        "atk": 66,
+        "def": 42,
+        "evolvesTo": ["Castle Eater", "Rifle Wolf"],
+        "depth": 1
+      },
+      {
+        "name": "Castle Eater",
+        "atk": 192,
+        "def": 54,
+        "evolvesTo": ["Death Mouse"],
+        "depth": 2
+      },
+      {
+        "name": "Death Mouse",
+        "atk": 288,
+        "def": 72,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Ram",
+        "atk": 24,
+        "def": 34,
+        "evolvesTo": ["Savage Ram", "Rifle Wolf"],
+        "depth": 1
+      },
+      {
+        "name": "Savage Ram",
+        "atk": 210,
+        "def": 54,
+        "evolvesTo": ["Bandou"],
+        "depth": 2
+      },
+      {
+        "name": "Bandou",
+        "atk": 300,
+        "def": 64,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Rifle Wolf",
+        "atk": 180,
+        "def": 50,
+        "evolvesTo": ["Smiling Wolf"],
+        "depth": 2
+      },
+      {
+        "name": "Smiling Wolf",
+        "atk": 264,
+        "def": 69,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "aquatic",
+    "name": "Aquatic",
+    "badge": "Frog varieties (Give 3 Battan)",
+    "forms": [
+      {
+        "name": "Froggy",
+        "atk": 21,
+        "def": 33,
+        "evolvesTo": ["Geron"],
+        "depth": 0
+      },
+      {
+        "name": "Geron",
+        "atk": 69,
+        "def": 41,
+        "evolvesTo": ["Gamal", "Moon Goyone"],
+        "depth": 1
+      },
+      {
+        "name": "Gamal",
+        "atk": 180,
+        "def": 53,
+        "evolvesTo": ["Putos"],
+        "depth": 2
+      },
+      {
+        "name": "Putos",
+        "atk": 285,
+        "def": 71,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Moon Goyone",
+        "atk": 180,
+        "def": 53,
+        "evolvesTo": ["Mariner"],
+        "depth": 2
+      },
+      {
+        "name": "Mariner",
+        "atk": 285,
+        "def": 71,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "undead",
+    "name": "Undead",
+    "badge": "Skeleton varieties (Kill with Holy Water)",
+    "forms": [
+      {
+        "name": "Skeleton",
+        "atk": 21,
+        "def": 33,
+        "evolvesTo": ["Hornhead"],
+        "depth": 0
+      },
+      {
+        "name": "Hornhead",
+        "atk": 69,
+        "def": 41,
+        "evolvesTo": ["Master Jacket", "Whitebeard"],
+        "depth": 1
+      },
+      {
+        "name": "Master Jacket",
+        "atk": 180,
+        "def": 53,
+        "evolvesTo": ["Rare Jacket"],
+        "depth": 2
+      },
+      {
+        "name": "Rare Jacket",
+        "atk": 285,
+        "def": 71,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Whitebeard",
+        "atk": 183,
+        "def": 55,
+        "evolvesTo": ["Oyakata"],
+        "depth": 2
+      },
+      {
+        "name": "Oyakata",
+        "atk": 267,
+        "def": 68,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "spirit",
+    "name": "Spirit",
+    "badge": "Pixie varieties (Give 3 Gooey Peach)",
+    "forms": [
+      {
+        "name": "Pixie",
+        "atk": 21,
+        "def": 33,
+        "evolvesTo": ["Sylph"],
+        "depth": 0
+      },
+      {
+        "name": "Sylph",
+        "atk": 69,
+        "def": 33,
+        "evolvesTo": ["Faerie"],
+        "depth": 1
+      },
+      {
+        "name": "Faerie",
+        "atk": 180,
+        "def": 51,
+        "evolvesTo": ["Imp"],
+        "depth": 2
+      },
+      {
+        "name": "Imp",
+        "atk": 285,
+        "def": 69,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "darkling",
+    "name": "Darkling",
+    "badge": "Spider varieties (Give 3 Gold Bar)",
+    "forms": [
+      {
+        "name": "Spider Woman",
+        "atk": 21,
+        "def": 33,
+        "evolvesTo": ["Shiva"],
+        "depth": 0
+      },
+      {
+        "name": "Shiva",
+        "atk": 69,
+        "def": 41,
+        "evolvesTo": ["Spider Lady", "Miss Gourgon"],
+        "depth": 1
+      },
+      {
+        "name": "Spider Lady",
+        "atk": 180,
+        "def": 53,
+        "evolvesTo": ["Bambamchoo"],
+        "depth": 2
+      },
+      {
+        "name": "Bambamchoo",
+        "atk": 285,
+        "def": 71,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Miss Gourgon",
+        "atk": 165,
+        "def": 60,
+        "evolvesTo": ["Mrs. Gourgon"],
+        "depth": 2
+      },
+      {
+        "name": "Mrs. Gourgon",
+        "atk": 264,
+        "def": 72,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "reptile",
+    "name": "Reptile",
+    "badge": "Wind Gemron varieties (Give 3 Wind Element)",
+    "forms": [
+      {
+        "name": "Wind Gemron",
+        "atk": 99,
+        "def": 50,
+        "evolvesTo": ["Ice Gemron"],
+        "depth": 0
+      },
+      {
+        "name": "Ice Gemron",
+        "atk": 132,
+        "def": 52,
+        "evolvesTo": ["Thunder Gemron"],
+        "depth": 1
+      },
+      {
+        "name": "Thunder Gemron",
+        "atk": 165,
+        "def": 54,
+        "evolvesTo": ["Fire Gemron", "Holy Gemron"],
+        "depth": 2
+      },
+      {
+        "name": "Fire Gemron",
+        "atk": 240,
+        "def": 56,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Holy Gemron",
+        "atk": 255,
+        "def": 58,
+        "evolvesTo": [],
+        "note": "5 Rubies",
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "magical-creature",
+    "name": "Magical Creature",
+    "badge": "Statue varieties (Give 3 Sturdy Rock)",
+    "forms": [
+      {
+        "name": "Baron Balloon",
+        "atk": 24,
+        "def": 33,
+        "evolvesTo": ["Flotsam Balloon"],
+        "depth": 0
+      },
+      {
+        "name": "Flotsam Balloon",
+        "atk": 66,
+        "def": 33,
+        "evolvesTo": ["Count Balloon", "Guardia"],
+        "depth": 1
+      },
+      {
+        "name": "Count Balloon",
+        "atk": 192,
+        "def": 51,
+        "evolvesTo": ["Duke Balloon"],
+        "depth": 2
+      },
+      {
+        "name": "Duke Balloon",
+        "atk": 288,
+        "def": 69,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Guardia",
+        "atk": 195,
+        "def": 70,
+        "evolvesTo": ["Dark Keeper"],
+        "depth": 2
+      },
+      {
+        "name": "Dark Keeper",
+        "atk": 255,
+        "def": 90,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "windup",
+    "name": "Windup",
+    "badge": "Bomb varieties (Kill with bombs)",
+    "forms": [
+      {
+        "name": "Bomber Head",
+        "atk": 24,
+        "def": 33,
+        "evolvesTo": ["Triple Cracker"],
+        "depth": 0
+      },
+      {
+        "name": "Triple Cracker",
+        "atk": 66,
+        "def": 40,
+        "evolvesTo": ["Danger Bomb"],
+        "depth": 1
+      },
+      {
+        "name": "Danger Bomb",
+        "atk": 192,
+        "def": 51,
+        "evolvesTo": ["Sweet Dynamite"],
+        "depth": 2
+      },
+      {
+        "name": "Sweet Dynamite",
+        "atk": 288,
+        "def": 69,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "name": "Card",
+    "badge": "Diamond varieties (Give 3 Diamond)",
+    "forms": [
+      {
+        "name": "Club",
+        "atk": 108,
+        "def": 50,
+        "evolvesTo": ["Diamond"],
+        "depth": 0
+      },
+      {
+        "name": "Diamond",
+        "atk": 135,
+        "def": 52,
+        "evolvesTo": ["Heart"],
+        "depth": 1
+      },
+      {
+        "name": "Heart",
+        "atk": 171,
+        "def": 54,
+        "evolvesTo": ["Spade", "Joker"],
+        "depth": 2
+      },
+      {
+        "name": "Spade",
+        "atk": 198,
+        "def": 70,
+        "evolvesTo": [],
+        "depth": 3
+      },
+      {
+        "name": "Joker",
+        "atk": 198,
+        "def": 70,
+        "evolvesTo": [],
+        "depth": 3
+      }
+    ]
+  }
+]

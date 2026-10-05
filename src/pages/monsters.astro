@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { MonsterTracker } from "@/components/minigames/MonsterTracker";
+import { useTranslations } from "@/i18n";
+
+const t = useTranslations();
+---
+
+<Layout title={`${t("monsters.title")} · ${t("app.name")}`}>
+  <h1 class="mb-4 text-2xl font-semibold">{t("monsters.title")}</h1>
+  <MonsterTracker client:load />
+</Layout>

@@ -13,7 +13,7 @@ import {
 
 // Spelling inconsistencies in the source, normalised to the correct spelling.
 function fixName(s: string) {
-  return s.replace(/Vaccuum/g, "Vacuum");
+  return s.replace(/Vaccuum/g, "Vacuum").replace(/Peeping Pole/g, "Peeping Hole");
 }
 
 const SRC = ".local/guides/DC.txt";
