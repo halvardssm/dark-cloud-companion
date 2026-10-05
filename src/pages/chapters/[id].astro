@@ -1,0 +1,16 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ChapterView } from "@/components/chapter/ChapterView";
+import { chapters } from "@/lib/data";
+
+export function getStaticPaths() {
+  return chapters.map((c) => ({ params: { id: c.id }, props: { title: c.title } }));
+}
+
+const { id } = Astro.params;
+const { title } = Astro.props;
+---
+
+<Layout title={`${title} · Dark Chronicles Companion`}>
+  <ChapterView client:load chapterId={id!} />
+</Layout>
