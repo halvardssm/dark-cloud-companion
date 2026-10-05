@@ -1,0 +1,8821 @@
+[
+  {
+    "id": "c1-outside",
+    "chapterId": "c1",
+    "code": "C1OUTSIDE",
+    "title": "To the Outside World",
+    "kind": "dungeon",
+    "order": 0,
+    "medals": {
+      "timeAttack": "2:35",
+      "clearGoal": "Complete without healing",
+      "prize": "Treasure Chest Key x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Clown",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Froggy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Sewer Rat",
+        "count": 6,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 108,
+      "gilda": 108
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c1-rats",
+    "chapterId": "c1",
+    "code": "C1RATS",
+    "title": "Battle with Rats",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "2:40",
+      "clearGoal": "Items only",
+      "prize": "Diamond",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Clown",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sewer Rat",
+        "count": 3,
+        "carriesKey": true
+      },
+      {
+        "name": "Baron Balloon",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Froggy",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Bat",
+        "count": 5,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 116,
+      "gilda": 120
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c1-ghost",
+    "chapterId": "c1",
+    "code": "C1GHOST",
+    "title": "Ghost in the Channel",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "3:00",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Improved Bomb x4",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bat",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Night Stalker",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Baron Balloon",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Turtle",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 98,
+      "gilda": 105
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c1-photos",
+    "chapterId": "c1",
+    "code": "C1PHOTOS",
+    "title": "Interlude ~ Palm Brinks Photo Spree",
+    "kind": "interlude",
+    "order": 3,
+    "enemies": [],
+    "newPhotos": [
+      "Auto Book Reader",
+      "Bar Sign",
+      "Barrel",
+      "Belt",
+      "Bench",
+      "Binoculars",
+      "Blackstone One",
+      "Book",
+      "Bottle",
+      "Bread",
+      "Cafe Sign",
+      "Can",
+      "Car",
+      "Cart",
+      "Cedric's Shop Sign",
+      "Chair",
+      "Chandelier",
+      "Chimney",
+      "Clock",
+      "Constructor",
+      "Cup",
+      "Drawbridge",
+      "Evening Sun",
+      "Fan",
+      "Flag",
+      "Flower",
+      "Flower Chair",
+      "Fountain",
+      "Freight Train",
+      "Gold Store",
+      "Iron Maiden",
+      "Ladder",
+      "Lamp",
+      "Light",
+      "Mailbox",
+      "Manhole",
+      "Milk Can",
+      "Morning Sun",
+      "Old-Style Robot",
+      "Oven",
+      "Painting",
+      "Morton's Sundries Sign",
+      "Parasol",
+      "Phonograph",
+      "Piano",
+      "Pipe",
+      "Police Sign",
+      "Polly's Bakery Sign",
+      "Post",
+      "Pot",
+      "Pumpkin",
+      "Railroad",
+      "Rapper",
+      "Refrigerator",
+      "Register",
+      "River",
+      "Shield",
+      "Show Window",
+      "Shrubbery",
+      "Sign",
+      "Staircase",
+      "Streetlight",
+      "Sunshade",
+      "Table",
+      "The Moon",
+      "The Sun",
+      "Tiny Hammer",
+      "Traffic Light",
+      "Trashcan",
+      "Tree",
+      "Vacuum",
+      "Vacuum Bag",
+      "Vegetables/Fruit",
+      "Vending Machine",
+      "Weapon",
+      "Weapon Shop Sign",
+      "Weight Gauge",
+      "Wheat Flour",
+      "Wheel",
+      "Window",
+      "Wooden Box"
+    ],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Aquarium",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Window",
+            "scoop": false
+          },
+          {
+            "name": "Wooden Box",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Bandit Brassard",
+        "recipe": [
+          {
+            "name": "Clock",
+            "scoop": false
+          },
+          {
+            "name": "Gold Store",
+            "scoop": false
+          },
+          {
+            "name": "Show Window",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Cannonball Arm",
+        "recipe": [
+          {
+            "name": "Manhole",
+            "scoop": false
+          },
+          {
+            "name": "Old-Style Robot",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Caterpillar",
+        "recipe": [
+          {
+            "name": "Car",
+            "scoop": false
+          },
+          {
+            "name": "Cart",
+            "scoop": false
+          },
+          {
+            "name": "Wheel",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Energy Pack",
+        "recipe": [
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Milk Can",
+            "scoop": false
+          },
+          {
+            "name": "Pipe",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Energy Pack (Barrel)",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Knight Boots",
+        "recipe": [
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Shield",
+            "scoop": false
+          },
+          {
+            "name": "The Moon",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Trumpet Gun",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Rapper",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c1-linda",
+    "chapterId": "c1",
+    "code": "C1LINDA",
+    "title": "Boss Fight ~ Brave Little Linda",
+    "kind": "story",
+    "order": 4,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Brave Little Linda"],
+    "newInventions": []
+  },
+  {
+    "id": "c1-steve",
+    "chapterId": "c1",
+    "code": "C1STEVE",
+    "title": "Steve's Battle",
+    "kind": "dungeon",
+    "order": 5,
+    "medals": {
+      "timeAttack": "2:45",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Clown",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Night Stalker",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Vanguard",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Bat",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 3,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 162,
+      "gilda": 170
+    },
+    "newPhotos": [],
+    "newScoops": ["Night Stalker", "Baron's Hangin' On"],
+    "newInventions": []
+  },
+  {
+    "id": "c1-chest",
+    "chapterId": "c1",
+    "code": "C1CHEST",
+    "title": "Sweet, Scary Treasure Chest",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "2:30",
+      "clearGoal": "Complete without healing",
+      "prize": "Treasure Chest Key",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Vanguard",
+        "count": 3,
+        "carriesKey": true
+      },
+      {
+        "name": "Darkness",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Froggy",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 122,
+      "gilda": 126
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c1-clown",
+    "chapterId": "c1",
+    "code": "C1CLOWN",
+    "title": "Boss Fight ~ Halloween the Clown Robo",
+    "kind": "story",
+    "order": 7,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Clown Robo's Attack"],
+    "newInventions": [
+      {
+        "name": "Clown Hand",
+        "recipe": [
+          {
+            "name": "Parasol",
+            "scoop": false
+          },
+          {
+            "name": "Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c1-finish",
+    "chapterId": "c1",
+    "code": "C1FINISH",
+    "title": "Finishing up Chapter 1",
+    "kind": "story",
+    "order": 8,
+    "enemies": [],
+    "newPhotos": ["Iron Bridge", "Waterfall", "Fire House", "Coal"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Tasty Water",
+        "recipe": [
+          {
+            "name": "Bottle",
+            "scoop": false
+          },
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2-photos",
+    "chapterId": "c2",
+    "code": "C2PHOTOS",
+    "title": "Interlude ~ Palm Brinks Photo Spree Revisited",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": [
+      "Bed",
+      "Boat",
+      "Bone",
+      "Bridge",
+      "Candle",
+      "Cloth",
+      "Curtain",
+      "Deer Horn",
+      "Dell Clinic Sign",
+      "Drawer",
+      "Dresser",
+      "Egg",
+      "Elena's Portrait",
+      "Eyeball",
+      "Fence",
+      "Figure",
+      "Fireplace",
+      "Fish",
+      "Gate",
+      "Glasses Case",
+      "Hoe",
+      "Letter",
+      "Monument",
+      "Paints",
+      "Palm Tree",
+      "Parn's Studio Sign",
+      "Pier",
+      "Phone",
+      "Rifle",
+      "Robot",
+      "Rock",
+      "Rug",
+      "Saw",
+      "Stained Glass",
+      "Stand",
+      "Stove",
+      "Telescope"
+    ],
+    "newScoops": ["Ruler of the Pond"],
+    "newInventions": [
+      {
+        "name": "Bell Trigger",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Phone",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Bomb",
+        "recipe": [
+          {
+            "name": "Candle",
+            "scoop": false
+          },
+          {
+            "name": "Pot",
+            "scoop": false
+          },
+          {
+            "name": "Weapon Shop Sign",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Bread",
+        "recipe": [
+          {
+            "name": "Fireplace",
+            "scoop": false
+          },
+          {
+            "name": "Polly's Bakery Sign",
+            "scoop": false
+          },
+          {
+            "name": "Wheat Flour",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Cannonball Arm II",
+        "recipe": [
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          },
+          {
+            "name": "Rock",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Clown Body",
+        "recipe": [
+          {
+            "name": "Cup",
+            "scoop": false
+          },
+          {
+            "name": "Paints",
+            "scoop": false
+          },
+          {
+            "name": "Parasol",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Clown Foot",
+        "recipe": [
+          {
+            "name": "Eyeball",
+            "scoop": false
+          },
+          {
+            "name": "Paints",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Clown Shoes",
+        "recipe": [
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Parasol",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Gift Capsule",
+        "recipe": [
+          {
+            "name": "Bone",
+            "scoop": false
+          },
+          {
+            "name": "Letter",
+            "scoop": false
+          },
+          {
+            "name": "Pot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Grenade Launcher",
+        "recipe": [
+          {
+            "name": "Chimney",
+            "scoop": false
+          },
+          {
+            "name": "Egg",
+            "scoop": false
+          },
+          {
+            "name": "Fountain",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Iron Leg",
+        "recipe": [
+          {
+            "name": "Fence",
+            "scoop": false
+          },
+          {
+            "name": "Old-Style Robot",
+            "scoop": false
+          },
+          {
+            "name": "Trashcan",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Improved Bomb",
+        "recipe": [
+          {
+            "name": "Candle",
+            "scoop": false
+          },
+          {
+            "name": "Coal",
+            "scoop": false
+          },
+          {
+            "name": "Egg",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Lightspeed",
+        "recipe": [
+          {
+            "name": "Candle",
+            "scoop": false
+          },
+          {
+            "name": "Flower",
+            "scoop": false
+          },
+          {
+            "name": "Rock",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Swan",
+        "recipe": [
+          {
+            "name": "Boat",
+            "scoop": false
+          },
+          {
+            "name": "Tiny Hammer",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Work Shoes",
+        "recipe": [
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Ladder",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2-firbits",
+    "chapterId": "c2",
+    "code": "C2FIRBITS",
+    "title": "The Firbits' Proposition",
+    "kind": "story",
+    "order": 1,
+    "enemies": [],
+    "newPhotos": ["Grass", "Hammock", "Log", "Withered Jurak", "Wooden Bookshelf"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Bone Rapier",
+        "recipe": [
+          {
+            "name": "Bone",
+            "scoop": false
+          },
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Withered Jurak",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2-fright",
+    "chapterId": "c2",
+    "code": "C2FRIGHT",
+    "title": "Frightening Forest",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "4:45",
+      "fishingGoal": "70cm",
+      "clearGoal": "Monica's sword only",
+      "prize": "Treasure Chest Key x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Himarra",
+        "count": 8,
+        "carriesKey": true
+      },
+      {
+        "name": "Man-Eating Grass",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Skeleton Soldier",
+        "count": 8,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 272,
+      "gilda": 304
+    },
+    "newPhotos": [],
+    "newScoops": ["Spooky Grass Smile"],
+    "newInventions": []
+  },
+  {
+    "id": "c2-strange",
+    "chapterId": "c2",
+    "code": "C2STRANGE",
+    "title": "Strange Tree",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "4:28",
+      "fishingGoal": "65cm",
+      "clearGoal": "Items only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Moler",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Tore",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Pumpkinhead",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 180,
+      "gilda": 210
+    },
+    "newPhotos": [],
+    "newScoops": ["Dangerous Pumpkin", "Floatin' Earth Digger", "Tore's Nap"],
+    "newInventions": []
+  },
+  {
+    "id": "c2-shells",
+    "chapterId": "c2",
+    "code": "C2SHELLS",
+    "title": "Rolling Shells",
+    "kind": "dungeon",
+    "order": 4,
+    "medals": {
+      "timeAttack": "4:30",
+      "fishingGoal": "46cm",
+      "clearGoal": "Monica's magic only",
+      "prize": "Stamina Drink x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Tortoise",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Skeleton Soldier",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Man-Eating Grass",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Himarra",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 260,
+      "gilda": 288
+    },
+    "seal": "Red",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-swamp",
+    "chapterId": "c2",
+    "code": "C2SWAMP",
+    "title": "Great Fish Swamp ~ Helping the Firbits",
+    "kind": "story",
+    "order": 5,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Master Utan", "King Mardan"],
+    "newInventions": []
+  },
+  {
+    "id": "c2-carpent",
+    "chapterId": "c2",
+    "code": "C2CARPENT",
+    "title": "Interlude ~ Carpenterion",
+    "kind": "interlude",
+    "order": 6,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-geoston",
+    "chapterId": "c2",
+    "code": "C2GEOSTON",
+    "title": "This is a Geostone?",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "5:00",
+      "fishingGoal": "50cm",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Face of Prajna",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Moler",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Pumpkinhead",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 188,
+      "gilda": 236
+    },
+    "geostone": "Wooden House, Iron Chimney 1, Thorn Tree, Wooden Stand, River,",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-noise",
+    "chapterId": "c2",
+    "code": "C2NOISE",
+    "title": "Noise in the Forest",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "4:10",
+      "fishingGoal": "60cm",
+      "clearGoal": "Max's gun only",
+      "prize": "Stamina Drink x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Element",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sonic Bomber",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Tore",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Himarra",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 240,
+      "gilda": 276
+    },
+    "geostone": "Eye Tree 1, Eye Tree 2, Nose Tree",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-pixie",
+    "chapterId": "c2",
+    "code": "C2PIXIE",
+    "title": "I'm a Pixie",
+    "kind": "dungeon",
+    "order": 9,
+    "medals": {
+      "timeAttack": "4:16",
+      "fishingGoal": "66cm",
+      "clearGoal": "Items only",
+      "prize": "Armband Repair Powder x4",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Face of Prajna",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Pixie",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 132,
+      "gilda": 200
+    },
+    "geostone": "Straw House, Shed, Rough Wooden Fence, Bench",
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-snake",
+    "chapterId": "c2",
+    "code": "C2SNAKE",
+    "title": "Legendary Killer Snake",
+    "kind": "dungeon",
+    "order": 10,
+    "medals": {
+      "timeAttack": "4:40",
+      "fishingGoal": "49cm",
+      "prize": "Gun Repair Powder x4",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Killer Snake",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sonic Bomber",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Gyumo",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Fire Element",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Element",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 352,
+      "gilda": 392
+    },
+    "geostone": "Pot, Cart, Wooden Bridge",
+    "newPhotos": [],
+    "newScoops": ["Gyumo's Yell"],
+    "newInventions": [
+      {
+        "name": "Leather Shoes",
+        "recipe": [
+          {
+            "name": "Chair",
+            "scoop": false
+          },
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Gyumo's Yell",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2-recruit",
+    "chapterId": "c2",
+    "code": "C2RECRUIT",
+    "title": "Interlude ~ Recruitment Drive",
+    "kind": "interlude",
+    "order": 11,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-spider",
+    "chapterId": "c2",
+    "code": "C2SPIDER",
+    "title": "Grotesque Spider Lady",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "4:26",
+      "fishingGoal": "50cm",
+      "clearGoal": "Complete without healing",
+      "prize": "Gift Capsule x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Tigriff",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Hunter Fox",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Spider Lady",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 194,
+      "gilda": 216
+    },
+    "geostone": "Pot Torch, Wooden Gate, Waterwheel",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-falls",
+    "chapterId": "c2",
+    "code": "C2FALLS",
+    "title": "Rainbow Falls Entrance",
+    "kind": "dungeon",
+    "order": 13,
+    "medals": {
+      "timeAttack": "4:00",
+      "fishingGoal": "68cm",
+      "clearGoal": "Monica's sword only",
+      "prize": "Treasure Chest Key x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Tigriff",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sonic Bomber",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Hunter Fox",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Gyumo",
+        "count": 5,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 236,
+      "gilda": 272
+    },
+    "geostone": "Fruit Tree, Hill",
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c2-lafresc",
+    "chapterId": "c2",
+    "code": "C2LAFRESC",
+    "title": "Interlude ~ The Lafrescia",
+    "kind": "interlude",
+    "order": 14,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Anti-Petrify Amulet",
+        "recipe": [
+          {
+            "name": "Clock",
+            "scoop": false
+          },
+          {
+            "name": "Jurak's Eye",
+            "scoop": false
+          },
+          {
+            "name": "Morning Sun",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Barrel Cannon",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Mushroom",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Double Pudding",
+        "recipe": [
+          {
+            "name": "Milk Can",
+            "scoop": false
+          },
+          {
+            "name": "Wheat Flour",
+            "scoop": false
+          },
+          {
+            "name": "Find the Golden Egg!",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Lure Rod",
+        "recipe": [
+          {
+            "name": "Fish",
+            "scoop": false
+          },
+          {
+            "name": "River",
+            "scoop": false
+          },
+          {
+            "name": "Lafrescia Stem",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2-butterf",
+    "chapterId": "c2",
+    "code": "C2BUTTERF",
+    "title": "Boss ~ Rainbow Butterfly",
+    "kind": "story",
+    "order": 15,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["R. Butterfly United!"],
+    "newInventions": []
+  },
+  {
+    "id": "c2-finish",
+    "chapterId": "c2",
+    "code": "C2FINISH",
+    "title": "Finishing up Chapter 2",
+    "kind": "story",
+    "order": 16,
+    "enemies": [],
+    "newPhotos": ["Torch", "Lin's House"],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-balance",
+    "chapterId": "c3",
+    "code": "C3BALANCE",
+    "title": "Interlude ~ Balance Valley",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-dash",
+    "chapterId": "c3",
+    "code": "C3DASH",
+    "title": "Headlong Dash",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Ridepod only",
+      "prize": "Ruby",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Masked Tribesman",
+        "count": 8,
+        "carriesKey": true
+      },
+      {
+        "name": "Ram",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Smiling Fairy",
+        "count": 8,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 480,
+      "gilda": 416
+    },
+    "geostone": "Brick House",
+    "newPhotos": [],
+    "newScoops": ["Charging Ram", "Face Behind Devil Mask"],
+    "newInventions": [
+      {
+        "name": "Wise Owl Sword",
+        "recipe": [
+          {
+            "name": "Grass",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          },
+          {
+            "name": "Charging Ram",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-fireice",
+    "chapterId": "c3",
+    "code": "C3FIREICE",
+    "title": "Fire and Ice Don't Mix",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "6:30",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Elfas",
+        "count": 3,
+        "carriesKey": true
+      },
+      {
+        "name": "Fire Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Masked Tribesman",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ram",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 518,
+      "gilda": 402
+    },
+    "geostone": "Weather Vane, Chinese Stand",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-demon",
+    "chapterId": "c3",
+    "code": "C3DEMON",
+    "title": "Earth-Shaking Demon",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Items only",
+      "prize": "Amethyst",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Dog Statue",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Golem",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Smiling Fairy",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 384,
+      "gilda": 310
+    },
+    "geostone": "Warehouse, Brick Chimney",
+    "newPhotos": [],
+    "newScoops": ["Changing Dog Statue", "Hurray for Rock Man!"],
+    "newInventions": []
+  },
+  {
+    "id": "c3-collect",
+    "chapterId": "c3",
+    "code": "C3COLLECT",
+    "title": "Interlude ~ Collecting Power-ups",
+    "kind": "interlude",
+    "order": 4,
+    "enemies": [],
+    "newPhotos": [
+      "Basket Steamer",
+      "Chinese Lantern",
+      "Hand-Sewn Silk Flag",
+      "Pork Dumpling",
+      "Rotating Sign",
+      "Warehouse",
+      "Weather Vane"
+    ],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Bucket Pack",
+        "recipe": [
+          {
+            "name": "Mailbox",
+            "scoop": false
+          },
+          {
+            "name": "Trashcan",
+            "scoop": false
+          },
+          {
+            "name": "Warehouse",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Missile Pod Arm",
+        "recipe": [
+          {
+            "name": "Mushroom",
+            "scoop": false
+          },
+          {
+            "name": "Rotating Sign",
+            "scoop": false
+          },
+          {
+            "name": "Wooden Box",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Roller Foot",
+        "recipe": [
+          {
+            "name": "Freight Train",
+            "scoop": false
+          },
+          {
+            "name": "Rotating Sign",
+            "scoop": false
+          },
+          {
+            "name": "Wheel",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Stamina Drink",
+        "recipe": [
+          {
+            "name": "Bottle",
+            "scoop": false
+          },
+          {
+            "name": "Chinese Lantern",
+            "scoop": false
+          },
+          {
+            "name": "King Mardan",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-yoyo",
+    "chapterId": "c3",
+    "code": "C3YOYO",
+    "title": "Powerful Yo-Yo Robot",
+    "kind": "dungeon",
+    "order": 5,
+    "medals": {
+      "timeAttack": "7:40",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Topaz",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Thunder Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gemron",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Yo-Yo Barrel",
+        "count": 8,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 416,
+      "gilda": 456
+    },
+    "geostone": "Iron Fence",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-elephan",
+    "chapterId": "c3",
+    "code": "C3ELEPHAN",
+    "title": "Elephant Army in the Valley",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "8:00",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Stamina Drink x4",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Holy Gemron",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Golem",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Elfas",
+        "count": 12,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 458,
+      "gilda": 365
+    },
+    "geostone": "Wooden Fence",
+    "seal": "Red",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-warrior",
+    "chapterId": "c3",
+    "code": "C3WARRIOR",
+    "title": "Warrior in Starlight Canyon",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "6:50",
+      "clearGoal": "Ridepod Only",
+      "prize": "Wind Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Elfas",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Golem",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Masked Tribesman",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 560,
+      "gilda": 480
+    },
+    "geostone": "Requirements only",
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-fairy",
+    "chapterId": "c3",
+    "code": "C3FAIRY",
+    "title": "Smiling Fairy Village",
+    "kind": "story",
+    "order": 8,
+    "enemies": [
+      {
+        "name": "Fire Gemron",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Ice Gemron",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Gemron",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gemron",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Smiling Fairy",
+        "count": 12,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 392,
+      "gilda": 240
+    },
+    "geostone": "Church",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-laochao",
+    "chapterId": "c3",
+    "code": "C3LAOCHAO",
+    "title": "Interlude ~ Restoring Lao Chao's Bistro",
+    "kind": "interlude",
+    "order": 9,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Anti-Curse Amulet",
+        "recipe": [
+          {
+            "name": "Holy Emblem",
+            "scoop": false
+          },
+          {
+            "name": "Saint's Writings",
+            "scoop": false
+          },
+          {
+            "name": "Hmmmm! Jurak",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Antidote Amulet",
+        "recipe": [
+          {
+            "name": "Bed",
+            "scoop": false
+          },
+          {
+            "name": "Dell Clinic Sign",
+            "scoop": false
+          },
+          {
+            "name": "Holy Emblem",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Holy Water",
+        "recipe": [
+          {
+            "name": "Bottle",
+            "scoop": false
+          },
+          {
+            "name": "Holy Emblem",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Cheese",
+        "recipe": [
+          {
+            "name": "Cafe Sign",
+            "scoop": false
+          },
+          {
+            "name": "Lao Chao's Trademark",
+            "scoop": false
+          },
+          {
+            "name": "Milk Can",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Dragon Shoes",
+        "recipe": [
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Runaway Dragon",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Machine Gun Arm",
+        "recipe": [
+          {
+            "name": "Fan",
+            "scoop": false
+          },
+          {
+            "name": "Rifle",
+            "scoop": false
+          },
+          {
+            "name": "Runaway Dragon",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-treasur",
+    "chapterId": "c3",
+    "code": "C3TREASUR",
+    "title": "Dangerous Treasure Chest",
+    "kind": "dungeon",
+    "order": 10,
+    "medals": {
+      "timeAttack": "7:35",
+      "clearGoal": "Monica's sword only",
+      "prize": "Indestructible Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Elfas",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Ram",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Smiling Fairy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 480,
+      "gilda": 454
+    },
+    "geostone": "Iron Lamp 1",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-counter",
+    "chapterId": "c3",
+    "code": "C3COUNTER",
+    "title": "Little Dragon Counterattack",
+    "kind": "dungeon",
+    "order": 11,
+    "medals": {
+      "timeAttack": "7:42",
+      "clearGoal": "Complete without healing",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Gemron",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Holy Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Gemron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gemron",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 504,
+      "gilda": 420
+    },
+    "geostone": "Iron Gate, Star Lamp",
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-bargas",
+    "chapterId": "c3",
+    "code": "C3BARGAS",
+    "title": "Barga's Valley ~ Introducing Spheda",
+    "kind": "story",
+    "order": 12,
+    "enemies": [],
+    "newPhotos": ["Star Lamp"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Smash Wrench",
+        "recipe": [
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Rock",
+            "scoop": false
+          },
+          {
+            "name": "Star Lamp",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-saving",
+    "chapterId": "c3",
+    "code": "C3SAVING",
+    "title": "Interlude ~ Saving Lin's Life",
+    "kind": "interlude",
+    "order": 13,
+    "enemies": [],
+    "newPhotos": ["Crescent-Shaped Light", "Peeping Hole", "Starglass"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Milk Can Body",
+        "recipe": [
+          {
+            "name": "Chimney",
+            "scoop": false
+          },
+          {
+            "name": "Milk Can",
+            "scoop": false
+          },
+          {
+            "name": "Peeping Pole",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Non-Stop Amulet",
+        "recipe": [
+          {
+            "name": "Clock",
+            "scoop": false
+          },
+          {
+            "name": "Monument",
+            "scoop": false
+          },
+          {
+            "name": "Starglass",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Samurai Arm",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Crescent-Shaped Light",
+            "scoop": false
+          },
+          {
+            "name": "Weapon",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Samurai Body",
+        "recipe": [
+          {
+            "name": "Cedric's Shop Sign",
+            "scoop": false
+          },
+          {
+            "name": "Crescent-Shaped Light",
+            "scoop": false
+          },
+          {
+            "name": "Telescope",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-cursed",
+    "chapterId": "c3",
+    "code": "C3CURSED",
+    "title": "Cursed Mask",
+    "kind": "dungeon",
+    "order": 14,
+    "medals": {
+      "timeAttack": "7:30",
+      "clearGoal": "Items only",
+      "prize": "Lightning Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Thunder Gemron",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Holy Gemron",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Nikapous",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Yo-Yo Barrel",
+        "count": 7,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 664,
+      "gilda": 810
+    },
+    "geostone": "Iron Lamp 2",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-roly",
+    "chapterId": "c3",
+    "code": "C3ROLY",
+    "title": "We're the Roly-Poly Brothers",
+    "kind": "dungeon",
+    "order": 15,
+    "medals": {
+      "timeAttack": "7:50",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Bull's-Eye Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Elfas",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Ivanoff",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Priest of Rama",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ram",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 588,
+      "gilda": 488
+    },
+    "geostone": "Barn, Mailbox",
+    "newPhotos": [],
+    "newScoops": ["Nice Massage", "Spinning Ivanoff"],
+    "newInventions": [
+      {
+        "name": "Sand Breaker",
+        "recipe": [
+          {
+            "name": "Hand-Sewn Silk Flag",
+            "scoop": false
+          },
+          {
+            "name": "Horn",
+            "scoop": false
+          },
+          {
+            "name": "Spinning Ivanoff",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-dragon",
+    "chapterId": "c3",
+    "code": "C3DRAGON",
+    "title": "Dragon Slayer",
+    "kind": "dungeon",
+    "order": 16,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Ridepod only",
+      "prize": "Poison Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Golem",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Masked Tribesman",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Yo-Yo Barrel",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Dragon",
+        "count": 1,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 530,
+      "gilda": 578
+    },
+    "geostone": "Laundry",
+    "newPhotos": [],
+    "newScoops": ["Burning Dragon Fire"],
+    "newInventions": [
+      {
+        "name": "Premium Chicken",
+        "recipe": [
+          {
+            "name": "Pork Dumpling",
+            "scoop": false
+          },
+          {
+            "name": "Special Peking Duck",
+            "scoop": false
+          },
+          {
+            "name": "Burning Dragon Fire",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-memo",
+    "chapterId": "c3",
+    "code": "C3MEMO",
+    "title": "Boss ~ Phantom Memo Eater",
+    "kind": "story",
+    "order": 17,
+    "enemies": [],
+    "newPhotos": ["Giant Yorda Tree", "Laundry"],
+    "newScoops": ["Phantom Memo Eater"],
+    "newInventions": [
+      {
+        "name": "Anti-Goo Amulet",
+        "recipe": [
+          {
+            "name": "Laundry",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall",
+            "scoop": false
+          },
+          {
+            "name": "Ruler of the Pond",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Soap",
+        "recipe": [
+          {
+            "name": "Laundry",
+            "scoop": false
+          },
+          {
+            "name": "Palm Tree",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Star Breaker",
+        "recipe": [
+          {
+            "name": "Chimney",
+            "scoop": false
+          },
+          {
+            "name": "Fire House",
+            "scoop": false
+          },
+          {
+            "name": "Phantom Memo Eater",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Wooden Box Body",
+        "recipe": [
+          {
+            "name": "Giant Yorda Tree",
+            "scoop": false
+          },
+          {
+            "name": "Wooden Box",
+            "scoop": false
+          },
+          {
+            "name": "Hmmmm! Jurak",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-rama",
+    "chapterId": "c3",
+    "code": "C3RAMA",
+    "title": "Rama Priests Like Cheese",
+    "kind": "dungeon",
+    "order": 18,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Yo-Yo Barrel",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Element",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Priest of Rama",
+        "count": 10,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 640,
+      "gilda": 568
+    },
+    "geostone": "Block, Block 2",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-nature",
+    "chapterId": "c3",
+    "code": "C3NATURE",
+    "title": "Nature's Threat",
+    "kind": "dungeon",
+    "order": 19,
+    "medals": {
+      "timeAttack": "8:00",
+      "fishingGoal": "58cm",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Turqoise",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Golem",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Dragon",
+        "count": 3,
+        "carriesKey": true
+      },
+      {
+        "name": "Ivanoff",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Priest of Rama",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 594,
+      "gilda": 488
+    },
+    "geostone": "Well",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-baron",
+    "chapterId": "c3",
+    "code": "C3BARON",
+    "title": "Moon Baron",
+    "kind": "story",
+    "order": 20,
+    "enemies": [
+      {
+        "name": "Holy Gemron",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Crescent Baron",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Nikapous",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 596,
+      "gilda": 752
+    },
+    "geostone": "Feeble Tree",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-fishing",
+    "chapterId": "c3",
+    "code": "C3FISHING",
+    "title": "Interlude ~ Fishing Contest",
+    "kind": "interlude",
+    "order": 21,
+    "enemies": [],
+    "newPhotos": [
+      "Electric Bulletin",
+      "Fishing Contest Sign",
+      "Glowing Gate",
+      "Scale",
+      "Victory Stand",
+      "Well"
+    ],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Antidote Drink",
+        "recipe": [
+          {
+            "name": "Bottle",
+            "scoop": false
+          },
+          {
+            "name": "Dell Clinic Sign",
+            "scoop": false
+          },
+          {
+            "name": "Well",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Barrel Cannon II",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Well",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Bucket Leg",
+        "recipe": [
+          {
+            "name": "Can",
+            "scoop": false
+          },
+          {
+            "name": "River",
+            "scoop": false
+          },
+          {
+            "name": "Well",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Clown Hand II",
+        "recipe": [
+          {
+            "name": "Parasol",
+            "scoop": false
+          },
+          {
+            "name": "Scale",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-appears",
+    "chapterId": "c3",
+    "code": "C3APPEARS",
+    "title": "Lighthouse Appears",
+    "kind": "dungeon",
+    "order": 22,
+    "medals": {
+      "timeAttack": "7:40",
+      "fishingGoal": "72cm",
+      "clearGoal": "Items only",
+      "prize": "Indestructible Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Ivanoff",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Element",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Dragon",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Crescent Baron",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 778,
+      "gilda": 992
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c3-cape",
+    "chapterId": "c3",
+    "code": "C3CAPE",
+    "title": "Lighthouse on the Cape ~ Dual Boss Battle",
+    "kind": "story",
+    "order": 23,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Flying Battleship", "Moon Crystal"],
+    "newInventions": [
+      {
+        "name": "Cannonball Arm III",
+        "recipe": [
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          },
+          {
+            "name": "Moon Crystal",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Magic Gun",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "The Moon",
+            "scoop": false
+          },
+          {
+            "name": "Moon Crystal",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Spike Boots",
+        "recipe": [
+          {
+            "name": "Parasol",
+            "scoop": false
+          },
+          {
+            "name": "Pumpkin",
+            "scoop": false
+          },
+          {
+            "name": "Moon Crystal",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3-finish",
+    "chapterId": "c3",
+    "code": "C3FINISH",
+    "title": "Finishing up Chapter 3",
+    "kind": "story",
+    "order": 24,
+    "enemies": [],
+    "newPhotos": ["Windmill"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Drill Arm",
+        "recipe": [
+          {
+            "name": "Auto Book Reader",
+            "scoop": false
+          },
+          {
+            "name": "Fan",
+            "scoop": false
+          },
+          {
+            "name": "Windmill",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Machine Gun Arm II",
+        "recipe": [
+          {
+            "name": "Fan",
+            "scoop": false
+          },
+          {
+            "name": "Telescope",
+            "scoop": false
+          },
+          {
+            "name": "Windmill",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-pau",
+    "chapterId": "c4",
+    "code": "C4PAU",
+    "title": "Interlude ~ Pau and Shingala",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": ["Luna Stone Shards", "Red House"],
+    "newScoops": ["A Surviving Soldier", "Veniccio's Evening Sun"],
+    "newInventions": []
+  },
+  {
+    "id": "c4-pirates",
+    "chapterId": "c4",
+    "code": "C4PIRATES",
+    "title": "Pirates!",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "6:35",
+      "fishingGoal": "48cm",
+      "clearGoal": "Monster Transformation only"
+    },
+    "enemies": [
+      {
+        "name": "Geron",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Flintol",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Corsair",
+        "count": 12,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1000,
+      "gilda": 540
+    },
+    "geostone": "Pier, Shop Boat",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-fish",
+    "chapterId": "c4",
+    "code": "C4FISH",
+    "title": "Tons of Fish",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "6:20",
+      "fishingGoal": "50cm",
+      "clearGoal": "Ridepod only"
+    },
+    "enemies": [
+      {
+        "name": "Statue",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Geron",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Sea Bat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Goyone",
+        "count": 12,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1040,
+      "gilda": 960
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-tank",
+    "chapterId": "c4",
+    "code": "C4TANK",
+    "title": "Tank and Boss",
+    "kind": "boss",
+    "order": 3,
+    "medals": {
+      "timeAttack": "6:09",
+      "fishingGoal": "68cm",
+      "clearGoal": "Complete without healing"
+    },
+    "enemies": [
+      {
+        "name": "Pirate Tank",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Beach Rat",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Captain",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Corsair",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 798,
+      "gilda": 459
+    },
+    "geostone": "Iron House",
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-build",
+    "chapterId": "c4",
+    "code": "C4BUILD",
+    "title": "Interlude ~ Building Veniccio Up",
+    "kind": "interlude",
+    "order": 4,
+    "enemies": [],
+    "newPhotos": [
+      "T.V.",
+      "Small Generator",
+      "Banana",
+      "Egg-Shaped Transmitter",
+      "Ventilation",
+      "Air Cleaner",
+      "Egg Chair",
+      "Energy Pipe",
+      "Work Equipment",
+      "Work Robot"
+    ],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Cannonball Arm IV",
+        "recipe": [
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Egg Chair",
+            "scoop": false
+          },
+          {
+            "name": "Rock",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Cleaner Pack",
+        "recipe": [
+          {
+            "name": "Air Cleaner",
+            "scoop": false
+          },
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Vacuum",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Cubic Hammer",
+        "recipe": [
+          {
+            "name": "Dresser",
+            "scoop": false
+          },
+          {
+            "name": "Gold Store",
+            "scoop": false
+          },
+          {
+            "name": "Work Equipment",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Hammer Arm",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          },
+          {
+            "name": "Work Robot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Multi Feet",
+        "recipe": [
+          {
+            "name": "Deer Horn",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          },
+          {
+            "name": "Work Robot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Refrigerator Body",
+        "recipe": [
+          {
+            "name": "Refrigerator",
+            "scoop": false
+          },
+          {
+            "name": "Small Generator",
+            "scoop": false
+          },
+          {
+            "name": "Traffic Light",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Stinger Wrench",
+        "recipe": [
+          {
+            "name": "Air Cleaner",
+            "scoop": false
+          },
+          {
+            "name": "Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Wheel",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Wild Cat",
+        "recipe": [
+          {
+            "name": "Rifle",
+            "scoop": false
+          },
+          {
+            "name": "Work Equipment",
+            "scoop": false
+          },
+          {
+            "name": "Charging Ram",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-water",
+    "chapterId": "c4",
+    "code": "C4WATER",
+    "title": "Water Monster",
+    "kind": "dungeon",
+    "order": 5,
+    "medals": {
+      "timeAttack": "6:40",
+      "fishingGoal": "46cm",
+      "clearGoal": "Monica's Magic only"
+    },
+    "enemies": [
+      {
+        "name": "Aqua Element",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Beach Rat",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Flintol",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Sea Bat",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Statue",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 996,
+      "gilda": 660
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-medusa",
+    "chapterId": "c4",
+    "code": "C4MEDUSA",
+    "title": "Scary Auntie Medusa",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "7:00",
+      "fishingGoal": "50cm",
+      "clearGoal": "Max's Gun only"
+    },
+    "enemies": [
+      {
+        "name": "Shiva",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Aqua Element",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Auntie Medusa",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Geron",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1044,
+      "gilda": 854
+    },
+    "geostone": "Iron Stand",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-molers",
+    "chapterId": "c4",
+    "code": "C4MOLERS",
+    "title": "Sand Molers",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "6:25",
+      "clearGoal": "Items only",
+      "prize": "Stamina Drink x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Statue",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Goyone",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Sand Moler",
+        "count": 8,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1008,
+      "gilda": 1168
+    },
+    "geostone": "Bridge Block, Block 3",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-batden",
+    "chapterId": "c4",
+    "code": "C4BATDEN",
+    "title": "Bat Den",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "6:00",
+      "clearGoal": "Ridepod only",
+      "prize": "Pearl",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Auntie Medusa",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Sea Bat",
+        "count": 18,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 834,
+      "gilda": 610
+    },
+    "geostone": "Iron Shed",
+    "newPhotos": ["Iron Shed"],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-hideout",
+    "chapterId": "c4",
+    "code": "C4HIDEOUT",
+    "title": "Pirates' Hideout",
+    "kind": "dungeon",
+    "order": 9,
+    "medals": {
+      "timeAttack": "6:15",
+      "clearGoal": "Ridepod only",
+      "prize": "Chill Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Shiva",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Corsair",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Pirate Tank",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Captain",
+        "count": 10,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1294,
+      "gilda": 1006
+    },
+    "geostone": "Iron Stairs",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-puppet",
+    "chapterId": "c4",
+    "code": "C4PUPPET",
+    "title": "Boss ~ Puppet Shingala",
+    "kind": "story",
+    "order": 10,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Ancient Mural", "Puppet Shingala"],
+    "newInventions": [
+      {
+        "name": "Dark Viper",
+        "recipe": [
+          {
+            "name": "Rifle",
+            "scoop": false
+          },
+          {
+            "name": "Night Stalker",
+            "scoop": true
+          },
+          {
+            "name": "Puppet Shingala",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-zappy",
+    "chapterId": "c4",
+    "code": "C4ZAPPY",
+    "title": "Wandering Zappy",
+    "kind": "dungeon",
+    "order": 11,
+    "medals": {
+      "timeAttack": "6:30",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Zappy",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Auntie Medusa",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Goyone",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Aqua Element",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1276,
+      "gilda": 1032
+    },
+    "geostone": "Requirements only",
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-banquet",
+    "chapterId": "c4",
+    "code": "C4BANQUET",
+    "title": "Banquet of the Dead",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "5:50",
+      "clearGoal": "Items only",
+      "prize": "Absorption Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Pirate Tank",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Sand Moler",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Sooty",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Hornhead",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1360,
+      "gilda": 1176
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-improve",
+    "chapterId": "c4",
+    "code": "C4IMPROVE",
+    "title": "Improvements",
+    "kind": "dungeon",
+    "order": 13,
+    "medals": {
+      "timeAttack": "5:20",
+      "clearGoal": "Complete without healing",
+      "prize": "Treasure Chest Key x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Aqua Element",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sea Tortoise",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Neo Vanguard",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Zappy",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ragstink",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1200,
+      "gilda": 818
+    },
+    "geostone": "Luna Stone Light",
+    "seal": "Red",
+    "newPhotos": ["Light of Luna Stone"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Flamingo",
+        "recipe": [
+          {
+            "name": "Light of Luna Stone",
+            "scoop": false
+          },
+          {
+            "name": "Palm Tree",
+            "scoop": false
+          },
+          {
+            "name": "Tiny Hammer",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-serpent",
+    "chapterId": "c4",
+    "code": "C4SERPENT",
+    "title": "Return of the Serpent",
+    "kind": "dungeon",
+    "order": 14,
+    "medals": {
+      "timeAttack": "6:35",
+      "fishingGoal": "50cm",
+      "clearGoal": "Ridepod only"
+    },
+    "enemies": [
+      {
+        "name": "Sea Serpent",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Sand Moler",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Goyone",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Sooty",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1094,
+      "gilda": 1198
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-finny",
+    "chapterId": "c4",
+    "code": "C4FINNY",
+    "title": "Interlude ~ Finny Frenzy",
+    "kind": "interlude",
+    "order": 15,
+    "enemies": [],
+    "newPhotos": ["Fish Race Sign", "Opposed Island", "Water Tank"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Barrel Cannon III",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Water Tank",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-cursed",
+    "chapterId": "c4",
+    "code": "C4CURSED",
+    "title": "Cursed Sea",
+    "kind": "dungeon",
+    "order": 16,
+    "medals": {
+      "timeAttack": "6:15",
+      "fishingGoal": "54cm",
+      "clearGoal": "Max's Close-Range Weapon only"
+    },
+    "enemies": [
+      {
+        "name": "Master Jacket",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Neo Vanguard",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Shiva",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Pirate Tank",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1256,
+      "gilda": 1430
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-atrocit",
+    "chapterId": "c4",
+    "code": "C4ATROCIT",
+    "title": "Sea of Atrocity",
+    "kind": "dungeon",
+    "order": 17,
+    "medals": {
+      "timeAttack": "6:00",
+      "fishingGoal": "46cm",
+      "clearGoal": "Monica's Sword only"
+    },
+    "enemies": [
+      {
+        "name": "Sea Serpent",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Master Jacket",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Sooty",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Zappy",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1532,
+      "gilda": 1334
+    },
+    "geostone": "Windmill",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c4-healing",
+    "chapterId": "c4",
+    "code": "C4HEALING",
+    "title": "Interlude ~ Healing Shingala",
+    "kind": "interlude",
+    "order": 18,
+    "enemies": [],
+    "newPhotos": ["Windmill Feather"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Propeller Leg",
+        "recipe": [
+          {
+            "name": "Cart",
+            "scoop": false
+          },
+          {
+            "name": "Fan",
+            "scoop": false
+          },
+          {
+            "name": "Windmill Feather",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Turkey",
+        "recipe": [
+          {
+            "name": "Special Peking Duck",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          },
+          {
+            "name": "Windmill Feather",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Wing Boots",
+        "recipe": [
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Weather Vane",
+            "scoop": false
+          },
+          {
+            "name": "Windmill Feather",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Wing Shoes",
+        "recipe": [
+          {
+            "name": "Cloth",
+            "scoop": false
+          },
+          {
+            "name": "Parasol",
+            "scoop": false
+          },
+          {
+            "name": "Windmill Feather",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-jaming",
+    "chapterId": "c4",
+    "code": "C4JAMING",
+    "title": "Boss ~ Doctor Jaming",
+    "kind": "story",
+    "order": 19,
+    "enemies": [],
+    "newPhotos": ["Futuron 800", "Neo-Projector", "Search Light", "System 5WP2", "Work Arm"],
+    "newScoops": ["Dr. Jaming", "Symbol of Luna Lab"],
+    "newInventions": [
+      {
+        "name": "Buggy",
+        "recipe": [
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Car",
+            "scoop": false
+          },
+          {
+            "name": "System 5WP2",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Clown Hand III",
+        "recipe": [
+          {
+            "name": "Flag",
+            "scoop": false
+          },
+          {
+            "name": "Work Arm",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Missile Pod Arm II",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Wooden Box",
+            "scoop": false
+          },
+          {
+            "name": "Symbol of Luna Lab",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Question Shooter",
+        "recipe": [
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Neo-Projector",
+            "scoop": false
+          },
+          {
+            "name": "Brave Little Linda",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Super-Alloy Body",
+        "recipe": [
+          {
+            "name": "Gold Store",
+            "scoop": false
+          },
+          {
+            "name": "Search Light",
+            "scoop": false
+          },
+          {
+            "name": "Work Equipment",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4-finish",
+    "chapterId": "c4",
+    "code": "C4FINISH",
+    "title": "Finishing up Chapter 4",
+    "kind": "story",
+    "order": 20,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-build",
+    "chapterId": "c5",
+    "code": "C5BUILD",
+    "title": "Interlude ~ Heim Rada Rebuilding",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": [
+      "Cinders",
+      "Geyser",
+      "Hot-Spring Pond",
+      "Mount Gundor",
+      "Elevator",
+      "Transmission Device"
+    ],
+    "newScoops": ["Hot Springs Spirit"],
+    "newInventions": [
+      {
+        "name": "Escape Powder",
+        "recipe": [
+          {
+            "name": "Elevator",
+            "scoop": false
+          },
+          {
+            "name": "Transmission Device",
+            "scoop": false
+          },
+          {
+            "name": "Ancient Mural",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Final Bomb",
+        "recipe": [
+          {
+            "name": "Candle",
+            "scoop": false
+          },
+          {
+            "name": "Cinders",
+            "scoop": false
+          },
+          {
+            "name": "Oven",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Laser Arm",
+        "recipe": [
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Geyser",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Soul Breaker",
+        "recipe": [
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Geyser",
+            "scoop": false
+          },
+          {
+            "name": "Transmission Device",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-griffon",
+    "chapterId": "c5",
+    "code": "C5GRIFFON",
+    "title": "Battle with Griffon's Army",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "7:10",
+      "clearGoal": "Complete without healing",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Rifle Wolf",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Stick Joe",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 10,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1692,
+      "gilda": 1128
+    },
+    "geostone": "Great Crane",
+    "newPhotos": ["Large Crane", "Work Crane"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Samurai Arm II",
+        "recipe": [
+          {
+            "name": "Runaway Dragon",
+            "scoop": false
+          },
+          {
+            "name": "Weapon",
+            "scoop": false
+          },
+          {
+            "name": "Work Crane",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Steal Gun",
+        "recipe": [
+          {
+            "name": "Book",
+            "scoop": false
+          },
+          {
+            "name": "Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Work Crane",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-wind",
+    "chapterId": "c5",
+    "code": "C5WIND",
+    "title": "Mt. Gundor Wind",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Max's Gun only",
+      "prize": "Treasure Chest Key x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Steam Tore",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Gundron",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gundron",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1544,
+      "gilda": 1188
+    },
+    "geostone": "Power Arm",
+    "seal": "Red",
+    "newPhotos": ["Power Arm"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Clown Hand IV",
+        "recipe": [
+          {
+            "name": "Paints",
+            "scoop": false
+          },
+          {
+            "name": "Power Arm",
+            "scoop": false
+          },
+          {
+            "name": "Clown Robo's Attack",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-little",
+    "chapterId": "c5",
+    "code": "C5LITTLE",
+    "title": "Little Dragons on the Mountain",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "7:30",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Holy Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Gundron",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Thunder Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Stick Joe",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1416,
+      "gilda": 1476
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-goyone",
+    "chapterId": "c5",
+    "code": "C5GOYONE",
+    "title": "Steam Goyone",
+    "kind": "dungeon",
+    "order": 4,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Monica's Magic only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Griffon Soldier",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Rifle Wolf",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Savage Ram",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Steam Goyone",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1768,
+      "gilda": 1404
+    },
+    "geostone": "Requirements only",
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-baddie",
+    "chapterId": "c5",
+    "code": "C5BADDIE",
+    "title": "Mountain Baddie Appears",
+    "kind": "dungeon",
+    "order": 5,
+    "medals": {
+      "timeAttack": "7:12",
+      "clearGoal": "Items only",
+      "prize": "Bandit Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Burger",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Steam Tore",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Rifle Wolf",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Savage Ram",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1202,
+      "gilda": 748
+    },
+    "geostone": "Generator",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-squall",
+    "chapterId": "c5",
+    "code": "C5SQUALL",
+    "title": "Interlude ~ The Fire Squall",
+    "kind": "interlude",
+    "order": 6,
+    "enemies": [],
+    "newPhotos": [
+      "Decorative Light",
+      "Display Robo",
+      "Drum Can",
+      "Electric Sesame",
+      "Generator",
+      "Hammer",
+      "Patterned Rug",
+      "Sulphur-Colored Juice"
+    ],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Drum Can Body",
+        "recipe": [
+          {
+            "name": "Chair",
+            "scoop": false
+          },
+          {
+            "name": "Drum Can",
+            "scoop": false
+          },
+          {
+            "name": "Lamp",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Drill Arm II",
+        "recipe": [
+          {
+            "name": "Electric Sesame",
+            "scoop": false
+          },
+          {
+            "name": "Horn",
+            "scoop": false
+          },
+          {
+            "name": "Work Arm",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Energy Pack (Urn)",
+        "recipe": [
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Generator",
+            "scoop": false
+          },
+          {
+            "name": "Pot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Falcon",
+        "recipe": [
+          {
+            "name": "Hammer",
+            "scoop": false
+          },
+          {
+            "name": "Large Crane",
+            "scoop": false
+          },
+          {
+            "name": "Withered Jurak",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Hammer Arm II",
+        "recipe": [
+          {
+            "name": "Hammer",
+            "scoop": false
+          },
+          {
+            "name": "Post",
+            "scoop": false
+          },
+          {
+            "name": "Work Arm",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Metal Boots",
+        "recipe": [
+          {
+            "name": "Belt",
+            "scoop": false
+          },
+          {
+            "name": "Drum Can",
+            "scoop": false
+          },
+          {
+            "name": "Work Robot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Missile Pod Arm III",
+        "recipe": [
+          {
+            "name": "Deer Horn",
+            "scoop": false
+          },
+          {
+            "name": "Generator",
+            "scoop": false
+          },
+          {
+            "name": "Gold Store",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Nova Cannon",
+        "recipe": [
+          {
+            "name": "Generator",
+            "scoop": false
+          },
+          {
+            "name": "Rapper",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Poison Wrench",
+        "recipe": [
+          {
+            "name": "Deer Horn",
+            "scoop": false
+          },
+          {
+            "name": "Mushroom",
+            "scoop": false
+          },
+          {
+            "name": "Sulfur-Colored Juice",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Sun & Moon Armor",
+        "recipe": [
+          {
+            "name": "Electric Sesame",
+            "scoop": false
+          },
+          {
+            "name": "The Moon",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-magmano",
+    "chapterId": "c5",
+    "code": "C5MAGMANO",
+    "title": "Magmanoff",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "7:02",
+      "clearGoal": "Monica's Sword only",
+      "prize": "Ruby",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Magmanoff",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Steam Goyone",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Stick Joe",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1594,
+      "gilda": 1039
+    },
+    "geostone": "Stair Block",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-danger",
+    "chapterId": "c5",
+    "code": "C5DANGER",
+    "title": "Danger Zone",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "7:40",
+      "clearGoal": "Ridepod only",
+      "prize": "Mighty Healing x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Burger",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Bomber Head",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 6,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 1374,
+      "gilda": 888
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-secret",
+    "chapterId": "c5",
+    "code": "C5SECRET",
+    "title": "Secret of Fire Mountain",
+    "kind": "dungeon",
+    "order": 9,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Amethyst",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Gundron",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Steam Tore",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Magmanoff",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1208,
+      "gilda": 534
+    },
+    "geostone": "Iron Chimney 2",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-death",
+    "chapterId": "c5",
+    "code": "C5DEATH",
+    "title": "Deathtrap",
+    "kind": "dungeon",
+    "order": 10,
+    "medals": {
+      "timeAttack": "8:15",
+      "clearGoal": "Items only",
+      "prize": "Topaz",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Stick Joe",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Savage Ram",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Steam Goyone",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1928,
+      "gilda": 1274
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-despera",
+    "chapterId": "c5",
+    "code": "C5DESPERA",
+    "title": "Desperation on the Mountain",
+    "kind": "dungeon",
+    "order": 11,
+    "medals": {
+      "timeAttack": "7:10",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Gundron",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Burger",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Rifle Wolf",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Bomber Head",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Gundron",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1496,
+      "gilda": 874
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-pains",
+    "chapterId": "c5",
+    "code": "C5PAINS",
+    "title": "Pains in the Neck",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "7:01",
+      "clearGoal": "Max's Gun only",
+      "prize": "Indestructible Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Steam Tore",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Griffon Soldier",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1392,
+      "gilda": 578
+    },
+    "geostone": "Hardened Mud Pile",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-before",
+    "chapterId": "c5",
+    "code": "C5BEFORE",
+    "title": "Interlude ~ Before the Fire Squall",
+    "kind": "interlude",
+    "order": 13,
+    "enemies": [],
+    "newPhotos": ["Mud"],
+    "newScoops": ["Fire Squall"],
+    "newInventions": [
+      {
+        "name": "Albatross",
+        "recipe": [
+          {
+            "name": "Geyser",
+            "scoop": false
+          },
+          {
+            "name": "Tree",
+            "scoop": false
+          },
+          {
+            "name": "Fire Squall",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Barrel Cannon IV",
+        "recipe": [
+          {
+            "name": "Air Cleaner",
+            "scoop": false
+          },
+          {
+            "name": "Barrel",
+            "scoop": false
+          },
+          {
+            "name": "Fire Squall",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-flying",
+    "chapterId": "c5",
+    "code": "C5FLYING",
+    "title": "Boss ~ Flying Battleship",
+    "kind": "story",
+    "order": 14,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-horn",
+    "chapterId": "c5",
+    "code": "C5HORN",
+    "title": "Interlude ~ The Fire Horn",
+    "kind": "interlude",
+    "order": 15,
+    "enemies": [],
+    "newPhotos": ["Computer", "Propeller"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Digi Hammer",
+        "recipe": [
+          {
+            "name": "Computer",
+            "scoop": false
+          },
+          {
+            "name": "Constructor",
+            "scoop": false
+          },
+          {
+            "name": "Decorative Lights",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Machine Gun Arm III",
+        "recipe": [
+          {
+            "name": "Propeller",
+            "scoop": false
+          },
+          {
+            "name": "Rifle",
+            "scoop": false
+          },
+          {
+            "name": "Windmill",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-walking",
+    "chapterId": "c5",
+    "code": "C5WALKING",
+    "title": "Walking the Path of Flames",
+    "kind": "dungeon",
+    "order": 16,
+    "medals": {
+      "timeAttack": "7:40",
+      "clearGoal": "Ridepod only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Alexander",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Chimera",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Lava Bat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Lava Golem",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1362,
+      "gilda": 786
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-burning",
+    "chapterId": "c5",
+    "code": "C5BURNING",
+    "title": "Burning Undead",
+    "kind": "dungeon",
+    "order": 17,
+    "medals": {
+      "timeAttack": "6:52",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bone Lord",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Ultrasonic Bomber",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Lava Runner",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1544,
+      "gilda": 1030
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": ["Faintin' Bone Lord"],
+    "newInventions": []
+  },
+  {
+    "id": "c5-dragon",
+    "chapterId": "c5",
+    "code": "C5DRAGON",
+    "title": "Fire Dragon",
+    "kind": "dungeon",
+    "order": 18,
+    "medals": {
+      "timeAttack": "7:06",
+      "clearGoal": "Complete without healing",
+      "prize": "Indestructible Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bomber Head",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Chimera",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Fire Gundron",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Lava Bat",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Red Dragon",
+        "count": 5,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2042,
+      "gilda": 1460
+    },
+    "geostone": "Requirements only",
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-chest",
+    "chapterId": "c5",
+    "code": "C5CHEST",
+    "title": "Treasure Chest Danger Zone",
+    "kind": "dungeon",
+    "order": 19,
+    "medals": {
+      "timeAttack": "8:00",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Sapphire",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Alexander",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Bone Lord",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Lava Bat",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2300,
+      "gilda": 1532
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-river",
+    "chapterId": "c5",
+    "code": "C5RIVER",
+    "title": "Road to the River of Flames",
+    "kind": "dungeon",
+    "order": 20,
+    "medals": {
+      "timeAttack": "7:10",
+      "clearGoal": "Items only",
+      "prize": "Turqoise",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bone Lord",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Lava Bat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Red Dragon",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Ultrasonic Bomber",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2346,
+      "gilda": 2130
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c5-gaspard",
+    "chapterId": "c5",
+    "code": "C5GASPARD",
+    "title": "Boss ~ Ultimate Gaspard",
+    "kind": "story",
+    "order": 21,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Panther Boots",
+        "recipe": [
+          {
+            "name": "Bone",
+            "scoop": false
+          },
+          {
+            "name": "The Moon",
+            "scoop": false
+          },
+          {
+            "name": "The Ultimate Gaspard",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5-finish",
+    "chapterId": "c5",
+    "code": "C5FINISH",
+    "title": "Finishing up Chapter 5",
+    "kind": "story",
+    "order": 22,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Heavy Hammer",
+        "recipe": [
+          {
+            "name": "Drum Can",
+            "scoop": false
+          },
+          {
+            "name": "Power Arm",
+            "scoop": false
+          },
+          {
+            "name": "Paznos",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Ruler's Sword",
+        "recipe": [
+          {
+            "name": "Figure",
+            "scoop": false
+          },
+          {
+            "name": "Iron Maiden",
+            "scoop": false
+          },
+          {
+            "name": "Paznos",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6-palace",
+    "chapterId": "c6",
+    "code": "C6PALACE",
+    "title": "The Locked Palace",
+    "kind": "story",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": ["Dead Tree", "Gold Gate", "Hooked Nose", "Pinky"],
+    "newScoops": ["Ixion", "Griffon's Real Face", "Moon Flower Palace"],
+    "newInventions": [
+      {
+        "name": "Drill Arm III",
+        "recipe": [
+          {
+            "name": "Luna Stone Shards",
+            "scoop": false
+          },
+          {
+            "name": "Work Arm",
+            "scoop": false
+          },
+          {
+            "name": "Ixion",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Laser Arm II",
+        "recipe": [
+          {
+            "name": "Crescent-Shaped Light",
+            "scoop": false
+          },
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Ixion",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6-kazarov",
+    "chapterId": "c6",
+    "code": "C6KAZAROV",
+    "title": "Interlude ~ Kazarov Stonehenge",
+    "kind": "interlude",
+    "order": 1,
+    "enemies": [],
+    "newPhotos": ["Earth Altar", "Fire Altar", "Water Altar", "Wind Altar"],
+    "newScoops": ["Kazarov Stonehenge"],
+    "newInventions": []
+  },
+  {
+    "id": "c6-earth",
+    "chapterId": "c6",
+    "code": "C6EARTH",
+    "title": "Looking for the Earth Gem",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "4:20",
+      "fishingGoal": "54cm",
+      "clearGoal": "Complete without healing",
+      "prize": "Gift Capsule x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Cursed Rose",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Spirit Flyer",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Zucky",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2336,
+      "gilda": 2164
+    },
+    "geostone": "Chimney Pot",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-rare",
+    "chapterId": "c6",
+    "code": "C6RARE",
+    "title": "Something Rare Here!",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "4:40",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Ama no Murakumo",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Sylph",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Zucky",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mad Tore",
+        "count": 4,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 1976,
+      "gilda": 1884
+    },
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-scary",
+    "chapterId": "c6",
+    "code": "C6SCARY",
+    "title": "Scary Tree",
+    "kind": "dungeon",
+    "order": 4,
+    "medals": {
+      "timeAttack": "4:00",
+      "fishingGoal": "66cm",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Final Bomb x3",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Mad Tore",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 1506,
+      "gilda": 1088
+    },
+    "geostone": "Leafy Tree",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-trentos",
+    "chapterId": "c6",
+    "code": "C6TRENTOS",
+    "title": "Boss ~ Trentos",
+    "kind": "story",
+    "order": 5,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Hammer Arm III",
+        "recipe": [
+          {
+            "name": "Chimney",
+            "scoop": false
+          },
+          {
+            "name": "Hammer",
+            "scoop": false
+          },
+          {
+            "name": "Earth Gem Altar",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6-wind",
+    "chapterId": "c6",
+    "code": "C6WIND",
+    "title": "Looking for the Wind Gem",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "8:05",
+      "clearGoal": "Monica's Magic only",
+      "prize": "Opal",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Balalla",
+        "count": 12,
+        "carriesKey": true
+      },
+      {
+        "name": "Heat Fairy",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Spirit",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Water Spirit",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2816,
+      "gilda": 2784
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-spirit",
+    "chapterId": "c6",
+    "code": "C6SPIRIT",
+    "title": "Evil Spirit in the Valley",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "8:15",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Balalla",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Iron Mask",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mummy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2752,
+      "gilda": 2414
+    },
+    "geostone": "Barrel",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-warrior",
+    "chapterId": "c6",
+    "code": "C6WARRIOR",
+    "title": "Brave Warriors in the Valley",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "6:50",
+      "clearGoal": "Max's Gun only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Blumo",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Iron Mask",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Sleeber",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2972,
+      "gilda": 2184
+    },
+    "geostone": "Hay and Hoe",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-lapis",
+    "chapterId": "c6",
+    "code": "C6LAPIS",
+    "title": "Boss ~ Lapis Garter",
+    "kind": "story",
+    "order": 9,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Wind Gem Altar"],
+    "newInventions": [
+      {
+        "name": "Machine Gun Arm IV",
+        "recipe": [
+          {
+            "name": "Drum Can",
+            "scoop": false
+          },
+          {
+            "name": "Propeller",
+            "scoop": false
+          },
+          {
+            "name": "Wind Gem Altar",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6-water",
+    "chapterId": "c6",
+    "code": "C6WATER",
+    "title": "Looking for the Water Gem",
+    "kind": "dungeon",
+    "order": 10,
+    "medals": {
+      "timeAttack": "6:40",
+      "clearGoal": "Items only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Arkerath",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Blackbeard",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Star Tortoise",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Zombie Pirate",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2084,
+      "gilda": 1936
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-pirate",
+    "chapterId": "c6",
+    "code": "C6PIRATE",
+    "title": "Pirates' Revenge",
+    "kind": "dungeon",
+    "order": 11,
+    "medals": {
+      "timeAttack": "5:55",
+      "clearGoal": "Complete without healing",
+      "prize": "Treasure Chest Key x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Blackbeard",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Coral Dog",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Fat Naga",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Pirate Eye",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3132,
+      "gilda": 3012
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-death",
+    "chapterId": "c6",
+    "code": "C6DEATH",
+    "title": "Death Ocean",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "6:14",
+      "clearGoal": "Monica's Sword only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Arkerath",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Fat Naga",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Metal Bomber",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Pirate Eye",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2528,
+      "gilda": 1956
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-dragon",
+    "chapterId": "c6",
+    "code": "C6DRAGON",
+    "title": "Boss ~ Sea Dragon",
+    "kind": "story",
+    "order": 13,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Water Gem Altar"],
+    "newInventions": []
+  },
+  {
+    "id": "c6-fire",
+    "chapterId": "c6",
+    "code": "C6FIRE",
+    "title": "Looking for the Fire Gem",
+    "kind": "dungeon",
+    "order": 14,
+    "medals": {
+      "timeAttack": "6:50",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Heat Wear",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Living Armor",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Red Fox",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Rolling Rocks",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2450,
+      "gilda": 2390
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-spring",
+    "chapterId": "c6",
+    "code": "C6SPRING",
+    "title": "Explosive Hot Spring",
+    "kind": "dungeon",
+    "order": 15,
+    "medals": {
+      "timeAttack": "7:05",
+      "clearGoal": "Ridepod only",
+      "prize": "Mighty Healing x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Spirit",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Flaming Nail",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Spirit",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Triple Cracker",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2480,
+      "gilda": 2172
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-crazy",
+    "chapterId": "c6",
+    "code": "C6CRAZY",
+    "title": "Crazy Mountain",
+    "kind": "dungeon",
+    "order": 16,
+    "medals": {
+      "timeAttack": "6:55",
+      "clearGoal": "Items only",
+      "prize": "Wealth Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Flaming Nail",
+        "count": 8,
+        "carriesKey": true
+      },
+      {
+        "name": "Arthur",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Heat Wear",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Rolling Rocks",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3112,
+      "gilda": 2448
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c6-inferno",
+    "chapterId": "c6",
+    "code": "C6INFERNO",
+    "title": "Boss ~ Inferno",
+    "kind": "story",
+    "order": 17,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Fire Gem Altar"],
+    "newInventions": [
+      {
+        "name": "Missile Pod Arm IV",
+        "recipe": [
+          {
+            "name": "Gold Store",
+            "scoop": false
+          },
+          {
+            "name": "Mount Gundor",
+            "scoop": false
+          },
+          {
+            "name": "Fire Gem Altar",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Nova Cannon II",
+        "recipe": [
+          {
+            "name": "Streetlight",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          },
+          {
+            "name": "Fire Gem Altar",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6-finish",
+    "chapterId": "c6",
+    "code": "C6FINISH",
+    "title": "Finishing up Chapter 6",
+    "kind": "story",
+    "order": 18,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": ["Gigantor Paznos"],
+    "newInventions": []
+  },
+  {
+    "id": "c7-moonpal",
+    "chapterId": "c7",
+    "code": "C7MOONPAL",
+    "title": "Interlude ~ The Moon Flower Palace",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": ["Camellia Tree", "Relaxation Fountain"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Jet Hover",
+        "recipe": [
+          {
+            "name": "Candle",
+            "scoop": false
+          },
+          {
+            "name": "Fire House",
+            "scoop": false
+          },
+          {
+            "name": "Relaxation Fountain",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Laser Arm III",
+        "recipe": [
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Relaxation Fountain",
+            "scoop": false
+          },
+          {
+            "name": "Search Light",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c7-ancient",
+    "chapterId": "c7",
+    "code": "C7ANCIENT",
+    "title": "Ancient Wind",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "8:00",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bundy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Castle Eater",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Count Balloon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Silver Gear",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4056,
+      "gilda": 2754
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-card",
+    "chapterId": "c7",
+    "code": "C7CARD",
+    "title": "Card Warriors Gather",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Ridepod only",
+      "prize": "Treasure Chest Key x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Club",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "Diamond",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Heart",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Spade",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Joker",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3744,
+      "gilda": 1584
+    },
+    "geostone": "Camellia Tree",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-danger",
+    "chapterId": "c7",
+    "code": "C7DANGER",
+    "title": "Dangerous Treasure",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "7:02",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Holy Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Evil Performer",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 10,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2056,
+      "gilda": 1490
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-zombie",
+    "chapterId": "c7",
+    "code": "C7ZOMBIE",
+    "title": "Zombie Zone",
+    "kind": "dungeon",
+    "order": 4,
+    "medals": {
+      "timeAttack": "7:06",
+      "clearGoal": "Complete without healing",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bundy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Castle Eater",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Silver Gear",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Crow Priest",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Fire Drake",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3820,
+      "gilda": 2648
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-feeling",
+    "chapterId": "c7",
+    "code": "C7FEELING",
+    "title": "Feeling out of Place",
+    "kind": "dungeon",
+    "order": 5,
+    "medals": {
+      "timeAttack": "7:08",
+      "clearGoal": "Monica's Sword only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Diamond",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Evil Performer",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Heart",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Moon Goyone",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3416,
+      "gilda": 1896
+    },
+    "geostone": "Road to Golbad",
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-living",
+    "chapterId": "c7",
+    "code": "C7LIVING",
+    "title": "Living Statue",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Items only",
+      "prize": "Gold Bar x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Guardia",
+        "count": 9,
+        "carriesKey": false
+      },
+      {
+        "name": "Moon Goyone",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Club",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Spade",
+        "count": 3,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3624,
+      "gilda": 1947
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-zone",
+    "chapterId": "c7",
+    "code": "C7ZONE",
+    "title": "Danger Zone",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "7:40",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Emerald",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Drake",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Drake",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Joker",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Stormy",
+        "count": 2,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 3732,
+      "gilda": 2672
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-scary",
+    "chapterId": "c7",
+    "code": "C7SCARY",
+    "title": "Scary Women",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "8:00",
+      "clearGoal": "Items only",
+      "prize": "Diamond",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Crow Priest",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Moon Goyone",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Miss Gourgon",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Rock Taster",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3196,
+      "gilda": 2336
+    },
+    "geostone": "Starlight Stairs",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-hell",
+    "chapterId": "c7",
+    "code": "C7HELL",
+    "title": "Hell Elephant",
+    "kind": "dungeon",
+    "order": 9,
+    "medals": {
+      "timeAttack": "7:55",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Drake",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Drake",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Moonflowephant",
+        "count": 1,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 2476,
+      "gilda": 1883
+    },
+    "geostone": "Requirements only",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-crush",
+    "chapterId": "c7",
+    "code": "C7CRUSH",
+    "title": "Crush the Undead",
+    "kind": "dungeon",
+    "order": 10,
+    "medals": {
+      "timeAttack": "7:01",
+      "clearGoal": "Ridepod only",
+      "prize": "Bull's-Eye Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Silver Gear",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Evil Performer",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Miss Gourgon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Skull Chief",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4312,
+      "gilda": 2938
+    },
+    "geostone": "Road",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-build1",
+    "chapterId": "c7",
+    "code": "C7BUILD1",
+    "title": "Interlude ~ Rebuilding the Moon Flower Palace",
+    "kind": "interlude",
+    "order": 11,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Drill Arm IV",
+        "recipe": [
+          {
+            "name": "Deer Horn",
+            "scoop": false
+          },
+          {
+            "name": "Work Arm",
+            "scoop": false
+          },
+          {
+            "name": "Flower of the Sun",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Level-up Powder",
+        "recipe": [
+          {
+            "name": "Sun Chair",
+            "scoop": false
+          },
+          {
+            "name": "Sun Table",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Sexy Panther",
+        "recipe": [
+          {
+            "name": "Elena's Portrait",
+            "scoop": false
+          },
+          {
+            "name": "Flower Bathed in Light",
+            "scoop": false
+          },
+          {
+            "name": "Rifle",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Resurrection Powder",
+        "recipe": [
+          {
+            "name": "Fruit",
+            "scoop": false
+          },
+          {
+            "name": "Lotus Flower",
+            "scoop": false
+          },
+          {
+            "name": "Hot Springs Spirit",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c7-missing",
+    "chapterId": "c7",
+    "code": "C7MISSING",
+    "title": "Missing Gem Dealer",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "7:40",
+      "clearGoal": "Items only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Guardia",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Rock Taster",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Joker",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Stormy",
+        "count": 1,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3048,
+      "gilda": 1630
+    },
+    "geostone": "Hall of Sorrow",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-longest",
+    "chapterId": "c7",
+    "code": "C7LONGEST",
+    "title": "Max's Longest Day",
+    "kind": "dungeon",
+    "order": 13,
+    "medals": {
+      "timeAttack": "8:00",
+      "clearGoal": "Max's Gun only",
+      "prize": "Destruction Crystal x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Club",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Fire Drake",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Ice Drake",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Joker",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Spade",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3592,
+      "gilda": 2176
+    },
+    "geostone": "Silver Bench",
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-corrido",
+    "chapterId": "c7",
+    "code": "C7CORRIDO",
+    "title": "Hell's Corridor",
+    "kind": "dungeon",
+    "order": 14,
+    "medals": {
+      "timeAttack": "7:35",
+      "clearGoal": "Complete without healing",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Skull Chief",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Rock Taster",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Moonflowephant",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Stormy",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2540,
+      "gilda": 1594
+    },
+    "geostone": "Palace Stairs",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-monica",
+    "chapterId": "c7",
+    "code": "C7MONICA",
+    "title": "Monica All Alone",
+    "kind": "dungeon",
+    "order": 15,
+    "medals": {
+      "timeAttack": "7:05",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Joker",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Heart",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Diamond",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Guardia",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3556,
+      "gilda": 1720
+    },
+    "geostone": "Petal Stream",
+    "seal": "Red",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-raging",
+    "chapterId": "c7",
+    "code": "C7RAGING",
+    "title": "Raging Spirits",
+    "kind": "dungeon",
+    "order": 16,
+    "medals": {
+      "timeAttack": "6:55",
+      "clearGoal": "Monica's Magic only",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Miss Gourgon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Rain Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Storm Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Ghost",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3632,
+      "gilda": 2218
+    },
+    "geostone": "Flower Bed",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-lonely",
+    "chapterId": "c7",
+    "code": "C7LONELY",
+    "title": "Lonely Machine",
+    "kind": "dungeon",
+    "order": 17,
+    "medals": {
+      "timeAttack": "7:45",
+      "clearGoal": "Items only",
+      "prize": "Lightning Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Skull Chief",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Leogriff",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Moonflowephant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Vanguard Mk 2",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3332,
+      "gilda": 2088
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-nobilit",
+    "chapterId": "c7",
+    "code": "C7NOBILIT",
+    "title": "Nobility",
+    "kind": "dungeon",
+    "order": 18,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Complete without healing",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Rain Ghost",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Ghost",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Moon Joe",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Stormy",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3432,
+      "gilda": 2016
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-watch",
+    "chapterId": "c7",
+    "code": "C7WATCH",
+    "title": "Palace Watchdog",
+    "kind": "dungeon",
+    "order": 19,
+    "medals": {
+      "timeAttack": "8:05",
+      "clearGoal": "Complete without healing",
+      "prize": "Time Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Toy Rock",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Vanguard Mk 2",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Clock Knight",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Ghost",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3314,
+      "gilda": 1830
+    },
+    "geostone": "Moon Column",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-build2",
+    "chapterId": "c7",
+    "code": "C7BUILD2",
+    "title": "Interlude ~ More Rebuilding",
+    "kind": "interlude",
+    "order": 20,
+    "enemies": [],
+    "newPhotos": ["Flower Bed", "Moon Column", "Silver Bench"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Hammer Arm IV",
+        "recipe": [
+          {
+            "name": "Moon Column",
+            "scoop": false
+          },
+          {
+            "name": "Power Arm",
+            "scoop": false
+          },
+          {
+            "name": "Tiny Hammer",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Nova Cannon III",
+        "recipe": [
+          {
+            "name": "Moon Column",
+            "scoop": false
+          },
+          {
+            "name": "Stove",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Samurai Arm III",
+        "recipe": [
+          {
+            "name": "Deer Horn",
+            "scoop": false
+          },
+          {
+            "name": "Moon Column",
+            "scoop": false
+          },
+          {
+            "name": "Weapon",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c7-memorie",
+    "chapterId": "c7",
+    "code": "C7MEMORIE",
+    "title": "Road to Memories",
+    "kind": "dungeon",
+    "order": 21,
+    "medals": {
+      "timeAttack": "7:03",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Double Pudding x4",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Moon Joe",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Skull Chief",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Storm Ghost",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Leogriff",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4116,
+      "gilda": 2490
+    },
+    "newPhotos": ["Alexandra's Bed"],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-trump",
+    "chapterId": "c7",
+    "code": "C7TRUMP",
+    "title": "Final Trump Card",
+    "kind": "dungeon",
+    "order": 22,
+    "medals": {
+      "timeAttack": "7:00",
+      "clearGoal": "Items only",
+      "prize": "Bandit Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "S. Club",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "S. Diamond",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "S. Heart",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "S. Spade",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "S. Joker",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3820,
+      "gilda": 2108
+    },
+    "geostone": "Stardust Pond",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-build3",
+    "chapterId": "c7",
+    "code": "C7BUILD3",
+    "title": "Interlude ~ Yet More Rebuilding",
+    "kind": "interlude",
+    "order": 23,
+    "enemies": [],
+    "newPhotos": ["Stardust Pond"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Ridepod Fuel",
+        "recipe": [
+          {
+            "name": "Luna Stone Shards",
+            "scoop": false
+          },
+          {
+            "name": "Mud",
+            "scoop": false
+          },
+          {
+            "name": "Stardust Pond",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c7-element",
+    "chapterId": "c7",
+    "code": "C7ELEMENT",
+    "title": "Elemental Party",
+    "kind": "dungeon",
+    "order": 24,
+    "medals": {
+      "timeAttack": "7:01",
+      "clearGoal": "Complete without healing",
+      "prize": "Ressurection Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Vanguard Mk 2",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Rain Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Storm Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Clock Knight",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3820,
+      "gilda": 2450
+    },
+    "seal": "Blue",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-wander",
+    "chapterId": "c7",
+    "code": "C7WANDER",
+    "title": "Wandering Knight's Soul",
+    "kind": "dungeon",
+    "order": 25,
+    "medals": {
+      "timeAttack": "7:15",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Moon Joe",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Leach",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Toy Rock",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Lancer",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3740,
+      "gilda": 1950
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-beware",
+    "chapterId": "c7",
+    "code": "C7BEWARE",
+    "title": "Beware Carelessness",
+    "kind": "dungeon",
+    "order": 26,
+    "medals": {
+      "timeAttack": "6:30",
+      "clearGoal": "Ridepod only",
+      "prize": "Treasure Chest Key x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Lancer",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Leach",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Vanguard Mk 2",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Earth Dragon",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4060,
+      "gilda": 2502
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-final",
+    "chapterId": "c7",
+    "code": "C7FINAL",
+    "title": "Final Battle",
+    "kind": "dungeon",
+    "order": 27,
+    "medals": {
+      "timeAttack": "6:42",
+      "clearGoal": "Items only",
+      "prize": "Holy Stone x5",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Clock Knight",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Earth Dragon",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Evil Nail",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Lancer",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4000,
+      "gilda": 2300
+    },
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c7-sun",
+    "chapterId": "c7",
+    "code": "C7SUN",
+    "title": "Sun Chamber ~ The End of an Adventure Awaits",
+    "kind": "story",
+    "order": 28,
+    "enemies": [],
+    "newPhotos": ["Flower Chandelier", "Golden Door", "Labyrinth Door"],
+    "newScoops": ["Sun Chamber Gatekeeper"],
+    "newInventions": [
+      {
+        "name": "Princess Boots",
+        "recipe": [
+          {
+            "name": "Flower Chandelier",
+            "scoop": false
+          },
+          {
+            "name": "Waterfall Curtain",
+            "scoop": false
+          },
+          {
+            "name": "Moon Flower Palace",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Treasure Chest Key",
+        "recipe": [
+          {
+            "name": "Golden Door",
+            "scoop": false
+          },
+          {
+            "name": "Labyrinth Door",
+            "scoop": false
+          },
+          {
+            "name": "Sun Chamber Gatekeeper",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Triple-Urn Pack",
+        "recipe": [
+          {
+            "name": "Flower Chandelier",
+            "scoop": false
+          },
+          {
+            "name": "Light of Luna Stone",
+            "scoop": false
+          },
+          {
+            "name": "Pot",
+            "scoop": false
+          }
+        ]
+      },
+      {
+        "name": "Twin Buster",
+        "recipe": [
+          {
+            "name": "Flower Chandelier",
+            "scoop": false
+          },
+          {
+            "name": "Jurak's Nose",
+            "scoop": false
+          },
+          {
+            "name": "Rifle",
+            "scoop": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c8-mine",
+    "chapterId": "c8",
+    "code": "C8MINE",
+    "title": "Interlude ~ The Zelmite Mine",
+    "kind": "interlude",
+    "order": 0,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-zelmite",
+    "chapterId": "c8",
+    "code": "C8ZELMITE",
+    "title": "Get the Zelmite!",
+    "kind": "dungeon",
+    "order": 1,
+    "medals": {
+      "timeAttack": "9:20",
+      "clearGoal": "Max's Gun only",
+      "prize": "Healing Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Dark Flower",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Fairy Helper",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ore Robber",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Whitebeard",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4400,
+      "gilda": 2264
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-mole",
+    "chapterId": "c8",
+    "code": "C8MOLE",
+    "title": "Moon Mole",
+    "kind": "dungeon",
+    "order": 2,
+    "medals": {
+      "timeAttack": "9:00",
+      "clearGoal": "Complete without healing",
+      "prize": "Bull's-Eye Coin",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Mallone",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Mine Moler",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ore Robber",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Whitebeard",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4800,
+      "gilda": 2730
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-frog",
+    "chapterId": "c8",
+    "code": "C8FROG",
+    "title": "Powerful Frog",
+    "kind": "dungeon",
+    "order": 3,
+    "medals": {
+      "timeAttack": "8:50",
+      "clearGoal": "Items only",
+      "prize": "Potato Pie",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Dark Flower",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Gamal",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Thunder Drake",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Drake",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4800,
+      "gilda": 2376
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-evilbat",
+    "chapterId": "c8",
+    "code": "C8EVILBAT",
+    "title": "Evil Bat Invasion",
+    "kind": "dungeon",
+    "order": 4,
+    "medals": {
+      "timeAttack": "9:45",
+      "clearGoal": "Ridepod only",
+      "prize": "Mighty Healing x10",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Evil Bat",
+        "count": 11,
+        "carriesKey": false
+      },
+      {
+        "name": "Darker",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Holy Drake",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4260,
+      "gilda": 2028
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-warrior",
+    "chapterId": "c8",
+    "code": "C8WARRIOR",
+    "title": "Interlude ~ Return of the Warrior",
+    "kind": "interlude",
+    "order": 5,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-destiny",
+    "chapterId": "c8",
+    "code": "C8DESTINY",
+    "title": "Crossroads of Destiny",
+    "kind": "dungeon",
+    "order": 6,
+    "medals": {
+      "timeAttack": "9:46",
+      "clearGoal": "Items only",
+      "prize": "Garnet",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Danger Bomb",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Evil Bat",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Fire Ghost",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Snow Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Stone Guard",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4240,
+      "gilda": 1952
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-scary",
+    "chapterId": "c8",
+    "code": "C8SCARY",
+    "title": "Scary Face",
+    "kind": "dungeon",
+    "order": 7,
+    "medals": {
+      "timeAttack": "8:40",
+      "clearGoal": "Complete without healing",
+      "prize": "Amethyst",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Cabule",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Darker",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Face of Yaksa",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Stormflower",
+        "count": 5,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4500,
+      "gilda": 2070
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boar",
+    "chapterId": "c8",
+    "code": "C8BOAR",
+    "title": "Powerful Wild Boar",
+    "kind": "dungeon",
+    "order": 8,
+    "medals": {
+      "timeAttack": "8:40",
+      "clearGoal": "Items only",
+      "prize": "Aquamarine",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Evil Bat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ghoul",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ram Z",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Fire Ghost",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Spider Lady",
+        "count": 2,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 4920,
+      "gilda": 2668
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-murder",
+    "chapterId": "c8",
+    "code": "C8MURDER",
+    "title": "Murderous Tank",
+    "kind": "dungeon",
+    "order": 9,
+    "medals": {
+      "timeAttack": "9:50",
+      "clearGoal": "Ridepod only",
+      "prize": "Potato Pie",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Angry Cannon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Evil Bat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Rock Face",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ummagumma",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 5520,
+      "gilda": 2468
+    },
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boss1",
+    "chapterId": "c8",
+    "code": "C8BOSS1",
+    "title": "Dead End 1 ~ Burst One and Two",
+    "kind": "story",
+    "order": 10,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-which",
+    "chapterId": "c8",
+    "code": "C8WHICH",
+    "title": "Which One?",
+    "kind": "dungeon",
+    "order": 11,
+    "medals": {
+      "timeAttack": "8:50",
+      "clearGoal": "Monica's Sword only",
+      "prize": "Pearl",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Faerie",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Ram Z",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Iron Spear",
+        "count": 3,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 5220,
+      "gilda": 2340
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-woman",
+    "chapterId": "c8",
+    "code": "C8WOMAN",
+    "title": "The Old Woman Saw It",
+    "kind": "dungeon",
+    "order": 12,
+    "medals": {
+      "timeAttack": "9:00",
+      "clearGoal": "Complete without healing",
+      "prize": "Fruit of Eden",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Spider Lady",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Ummagumma",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 2880,
+      "gilda": 1770
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-snake",
+    "chapterId": "c8",
+    "code": "C8SNAKE",
+    "title": "A Giant Snake!",
+    "kind": "dungeon",
+    "order": 13,
+    "medals": {
+      "timeAttack": "9:25",
+      "clearGoal": "Items only",
+      "prize": "Peridot",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Ghoul",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Rock Face",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Iron Spear",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Sand Dragon",
+        "count": 1,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4380,
+      "gilda": 1880
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-soldier",
+    "chapterId": "c8",
+    "code": "C8SOLDIER",
+    "title": "Undaunted Soldiers",
+    "kind": "dungeon",
+    "order": 14,
+    "medals": {
+      "timeAttack": "9:40",
+      "clearGoal": "Ridepod only",
+      "prize": "Sapphire",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "R. Club",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "R. Diamond",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "R. Heart",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "R. Joker",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "R. Spade",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 4800,
+      "gilda": 1980
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-ward1",
+    "chapterId": "c8",
+    "code": "C8WARD1",
+    "title": "Hell, Ward 1",
+    "kind": "dungeon",
+    "order": 15,
+    "medals": {
+      "timeAttack": "9:50",
+      "clearGoal": "Max's Gun only",
+      "prize": "Witch Parfait",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Iron Spear",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "R. Joker",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Drake",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 3760,
+      "gilda": 1736
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boss2",
+    "chapterId": "c8",
+    "code": "C8BOSS2",
+    "title": "Dead End 2 ~ Exploding Skeletal Dudes",
+    "kind": "story",
+    "order": 16,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-truth",
+    "chapterId": "c8",
+    "code": "C8TRUTH",
+    "title": "Road to Truth",
+    "kind": "dungeon",
+    "order": 17,
+    "medals": {
+      "timeAttack": "10:30",
+      "clearGoal": "Items only",
+      "prize": "Witch Parfait",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Death Mouse",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Duke Balloon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Putos",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Scarecrow",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 7200,
+      "gilda": 2472
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-crossro",
+    "chapterId": "c8",
+    "code": "C8CROSSRO",
+    "title": "Crossroads",
+    "kind": "dungeon",
+    "order": 18,
+    "medals": {
+      "timeAttack": "10:50",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Moon Stone",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Hell Fairy",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mystery Plant",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Great Tree",
+        "count": 2,
+        "carriesKey": true
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 5640,
+      "gilda": 1892
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-lost",
+    "chapterId": "c8",
+    "code": "C8LOST",
+    "title": "Lost Road",
+    "kind": "dungeon",
+    "order": 19,
+    "medals": {
+      "timeAttack": "11:20",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bolter",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Elite Corsair",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Platinum Gear",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ebony Tortoise",
+        "count": 4,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 7440,
+      "gilda": 2658
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-indecis",
+    "chapterId": "c8",
+    "code": "C8INDECIS",
+    "title": "Indecision",
+    "kind": "dungeon",
+    "order": 20,
+    "medals": {
+      "timeAttack": "11:35",
+      "clearGoal": "Items only",
+      "prize": "Treasure Chest Key x8",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Demon Puppet",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Shadow",
+        "count": 5,
+        "carriesKey": false
+      },
+      {
+        "name": "Bandou",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mystery Plant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Behemoth",
+        "count": 2,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 6540,
+      "gilda": 2380
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boss3",
+    "chapterId": "c8",
+    "code": "C8BOSS3",
+    "title": "Dead End 3 ~ Flappin' Brothers",
+    "kind": "story",
+    "order": 21,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-dragon",
+    "chapterId": "c8",
+    "code": "C8DRAGON",
+    "title": "Little Dragon Army",
+    "kind": "dungeon",
+    "order": 22,
+    "medals": {
+      "timeAttack": "11:40",
+      "clearGoal": "Complete without healing",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Fire Wyrm",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Holy Wyrm",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Ice Wyrm",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Wyrm",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Wyrm",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 6720,
+      "gilda": 2200
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-opening",
+    "chapterId": "c8",
+    "code": "C8OPENING",
+    "title": "A Suspicious Opening ~ Flotsam, Revived!",
+    "kind": "story",
+    "order": 23,
+    "enemies": [],
+    "newPhotos": ["Flotsam", "Revived!"],
+    "newScoops": [],
+    "newInventions": [
+      {
+        "name": "Nova Cannon IV",
+        "recipe": [
+          {
+            "name": "Pot Torch",
+            "scoop": false
+          },
+          {
+            "name": "The Sun",
+            "scoop": false
+          },
+          {
+            "name": "Flotsam, Revived!",
+            "scoop": true
+          }
+        ]
+      },
+      {
+        "name": "Samurai Arm IV",
+        "recipe": [
+          {
+            "name": "A Surviving Soldier",
+            "scoop": true
+          },
+          {
+            "name": "Flotsam, Revived!",
+            "scoop": true
+          },
+          {
+            "name": "Legend of the Moon",
+            "scoop": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c8-captain",
+    "chapterId": "c8",
+    "code": "C8CAPTAIN",
+    "title": "Captain Returns",
+    "kind": "dungeon",
+    "order": 24,
+    "medals": {
+      "timeAttack": "12:00",
+      "clearGoal": "Monica's Magic only",
+      "prize": "Fruit of Eden",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Elite Corsair",
+        "count": 8,
+        "carriesKey": false
+      },
+      {
+        "name": "Oyakata",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Great Tree",
+        "count": 2,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 4440,
+      "gilda": 1584
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-turning",
+    "chapterId": "c8",
+    "code": "C8TURNING",
+    "title": "Hell's Turning Point",
+    "kind": "dungeon",
+    "order": 25,
+    "medals": {
+      "timeAttack": "11:55",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder x2",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bandou",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Moonlight Hulk",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Titan",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Ladha",
+        "count": 2,
+        "carriesKey": true
+      }
+    ],
+    "totals": {
+      "abs": 7200,
+      "gilda": 2220
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-mummy",
+    "chapterId": "c8",
+    "code": "C8MUMMY",
+    "title": "Mummy Heaven",
+    "kind": "dungeon",
+    "order": 26,
+    "medals": {
+      "timeAttack": "12:40",
+      "clearGoal": "Items only",
+      "prize": "Stamina Drink",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Revenant",
+        "count": 16,
+        "carriesKey": true
+      },
+      {
+        "name": "Dark Keeper",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Fire Wyrm",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "Holy Wyrm",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 8520,
+      "gilda": 2062
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boss4",
+    "chapterId": "c8",
+    "code": "C8BOSS4",
+    "title": "Boss 4 ~ The Mandrakerz",
+    "kind": "story",
+    "order": 27,
+    "enemies": [],
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-ward3en",
+    "chapterId": "c8",
+    "code": "C8WARD3EN",
+    "title": "Ward 3 Entrance",
+    "kind": "dungeon",
+    "order": 28,
+    "medals": {
+      "timeAttack": "12:30",
+      "clearGoal": "Items only",
+      "prize": "Garnet",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Dark Alchemist",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Last Guardian",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Smiling Wolf",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Revenant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 9400,
+      "gilda": 2426
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-flotsam",
+    "chapterId": "c8",
+    "code": "C8FLOTSAM",
+    "title": "Flotsam's Broken Army",
+    "kind": "dungeon",
+    "order": 29,
+    "medals": {
+      "timeAttack": "12:40",
+      "clearGoal": "Complete without healing",
+      "prize": "Amethyst",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Imp",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Incuder",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Cerberus",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Krau Mauness",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Mimic",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 9440,
+      "gilda": 2668
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-ward3",
+    "chapterId": "c8",
+    "code": "C8WARD3",
+    "title": "Hell, Ward 3 - Wellside Gossip",
+    "kind": "dungeon",
+    "order": 30,
+    "medals": {
+      "timeAttack": "13:00",
+      "clearGoal": "Ridepod only",
+      "prize": "Aquamarine",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bambamchoo",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Busy Moler",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mrs. Gourgon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Dead Rope",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 9200,
+      "gilda": 2456
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-element",
+    "chapterId": "c8",
+    "code": "C8ELEMENT",
+    "title": "Devil Elemental",
+    "kind": "dungeon",
+    "order": 31,
+    "medals": {
+      "timeAttack": "13:10",
+      "clearGoal": "Max's Gun only",
+      "prize": "Diamond",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Magma Servant",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Snow Servant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Tempest Servant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Thunder Servant",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Wind Servant",
+        "count": 4,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 8000,
+      "gilda": 2400
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-mariner",
+    "chapterId": "c8",
+    "code": "C8MARINER",
+    "title": "Mariner",
+    "kind": "dungeon",
+    "order": 32,
+    "medals": {
+      "timeAttack": "13:40",
+      "clearGoal": "Monica's Sword only",
+      "prize": "Emerald",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Iwanosuke",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Garuda",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mariner",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Sweet Dynamite",
+        "count": 6,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 11400,
+      "gilda": 2964
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-ultimat",
+    "chapterId": "c8",
+    "code": "C8ULTIMAT",
+    "title": "Ultimate Snake",
+    "kind": "dungeon",
+    "order": 33,
+    "medals": {
+      "timeAttack": "12:30",
+      "clearGoal": "Items only",
+      "prize": "Pearl",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Iron Ghost",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Mrs. Gourgon",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Wraith",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Dead Rope",
+        "count": 2,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 11000,
+      "gilda": 2428
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-anxiety",
+    "chapterId": "c8",
+    "code": "C8ANXIETY",
+    "title": "Anxiety",
+    "kind": "dungeon",
+    "order": 34,
+    "medals": {
+      "timeAttack": "12:38",
+      "clearGoal": "Monica's Magic only",
+      "prize": "Peridot",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "RSF Club",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "RSF Diamond",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "RSF Heart",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "RSF Spade",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "RSF Joker",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 9000,
+      "gilda": 2012
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-omen",
+    "chapterId": "c8",
+    "code": "C8OMEN",
+    "title": "Omen",
+    "kind": "dungeon",
+    "order": 35,
+    "medals": {
+      "timeAttack": "10:50",
+      "clearGoal": "Max's Close-Range Weapon only",
+      "prize": "Ruby",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bone King",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Minotaurus",
+        "count": 4,
+        "carriesKey": true
+      },
+      {
+        "name": "Spinning Saucer",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Tiamat",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 10400,
+      "gilda": 1848
+    },
+    "seal": "White",
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-belief",
+    "chapterId": "c8",
+    "code": "C8BELIEF",
+    "title": "Firm Belief",
+    "kind": "dungeon",
+    "order": 36,
+    "medals": {
+      "timeAttack": "11:30",
+      "clearGoal": "Items only",
+      "prize": "Sapphire",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Minotaurus",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Sweet Dynamite",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Tiamat",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Iron Ghost",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "Flying Steel",
+        "count": 1,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 12200,
+      "gilda": 2648
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-seeping",
+    "chapterId": "c8",
+    "code": "C8SEEPING",
+    "title": "Seeping Light",
+    "kind": "dungeon",
+    "order": 37,
+    "medals": {
+      "timeAttack": "11:45",
+      "clearGoal": "Complete without healing",
+      "prize": "Topaz",
+      "prizeType": "spheda"
+    },
+    "enemies": [
+      {
+        "name": "Bone King",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Flying Steel",
+        "count": 6,
+        "carriesKey": false
+      },
+      {
+        "name": "Tiamat",
+        "count": 6,
+        "carriesKey": true
+      },
+      {
+        "name": "Spinning Saucer",
+        "count": 4,
+        "carriesKey": false
+      },
+      {
+        "name": "King Mimic",
+        "count": 2,
+        "carriesKey": false
+      }
+    ],
+    "totals": {
+      "abs": 14400,
+      "gilda": 2504
+    },
+    "newPhotos": [],
+    "newScoops": [],
+    "newInventions": []
+  },
+  {
+    "id": "c8-boss5",
+    "chapterId": "c8",
+    "code": "C8BOSS5",
+    "title": "Boss ~ Mr. Big Shot Shadow",
+    "kind": "story",
+    "order": 38,
+    "enemies": [],
+    "newPhotos": ["Zelmite Found!", "Mr. Big Shot Shadow"],
+    "newScoops": [],
+    "newInventions": []
+  }
+]

@@ -1,0 +1,7330 @@
+[
+  {
+    "id": "c1-scoop-brave-little-linda",
+    "chapterId": "c1",
+    "category": "scoop",
+    "name": "Brave Little Linda",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c1-linda"
+  },
+  {
+    "id": "c1-scoop-night-stalker",
+    "chapterId": "c1",
+    "category": "scoop",
+    "name": "Night Stalker",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-steve"
+  },
+  {
+    "id": "c1-scoop-barons-hangin-on",
+    "chapterId": "c1",
+    "category": "scoop",
+    "name": "Baron's Hangin' On",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-steve"
+  },
+  {
+    "id": "c1-scoop-clown-robos-attack",
+    "chapterId": "c1",
+    "category": "scoop",
+    "name": "Clown Robo's Attack",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c1-clown"
+  },
+  {
+    "id": "c1-idea-auto-book-reader",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Auto Book Reader",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-bar-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Bar Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-barrel",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Barrel",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-belt",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Belt",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-bench",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Bench",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-binoculars",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Binoculars",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-blackstone-one",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Blackstone One",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-book",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Book",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-bottle",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Bottle",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-bread",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Bread",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-cafe-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Cafe Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-can",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Can",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-car",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Car",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-cart",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Cart",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-cedrics-shop-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Cedric's Shop Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-chair",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Chair",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-chandelier",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Chandelier",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-chimney",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Chimney",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-clock",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Clock",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-constructor",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Constructor",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-cup",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Cup",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-drawbridge",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Drawbridge",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-evening-sun",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Evening Sun",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-fan",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Fan",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-flag",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Flag",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-flower",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Flower",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-flower-chair",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Flower Chair",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-fountain",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Fountain",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-freight-train",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Freight Train",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-gold-store",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Gold Store",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-iron-maiden",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Iron Maiden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-ladder",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Ladder",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-lamp",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Lamp",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-light",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Light",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-mailbox",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Mailbox",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-manhole",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Manhole",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-milk-can",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Milk Can",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-morning-sun",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Morning Sun",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-old-style-robot",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Old-Style Robot",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-oven",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Oven",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-painting",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Painting",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-mortons-sundries-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Morton's Sundries Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-parasol",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Parasol",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-phonograph",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Phonograph",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-piano",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Piano",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-pipe",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Pipe",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-police-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Police Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-pollys-bakery-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Polly's Bakery Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-post",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Post",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-pot",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Pot",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-pumpkin",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Pumpkin",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-railroad",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Railroad",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-rapper",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Rapper",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-refrigerator",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Refrigerator",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-register",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Register",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-river",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "River",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-shield",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Shield",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-show-window",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Show Window",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-shrubbery",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Shrubbery",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-staircase",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Staircase",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-streetlight",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Streetlight",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-sunshade",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Sunshade",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-table",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Table",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-the-moon",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "The Moon",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-the-sun",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "The Sun",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-tiny-hammer",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Tiny Hammer",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-traffic-light",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Traffic Light",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-trashcan",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Trashcan",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-tree",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Tree",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-vacuum",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Vacuum",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-vacuum-bag",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Vacuum Bag",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-vegetables-fruit",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Vegetables/Fruit",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-vending-machine",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Vending Machine",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-weapon",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Weapon",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-weapon-shop-sign",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Weapon Shop Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-weight-gauge",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Weight Gauge",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-wheat-flour",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Wheat Flour",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-wheel",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Wheel",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-window",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Window",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-wooden-box",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Wooden Box",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-photos"
+  },
+  {
+    "id": "c1-idea-waterfall",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Waterfall",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-finish"
+  },
+  {
+    "id": "c1-idea-iron-bridge",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Iron Bridge",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-finish"
+  },
+  {
+    "id": "c1-idea-coal",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Coal",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-finish"
+  },
+  {
+    "id": "c1-idea-fire-house",
+    "chapterId": "c1",
+    "category": "idea",
+    "name": "Fire House",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-finish"
+  },
+  {
+    "id": "c1-invention-aquarium",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Aquarium",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Window",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-bandit-brassard",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Bandit Brassard",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Show Window",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-cannonball-arm",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Cannonball Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Manhole",
+        "scoop": false
+      },
+      {
+        "name": "Old-Style Robot",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-caterpillar",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Caterpillar",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Car",
+        "scoop": false
+      },
+      {
+        "name": "Cart",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-clown-hand",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Clown Hand",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-energy-pack",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Energy Pack",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-energy-pack-barrel",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Energy Pack (Barrel)",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-knight-boots",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Knight Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Shield",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-tasty-water",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Tasty Water",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-invention-trumpet-gun",
+    "chapterId": "c1",
+    "category": "invention",
+    "name": "Trumpet Gun",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Rapper",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c1-powerup-fruit-of-eden",
+    "chapterId": "c1",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-rats",
+    "notes": ["Channel Entrance", "Battle with Rats"]
+  },
+  {
+    "id": "c1-powerup-potato-pie",
+    "chapterId": "c1",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-steve",
+    "notes": ["in front of Cedric's shop", "Steve's Battle"]
+  },
+  {
+    "id": "c1-powerup-fruit-of-eden-2",
+    "chapterId": "c1",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c1-chest",
+    "notes": ["cart east of Cedric's shop", "Sweet, Scary Treasure Chest"]
+  },
+  {
+    "id": "c2-scoop-ruler-of-the-pond",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Ruler of the Pond",
+    "missable": false,
+    "postgame": false,
+    "ghost": true,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-scoop-spooky-grass-smile",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Spooky Grass Smile",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-fright"
+  },
+  {
+    "id": "c2-scoop-floatin-earth-digger",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Floatin' Earth Digger",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-strange"
+  },
+  {
+    "id": "c2-scoop-dangerous-pumpkin",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Dangerous Pumpkin",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-strange"
+  },
+  {
+    "id": "c2-scoop-tores-nap",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Tore's Nap",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-strange"
+  },
+  {
+    "id": "c2-scoop-gyumos-yell",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Gyumo's Yell",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-snake"
+  },
+  {
+    "id": "c2-scoop-master-utan",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Master Utan",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-swamp"
+  },
+  {
+    "id": "c2-scoop-king-mardan",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "King Mardan",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c2-swamp"
+  },
+  {
+    "id": "c2-scoop-hmmmm-jurak",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Hmmmm! Jurak",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-scoop-find-the-golden-egg",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Find the Golden Egg!",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-scoop-lafrescia-stem",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "Lafrescia Stem",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-scoop-r-butterfly-united",
+    "chapterId": "c2",
+    "category": "scoop",
+    "name": "R. Butterfly United",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c2-butterf"
+  },
+  {
+    "id": "c2-idea-bed",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Bed",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-boat",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Boat",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-bone",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Bone",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-bridge",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Bridge",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-candle",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Candle",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-cloth",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Cloth",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-curtain",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Curtain",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-deer-horn",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Deer Horn",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-dell-clinic-sign",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Dell Clinic Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-drawer",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Drawer",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-dresser",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Dresser",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-egg",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Egg",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-elenas-portrait",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Elena's Portrait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-eyeball",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Eyeball",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-fence",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Fence",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-figure",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Figure",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-fireplace",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Fireplace",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-fish",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Fish",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-fruit",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Fruit",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-gate",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Gate",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-glasses-case",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Glasses Case",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-grass",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Grass",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-firbits"
+  },
+  {
+    "id": "c2-idea-hammock",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Hammock",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-firbits"
+  },
+  {
+    "id": "c2-idea-hoe",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Hoe",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-jurak-arms-sign",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Jurak Arms Sign",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-juraks-eye",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Jurak's Eye",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-juraks-nose",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Jurak's Nose",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-letter",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Letter",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-log",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Log",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-firbits"
+  },
+  {
+    "id": "c2-idea-monument",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Monument",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-paints",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Paints",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-mushroom",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Mushroom",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-mushroom-burgers-sign",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Mushroom Burgers Sign",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-palm-tree",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Palm Tree",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-parns-studio-sign",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Parn's Studio Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-phone",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Phone",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-pier",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Pier",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-pot-torch",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Pot Torch",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-quartz",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Quartz",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-rifle",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Rifle",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-robot",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Robot",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-rock",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Rock",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-rug",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Rug",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-saw",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Saw",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-stained-glass",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Stained Glass",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-stand",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Stand",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-stove",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Stove",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-telescope",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Telescope",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-photos"
+  },
+  {
+    "id": "c2-idea-water-wheel",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Water Wheel",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-withered-jurak",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Withered Jurak",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-firbits"
+  },
+  {
+    "id": "c2-idea-wooden-bookshelf",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Wooden Bookshelf",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-firbits"
+  },
+  {
+    "id": "c2-idea-woody-tailor-sign",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Woody Tailor Sign",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-idea-lins-house",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Lin's House",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-finish"
+  },
+  {
+    "id": "c2-idea-torch",
+    "chapterId": "c2",
+    "category": "idea",
+    "name": "Torch",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-finish"
+  },
+  {
+    "id": "c2-invention-anti-petrify-amulet",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Anti-Petrify Amulet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Jurak's Eye",
+        "scoop": false
+      },
+      {
+        "name": "Morning Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-barrel-cannon",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Barrel Cannon",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Mushroom",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-bell-trigger",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Bell Trigger",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Phone",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-bomb",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Bomb",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      },
+      {
+        "name": "Weapon Shop Sign",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-bone-rapier",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Bone Rapier",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Withered Jurak",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-bread",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Bread",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fireplace",
+        "scoop": false
+      },
+      {
+        "name": "Polly's Bakery Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wheat Flour",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-cannonball-arm-ii",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Cannonball Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-clown-body",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Clown Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cup",
+        "scoop": false
+      },
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-clown-foot",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Clown Foot",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Eyeball",
+        "scoop": false
+      },
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-clown-shoes",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Clown Shoes",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-double-pudding",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Double Pudding",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Wheat Flour",
+        "scoop": false
+      },
+      {
+        "name": "Find the Golden Egg!",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-gift-capsule",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Gift Capsule",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "Letter",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-grenade-launcher",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Grenade Launcher",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Egg",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-iron-leg",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Iron Leg",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fence",
+        "scoop": false
+      },
+      {
+        "name": "Old-Style Robot",
+        "scoop": false
+      },
+      {
+        "name": "Trashcan",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-improved-bomb",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Improved Bomb",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Coal",
+        "scoop": false
+      },
+      {
+        "name": "Egg",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-leather-shoes",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Leather Shoes",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chair",
+        "scoop": false
+      },
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Gyumo's Yell",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-lightspeed",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Lightspeed",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Flower",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-lure-rod",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Lure Rod",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fish",
+        "scoop": false
+      },
+      {
+        "name": "River",
+        "scoop": false
+      },
+      {
+        "name": "Lafrescia Stem",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-swan",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Swan",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Boat",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-invention-work-shoes",
+    "chapterId": "c2",
+    "category": "invention",
+    "name": "Work Shoes",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Ladder",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c2-powerup-fruit-of-eden",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "notes": ["J.Mall", "always"]
+  },
+  {
+    "id": "c2-powerup-potato-pie",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "notes": ["J.Mall", "always"]
+  },
+  {
+    "id": "c2-powerup-witch-parfait",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-fright",
+    "notes": ["J.Mall, between mushrooms and tree", "Frightening Forest"]
+  },
+  {
+    "id": "c2-powerup-fruit-of-eden-2",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-strange",
+    "notes": ["J.Mall, near mushrooms near ladder", "Strange Tree"]
+  },
+  {
+    "id": "c2-powerup-fruit-of-eden-3",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-shells",
+    "notes": ["J.Mall, right side where branches meet", "Rolling Shells"]
+  },
+  {
+    "id": "c2-powerup-witch-parfait-2",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-geoston",
+    "notes": ["J.Mall, right side where branches meet", "This is a Geostone?"]
+  },
+  {
+    "id": "c2-powerup-fruit-of-eden-4",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-noise",
+    "notes": ["J.Mall, left of time gate", "Noise in the Forest"]
+  },
+  {
+    "id": "c2-powerup-potato-pie-2",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-pixie",
+    "notes": ["J.Mall, right side of Jurak's face", "I'm a Pixie"]
+  },
+  {
+    "id": "c2-powerup-4x-wind-crystal",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "4x Wind Crystal",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-snake",
+    "notes": ["J.Mall, near left mushrooms", "Legendary Killer Snake"]
+  },
+  {
+    "id": "c2-powerup-garnet",
+    "chapterId": "c2",
+    "category": "powerup",
+    "name": "Garnet",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c2-spider",
+    "notes": ["J.Mall, by the ladder", "Grotesque Spider Lady"]
+  },
+  {
+    "id": "c2-recruit-cedric-borneo-erik",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Cedric, Borneo, & Erik",
+    "missable": false,
+    "postgame": false,
+    "notes": ["automatic"]
+  },
+  {
+    "id": "c2-recruit-gordon",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Gordon",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give Holy Water"]
+  },
+  {
+    "id": "c2-recruit-gerald",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Gerald",
+    "missable": false,
+    "postgame": false,
+    "notes": ["show Bell Trigger"]
+  },
+  {
+    "id": "c2-recruit-stewart",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Stewart",
+    "missable": false,
+    "postgame": false,
+    "notes": ["Give 2000 gilda"]
+  },
+  {
+    "id": "c2-recruit-granny-rosa",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Granny Rosa",
+    "missable": false,
+    "postgame": false,
+    "notes": ["say \"Let's go together.\""]
+  },
+  {
+    "id": "c2-recruit-ferdinand",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Ferdinand",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give Roasted Chestnut"]
+  },
+  {
+    "id": "c2-recruit-adel",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Adel",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give Sturdy Cloth, Thick Hide, & Hunk of Copper"]
+  },
+  {
+    "id": "c2-recruit-claire",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Claire",
+    "missable": false,
+    "postgame": false,
+    "notes": ["show Lafrescia Stem picture"]
+  },
+  {
+    "id": "c2-recruit-corrine",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Corrine",
+    "missable": false,
+    "postgame": false,
+    "notes": ["find her upstairs in Corrine's house, then in Max's room"]
+  },
+  {
+    "id": "c2-recruit-parn-julia",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Parn & Julia",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give Parn Gold Paint"]
+  },
+  {
+    "id": "c2-recruit-priest-bruno",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Priest Bruno",
+    "missable": false,
+    "postgame": false,
+    "notes": ["put out all candles in cathedral"]
+  },
+  {
+    "id": "c2-recruit-sheriff-blinkhorn",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Sheriff Blinkhorn",
+    "missable": false,
+    "postgame": false,
+    "notes": ["run to boat and back in less than 2 min 1 sec"]
+  },
+  {
+    "id": "c2-recruit-donny",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Donny",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give a Dark and Indestructible Coin"]
+  },
+  {
+    "id": "c2-recruit-milane",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Milane",
+    "missable": false,
+    "postgame": false,
+    "notes": ["show Sand Breaker or Chopper"]
+  },
+  {
+    "id": "c2-recruit-aunt-polly",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Aunt Polly",
+    "missable": false,
+    "postgame": false,
+    "notes": ["deliver Crunchy Bread as ordered"]
+  },
+  {
+    "id": "c2-recruit-rufio",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Rufio",
+    "missable": false,
+    "postgame": false,
+    "notes": ["show The Moon picture"]
+  },
+  {
+    "id": "c2-recruit-fabio",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Fabio",
+    "missable": false,
+    "postgame": false,
+    "notes": ["catch 60cm+ Nonky"]
+  },
+  {
+    "id": "c2-recruit-mayor-need",
+    "chapterId": "c2",
+    "category": "recruit",
+    "name": "Mayor Need",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give him his safe's password; 1221"]
+  },
+  {
+    "id": "c2-georama-15-river-parts-placed",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "15 River parts placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-10-trees-placed",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "10 Trees placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-nose-and-eye-trees-placed-near-river-nose-between-eyes",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "Nose and Eye trees placed near river, nose between eyes",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-one-straw-house-placed-with-inhabitant",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "One straw house placed with inhabitant",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-gordon-resides-in-sindain",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "Gordon resides in Sindain",
+    "missable": false,
+    "postgame": false,
+    "notes": ["put his house near the trees"]
+  },
+  {
+    "id": "c2-georama-adel-resides-in-sindain",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "Adel resides in Sindain",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-polly-resides-in-sindain",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "Polly resides in Sindain",
+    "missable": false,
+    "postgame": false,
+    "notes": ["put a cart near her house"]
+  },
+  {
+    "id": "c2-georama-milane-resides-in-sindain",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "Milane resides in Sindain",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-15-fence-pieces-around-firbits-house",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "15 Fence pieces around Firbits' House",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-georama-50-culture-points",
+    "chapterId": "c2",
+    "category": "georama",
+    "name": "50 Culture points",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c2-badge-plant",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Plant",
+    "missable": false,
+    "postgame": false,
+    "notes": ["buy at Jurak Mall"]
+  },
+  {
+    "id": "c2-badge-beast",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Beast",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Cheese to Sewer Rat"]
+  },
+  {
+    "id": "c2-badge-aquatic",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Aquatic",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Battan to Froggy"]
+  },
+  {
+    "id": "c2-badge-darkling",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Darkling",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Gold Bar to Spider Lady"]
+  },
+  {
+    "id": "c2-badge-spirit",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Spirit",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Gooey Peach to Pixie"]
+  },
+  {
+    "id": "c2-badge-undead",
+    "chapterId": "c2",
+    "category": "badge",
+    "name": "Undead",
+    "missable": false,
+    "postgame": false,
+    "notes": ["kill Skeleton with a Holy Water"]
+  },
+  {
+    "id": "c3-scoop-charging-ram",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Charging Ram",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-dash"
+  },
+  {
+    "id": "c3-scoop-face-behind-devil-mask",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Face Behind Devil Mask",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-dash"
+  },
+  {
+    "id": "c3-scoop-hurray-for-rock-man",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Hurray For Rock Man!",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-demon"
+  },
+  {
+    "id": "c3-scoop-changing-dog-statue",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Changing Dog Statue",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-demon"
+  },
+  {
+    "id": "c3-scoop-spinning-ivanoff",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Spinning Ivanoff",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-roly"
+  },
+  {
+    "id": "c3-scoop-nice-massage",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Nice Massage",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-roly"
+  },
+  {
+    "id": "c3-scoop-phantom-memo-eater",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Phantom Memo Eater",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c3-memo"
+  },
+  {
+    "id": "c3-scoop-burning-dragon-fire",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Burning Dragon Fire",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-dragon"
+  },
+  {
+    "id": "c3-scoop-flying-battleship",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Flying Battleship",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c3-cape"
+  },
+  {
+    "id": "c3-scoop-moon-crystal",
+    "chapterId": "c3",
+    "category": "scoop",
+    "name": "Moon Crystal",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-cape"
+  },
+  {
+    "id": "c3-idea-basket-steamer",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Basket Steamer",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-chinese-lantern",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Chinese Lantern",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-crescent-shaped-light",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Crescent-Shaped Light",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-saving"
+  },
+  {
+    "id": "c3-idea-electric-bulletin",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Electric Bulletin",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-fishing-contest-sign",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Fishing Contest Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-fresco-painting",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Fresco Painting",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-giant-yorda-tree",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Giant Yorda Tree",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-memo"
+  },
+  {
+    "id": "c3-idea-glowing-gate",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Glowing Gate",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-hand-sewn-silk-flag",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Hand-Sewn Silk Flag",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-hat",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Hat",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-holy-emblem",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Holy Emblem",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-horn",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Horn",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-lao-chaos-trademark",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Lao Chao's Trademark",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-laundry",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Laundry",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-memo"
+  },
+  {
+    "id": "c3-idea-peeping-pole",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Peeping Pole",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-pork-dumpling",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Pork Dumpling",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-rotating-sign",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Rotating Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-runaway-dragon",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Runaway Dragon",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-saints-writings",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Saint's Writings",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-scale",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Scale",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-scroll",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Scroll",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-special-peking-duck",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Special Peking Duck",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-idea-star-lamp",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Star Lamp",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-bargas"
+  },
+  {
+    "id": "c3-idea-starglass",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Starglass",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-saving"
+  },
+  {
+    "id": "c3-idea-victory-stand",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Victory Stand",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-warehouse",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Warehouse",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-weather-vane",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Weather Vane",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-collect"
+  },
+  {
+    "id": "c3-idea-well",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Well",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fishing"
+  },
+  {
+    "id": "c3-idea-windmill",
+    "chapterId": "c3",
+    "category": "idea",
+    "name": "Windmill",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-finish"
+  },
+  {
+    "id": "c3-invention-anti-curse-amulet",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Anti-Curse Amulet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      },
+      {
+        "name": "Saint's Writings",
+        "scoop": false
+      },
+      {
+        "name": "Hmmmm! Jurak",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-antidote-amulet",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Antidote Amulet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bed",
+        "scoop": false
+      },
+      {
+        "name": "Dell Clinic Sign",
+        "scoop": false
+      },
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-antidote-drink",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Antidote Drink",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Dell Clinic Sign",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-anti-goo-amulet",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Anti-Goo Amulet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Laundry",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      },
+      {
+        "name": "Ruler of the Pond",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-barrel-cannon-ii",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Barrel Cannon II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-bucket-leg",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Bucket Leg",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Can",
+        "scoop": false
+      },
+      {
+        "name": "River",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-bucket-pack",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Bucket Pack",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Mailbox",
+        "scoop": false
+      },
+      {
+        "name": "Trashcan",
+        "scoop": false
+      },
+      {
+        "name": "Warehouse",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-cannonball-arm-iii",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Cannonball Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-cheese",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Cheese",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cafe Sign",
+        "scoop": false
+      },
+      {
+        "name": "Lao Chao's Trademark",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-clown-hand-ii",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Clown Hand II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Scale",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-dragon-shoes",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Dragon Shoes",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-drill-arm",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Drill Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Auto Book Reader",
+        "scoop": false
+      },
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-holy-water",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Holy Water",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-machine-gun-arm",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Machine Gun Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-machine-gun-arm-ii",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Machine Gun Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Telescope",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-magic-gun",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Magic Gun",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-milk-can-body",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Milk Can Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Peeping Pole",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-missile-pod-arm",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Missile Pod Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Mushroom",
+        "scoop": false
+      },
+      {
+        "name": "Rotating Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-non-stop-amulet",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Non-Stop Amulet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Monument",
+        "scoop": false
+      },
+      {
+        "name": "Starglass",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-premium-chicken",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Premium Chicken",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Pork Dumpling",
+        "scoop": false
+      },
+      {
+        "name": "Special Peking Duck",
+        "scoop": false
+      },
+      {
+        "name": "Burning Dragon Fire",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-roller-foot",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Roller Foot",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Freight Train",
+        "scoop": false
+      },
+      {
+        "name": "Rotating Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-samurai-arm",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Samurai Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-samurai-body",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Samurai Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cedric's Shop Sign",
+        "scoop": false
+      },
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Telescope",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-sand-breaker",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Sand Breaker",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Hand-Sewn Silk Flag",
+        "scoop": false
+      },
+      {
+        "name": "Horn",
+        "scoop": false
+      },
+      {
+        "name": "Spinning Ivanoff",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-smash-wrench",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Smash Wrench",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      },
+      {
+        "name": "Star Lamp",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-soap",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Soap",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Laundry",
+        "scoop": false
+      },
+      {
+        "name": "Palm Tree",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-spike-boots",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Spike Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Pumpkin",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-stamina-drink",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Stamina Drink",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Chinese Lantern",
+        "scoop": false
+      },
+      {
+        "name": "King Mardan",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-star-breaker",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Star Breaker",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Fire House",
+        "scoop": false
+      },
+      {
+        "name": "Phantom Memo Eater",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-wise-owl-sword",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Wise Owl Sword",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Grass",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Charging Ram",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-invention-wooden-box-body",
+    "chapterId": "c3",
+    "category": "invention",
+    "name": "Wooden Box Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Giant Yorda Tree",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      },
+      {
+        "name": "Hmmmm! Jurak",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-dash",
+    "notes": ["S.Temple, center platform", "Headlong Dash"]
+  },
+  {
+    "id": "c3-powerup-potato-pie",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-fireice",
+    "notes": ["S.Temple, center platform", "Fire and Ice Don't Mix"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-2",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-demon",
+    "notes": ["S.Temple, bridge 8", "Earth-Shaking Demon"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-3",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-demon",
+    "notes": ["S.Temple, bridge 4", "Earth-Shaking Demon"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-4",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-demon",
+    "notes": ["S.Temple, bridge 5", "Earth-Shaking Demon"]
+  },
+  {
+    "id": "c3-powerup-witch-parfait",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-yoyo",
+    "notes": ["S.Temple, bridge 1", "Powerful Yo-Yo Robot"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-5",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-treasur",
+    "notes": ["S.Temple, platform T", "Dangerous Treasure Chest"]
+  },
+  {
+    "id": "c3-powerup-potato-pie-2",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-counter",
+    "notes": ["S.Temple, platform I", "Little Dragon Counterattack"]
+  },
+  {
+    "id": "c3-powerup-emerald",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Emerald",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-roly",
+    "notes": ["S.Temple, left of time gate", "We're the Roly-Poly Brothers"]
+  },
+  {
+    "id": "c3-powerup-pearl",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Pearl",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-dragon",
+    "notes": ["S.Temple, platform W", "Dragon Slayer"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-6",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-rama",
+    "notes": ["S.Temple, next to time gate", "Rama Priests Like Cheese"]
+  },
+  {
+    "id": "c3-powerup-witch-parfait-2",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-nature",
+    "notes": ["S.Temple, Platform L", "Nature's Threat"]
+  },
+  {
+    "id": "c3-powerup-fruit-of-eden-7",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-baron",
+    "notes": ["S.Temple, Platform L", "Moon Baron"]
+  },
+  {
+    "id": "c3-powerup-potato-pie-3",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-appears",
+    "notes": ["S.Temple, Platform L", "Lighthouse Appears"]
+  },
+  {
+    "id": "c3-powerup-potato-pie-4",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-cape",
+    "notes": ["S.Temple, Moon Crystal layer", "Lighthouse on the Cape"]
+  },
+  {
+    "id": "c3-powerup-witch-parfait-3",
+    "chapterId": "c3",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c3-cape",
+    "notes": ["S.Temple, Moon Crystal layer", "Lighthouse on the Cape"]
+  },
+  {
+    "id": "c3-recruit-dr-dell",
+    "chapterId": "c3",
+    "category": "recruit",
+    "name": "Dr. Dell",
+    "missable": false,
+    "postgame": false,
+    "notes": ["automatic"]
+  },
+  {
+    "id": "c3-recruit-mena",
+    "chapterId": "c3",
+    "category": "recruit",
+    "name": "Mena",
+    "missable": false,
+    "postgame": false,
+    "notes": ["get 10 medals for Spheda after talking to her"]
+  },
+  {
+    "id": "c3-recruit-lin",
+    "chapterId": "c3",
+    "category": "recruit",
+    "name": "Lin",
+    "missable": false,
+    "postgame": false,
+    "notes": ["automatic, temporary"]
+  },
+  {
+    "id": "c3-georama-15-trees-placed",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "15 Trees placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-georama-4-pot-torches-placed",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "4 Pot Torches placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-georama-priest-bruno-resides-in-valley",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Priest Bruno resides in valley",
+    "missable": false,
+    "postgame": false,
+    "notes": ["must move him into a Church"]
+  },
+  {
+    "id": "c3-georama-stewart-resides-in-valley",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Stewart resides in valley",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-georama-ferdinand-at-a-chinese-stand",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Ferdinand at a Chinese Stand",
+    "missable": false,
+    "postgame": false,
+    "notes": ["put stand near a house"]
+  },
+  {
+    "id": "c3-georama-star-lamp-on-a-brick-house",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Star Lamp on a Brick House",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-georama-parn-resides-in-valley",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Parn resides in valley",
+    "missable": false,
+    "postgame": false,
+    "notes": ["straw house with a purple roof"]
+  },
+  {
+    "id": "c3-georama-blinkhorn-resides-in-valley",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "Blinkhorn resides in valley",
+    "missable": false,
+    "postgame": false,
+    "notes": ["7 fences, 1 gate around his house"]
+  },
+  {
+    "id": "c3-georama-40-culture-points",
+    "chapterId": "c3",
+    "category": "georama",
+    "name": "40 Culture points",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c3-badge-reptile",
+    "chapterId": "c3",
+    "category": "badge",
+    "name": "Reptile",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Wind Element to Wind Gemron"]
+  },
+  {
+    "id": "c4-scoop-a-surviving-soldier",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "A Surviving Soldier",
+    "missable": false,
+    "postgame": false,
+    "ghost": true,
+    "sectionId": "c4-pau"
+  },
+  {
+    "id": "c4-scoop-veniccios-evening-sun",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "Veniccio's Evening Sun",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-pau"
+  },
+  {
+    "id": "c4-scoop-ancient-mural",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "Ancient Mural",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-puppet"
+  },
+  {
+    "id": "c4-scoop-puppet-shingala",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "Puppet Shingala",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c4-puppet"
+  },
+  {
+    "id": "c4-scoop-doctor-jaming",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "Doctor Jaming",
+    "missable": true,
+    "postgame": false
+  },
+  {
+    "id": "c4-scoop-symbol-of-luna-lab",
+    "chapterId": "c4",
+    "category": "scoop",
+    "name": "Symbol of Luna Lab",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-air-cleaner",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Air Cleaner",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-banana",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Banana",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-egg-chair",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Egg Chair",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-egg-shaped-transmitter",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Egg-Shaped Transmitter",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-energy-pipe",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Energy Pipe",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-fish-race-sign",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Fish Race Sign",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-finny"
+  },
+  {
+    "id": "c4-idea-futuron-800",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Futuron 800",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-iron-shed",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Iron Shed",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-batden"
+  },
+  {
+    "id": "c4-idea-light-of-luna-stone",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Light of Luna Stone",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-improve"
+  },
+  {
+    "id": "c4-idea-luna-stone-shards",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Luna Stone Shards",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-pau"
+  },
+  {
+    "id": "c4-idea-neo-projector",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Neo-Projector",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-opposed-island",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Opposed Island",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-finny"
+  },
+  {
+    "id": "c4-idea-red-house",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Red House",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-pau"
+  },
+  {
+    "id": "c4-idea-search-light",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Search Light",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-small-generator",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Small Generator",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-system-5wp2",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "System 5WP2",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-t-v",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "T.V.",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-ventilation",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Ventilation",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-water-tank",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Water Tank",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-finny"
+  },
+  {
+    "id": "c4-idea-windmill-feather",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Windmill Feather",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-healing"
+  },
+  {
+    "id": "c4-idea-work-arm",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Work Arm",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-jaming"
+  },
+  {
+    "id": "c4-idea-work-equipment",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Work Equipment",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-idea-work-robot",
+    "chapterId": "c4",
+    "category": "idea",
+    "name": "Work Robot",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-build"
+  },
+  {
+    "id": "c4-invention-barrel-cannon-iii",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Barrel Cannon III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Water Tank",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-buggy",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Buggy",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Car",
+        "scoop": false
+      },
+      {
+        "name": "System 5WP2",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-cannonball-arm-iv",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Cannonball Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Egg Chair",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-cleaner-pack",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Cleaner Pack",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Vacuum",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-clown-hand-iii",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Clown Hand III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Flag",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-cubic-hammer",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Cubic Hammer",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Dresser",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-dark-viper",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Dark Viper",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Night Stalker",
+        "scoop": true
+      },
+      {
+        "name": "Puppet Shingala",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-flamingo",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Flamingo",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Light of Luna Stone",
+        "scoop": false
+      },
+      {
+        "name": "Palm Tree",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-hammer-arm",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Hammer Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-missile-pod-arm-ii",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Missile Pod Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      },
+      {
+        "name": "Symbol of Luna Lab",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-multi-feet",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Multi Feet",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-propeller-leg",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Propeller Leg",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cart",
+        "scoop": false
+      },
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-question-shooter",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Question Shooter",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Neo-Projector",
+        "scoop": false
+      },
+      {
+        "name": "Brave Little Linda",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-refrigerator-body",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Refrigerator Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Refrigerator",
+        "scoop": false
+      },
+      {
+        "name": "Small Generator",
+        "scoop": false
+      },
+      {
+        "name": "Traffic Light",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-stinger-wrench",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Stinger Wrench",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-super-alloy-body",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Super-Alloy Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Search Light",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-turkey",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Turkey",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Special Peking Duck",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-wild-cat",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Wild Cat",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      },
+      {
+        "name": "Charging Ram",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-wing-boots",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Wing Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Weather Vane",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-invention-wing-shoes",
+    "chapterId": "c4",
+    "category": "invention",
+    "name": "Wing Shoes",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "notes": ["L.Lab, bridge 1", "always"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-2",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-medusa",
+    "notes": ["L.Lab, right of Time Gate", "Scary Auntie Medusa"]
+  },
+  {
+    "id": "c4-powerup-potato-pie",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-molers",
+    "notes": ["L.Lab, bridge 5", "Sand Molers"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-3",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-batden",
+    "notes": ["L.Lab, bridge 4", "Bat Den"]
+  },
+  {
+    "id": "c4-powerup-witch-parfait",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-pirates",
+    "notes": ["L.Lab, bridge 3", "Pirate's Hideout"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-4",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-zappy",
+    "notes": ["L.Lab, inside Lab 1", "Wandering Zappy"]
+  },
+  {
+    "id": "c4-powerup-potato-pie-2",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-banquet",
+    "notes": ["L.Lab, inside Lab 1", "Banquet of the Dead"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-5",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-improve",
+    "notes": ["L.Lab, inside Lab 2", "Improvements"]
+  },
+  {
+    "id": "c4-powerup-witch-parfait-2",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-serpent",
+    "notes": ["L.Lab, inside Lab 2", "Return of the Serpent"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-6",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-cursed",
+    "notes": ["L.Lab, inside Lab 3", "Cursed Sea"]
+  },
+  {
+    "id": "c4-powerup-witch-parfait-3",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c4-atrocit",
+    "notes": ["L.Lab, inside Lab 3", "Sea of Atrocity"]
+  },
+  {
+    "id": "c4-powerup-fruit-of-eden-7",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, bridge 5", "After beating Jaming"]
+  },
+  {
+    "id": "c4-powerup-potato-pie-3",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, fenced area near Lab 2", "After beating Jaming"]
+  },
+  {
+    "id": "c4-powerup-witch-parfait-4",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, between bridges 1 & 3", "After beating Jaming"]
+  },
+  {
+    "id": "c4-powerup-peridot",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Peridot",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, between bridges 2 & 4", "After beating Jaming"]
+  },
+  {
+    "id": "c4-powerup-ruby",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Ruby",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, bridge 5", "After beating Jaming"]
+  },
+  {
+    "id": "c4-powerup-sapphire",
+    "chapterId": "c4",
+    "category": "powerup",
+    "name": "Sapphire",
+    "missable": false,
+    "postgame": true,
+    "notes": ["L.Lab, between bridges 1 & 3", "After beating Jaming"]
+  },
+  {
+    "id": "c4-recruit-olivie",
+    "chapterId": "c4",
+    "category": "recruit",
+    "name": "Olivie",
+    "missable": false,
+    "postgame": false,
+    "notes": ["win Beginner Class Finny Frenzy"]
+  },
+  {
+    "id": "c4-georama-8-pier-blocks-placed",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "8 Pier blocks placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-red-iron-house-with-claire-in-it",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Red Iron House with Claire in it",
+    "missable": false,
+    "postgame": false,
+    "notes": ["place Pot Torch near red house"]
+  },
+  {
+    "id": "c4-georama-blue-iron-house-with-donny-in-it",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Blue Iron House with Donny in it",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-shop-boats-near-iron-houses",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Shop Boats near Iron Houses",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-purple-iron-house-placed",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Purple Iron House placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-green-iron-house-placed",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Green Iron House placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-8-luna-stone-lights-placed",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "8 Luna Stone Lights placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-windmill-placed",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "Windmill placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-georama-80-culture-points",
+    "chapterId": "c4",
+    "category": "georama",
+    "name": "80 Culture points",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c4-badge-magical-creature",
+    "chapterId": "c4",
+    "category": "badge",
+    "name": "Magical Creature",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Sturdy Rock to Statue"]
+  },
+  {
+    "id": "c5-scoop-hot-springs-spirit",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Hot Springs Spirit",
+    "missable": false,
+    "postgame": false,
+    "ghost": true,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-scoop-bomber-head-boom",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Bomber Head Boom!",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-scoop-fire-squall",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Fire Squall",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c5-before"
+  },
+  {
+    "id": "c5-scoop-the-ultimate-gaspard",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "The Ultimate Gaspard",
+    "missable": true,
+    "postgame": false
+  },
+  {
+    "id": "c5-scoop-faintin-bone-lord",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Faintin' Bone Lord",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-burning"
+  },
+  {
+    "id": "c5-scoop-lava-road",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Lava Road",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-scoop-fallen-battleship",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Fallen Battleship",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-scoop-paznos",
+    "chapterId": "c5",
+    "category": "scoop",
+    "name": "Paznos",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-idea-cinders",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Cinders",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-idea-computer",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Computer",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-horn"
+  },
+  {
+    "id": "c5-idea-decorative-lights",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Decorative Lights",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-idea-display-robo",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Display Robo",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-drum-can",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Drum Can",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-electric-sesame",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Electric Sesame",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-elevator",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Elevator",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-idea-generator",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Generator",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-geyser",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Geyser",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-idea-hammer",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Hammer",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-hot-springs-pond",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Hot Springs Pond",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-idea-large-crane",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Large Crane",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-griffon"
+  },
+  {
+    "id": "c5-idea-mount-gundor",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Mount Gundor",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-idea-mud",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Mud",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-before"
+  },
+  {
+    "id": "c5-idea-patterned-rug",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Patterned Rug",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-squall"
+  },
+  {
+    "id": "c5-idea-paznos-pattern",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Paznos Pattern",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-idea-power-arm",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Power Arm",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-wind"
+  },
+  {
+    "id": "c5-idea-propeller",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Propeller",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-horn"
+  },
+  {
+    "id": "c5-idea-sulfur-colored-juice",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Sulfur-Colored Juice",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-idea-transmission-device",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Transmission Device",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-build"
+  },
+  {
+    "id": "c5-idea-work-crane",
+    "chapterId": "c5",
+    "category": "idea",
+    "name": "Work Crane",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-griffon"
+  },
+  {
+    "id": "c5-invention-albatross",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Albatross",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Geyser",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Fire Squall",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-barrel-cannon-iv",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Barrel Cannon IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fire Squall",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-clown-hand-iv",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Clown Hand IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-digi-hammer",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Digi Hammer",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Computer",
+        "scoop": false
+      },
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Decorative Lights",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-drill-arm-ii",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Drill Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Electric Sesame",
+        "scoop": false
+      },
+      {
+        "name": "Horn",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-drum-can-body",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Drum Can Body",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chair",
+        "scoop": false
+      },
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Lamp",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-energy-pack-urn",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Energy Pack (Urn)",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-escape-powder",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Escape Powder",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Elevator",
+        "scoop": false
+      },
+      {
+        "name": "Transmission Device",
+        "scoop": false
+      },
+      {
+        "name": "Ancient Mural",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-falcon",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Falcon",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Large Crane",
+        "scoop": false
+      },
+      {
+        "name": "Withered Jurak",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-final-bomb",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Final Bomb",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Cinders",
+        "scoop": false
+      },
+      {
+        "name": "Oven",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-hammer-arm-ii",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Hammer Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-heavy-hammer",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Heavy Hammer",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Paznos",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-laser-arm",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Laser Arm",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Geyser",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-machine-gun-arm-iii",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Machine Gun Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Propeller",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-metal-boots",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Metal Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-missile-pod-arm-iii",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Missile Pod Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-nova-cannon",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Nova Cannon",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Rapper",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-panther-boots",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Panther Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      },
+      {
+        "name": "The Ultimate Gaspard",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-poison-wrench",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Poison Wrench",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Mushroom",
+        "scoop": false
+      },
+      {
+        "name": "Sulfur-Colored Juice",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-rulers-sword",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Ruler's Sword",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Figure",
+        "scoop": false
+      },
+      {
+        "name": "Iron Maiden",
+        "scoop": false
+      },
+      {
+        "name": "Paznos",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-samurai-arm-ii",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Samurai Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      },
+      {
+        "name": "Work Crane",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-soul-breaker",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Soul Breaker",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Geyser",
+        "scoop": false
+      },
+      {
+        "name": "Transmission Device",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-steal-gun",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Steal Gun",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Book",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Work Crane",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-invention-sun-moon-armor",
+    "chapterId": "c5",
+    "category": "invention",
+    "name": "Sun & Moon Armor",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Electric Sesame",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-griffon",
+    "notes": ["G.Workshop, 1st floor, between G7 and TG", "Battle with Griffon's Army"]
+  },
+  {
+    "id": "c5-powerup-potato-pie",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-wind",
+    "notes": ["G.Workshop, 1st floor, P6", "Mt. Gundor Wind"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-2",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-little",
+    "notes": ["G.Workshop, 1st floor, G6", "Little Dragons on the Mountain"]
+  },
+  {
+    "id": "c5-powerup-witch-parfait",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-goyone",
+    "notes": ["G.Workshop, 1st floor, G5, near JE", "Steam Goyone"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-3",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-baddie",
+    "notes": ["G.Workshop, 2nd floor, G8", "Mountain Baddie Appears"]
+  },
+  {
+    "id": "c5-powerup-potato-pie-2",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-magmano",
+    "notes": ["G.Workshop, 1st floor, P3, next to JW", "Magmanoff"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-4",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-danger",
+    "notes": ["G.Workshop, 2nd floor, A3", "Danger Zone"]
+  },
+  {
+    "id": "c5-powerup-witch-parfait-2",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-secret",
+    "notes": ["G.Workshop, 1st floor, near G1", "Secret of Fire Mountain"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-5",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-death",
+    "notes": ["G.Workshop, 2nd floor, A3", "Deathtrap"]
+  },
+  {
+    "id": "c5-powerup-potato-pie-3",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "notes": ["G.Workshop, 2nd floor, G2", "Deperation on the Mountain"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-6",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-pains",
+    "notes": ["G.Workshop, 3rd floor, OR", "Pains in the Neck"]
+  },
+  {
+    "id": "c5-powerup-witch-parfait-3",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-walking",
+    "notes": ["G.Workshop, 3rd floor, G7", "Walking the Path of Flames"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-7",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-burning",
+    "notes": ["G.Workshop, 2nd floor, G1", "Burning Undead"]
+  },
+  {
+    "id": "c5-powerup-potato-pie-4",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-dragon",
+    "notes": ["G.Workshop, 3rd floor, F1", "Fire Dragon"]
+  },
+  {
+    "id": "c5-powerup-fruit-of-eden-8",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-danger",
+    "notes": ["G.Workshop, 2nd floor, E1", "Treasure Chest Danger Zone"]
+  },
+  {
+    "id": "c5-powerup-witch-parfait-4",
+    "chapterId": "c5",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c5-river",
+    "notes": ["G.Workshop, 3rd floor, E1", "Road to the River of Flames"]
+  },
+  {
+    "id": "c5-recruit-pau",
+    "chapterId": "c5",
+    "category": "recruit",
+    "name": "Pau",
+    "missable": false,
+    "postgame": false,
+    "notes": ["give him a Carrot"]
+  },
+  {
+    "id": "c5-georama-3-brick-houses-placed-2-with-chimneys",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "3 Brick Houses placed, 2 with Chimneys",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-10-pots-placed",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "10 Pots placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-brick-house-3-blocks-high-placed",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Brick House 3 blocks high placed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-windmill-placed",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Windmill placed",
+    "missable": false,
+    "postgame": false,
+    "notes": ["near 3-block-high Brick House"]
+  },
+  {
+    "id": "c5-georama-borneo-resides-in-heim-rada",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Borneo resides in Heim Rada",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-cedric-resides-in-heim-rada",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Cedric resides in Heim Rada",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-gerald-resides-in-heim-rada",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Gerald resides in Heim Rada",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-work-crane-on-one-non-chimney-house",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Work Crane on one non-chimney house",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-power-arm-on-one-non-chimney-house",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Power Arm on one non-chimney house",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-georama-erik-resides-in-heim-rada-near-windmill",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "Erik resides in Heim Rada near Windmill",
+    "missable": false,
+    "postgame": false,
+    "notes": ["use the 3-block-high house"]
+  },
+  {
+    "id": "c5-georama-100-culture-points",
+    "chapterId": "c5",
+    "category": "georama",
+    "name": "100 Culture points",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c5-badge-windup",
+    "chapterId": "c5",
+    "category": "badge",
+    "name": "Windup",
+    "missable": false,
+    "postgame": false,
+    "notes": ["kill Bomber Head with Bombs"]
+  },
+  {
+    "id": "c6-scoop-ixion",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Ixion",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-scoop-moon-flower-palace",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Moon Flower Palace",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-scoop-griffons-real-face",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Griffon's Real Face",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-scoop-kazarov-stonehenge",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Kazarov Stonehenge",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c6-kazarov"
+  },
+  {
+    "id": "c6-scoop-gigantor-paznos",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Gigantor Paznos",
+    "missable": true,
+    "postgame": false,
+    "sectionId": "c6-finish"
+  },
+  {
+    "id": "c6-scoop-earth-gem-altar",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Earth Gem Altar",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c6-scoop-wind-gem-altar",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Wind Gem Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-lapis"
+  },
+  {
+    "id": "c6-scoop-water-gem-altar",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Water Gem Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-dragon"
+  },
+  {
+    "id": "c6-scoop-fire-gem-altar",
+    "chapterId": "c6",
+    "category": "scoop",
+    "name": "Fire Gem Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-inferno"
+  },
+  {
+    "id": "c6-idea-dead-tree",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Dead Tree",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-idea-earth-altar",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Earth Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-kazarov"
+  },
+  {
+    "id": "c6-idea-fire-altar",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Fire Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-kazarov"
+  },
+  {
+    "id": "c6-idea-gold-gate",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Gold Gate",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-idea-pinky",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Pinky",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-idea-water-altar",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Water Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-kazarov"
+  },
+  {
+    "id": "c6-idea-wind-altar",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Wind Altar",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-kazarov"
+  },
+  {
+    "id": "c6-idea-hooked-nose",
+    "chapterId": "c6",
+    "category": "idea",
+    "name": "Hooked Nose",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-palace"
+  },
+  {
+    "id": "c6-invention-drill-arm-iii",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Drill Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Luna Stone Shards",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Ixion",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-invention-hammer-arm-iii",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Hammer Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Earth Gem Altar",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-invention-laser-arm-ii",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Laser Arm II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Ixion",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-invention-machine-gun-arm-iv",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Machine Gun Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Propeller",
+        "scoop": false
+      },
+      {
+        "name": "Wind Gem Altar",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-invention-missile-pod-arm-iv",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Missile Pod Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Mount Gundor",
+        "scoop": false
+      },
+      {
+        "name": "Fire Gem Altar",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-invention-nova-cannon-ii",
+    "chapterId": "c6",
+    "category": "invention",
+    "name": "Nova Cannon II",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Streetlight",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      },
+      {
+        "name": "Fire Gem Altar",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-earth",
+    "notes": ["Jurak Mall", "under a branch on the right", "Looking for the Earth Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-2",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-earth",
+    "notes": ["Jurak Mall", "Tailor Shop", "Looking for the Earth Gem"]
+  },
+  {
+    "id": "c6-powerup-amethyst",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Amethyst",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-earth",
+    "notes": ["Jurak Mall", "Weapon Shop", "Looking for the Earth Gem"]
+  },
+  {
+    "id": "c6-powerup-aquamarine",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Aquamarine",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-earth",
+    "notes": ["Jurak Mall", "Golden Eggs area", "Looking for the Earth Gem"]
+  },
+  {
+    "id": "c6-powerup-potato-pie",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-rare",
+    "notes": ["Jurak Mall", "Tailor Shop", "Something Rare Here!"]
+  },
+  {
+    "id": "c6-powerup-witch-parfait",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "notes": ["Jurak Mall", "Tailor Shop", "Strange Tree"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-3",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-wind",
+    "notes": ["Starlight Temple", "platform 1", "Looking for the Wind Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-4",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-wind",
+    "notes": ["Starlight Temple", "in front of Crest", "Looking for the Wind Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-5",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-wind",
+    "notes": [
+      "Starlight Temple",
+      "platform 1; must not have FoE mentioned in chapter 3",
+      "Looking for the Wind Gem"
+    ]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-6",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "notes": ["Starlight Temple", "S.Temple, Platform W; the one from chapter 3"]
+  },
+  {
+    "id": "c6-powerup-potato-pie-2",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-spirit",
+    "notes": ["Starlight Temple", "platform 1", "Evil Spirit in the Valley"]
+  },
+  {
+    "id": "c6-powerup-witch-parfait-2",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-warrior",
+    "notes": ["Starlight Temple", "near Crest", "Brave Warriors in the Valley"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-7",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-water",
+    "notes": ["Luna Lab", "inside lab 4", "Looking for the Water Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-8",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-water",
+    "notes": ["Luna Lab", "inside center lab, lab 4 side", "Looking for the Water Gem"]
+  },
+  {
+    "id": "c6-powerup-potato-pie-3",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-pirate",
+    "notes": ["Luna Lab", "inside lab 4", "Pirates' Revenge"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-9",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-pirate",
+    "notes": ["Luna Lab", "inside center lab, lab 3 side", "Pirates' Revenge"]
+  },
+  {
+    "id": "c6-powerup-witch-parfait-3",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-death",
+    "notes": ["Luna Lab", "inside center lab, near purple ramps", "Death Ocean"]
+  },
+  {
+    "id": "c6-powerup-potato-pie-4",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-death",
+    "notes": ["Luna Lab", "inside center lab, above purple ramps", "Death Ocean"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-10",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-fire",
+    "notes": ["Gundorada Workshop", "1st floor, GT", "Looking for the Fire Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-11",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-fire",
+    "notes": ["Gundorada Workshop", "2nd floor, P1", "Looking for the Fire Gem"]
+  },
+  {
+    "id": "c6-powerup-fruit-of-eden-12",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-spring",
+    "notes": ["Gundorada Workshop", "1st floor, P1", "Explosive Hot Spring"]
+  },
+  {
+    "id": "c6-powerup-potato-pie-5",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-spring",
+    "notes": ["Gundorada Workshop", "2nd floor, G4", "Explosive Hot Spring"]
+  },
+  {
+    "id": "c6-powerup-witch-parfait-4",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-crazy",
+    "notes": ["Gundorada Workshop", "1st floor, G2", "Crazy Mountain"]
+  },
+  {
+    "id": "c6-powerup-witch-parfait-5",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-crazy",
+    "notes": ["Gundorada Workshop", "2nd floor, GP", "Crazy Mountain"]
+  },
+  {
+    "id": "c6-powerup-diamond",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Diamond",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-crazy",
+    "notes": ["Gundorada Workshop", "1st floor, GW", "Crazy Mountain"]
+  },
+  {
+    "id": "c6-powerup-turquoise",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Turquoise",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-crazy",
+    "notes": ["Gundorada Workshop", "1st floor, GT", "Crazy Mountain"]
+  },
+  {
+    "id": "c6-powerup-topaz",
+    "chapterId": "c6",
+    "category": "powerup",
+    "name": "Topaz",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c6-crazy",
+    "notes": ["Gundorada Workshop", "2nd floor, GP", "Crazy Mountain"]
+  },
+  {
+    "id": "c7-scoop-flower-of-the-sun",
+    "chapterId": "c7",
+    "category": "scoop",
+    "name": "Flower of the Sun",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-scoop-sun-chamber-gatekeeper",
+    "chapterId": "c7",
+    "category": "scoop",
+    "name": "Sun Chamber Gatekeeper",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-sun"
+  },
+  {
+    "id": "c7-scoop-legend-of-the-moon",
+    "chapterId": "c7",
+    "category": "scoop",
+    "name": "Legend of the Moon",
+    "missable": true,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-alexandras-bed",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Alexandra's Bed",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-memorie"
+  },
+  {
+    "id": "c7-idea-blue-lantern",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Blue Lantern",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-camellia-tree",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Camellia Tree",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-moonpal"
+  },
+  {
+    "id": "c7-idea-flower-bathed-in-light",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Flower Bathed in Light",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-flower-bed",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Flower Bed",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-build2"
+  },
+  {
+    "id": "c7-idea-flower-chandelier",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Flower Chandelier",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-sun"
+  },
+  {
+    "id": "c7-idea-golden-door",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Golden Door",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-sun"
+  },
+  {
+    "id": "c7-idea-labyrinth-door",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Labyrinth Door",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-sun"
+  },
+  {
+    "id": "c7-idea-lotus-flower",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Lotus Flower",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-moon-column",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Moon Column",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-build2"
+  },
+  {
+    "id": "c7-idea-relaxation-fountain",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Relaxation Fountain",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-moonpal"
+  },
+  {
+    "id": "c7-idea-road-to-golbad",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Road to Golbad",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-silver-bench",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Silver Bench",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-build2"
+  },
+  {
+    "id": "c7-idea-stardust-pond",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Stardust Pond",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-build3"
+  },
+  {
+    "id": "c7-idea-starlight-stairway",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Starlight Stairway",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-starlight-tunnel",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Starlight Tunnel",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-sun-chair",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Sun Chair",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-sun-table",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Sun Table",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-idea-waterfall-curtain",
+    "chapterId": "c7",
+    "category": "idea",
+    "name": "Waterfall Curtain",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-invention-drill-arm-iv",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Drill Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Flower of the Sun",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-hammer-arm-iv",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Hammer Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-jet-hover",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Jet Hover",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Fire House",
+        "scoop": false
+      },
+      {
+        "name": "Relaxation Fountain",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-laser-arm-iii",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Laser Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Relaxation Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Search Light",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-laser-arm-iv",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Laser Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Blue Lantern",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Legend of the Moon",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-level-up-powder",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Level-up Powder",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Sun Chair",
+        "scoop": false
+      },
+      {
+        "name": "Sun Table",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-nova-cannon-iii",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Nova Cannon III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Stove",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-princess-boots",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Princess Boots",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall Curtain",
+        "scoop": false
+      },
+      {
+        "name": "Moon Flower Palace",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-resurrection-powder",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Resurrection Powder",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Fruit",
+        "scoop": false
+      },
+      {
+        "name": "Lotus Flower",
+        "scoop": false
+      },
+      {
+        "name": "Hot Springs Spirit",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-ridepod-fuel",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Ridepod Fuel",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Luna Stone Shards",
+        "scoop": false
+      },
+      {
+        "name": "Mud",
+        "scoop": false
+      },
+      {
+        "name": "Stardust Pond",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-samurai-arm-iii",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Samurai Arm III",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-sexy-panther",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Sexy Panther",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Elena's Portrait",
+        "scoop": false
+      },
+      {
+        "name": "Flower Bathed in Light",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-treasure-chest-key",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Treasure Chest Key",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Golden Door",
+        "scoop": false
+      },
+      {
+        "name": "Labyrinth Door",
+        "scoop": false
+      },
+      {
+        "name": "Sun Chamber Gatekeeper",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-triple-urn-pack",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Triple-Urn Pack",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Light of Luna Stone",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-invention-twin-buster",
+    "chapterId": "c7",
+    "category": "invention",
+    "name": "Twin Buster",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Jurak's Nose",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      }
+    ]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-ancient",
+    "notes": ["headless statue right of door", "Ancient Wind"]
+  },
+  {
+    "id": "c7-powerup-potato-pie",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-card",
+    "notes": ["headless statue left of door", "Card Warriors Gather"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-2",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-danger",
+    "notes": ["flowerpot near door (1st, CCW", "Dangerous Treasure"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-feeling",
+    "notes": ["flowerpot near door (2nd, CCW", "Feeling Out of Place"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-3",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-living",
+    "notes": ["flowerpot near door (3rd, CCW", "Living Statue"]
+  },
+  {
+    "id": "c7-powerup-potato-pie-2",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-zone",
+    "notes": ["flowerpot near door (4th, CCW", "Danger Zone"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-4",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-scary",
+    "notes": ["flowerpot near door (1st, CW", "Scary Women"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait-2",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-hell",
+    "notes": ["flowerpot near door (2nd, CW", "Hell Elephant"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-5",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-crush",
+    "notes": ["flowerpot near door (3rd, CW", "Crush the Undead"]
+  },
+  {
+    "id": "c7-powerup-potato-pie-3",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-missing",
+    "notes": ["flowerpot near door (4th, CW", "Missing Gem Dealer"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-6",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-longest",
+    "notes": ["flowerpot near upstairs door (4th, CW", "Max's Longest Day"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait-3",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-corrido",
+    "notes": ["flowerpot near upstairs door (3rd, CW", "Hell's Corridor"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-7",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-monica",
+    "notes": ["flowerpot near upstairs door (2nd, CW", "Monica All Alone"]
+  },
+  {
+    "id": "c7-powerup-potato-pie-4",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-lonely",
+    "notes": ["flowerpot near upstairs door (1st, CW", "Lonely Machine"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-8",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-nobilit",
+    "notes": ["flowerpot near upstairs door (4th, CCW", "Nobility"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait-4",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-watch",
+    "notes": ["flowerpot near upstairs door (3rd, CCW", "Palace Watchdog"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-9",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-memorie",
+    "notes": ["flowerpot near upstairs door (2nd, CCW", "Road to Memories"]
+  },
+  {
+    "id": "c7-powerup-potato-pie-5",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie)",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-trump",
+    "notes": ["flowerpot near upstairs door (1st, CCW", "Final Trump Card"]
+  },
+  {
+    "id": "c7-powerup-fruit-of-eden-10",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-element",
+    "notes": ["flowerpot right of staircase", "Elemental Party"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait-5",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-wander",
+    "notes": ["flowerpot left of staircase", "Wandering Knight's Soul"]
+  },
+  {
+    "id": "c7-powerup-potato-pie-6",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-beware",
+    "notes": ["behind staircase on left", "Beware Carelessness"]
+  },
+  {
+    "id": "c7-powerup-witch-parfait-6",
+    "chapterId": "c7",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c7-final",
+    "notes": ["behind staircase on right", "Final Battle"]
+  },
+  {
+    "id": "c7-georama-make-place-fountain-in-the-middle-of-the-thin-grass",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make/place fountain in the middle of the thin grass",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-place-8-road-to-golbad-4-between-entrance-fountain-4-between-entrance-station",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make/place 8 Road to Golbad, 4 between entrance/fountain, 4 between entrance/station",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-2-roads-on-the-left-of-the-fountain",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place 2 roads on the left of the fountain",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-2-roads-on-the-right-of-the-fountain",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place 2 roads on the right of the fountain",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-starlight-stairs-at-the-end-of-each-of-the-roads",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place Starlight stairs at the end of each of the roads",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-a-road-at-the-end-of-each-starlight-stair",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "place a road at the end of each Starlight stair",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-hall-of-sorrow-palace-stairs-2-camelia-tree-2-silver-bench-14-petal-stream",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make Hall of Sorrow, Palace Stairs, 2 Camelia Tree, 2 Silver Bench, 14 Petal Stream",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-2-streams-under-the-stairs-left-8-right-6",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make 2 streams under the stairs, left 8, right 6",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-hall-of-sorrow-at-the-end-of-the-left-stream",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place Hall of Sorrow at the end of the left stream",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-camelia-trees-between-hall-of-sorrow-and-stairs-either-side",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place Camelia Trees between Hall of Sorrow and stairs, either side",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-palace-stairs-at-the-end-of-the-right-stream",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place Palace Stairs at the end of the right stream",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-silver-benches-on-either-side-of-the-palace-stairs",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place Silver Benches on either side of the Palace Stairs",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-6-flower-bed",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make 6 Flower Bed",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-place-2-flower-beds-per-side-of-the-left-stream-1-per-side-for-right",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Place 2 flower beds per side of the left stream, 1 per side for right",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-place-16-moon-columns-along-road-to-golbad",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make/place 16 Moon Columns along Road to Golbad",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-georama-make-place-1-stardust-pond-at-end-of-right-stream",
+    "chapterId": "c7",
+    "category": "georama",
+    "name": "Make/place 1 Stardust pond at end of right stream",
+    "missable": false,
+    "postgame": false
+  },
+  {
+    "id": "c7-badge-card",
+    "chapterId": "c7",
+    "category": "badge",
+    "name": "Card",
+    "missable": false,
+    "postgame": false,
+    "notes": ["3x Diamond to Diamond"]
+  },
+  {
+    "id": "c8-scoop-flotsam-revived",
+    "chapterId": "c8",
+    "category": "scoop",
+    "name": "Flotsam, Revived!",
+    "missable": true,
+    "postgame": false
+  },
+  {
+    "id": "c8-idea-zelmite-found",
+    "chapterId": "c8",
+    "category": "idea",
+    "name": "Zelmite Found!",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-boss5"
+  },
+  {
+    "id": "c8-idea-mr-big-shot-shadow",
+    "chapterId": "c8",
+    "category": "idea",
+    "name": "Mr. Big Shot Shadow",
+    "missable": false,
+    "postgame": false,
+    "albumOnly": true,
+    "sectionId": "c8-boss5"
+  },
+  {
+    "id": "c8-invention-nova-cannon-iv",
+    "chapterId": "c8",
+    "category": "invention",
+    "name": "Nova Cannon IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "Pot Torch",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      },
+      {
+        "name": "Flotsam, Revived!",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c8-invention-samurai-arm-iv",
+    "chapterId": "c8",
+    "category": "invention",
+    "name": "Samurai Arm IV",
+    "missable": false,
+    "postgame": false,
+    "recipe": [
+      {
+        "name": "A Surviving Soldier",
+        "scoop": true
+      },
+      {
+        "name": "Flotsam, Revived!",
+        "scoop": true
+      },
+      {
+        "name": "Legend of the Moon",
+        "scoop": true
+      }
+    ]
+  },
+  {
+    "id": "c8-powerup-potato-pie",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-frog",
+    "notes": ["Spheda prize", "Powerful Frog"]
+  },
+  {
+    "id": "c8-powerup-potato-pie-2",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Potato Pie",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-murder",
+    "notes": ["Spheda prize", "Murderous Tank"]
+  },
+  {
+    "id": "c8-powerup-fruit-of-eden",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-woman",
+    "notes": ["Spheda prize", "The Old Woman Saw It"]
+  },
+  {
+    "id": "c8-powerup-witch-parfait",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-ward1",
+    "notes": ["Spheda prize", "Hell Ward 1"]
+  },
+  {
+    "id": "c8-powerup-witch-parfait-2",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Witch Parfait",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-truth",
+    "notes": ["Spheda prize", "Road to Truth"]
+  },
+  {
+    "id": "c8-powerup-fruit-of-eden-2",
+    "chapterId": "c8",
+    "category": "powerup",
+    "name": "Fruit of Eden",
+    "missable": false,
+    "postgame": false,
+    "sectionId": "c8-captain",
+    "notes": ["Spheda prize", "Captain Returns"]
+  }
+]
