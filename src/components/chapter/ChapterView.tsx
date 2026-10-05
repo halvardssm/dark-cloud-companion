@@ -16,6 +16,7 @@ import {
   sectionsOf,
 } from "@/lib/data";
 import { $checks, $profile, setChecked, setView } from "@/lib/store";
+import { ChapterGuides } from "@/components/guides/ChapterGuides";
 import { CheckRow } from "./CheckRow";
 import { SectionCard } from "./SectionCard";
 
@@ -102,6 +103,8 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
           </CardContent>
         </Card>
       )}
+
+      {chapter.phase === "main" && <ChapterGuides chapterNumber={chapter.number} />}
 
       {view.layers.checklists &&
         categoryOrder.map((cat) => {

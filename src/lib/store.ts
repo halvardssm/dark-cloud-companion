@@ -1,4 +1,5 @@
 import { atom, computed } from "nanostores";
+import type { Guide } from "./guides/types";
 import {
   STATE_VERSION,
   STORAGE_KEY,
@@ -70,6 +71,22 @@ export function toggleGuide(id: string, on: boolean) {
     activeGuides: on
       ? [...new Set([...p.activeGuides, id])]
       : p.activeGuides.filter((g) => g !== id),
+  }));
+}
+
+export function addCustomGuide(g: Guide) {
+  updateProfile((p) => ({
+    ...p,
+    customGuides: [...p.customGuides.filter((x) => x.id !== g.id), g],
+    activeGuides: [...new Set([...p.activeGuides, g.id])],
+  }));
+}
+
+export function removeCustomGuide(id: string) {
+  updateProfile((p) => ({
+    ...p,
+    customGuides: p.customGuides.filter((g) => g.id !== id),
+    activeGuides: p.activeGuides.filter((g) => g !== id),
   }));
 }
 

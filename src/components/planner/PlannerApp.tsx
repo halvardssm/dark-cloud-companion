@@ -11,7 +11,9 @@ import { earliestChapter, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
 import { getWeapon, weaponData } from "@/lib/planner/sources";
 import { freshState, type WeaponState } from "@/lib/weapons/mechanics";
-import { PlanView } from "./PlanView";
+import { GuideView } from "@/components/guides/GuideView";
+import { planToGuide } from "@/lib/guides/fromPlan";
+import { addCustomGuide } from "@/lib/store";
 import { StartSpecs } from "./StartSpecs";
 
 const selectClass = "bg-background h-10 w-full rounded-md border px-3 text-sm";
@@ -67,8 +69,25 @@ export function PlannerApp() {
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [guideName, setGuideName] = useState("");
+  const [pinned, setPinned] = useState(false);
 
   const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
+  const draft = useMemo(
+    () =>
+      result?.status === "ok"
+        ? planToGuide({
+            id: "draft",
+            title: `${getWeapon(targetId).name} — ${t(`planner.obj.${objective}` as const).toLowerCase()}`,
+            kind: "custom",
+            summary: `${t(`planner.obj.${objective}` as const)} · ${t(`planner.goal.${goal}` as const)} · ${getWeapon(start.weaponId).name} · ${t("planner.chapterOption", { n: maxChapter })}`,
+            result,
+          })
+        : null,
+    // The summary should describe the request that produced the result, not later form edits.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [result],
+  );
 
   const changeTarget = (id: string) => {
     setTargetId(id);
@@ -82,6 +101,7 @@ export function PlannerApp() {
     setRunning(true);
     setError(null);
     setResult(null);
+    setPinned(false);
     try {
       setResult(
         await runPlanner({
@@ -211,7 +231,46 @@ export function PlannerApp() {
       )}
       {result?.status === "no-path" && <p className="text-sm">{t("planner.noPath")}</p>}
       {result?.status === "infeasible" && <p className="text-sm">{t("planner.infeasible")}</p>}
-      {result?.status === "ok" && <PlanView result={result} />}
+      {result?.status === "ok" && draft && (
+        <>
+          <GuideView guide={draft} />
+          <form
+            className="flex flex-wrap items-end gap-2"
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (!result) return;
+              addCustomGuide(
+                planToGuide({
+                  id: `custom-${Date.now().toString(36)}`,
+                  title: guideName.trim() || draft.title,
+                  kind: "custom",
+                  summary: draft.summary,
+                  result,
+                  createdAt: Date.now(),
+                }),
+              );
+              setPinned(true);
+            }}
+          >
+            <Label className="flex min-w-48 flex-1 flex-col items-start gap-1">
+              {t("planner.guideName")}
+              <Input
+                value={guideName}
+                placeholder={draft.title}
+                onChange={(e) => setGuideName(e.target.value)}
+              />
+            </Label>
+            <Button type="submit" disabled={pinned}>
+              {t("planner.pin")}
+            </Button>
+          </form>
+          {pinned && (
+            <p className="text-sm" role="status">
+              {t("planner.pinned")}
+            </p>
+          )}
+        </>
+      )}
     </div>
   );
 }

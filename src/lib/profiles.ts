@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { guide } from "@/lib/guides/types";
 
 export const STORAGE_KEY = "dcc:state";
 export const STATE_VERSION = 1;
@@ -23,6 +24,8 @@ export const profile = z.object({
   checks: z.record(z.string(), z.literal(true)),
   view: viewSettings,
   activeGuides: z.array(z.string()),
+  /** Guides pinned from the planner; stored with the profile. */
+  customGuides: z.array(guide).default([]),
 });
 export type Profile = z.infer<typeof profile>;
 
@@ -55,7 +58,15 @@ export function newId(): string {
 }
 
 export function createProfile(name: string, now = Date.now()): Profile {
-  return { id: newId(), name, createdAt: now, checks: {}, view: defaultView(), activeGuides: [] };
+  return {
+    id: newId(),
+    name,
+    createdAt: now,
+    checks: {},
+    view: defaultView(),
+    activeGuides: [],
+    customGuides: [],
+  };
 }
 
 export function initialState(): AppState {

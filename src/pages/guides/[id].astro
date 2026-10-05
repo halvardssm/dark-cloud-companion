@@ -1,0 +1,16 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { CuratedGuidePage } from "@/components/guides/CuratedGuidePage";
+import { curatedGuides } from "@/lib/guides/data";
+
+export function getStaticPaths() {
+  return curatedGuides.map((g) => ({ params: { id: g.id }, props: { title: g.title } }));
+}
+
+const { id } = Astro.params;
+const { title } = Astro.props;
+---
+
+<Layout title={`${title} · Dark Chronicles Companion`}>
+  <CuratedGuidePage client:load id={id!} />
+</Layout>
