@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { guide } from "@/lib/guides/types";
+import { walkthrough } from "@/lib/walkthroughs/types";
 
 export const STORAGE_KEY = "dcc:state";
 export const STATE_VERSION = 1;
@@ -26,6 +27,8 @@ export const profile = z.object({
   activeGuides: z.array(z.string()),
   /** Guides pinned from the planner; stored with the profile. */
   customGuides: z.array(guide).default([]),
+  /** User-authored walkthroughs (custom steps with checklists). Shown/hidden through `activeGuides` like guides. */
+  walkthroughs: z.array(walkthrough).default([]),
 });
 export type Profile = z.infer<typeof profile>;
 
@@ -45,7 +48,7 @@ export const exportFile = z.object({
 export type ExportFile = z.infer<typeof exportFile>;
 
 export const defaultView = (): ViewSettings => ({
-  layers: { checklists: true, facts: true, walkthrough: false },
+  layers: { checklists: true, facts: true, walkthrough: true },
   hideDone: false,
   hidePostgame: false,
 });
@@ -66,6 +69,7 @@ export function createProfile(name: string, now = Date.now()): Profile {
     view: defaultView(),
     activeGuides: [],
     customGuides: [],
+    walkthroughs: [],
   };
 }
 

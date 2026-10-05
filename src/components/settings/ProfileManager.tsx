@@ -35,7 +35,7 @@ export function ProfileManager() {
 
   const onImport = async (file: File | undefined) => {
     if (!file) return;
-    const err = importFromJson(await file.text());
+    const err = await importFromJson(await file.text());
     setMessage(err ?? t("profiles.importOk"));
     if (fileRef.current) fileRef.current.value = "";
   };

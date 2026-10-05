@@ -6,6 +6,7 @@ import { useTranslations } from "@/i18n";
 import { curatedGuides } from "@/lib/guides/data";
 import type { Guide } from "@/lib/guides/types";
 import { $profile, removeCustomGuide } from "@/lib/store";
+import { ContentTransfer, downloadContent, fileSafe } from "@/components/ContentTransfer";
 import { GuideToggle } from "./GuideToggle";
 
 function GuideCard({
@@ -43,6 +44,17 @@ function GuideCard({
             <Button variant="outline" size="sm" render={<a href={href} />}>
               {t("guides.open")}
             </Button>
+            {onDelete && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() =>
+                  downloadContent(`dcc-guide-${fileSafe(guide.title)}.json`, [guide], [])
+                }
+              >
+                {t("transfer.export")}
+              </Button>
+            )}
             {onDelete && (
               <Button variant="destructive" size="sm" onClick={onDelete}>
                 {t("guides.delete")}
@@ -83,6 +95,7 @@ export function GuidesIndex() {
           </div>
         )}
       </section>
+      <ContentTransfer />
       <section className="flex flex-col gap-3">
         <h2 className="text-lg font-semibold">{t("guides.curated")}</h2>
         <div className="grid gap-3 sm:grid-cols-2">

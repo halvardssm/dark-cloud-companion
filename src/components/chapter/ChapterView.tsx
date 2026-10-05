@@ -20,6 +20,7 @@ import {
 } from "@/lib/data";
 import { $checks, $profile, setChecked, setView } from "@/lib/store";
 import { ChapterGuides } from "@/components/guides/ChapterGuides";
+import { ChapterWalkthroughs } from "@/components/walkthroughs/ChapterWalkthroughs";
 import { CheckRow } from "./CheckRow";
 import { SectionCard } from "./SectionCard";
 
@@ -78,6 +79,11 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
         </div>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Toggle
+            label={t("view.walkthrough")}
+            checked={view.layers.walkthrough}
+            onChange={(v) => setView({ layers: { walkthrough: v } })}
+          />
+          <Toggle
             label={t("view.facts")}
             checked={view.layers.facts}
             onChange={(v) => setView({ layers: { facts: v } })}
@@ -122,6 +128,7 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
       )}
 
       {chapter.phase === "main" && <ChapterGuides chapterNumber={chapter.number} />}
+      <ChapterWalkthroughs chapterId={chapter.id} />
 
       {view.layers.checklists &&
         categoryOrder.map((cat) => {

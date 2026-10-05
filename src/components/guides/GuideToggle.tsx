@@ -1,10 +1,16 @@
 import { useStore } from "@nanostores/react";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import { useTranslations } from "@/i18n";
+import { useTranslations, type MessageKey } from "@/i18n";
 import { $profile, toggleGuide } from "@/lib/store";
 
-export function GuideToggle({ guideId }: { guideId: string }) {
+export function GuideToggle({
+  guideId,
+  labelKey = "guides.active",
+}: {
+  guideId: string;
+  labelKey?: MessageKey;
+}) {
   const t = useTranslations();
   const { activeGuides } = useStore($profile);
   return (
@@ -13,7 +19,7 @@ export function GuideToggle({ guideId }: { guideId: string }) {
         checked={activeGuides.includes(guideId)}
         onCheckedChange={(v) => toggleGuide(guideId, v)}
       />
-      {t("guides.active")}
+      {t(labelKey)}
     </Label>
   );
 }

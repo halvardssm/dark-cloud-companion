@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { WalkthroughList } from "@/components/walkthroughs/WalkthroughList";
+import { useTranslations } from "@/i18n";
+
+const t = useTranslations();
+---
+
+<Layout title={`${t("wt.title")} · ${t("app.name")}`}>
+  <h1 class="mb-4 text-2xl font-semibold">{t("wt.title")}</h1>
+  <WalkthroughList client:load />
+</Layout>

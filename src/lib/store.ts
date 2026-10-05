@@ -1,5 +1,7 @@
 import { atom, computed } from "nanostores";
+import { mergeContent, type ContentFile, type MergeSummary } from "./content-file";
 import type { Guide } from "./guides/types";
+import type { Walkthrough } from "./walkthroughs/types";
 import {
   STATE_VERSION,
   STORAGE_KEY,
@@ -68,6 +70,11 @@ export function setView(
 export function toggleGuide(id: string, on: boolean) {
   updateProfile((p) => ({
     ...p,
+    // Switching a walkthrough on also turns the walkthrough layer on, otherwise nothing would appear.
+    view:
+      on && id.startsWith("wt-")
+        ? { ...p.view, layers: { ...p.view.layers, walkthrough: true } }
+        : p.view,
     activeGuides: on
       ? [...new Set([...p.activeGuides, id])]
       : p.activeGuides.filter((g) => g !== id),
@@ -88,6 +95,47 @@ export function removeCustomGuide(id: string) {
     customGuides: p.customGuides.filter((g) => g.id !== id),
     activeGuides: p.activeGuides.filter((g) => g !== id),
   }));
+}
+
+/** Creates or replaces a walkthrough in the active profile. */
+export function saveWalkthrough(w: Walkthrough) {
+  updateProfile((p) => {
+    const next = { ...w, updatedAt: Date.now() };
+    const exists = p.walkthroughs.some((x) => x.id === w.id);
+    return {
+      ...p,
+      walkthroughs: exists
+        ? p.walkthroughs.map((x) => (x.id === w.id ? next : x))
+        : [...p.walkthroughs, next],
+    };
+  });
+}
+
+export function deleteWalkthrough(id: string) {
+  updateProfile((p) => ({
+    ...p,
+    walkthroughs: p.walkthroughs.filter((w) => w.id !== id),
+    activeGuides: p.activeGuides.filter((g) => g !== id),
+    // Drop this walkthrough's ticks so stale progress doesn't linger.
+    checks: Object.fromEntries(
+      Object.entries(p.checks).filter(([k]) => !k.startsWith(`wt:${id}:`)),
+    ) as typeof p.checks,
+  }));
+}
+
+/** Merges validated imported guides/walkthroughs into the active profile; returns what happened. */
+export function applyContent(file: ContentFile): MergeSummary {
+  let summary: MergeSummary = { added: 0, copied: 0, skipped: 0 };
+  updateProfile((p) => {
+    const merged = mergeContent(
+      { guides: p.customGuides, walkthroughs: p.walkthroughs },
+      file,
+      (old) => `${old}-i${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`,
+    );
+    summary = merged.summary;
+    return { ...p, customGuides: merged.guides, walkthroughs: merged.walkthroughs };
+  });
+  return summary;
 }
 
 export function addProfile(name: string) {
@@ -126,7 +174,7 @@ export function buildExport(ids?: string[]): ExportFile {
 }
 
 /** Returns an error message, or null on success. */
-export function importFromJson(json: string): string | null {
+export async function importFromJson(json: string): Promise<string | null> {
   let data: unknown;
   try {
     data = JSON.parse(json);
@@ -135,6 +183,15 @@ export function importFromJson(json: string): string | null {
   }
   const parsed = exportFile.safeParse(data);
   if (!parsed.success) return "Not a Dark Chronicles Companion export";
+  // Guides and walkthroughs reference weapons, items and chapters: make sure they all exist before accepting.
+  const { validateGuide, validateWalkthrough } = await import("./content-validate");
+  const errors = parsed.data.profiles.flatMap((p) => [
+    ...p.customGuides.flatMap((g) => validateGuide(g).map((e) => `${p.name} / ${g.title}: ${e}`)),
+    ...p.walkthroughs.flatMap((w) =>
+      validateWalkthrough(w).map((e) => `${p.name} / ${w.title}: ${e}`),
+    ),
+  ]);
+  if (errors.length) return errors.slice(0, 5).join("\n");
   $state.set(importProfiles($state.get(), parsed.data));
   return null;
 }

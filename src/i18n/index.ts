@@ -1,5 +1,6 @@
 import { en, type MessageKey } from "./en";
 
+export type { MessageKey };
 export const defaultLocale = "en";
 export const locales = ["en"] as const;
 export type Locale = (typeof locales)[number];

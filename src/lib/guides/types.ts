@@ -12,7 +12,11 @@ export const guideStep = z.object({
   chapter: z.number().int(),
   /** The planner stage this step describes (structure is produced by our own planner). */
   stage: z.custom<Stage>(
-    (v) => typeof v === "object" && v !== null && "weaponId" in v && "synths" in v,
+    (v) =>
+      typeof v === "object" &&
+      v !== null &&
+      typeof (v as Stage).weaponId === "string" &&
+      Array.isArray((v as Stage).synths),
   ),
   /** Weapon this stage builds up into, if any. */
   buildsUpTo: z.string().optional(),
