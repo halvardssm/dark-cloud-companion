@@ -1,0 +1,11 @@
+{
+  "name": "Dark Chronicles Companion",
+  "short_name": "DC Companion",
+  "description": "Chapter checklists and weapon build planner for Dark Chronicles.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#171717",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

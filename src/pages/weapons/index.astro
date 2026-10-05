@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { WeaponList } from "@/components/weapons/WeaponList";
+import { useTranslations } from "@/i18n";
+
+const t = useTranslations();
+---
+
+<Layout title={`${t("weapons.title")} · ${t("app.name")}`}>
+  <h1 class="mb-4 text-2xl font-semibold">{t("weapons.title")}</h1>
+  <WeaponList client:load />
+</Layout>

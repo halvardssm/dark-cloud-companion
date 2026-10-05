@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { weaponType } from "@/data/weapons-schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -71,6 +71,14 @@ export function PlannerApp() {
   const [error, setError] = useState<string | null>(null);
   const [guideName, setGuideName] = useState("");
   const [pinned, setPinned] = useState(false);
+
+  // Deep link from weapon pages: /planner?target=<weapon id>
+  useEffect(() => {
+    const id = new URLSearchParams(location.search).get("target");
+    if (id && weaponData.weapons.some((w) => w.id === id)) changeTarget(id);
+    // Run once on mount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
   const draft = useMemo(

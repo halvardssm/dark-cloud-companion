@@ -1,0 +1,107 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { STAT_KEYS } from "@/data/weapons-schema";
+import { useTranslations } from "@/i18n";
+import { weaponData } from "@/lib/planner/sources";
+import { absTable, buildsFrom, buildsInto, dungeonsFor, eventFor, inventionFor, shopsFor } from "@/lib/weapons/info";
+
+export function getStaticPaths() {
+  return weaponData.weapons.map((w) => ({ params: { id: w.id }, props: { weapon: w } }));
+}
+
+const t = useTranslations();
+const { weapon: w } = Astro.props;
+const shops = shopsFor(w.id);
+const invention = inventionFor(w.id);
+const event = eventFor(w.id);
+const dungeons = dungeonsFor(w.id);
+const from = buildsFrom(w.id);
+const into = buildsInto(w.id);
+---
+
+<Layout title={`${w.name} · ${t("app.name")}`}>
+  <div class="flex flex-col gap-6">
+    <header class="flex flex-col gap-1">
+      <h1 class="text-2xl font-semibold">{w.name}</h1>
+      <p class="text-muted-foreground text-sm">
+        {t(`weapon.type.${w.type}` as const)} · {w.character === "max" ? "Max" : "Monica"}
+      </p>
+    </header>
+
+    <dl class="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+      <div><dt class="text-muted-foreground text-xs">{t("weapons.baseAbs")}</dt><dd>{w.baseAbs}</dd></div>
+      <div><dt class="text-muted-foreground text-xs">{t("weapons.spPerLevel")}</dt><dd>{w.spPerLevel}</dd></div>
+      {w.combo && <div><dt class="text-muted-foreground text-xs">{t("weapons.combo")}</dt><dd>{w.combo}</dd></div>}
+      {w.gunType && <div><dt class="text-muted-foreground text-xs">{t("weapons.gunType")}</dt><dd>{w.gunType}</dd></div>}
+      <div>
+        <dt class="text-muted-foreground text-xs">{t("weapons.abilities")}</dt>
+        <dd>{w.abilities.length ? w.abilities.map((a) => t(`ability.${a}` as const)).join(", ") : t("weapons.none")}</dd>
+      </div>
+      <div><dt class="text-muted-foreground text-xs">{t("weapons.durability")}</dt><dd>≤ {w.maxDu}</dd></div>
+    </dl>
+    {w.attackVariesByTime && <p class="text-muted-foreground text-sm">{t("weapons.attackVaries")}</p>}
+
+    <section class="overflow-x-auto">
+      <table class="w-full text-left text-sm">
+        <thead>
+          <tr class="text-muted-foreground text-xs">
+            <th class="py-1 pr-3 font-normal"></th>
+            {STAT_KEYS.map((k) => <th class="py-1 pr-3 font-normal">{t(`stat.${k}` as const)}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="py-1 pr-3 text-left font-normal">{t("weapons.baseStats")}</th>
+            {STAT_KEYS.map((k) => <td class="py-1 pr-3 tabular-nums">{w.baseStats[k]}</td>)}
+          </tr>
+          <tr>
+            <th class="py-1 pr-3 text-left font-normal">{t("weapons.maxStats")}</th>
+            {STAT_KEYS.map((k) => <td class="py-1 pr-3 tabular-nums">{w.maxStats[k]}</td>)}
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    {w.requiresKills.length > 0 && (
+      <p class="text-sm"><span class="text-muted-foreground">{t("weapons.requiresKills")}: </span>{w.requiresKills.join(", ")}</p>
+    )}
+
+    <section class="flex flex-col gap-3 text-sm">
+      <h2 class="text-lg font-semibold">{t("weapons.buildsFrom")} / {t("weapons.buildsInto")}</h2>
+      <p>
+        <span class="text-muted-foreground">{t("weapons.buildsFrom")}: </span>
+        {from.length ? from.map((x, i) => <><a class="underline" href={`/weapons/${x.id}`}>{x.name}</a>{i < from.length - 1 ? ", " : ""}</>) : "—"}
+      </p>
+      <p>
+        <span class="text-muted-foreground">{t("weapons.buildsInto")}: </span>
+        {into.length ? into.map((x, i) => <><a class="underline" href={`/weapons/${x.id}`}>{x.name}</a>{i < into.length - 1 ? ", " : ""}</>) : "—"}
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-2 text-sm">
+      <h2 class="text-lg font-semibold">{t("weapons.obtain")}</h2>
+      {shops.map((s) => <p>{t("weapons.shop", { shop: s.shop, chapter: s.chapter, price: s.price })}</p>)}
+      {invention && (
+        <div>
+          <p>{t("weapons.invent", { ideas: invention.ideas.map((alts) => alts.join(" / ")).join(" + ") })}</p>
+          <p class="text-muted-foreground text-xs">{t("weapons.materials")}: {invention.materials.map((m) => `${m.qty}× ${m.name}`).join(", ")}</p>
+        </div>
+      )}
+      {event && <p>{event.how}</p>}
+      {dungeons.length > 0 && <p>{t("weapons.dungeon", { dungeons: dungeons.join(", ") })}</p>}
+      {!shops.length && !invention && !event && !dungeons.length && <p class="text-muted-foreground">{t("weapons.buildOnly")}</p>}
+    </section>
+
+    <section class="overflow-x-auto">
+      <h2 class="mb-2 text-lg font-semibold">{t("weapons.absTable")}</h2>
+      <table class="text-sm">
+        <tbody>
+          <tr>{absTable(w).map((r) => <th class="text-muted-foreground py-1 pr-4 text-left text-xs font-normal">+{r.level}</th>)}</tr>
+          <tr>{absTable(w).map((r) => <td class="py-1 pr-4 tabular-nums">{Math.round(r.abs).toLocaleString()}</td>)}</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p><a class="underline" href={`/planner?target=${w.id}`}>{t("weapons.plan")}</a></p>
+  </div>
+</Layout>

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { ProfileSwitcher } from "@/components/ProfileSwitcher";
 import { useTranslations } from "@/i18n";
 
 interface Props {
@@ -24,6 +25,8 @@ const nav = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#171717" />
     <title>{title}</title>
     <script is:inline>
       try {
@@ -37,7 +40,10 @@ const nav = [
     <header class="border-b">
       <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
         <a href="/" class="font-semibold">{t("app.name")}</a>
-        <ThemeToggle client:load label={t("theme.toggle")} />
+        <div class="flex items-center gap-2">
+          <ProfileSwitcher client:load />
+          <ThemeToggle client:load label={t("theme.toggle")} />
+        </div>
       </div>
       <nav class="mx-auto flex max-w-5xl gap-4 overflow-x-auto px-4 pb-2 text-sm">
         {nav.map((n) => <a href={n.href} class="text-muted-foreground hover:text-foreground whitespace-nowrap">{n.label}</a>)}
@@ -46,5 +52,10 @@ const nav = [
     <main class="mx-auto max-w-5xl px-4 py-6">
       <slot />
     </main>
+    <script>
+      if ("serviceWorker" in navigator && import.meta.env.PROD) {
+        navigator.serviceWorker.register("/sw.js").catch(() => {});
+      }
+    </script>
   </body>
 </html>
