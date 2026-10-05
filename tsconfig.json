@@ -1,43 +1,5 @@
 {
-	"compilerOptions": {
-		// Target latest version of ECMAScript.
-		"target": "es2017",
-		// path to output directory
-		"outDir": "./dist/",
-		// Search under node_modules for non-relative imports.
-		"moduleResolution": "node",
-		// Process & infer types from .js files.
-		"allowJs": true,
-		// Don't emit; allow Babel to transform files.
-		"noEmit": true,
-		// Import non-ES modules as default imports.
-		"esModuleInterop": true,
-		// use typescript to transpile jsx to js
-		"jsx": "react",
-		"baseUrl": "./src",
-		"lib": [
-			"esnext",
-			"dom",
-			"dom.iterable"
-		],
-		"module": "es6",
-		"removeComments": true,
-		"importHelpers": true,
-		"allowSyntheticDefaultImports": true,
-		"experimentalDecorators": true,
-		"preserveConstEnums": true,
-		//enable these when project is working (should be done incrementally)
-		"strict": false,
-		"strictNullChecks": false,
-		"alwaysStrict": false,
-		"allowUnreachableCode": true,
-		"noImplicitAny": false,
-		"noImplicitThis": false,
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
-		"noImplicitReturns": false,
-		"noFallthroughCasesInSwitch": false,
-		"forceConsistentCasingInFileNames": false,
-		"resolveJsonModule": true
-	}
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }
