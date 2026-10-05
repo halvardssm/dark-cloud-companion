@@ -1,18 +1,29 @@
 {
-  "name": "",
-  "type": "module",
+  "name": "dark-cloud-companion",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "check": "pnpm run fmt:check && pnpm run lint",
+    "fix": "pnpm run fmt && pnpm run lint:fix"
   },
   "dependencies": {
     "astro": "^7.3.5"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   },
   "allowScripts": {
     "esbuild": true
