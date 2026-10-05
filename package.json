@@ -28,6 +28,7 @@
     "astro": "^7.3.5",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.4.0",
+    "highs": "^1.15.3",
     "lucide-react": "^1.52.0",
     "nanostores": "^1.5.4",
     "react": "^19.3.0",
