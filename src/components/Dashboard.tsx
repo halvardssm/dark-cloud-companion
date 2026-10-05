@@ -2,7 +2,7 @@ import { useStore } from "@nanostores/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "@/i18n";
 import { curatedGuideById } from "@/lib/guides/data";
-import { chapterProgress, chapters } from "@/lib/data";
+import { chapterProgress, chapters, checklist } from "@/lib/data";
 import { $checks, $profile } from "@/lib/store";
 
 export function Dashboard() {
@@ -15,6 +15,13 @@ export function Dashboard() {
   const total = progress.reduce((n, x) => n + x.p.total, 0);
   // "Continue" = first chapter that isn't finished.
   const current = progress.find((x) => x.p.done < x.p.total)?.c ?? main[main.length - 1];
+  const currentNumber = current.number;
+  const openMissable = checklist.filter(
+    (i) =>
+      i.missable &&
+      !checks[i.id] &&
+      (chapters.find((c) => c.id === i.chapterId)?.number ?? 99) <= currentNumber,
+  );
   const pct = total ? Math.round((done / total) * 100) : 0;
   const guides = activeGuides
     .map((id) => curatedGuideById.get(id) ?? customGuides.find((g) => g.id === id))
@@ -62,6 +69,27 @@ export function Dashboard() {
           )}
         </CardContent>
       </Card>
+      {openMissable.length > 0 && (
+        <Card className="sm:col-span-2">
+          <CardHeader>
+            <CardTitle>{t("home.missable")}</CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm">
+            <ul className="flex flex-col gap-1">
+              {openMissable.map((i) => (
+                <li key={i.id}>
+                  <a className="underline" href={`/chapters/${i.chapterId}`}>
+                    {i.name}
+                  </a>{" "}
+                  <span className="text-muted-foreground">
+                    ({chapters.find((c) => c.id === i.chapterId)?.number})
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }

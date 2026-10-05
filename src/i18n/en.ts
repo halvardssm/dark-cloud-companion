@@ -16,6 +16,8 @@ export const en = {
 
   "chapter.progress": "{done} / {total}",
   "chapter.postgame": "Post-game",
+  "chapter.search": "Search this chapter",
+  "home.missable": "Missable items still open",
   "chapter.empty": "Nothing tracked here yet.",
   "view.facts": "Section facts",
   "view.hideDone": "Hide completed",

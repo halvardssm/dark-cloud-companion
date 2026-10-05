@@ -1,4 +1,6 @@
 import { useStore } from "@nanostores/react";
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -7,6 +9,7 @@ import { Switch } from "@/components/ui/switch";
 import type { ChecklistCategory, ChecklistItem } from "@/data/schema";
 import { useTranslations } from "@/i18n";
 import {
+  chapters,
   chapterById,
   chapterProgress,
   inventionReady,
@@ -38,9 +41,16 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
   const items = itemsOf(chapterId);
   const sections = sectionsOf(chapterId);
   const progress = chapterProgress(chapterId, checks);
+  const index = chapters.findIndex((c) => c.id === chapterId);
+  const prev = chapters[index - 1];
+  const next = chapters[index + 1];
 
+  const [query, setQuery] = useState("");
+  const needle = query.trim().toLowerCase();
   const visible = (i: ChecklistItem) =>
-    !(view.hidePostgame && i.postgame) && !(view.hideDone && checks[i.id]);
+    !(view.hidePostgame && i.postgame) &&
+    !(view.hideDone && checks[i.id]) &&
+    (!needle || i.name.toLowerCase().includes(needle));
 
   const missable = items.filter((i) => i.missable && !checks[i.id]);
   const pct = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
@@ -83,6 +93,13 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
             onChange={(v) => setView({ hidePostgame: v })}
           />
         </div>
+        <Input
+          type="search"
+          placeholder={t("chapter.search")}
+          aria-label={t("chapter.search")}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </header>
 
       {missable.length > 0 && (
@@ -111,9 +128,13 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
           const all = items.filter((i) => i.category === cat);
           if (!all.length) return null;
           const shown = all.filter(visible);
+          if (needle && !shown.length) return null;
           const done = all.filter((i) => checks[i.id]).length;
           return (
-            <Collapsible key={cat} defaultOpen={cat === "scoop" || cat === "powerup"}>
+            <Collapsible
+              key={`${cat}-${needle ? "q" : ""}`}
+              defaultOpen={!!needle || cat === "scoop" || cat === "powerup"}
+            >
               <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md border px-3 py-3 text-left font-medium">
                 <span>{t(`cat.${cat}` as const)}</span>
                 <span className="text-muted-foreground text-sm tabular-nums">
@@ -143,6 +164,22 @@ export function ChapterView({ chapterId }: { chapterId: string }) {
           ))}
         </section>
       )}
+      <nav className="flex justify-between gap-3 border-t pt-4 text-sm">
+        {prev ? (
+          <a className="underline" href={`/chapters/${prev.id}`}>
+            ← {prev.title}
+          </a>
+        ) : (
+          <span />
+        )}
+        {next ? (
+          <a className="underline" href={`/chapters/${next.id}`}>
+            {next.title} →
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
     </div>
   );
 }
