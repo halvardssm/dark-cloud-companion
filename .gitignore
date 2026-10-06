@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 
 .local
+# playwright
+test-results/
+playwright-report/

@@ -179,8 +179,8 @@ export function ChapterView({
         </Card>
       )}
 
-      {blocks.length === 0 && anytime.length === 0 && (
-        <p className="text-muted-foreground text-sm">{t("dash.noActive")}</p>
+      {guides.length > 0 && blocks.length === 0 && anytime.length === 0 && (
+        <p className="text-muted-foreground text-sm">{t("dash.nothingHere")}</p>
       )}
 
       {blocks.map(({ guide, placed }) => (

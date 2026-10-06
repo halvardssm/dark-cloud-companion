@@ -15,7 +15,9 @@
     "check": "pnpm run fmt:check && pnpm run lint",
     "fix": "pnpm run fmt && pnpm run lint:fix",
     "test": "vitest run",
-    "typecheck": "astro check"
+    "typecheck": "astro check",
+    "e2e": "playwright test",
+    "test:all": "pnpm run check && pnpm test && pnpm e2e"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.0",
@@ -39,6 +41,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/node": "^26.6.4",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.87.0",

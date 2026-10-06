@@ -32,11 +32,15 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE);
-      // ignoreSearch: pages like /guides/custom?id=… share one prerendered file.
+      // ignoreSearch: pages like /guides/view?id=… share one prerendered file. ignoreVary: some servers send
+      // `Vary: Origin`, which would stop module scripts and fonts (CORS-mode requests) from matching precached copies.
       const hit =
-        (await cache.match(req, { ignoreSearch: true })) ??
+        (await cache.match(req, { ignoreSearch: true, ignoreVary: true })) ??
         (req.mode === "navigate"
-          ? await cache.match(url.pathname.replace(/\/?$/, "/"), { ignoreSearch: true })
+          ? await cache.match(url.pathname.replace(/\/?$/, "/"), {
+              ignoreSearch: true,
+              ignoreVary: true,
+            })
           : undefined);
       if (hit) return hit;
       try {

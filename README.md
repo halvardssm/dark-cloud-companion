@@ -16,7 +16,8 @@ pnpm install
 pnpm dev            # astro dev
 pnpm build          # static site in dist/
 pnpm preview
-pnpm test           # vitest
+pnpm test           # vitest (logic, data cross-checks)
+pnpm e2e            # Playwright: builds the site and drives it in Chromium (desktop + phone), incl. offline mode
 pnpm check          # oxfmt --check + oxlint
 ```
 

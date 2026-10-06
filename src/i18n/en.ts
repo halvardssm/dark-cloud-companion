@@ -277,6 +277,7 @@ export const en = {
   "dash.moreSteps": "Show {n} more",
   "dash.noActive": "No guides are switched on. Pick some under Guides.",
   "dash.allDone": "All steps done.",
+  "dash.nothingHere": "None of your switched-on guides has steps in this chapter.",
   "dash.chapterFilter": "Chapter",
   "dash.allChapters": "All chapters",
   "dash.missableOpen": "Missable items still open",
