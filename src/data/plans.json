@@ -1,5 +1,5 @@
 {
-  "hash": "efc5f50828eebc6bbd68ff49aeba688b359528b16c378c67876e80e4b55c9c09",
+  "hash": "1297bac7c8be66cd5b3db8ae3057451a391c3c3d80f96472058b644cd0542e3a",
   "guides": [
     {
       "id": "island-king-max-abs",
@@ -1537,6 +1537,11 @@
                 "kind": "item",
                 "name": "Diamond",
                 "count": 1
+              },
+              {
+                "kind": "item",
+                "name": "Emerald",
+                "count": 1
               }
             ]
           }
@@ -1554,17 +1559,12 @@
               {
                 "kind": "item",
                 "name": "Diamond",
-                "count": 2
-              },
-              {
-                "kind": "item",
-                "name": "Peridot",
-                "count": 1
+                "count": 3
               },
               {
                 "kind": "item",
                 "name": "Topaz",
-                "count": 4
+                "count": 3
               }
             ]
           }
@@ -1582,7 +1582,7 @@
               {
                 "kind": "item",
                 "name": "Diamond",
-                "count": 7
+                "count": 6
               },
               {
                 "kind": "item",
@@ -1592,12 +1592,7 @@
               {
                 "kind": "item",
                 "name": "Peridot",
-                "count": 1
-              },
-              {
-                "kind": "item",
-                "name": "Ruby",
-                "count": 1
+                "count": 2
               }
             ]
           }
@@ -1614,18 +1609,8 @@
             "synths": [
               {
                 "kind": "item",
-                "name": "Peridot",
-                "count": 1
-              },
-              {
-                "kind": "item",
                 "name": "Topaz",
-                "count": 1
-              },
-              {
-                "kind": "item",
-                "name": "Turquoise",
-                "count": 2
+                "count": 4
               }
             ]
           }
@@ -1648,17 +1633,7 @@
               {
                 "kind": "item",
                 "name": "Peridot",
-                "count": 1
-              },
-              {
-                "kind": "item",
-                "name": "Sapphire",
-                "count": 2
-              },
-              {
-                "kind": "item",
-                "name": "Topaz",
-                "count": 1
+                "count": 4
               }
             ]
           }
@@ -1686,7 +1661,7 @@
               {
                 "kind": "item",
                 "name": "Topaz",
-                "count": 9
+                "count": 10
               },
               {
                 "kind": "item",

@@ -13,10 +13,7 @@ import { fileURLToPath } from "node:url";
 export const ROOT = fileURLToPath(new URL("..", import.meta.url));
 
 /** Everything that can change what the plans contain. Outputs and tests are never inputs. */
-const INPUTS = [
-  "scripts/planner",
-  "src/data",
-];
+const INPUTS = ["scripts/planner", "src/data"];
 const SKIP_FILES = new Set(["plans.json", "INCONSISTENCIES.md"]);
 
 function walk(dir: string): string[] {
@@ -29,14 +26,10 @@ function walk(dir: string): string[] {
 /** Content hash over every input; stored in src/data/plans.json to detect staleness. */
 export function plansHash(): string {
   const files = INPUTS.flatMap((p) =>
-    statSync(join(ROOT, p)).isDirectory()
-      ? walk(join(ROOT, p))
-      : [join(ROOT, p)]
+    statSync(join(ROOT, p)).isDirectory() ? walk(join(ROOT, p)) : [join(ROOT, p)],
   )
     .filter(
-      (f) =>
-        /\.(ts|json)$/.test(f) && !f.endsWith(".test.ts") &&
-        !SKIP_FILES.has(basename(f)),
+      (f) => /\.(ts|json)$/.test(f) && !f.endsWith(".test.ts") && !SKIP_FILES.has(basename(f)),
     )
     .sort();
   const hash = createHash("sha256");
@@ -50,9 +43,7 @@ export default function plans(): AstroIntegration {
     hooks: {
       "astro:build:start": () => {
         const out = join(ROOT, "src/data/plans.json");
-        const stored = existsSync(out)
-          ? JSON.parse(readFileSync(out, "utf8")).hash
-          : undefined;
+        const stored = existsSync(out) ? JSON.parse(readFileSync(out, "utf8")).hash : undefined;
         if (stored === plansHash()) {
           console.log("predefined plans are up to date");
           return;
@@ -60,13 +51,7 @@ export default function plans(): AstroIntegration {
         console.log("predefined plans: inputs changed — regenerating");
         const r = spawnSync(
           "pnpm",
-          [
-            "exec",
-            "vite-node",
-            "--config",
-            "vitest.config.ts",
-            "scripts/planner/predefined.ts",
-          ],
+          ["exec", "vite-node", "--config", "vitest.config.ts", "scripts/planner/predefined.ts"],
           { stdio: "inherit", cwd: ROOT },
         );
         if (r.error || r.status !== 0) {

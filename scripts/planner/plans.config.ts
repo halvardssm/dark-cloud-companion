@@ -11,8 +11,7 @@
 //   maxChapter shops/items/enemy kills available up to this chapter; spBonus is the support bonus.
 //
 // Group settings apply to all its variants; variant settings win. Variant ids must be unique
-// across all plans (guide id = <targetId>-<variantId>) and must not collide with the curated
-// guides in src/data/guides.json.
+// across all plans (guide id = <targetId>-<variantId>).
 import type { PlansConfigInput } from "./plans-config.ts";
 
 export const plansConfig = {
@@ -20,16 +19,7 @@ export const plansConfig = {
     goal: "max",
     maxChapter: 8,
     spBonus: 1,
-    abilities: [
-      "poison",
-      "stop",
-      "abs-up",
-      "steal",
-      "wealth",
-      "dark",
-      "durable",
-      "absorb",
-    ],
+    abilities: ["poison", "stop", "abs-up", "steal", "wealth", "dark", "durable", "absorb"],
   },
   groups: [
     {
