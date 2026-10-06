@@ -36,3 +36,38 @@ jobs:
           name: playwright-traces
           path: test-results/
           retention-days: 7
+
+  deploy:
+    # Publish the site to GitHub Pages when the main branch passes all checks.
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/configure-pages@v5
+      - name: Build
+        run: pnpm build
+        env:
+          PUBLIC_SITE_URL: https://halvardssm.github.io/dark-cloud-companion
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deployment

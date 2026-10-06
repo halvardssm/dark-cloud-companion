@@ -6,14 +6,10 @@ import pwa from "./integrations/pwa.mjs";
 
 // https://docs.astro.build/en/reference/configuration/
 export default defineConfig({
-  site: process.env.PUBLIC_SITE_URL,
+  site: process.env.PUBLIC_SITE_URL ?? "https://halvardssm.github.io/dark-cloud-companion",
+  // The site is served from the repo subpath on GitHub Pages.
+  base: "/dark-cloud-companion",
   output: "static",
-  // Old routes from before the guides/dashboard restructuring.
-  redirects: {
-    "/walkthroughs": "/guides",
-    "/walkthroughs/edit": "/planner",
-    "/walkthroughs/view": "/guides",
-  },
   integrations: [react(), plans(), pwa()],
   vite: {
     plugins: [tailwindcss()],

@@ -1,5 +1,8 @@
 import type { Page } from "@playwright/test";
 
+/** The deployment base path (`base` in astro.config.ts). */
+export const basePath = "/dark-cloud-companion";
+
 /** The app's persisted state (localStorage), parsed. */
 export const readState = (page: Page) =>
   page.evaluate(() => {
@@ -55,7 +58,7 @@ export const v1State = {
  * over, and interacting with it in that window loses events.
  */
 export async function go(page: Page, url: string) {
-  await page.goto(url);
+  await page.goto(basePath + url);
   await page.waitForFunction(
     () => ![...document.querySelectorAll("astro-island")].some((i) => i.hasAttribute("ssr")),
   );

@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { withBase } from "@/lib/base";
 import { useEffect, useMemo, useState } from "react";
 import { downloadGuides, fileSafe } from "@/components/ContentTransfer";
 import { GuideToggle } from "@/components/guide/GuideToggle";
@@ -56,7 +57,7 @@ export function GuideViewPage() {
             variant="outline"
             size="sm"
             nativeButton={false}
-            render={<a href={`/planner?edit=${q}`} />}
+            render={<a href={withBase(`/planner?edit=${q}`)} />}
           >
             {t("guides.edit")}
           </Button>
@@ -67,7 +68,7 @@ export function GuideViewPage() {
           onClick={() => {
             const copy = duplicateGuide(guide);
             saveGuide(copy);
-            location.href = `/planner?edit=${encodeURIComponent(copy.id)}`;
+            location.href = withBase(`/planner?edit=${encodeURIComponent(copy.id)}`);
           }}
         >
           {t("guides.duplicate")}

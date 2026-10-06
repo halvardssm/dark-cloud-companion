@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { withBase } from "@/lib/base";
 import { weaponType } from "@/lib/schemas";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
@@ -55,7 +56,7 @@ export function WeaponList() {
             {g.weapons.map((w) => (
               <li key={w.id}>
                 <a
-                  href={`/weapons/${w.id}`}
+                  href={withBase(`/weapons/${w.id}`)}
                   className="hover:bg-muted/50 flex items-center justify-between gap-2 rounded-lg border px-3 py-2 text-sm"
                 >
                   <span>{w.name}</span>

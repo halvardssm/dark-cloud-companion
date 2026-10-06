@@ -1,6 +1,8 @@
 const VERSION = "__VERSION__";
 const CACHE = `dcc-${VERSION}`;
 const URLS = __URLS__;
+/** The deployment base path ("" when served from the root). */
+const BASE = "__BASE__";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -46,7 +48,7 @@ self.addEventListener("fetch", (event) => {
       try {
         return await fetch(req);
       } catch (err) {
-        if (req.mode === "navigate") return (await cache.match("/")) ?? Response.error();
+        if (req.mode === "navigate") return (await cache.match(`${BASE}/`)) ?? Response.error();
         throw err;
       }
     })(),

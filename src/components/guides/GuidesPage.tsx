@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { withBase } from "@/lib/base";
 import { useState } from "react";
 import { ContentTransfer, downloadGuides, fileSafe } from "@/components/ContentTransfer";
 import { GuideToggle } from "@/components/guide/GuideToggle";
@@ -22,7 +23,7 @@ function GuideCard({ guide }: { guide: Guide }) {
     <Card size="sm">
       <CardHeader>
         <CardTitle>
-          <a className="hover:underline" href={`/guides/view?id=${q}`}>
+          <a className="hover:underline" href={withBase(`/guides/view?id=${q}`)}>
             {guide.title}
           </a>
         </CardTitle>
@@ -39,7 +40,7 @@ function GuideCard({ guide }: { guide: Guide }) {
             variant="outline"
             size="sm"
             nativeButton={false}
-            render={<a href={`/guides/view?id=${q}`} />}
+            render={<a href={withBase(`/guides/view?id=${q}`)} />}
           >
             {t("guides.open")}
           </Button>
@@ -48,7 +49,7 @@ function GuideCard({ guide }: { guide: Guide }) {
               variant="outline"
               size="sm"
               nativeButton={false}
-              render={<a href={`/planner?edit=${q}`} />}
+              render={<a href={withBase(`/planner?edit=${q}`)} />}
             >
               {t("guides.edit")}
             </Button>
@@ -59,7 +60,7 @@ function GuideCard({ guide }: { guide: Guide }) {
             onClick={() => {
               const copy = duplicateGuide(guide);
               saveGuide(copy);
-              location.href = `/planner?edit=${encodeURIComponent(copy.id)}`;
+              location.href = withBase(`/planner?edit=${encodeURIComponent(copy.id)}`);
             }}
           >
             {t("guides.duplicate")}
@@ -108,7 +109,7 @@ export function GuidesPage() {
       <section className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-2">
           <h2 className="text-lg font-semibold">{t("guides.custom")}</h2>
-          <Button size="sm" nativeButton={false} render={<a href="/planner?new" />}>
+          <Button size="sm" nativeButton={false} render={<a href={withBase("/planner?new")} />}>
             {t("guides.new")}
           </Button>
         </div>

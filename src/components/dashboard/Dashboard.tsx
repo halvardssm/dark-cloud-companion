@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { withBase } from "@/lib/base";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
@@ -56,7 +57,7 @@ function DashboardInner() {
         {perGuide.length === 0 ? (
           <p className="text-muted-foreground text-sm">
             {t("dash.noActive")}{" "}
-            <a className="underline" href="/guides">
+            <a className="underline" href={withBase("/guides")}>
               {t("nav.guides")}
             </a>
           </p>
@@ -69,7 +70,7 @@ function DashboardInner() {
                   <div className="flex items-baseline justify-between gap-3 text-sm">
                     <a
                       className="truncate hover:underline"
-                      href={`/guides/view?id=${encodeURIComponent(guide.id)}`}
+                      href={withBase(`/guides/view?id=${encodeURIComponent(guide.id)}`)}
                     >
                       {guide.title}
                     </a>

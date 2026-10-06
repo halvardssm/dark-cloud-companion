@@ -1,4 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
+import { basePath } from "./e2e/helpers";
 
 const PORT = 4400;
 
@@ -9,10 +10,10 @@ export default defineConfig({
   fullyParallel: true,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? [["github"], ["list"]] : "list",
-  use: { baseURL: `http://localhost:${PORT}`, trace: "retain-on-failure" },
+  use: { baseURL: `http://localhost:${PORT}${basePath}`, trace: "retain-on-failure" },
   webServer: {
     command: `pnpm build && pnpm astro preview --port ${PORT} --ignore-lock`,
-    url: `http://localhost:${PORT}`,
+    url: `http://localhost:${PORT}${basePath}`,
     reuseExistingServer: false,
     timeout: 180_000,
   },

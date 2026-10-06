@@ -1,15 +1,16 @@
 ---
+import { withBase } from "@/lib/base";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=/" />
-    <link rel="canonical" href="/" />
+    <meta http-equiv="refresh" content={`0; url=${withBase("/")}`} />
+    <link rel="canonical" href={withBase("/")} />
     <title>Redirecting…</title>
   </head>
   <body>
-    <a href="/">Open the dashboard</a>
+    <a href={withBase("/")}>Open the dashboard</a>
   </body>
 </html>

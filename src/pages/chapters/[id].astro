@@ -1,12 +1,13 @@
 ---
 // Old chapter URLs now open the dashboard on that chapter.
+import { withBase } from "@/lib/base";
 import { chapters } from "@/lib/data";
 
 export function getStaticPaths() {
   return chapters.map((c) => ({ params: { id: c.id } }));
 }
 const { id } = Astro.params;
-const target = `/?chapter=${id}`;
+const target = withBase(`/?chapter=${id}`);
 ---
 
 <!doctype html>

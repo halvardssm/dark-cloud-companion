@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { AppShell } from "@/components/AppShell";
 import { useTranslations } from "@/i18n";
+import { stripBase, withBase } from "@/lib/base";
 
 interface Props {
   title?: string;
@@ -9,17 +10,17 @@ interface Props {
 
 const t = useTranslations();
 const { title = t("app.name") } = Astro.props;
-const pathname = Astro.url.pathname;
+const pathname = stripBase(Astro.url.pathname);
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href={withBase("/manifest.webmanifest")} />
+    <link rel="apple-touch-icon" href={withBase("/icon-192.png")} />
     <meta name="theme-color" content="#fdeedd" />
     <title>{title}</title>
     <script is:inline>
@@ -35,9 +36,10 @@ const pathname = Astro.url.pathname;
       <slot />
     </AppShell>
     <script>
+      import { withBase } from "@/lib/base";
       if ("serviceWorker" in navigator) {
         if (import.meta.env.PROD) {
-          navigator.serviceWorker.register("/sw.js").catch(() => {});
+          navigator.serviceWorker.register(withBase("/sw.js")).catch(() => {});
         } else {
           // A service worker left over from an earlier production preview on this origin would serve stale pages
           // in development; remove it.

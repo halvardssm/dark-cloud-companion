@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { withBase } from "@/lib/base";
 import { useStore } from "@nanostores/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -536,7 +537,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
             {saved && (
               <span className="text-sm" role="status">
                 {t("planner.saved")}{" "}
-                <a className="underline" href="/guides">
+                <a className="underline" href={withBase("/guides")}>
                   {t("nav.guides")}
                 </a>
               </span>

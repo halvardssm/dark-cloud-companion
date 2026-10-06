@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { withBase } from "@/lib/base";
 import { STAT_KEYS } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 import { weaponData } from "@/lib/planner/sources";
@@ -72,11 +73,11 @@ const into = buildsInto(w.id);
       <h2 class="text-lg font-semibold">{t("weapons.buildsFrom")} / {t("weapons.buildsInto")}</h2>
       <p>
         <span class="text-muted-foreground">{t("weapons.buildsFrom")}: </span>
-        {from.length ? from.map((x, i) => <><a class="underline" href={`/weapons/${x.id}`}>{x.name}</a>{i < from.length - 1 ? ", " : ""}</>) : "—"}
+        {from.length ? from.map((x, i) => <><a class="underline" href={withBase(`/weapons/${x.id}`)}>{x.name}</a>{i < from.length - 1 ? ", " : ""}</>) : "—"}
       </p>
       <p>
         <span class="text-muted-foreground">{t("weapons.buildsInto")}: </span>
-        {into.length ? into.map((x, i) => <><a class="underline" href={`/weapons/${x.id}`}>{x.name}</a>{i < into.length - 1 ? ", " : ""}</>) : "—"}
+        {into.length ? into.map((x, i) => <><a class="underline" href={withBase(`/weapons/${x.id}`)}>{x.name}</a>{i < into.length - 1 ? ", " : ""}</>) : "—"}
       </p>
     </section>
 
@@ -104,6 +105,6 @@ const into = buildsInto(w.id);
       </table>
     </section>
 
-    <p><a class="underline" href={`/planner?target=${w.id}`}>{t("weapons.plan")}</a></p>
+    <p><a class="underline" href={withBase(`/planner?target=${w.id}`)}>{t("weapons.plan")}</a></p>
   </div>
 </Layout>

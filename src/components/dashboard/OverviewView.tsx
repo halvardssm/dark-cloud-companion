@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { withBase } from "@/lib/base";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "@/i18n";
 import { chapters } from "@/lib/data";
@@ -66,7 +67,7 @@ export function OverviewView({
                 <CardTitle className="flex items-center justify-between gap-2">
                   <a
                     className="hover:underline"
-                    href={`/guides/view?id=${encodeURIComponent(g.id)}`}
+                    href={withBase(`/guides/view?id=${encodeURIComponent(g.id)}`)}
                   >
                     {g.title}
                   </a>

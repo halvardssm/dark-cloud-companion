@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { withBase } from "@/lib/base";
 import { CheckRow } from "@/components/chapter/CheckRow";
 import { weaponData } from "@/lib/planner/sources";
 import { useTranslations } from "@/i18n";
@@ -17,7 +18,7 @@ export function SphedaTracker() {
         <p className="text-sm">
           {clubs.map((c, i) => (
             <span key={c.id}>
-              <a className="underline" href={`/weapons/${c.id}`}>
+              <a className="underline" href={withBase(`/weapons/${c.id}`)}>
                 {c.name}
               </a>
               {i < clubs.length - 1 ? ", " : ""}
@@ -38,7 +39,7 @@ export function SphedaTracker() {
           return (
             <section key={c.id} className="flex flex-col">
               <h2 className="mb-1 flex items-baseline justify-between text-lg font-semibold">
-                <a className="hover:underline" href={`/?chapter=${c.id}`}>
+                <a className="hover:underline" href={withBase(`/?chapter=${c.id}`)}>
                   {c.number}. {c.title}
                 </a>
                 <span className="text-muted-foreground text-sm tabular-nums">

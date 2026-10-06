@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { withBase } from "@/lib/base";
 import { useEffect, useState } from "react";
 import { GuideEditor } from "@/components/guide/GuideEditor";
 import { Button } from "@/components/ui/button";
@@ -90,7 +91,10 @@ export function EditorSection() {
       {savedMessage && (
         <p className="text-sm" role="status">
           {t("editor.saved")}{" "}
-          <a className="underline" href={`/guides/view?id=${encodeURIComponent(draft.guide.id)}`}>
+          <a
+            className="underline"
+            href={withBase(`/guides/view?id=${encodeURIComponent(draft.guide.id)}`)}
+          >
             {t("guides.open")}
           </a>
         </p>

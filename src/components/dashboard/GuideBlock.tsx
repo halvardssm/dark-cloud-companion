@@ -1,4 +1,5 @@
 import { StepCard, type StepFilters } from "@/components/guide/StepCard";
+import { withBase } from "@/lib/base";
 import { chapters } from "@/lib/data";
 import type { DerivedBuild } from "@/lib/guide/derive";
 import type { PlacedStep } from "@/lib/guide/dashboard";
@@ -22,7 +23,10 @@ export function GuideBlock({
     <section className="flex flex-col gap-2">
       {guide.id !== "main" && (
         <h3 className="text-sm font-medium">
-          <a className="hover:underline" href={`/guides/view?id=${encodeURIComponent(guide.id)}`}>
+          <a
+            className="hover:underline"
+            href={withBase(`/guides/view?id=${encodeURIComponent(guide.id)}`)}
+          >
             {guide.title}
           </a>
         </h3>

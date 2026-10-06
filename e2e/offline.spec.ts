@@ -1,8 +1,8 @@
 import { expect, test } from "@playwright/test";
-import { targetPicker } from "./helpers";
+import { go, targetPicker } from "./helpers";
 
 test("the app works offline after the first visit", async ({ page, context }) => {
-  await page.goto("/");
+  await go(page, "/");
   // Wait for the service worker to take control and finish precaching.
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
@@ -18,17 +18,17 @@ test("the app works offline after the first visit", async ({ page, context }) =>
   await context.setOffline(true);
   await page.reload();
   await expect(page.getByRole("heading", { name: "Dashboard", exact: true })).toBeVisible();
-  await page.goto("/guides");
+  await go(page, "/guides");
   await expect(page.getByRole("heading", { name: "Guides", exact: true })).toBeVisible();
-  await page.goto("/weapons/poison-wrench");
+  await go(page, "/weapons/poison-wrench");
   await expect(page.getByRole("heading", { name: "Poison Wrench" })).toBeVisible();
   // A client-only page with a query string is served from the same cached file.
-  await page.goto("/guides/view?id=main");
+  await go(page, "/guides/view?id=main");
   await expect(page.getByRole("heading", { name: "Main walkthrough" })).toBeVisible();
 });
 
 test("the planner still runs offline (solver bundled)", async ({ page, context }) => {
-  await page.goto("/planner");
+  await go(page, "/planner");
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
     for (let i = 0; i < 100; i++) {

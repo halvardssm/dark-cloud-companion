@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { withBase } from "@/lib/base";
 import { StepCard, type StepFilters } from "@/components/guide/StepCard";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "@/i18n";
@@ -51,7 +52,10 @@ export function ByGuideView({
         return (
           <section key={g.id} className="flex flex-col gap-2">
             <h2 className="flex items-baseline justify-between gap-2 text-lg font-semibold">
-              <a className="hover:underline" href={`/guides/view?id=${encodeURIComponent(g.id)}`}>
+              <a
+                className="hover:underline"
+                href={withBase(`/guides/view?id=${encodeURIComponent(g.id)}`)}
+              >
                 {g.title}
               </a>
               <span className="text-muted-foreground text-xs font-normal tabular-nums">

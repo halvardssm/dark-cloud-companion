@@ -13,23 +13,29 @@ function walk(dir) {
 
 /** @returns {import("astro").AstroIntegration} */
 export default function pwa() {
+  /** The deployment base path ("" when served from the root). */
+  let base = "";
   return {
     name: "dcc-pwa",
     hooks: {
+      "astro:config:setup": ({ config }) => {
+        base = config.base.replace(/\/+$/, "");
+      },
       "astro:build:done": ({ dir }) => {
         const root = fileURLToPath(dir);
         const files = walk(root)
           .map((f) => relative(root, f).split(sep).join("/"))
           .filter((f) => f !== "sw.js" && !f.endsWith(".map"));
         const urls = files.map((f) =>
-          f.endsWith("index.html") ? "/" + f.slice(0, -"index.html".length) : "/" + f,
+          f.endsWith("index.html") ? `${base}/${f.slice(0, -"index.html".length)}` : `${base}/${f}`,
         );
         const hash = createHash("sha1");
         for (const f of files) hash.update(f).update(readFileSync(join(root, f)));
         const version = hash.digest("hex").slice(0, 12);
         const sw = readFileSync(new URL("./sw-template.js", import.meta.url), "utf8")
           .replace("__VERSION__", version)
-          .replace("__URLS__", JSON.stringify(urls));
+          .replace("__URLS__", JSON.stringify(urls))
+          .replace("__BASE__", base);
         writeFileSync(join(root, "sw.js"), sw);
       },
     },

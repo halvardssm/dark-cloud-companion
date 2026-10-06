@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { withBase } from "@/lib/base";
 import { useEffect, useState } from "react";
 import {
   BookOpenIcon,
@@ -84,10 +85,12 @@ function NavLink({
           }
         />
         <DropdownMenuContent side="right" align="start" className="min-w-44">
-          <DropdownMenuItem render={<a href={item.href} />}>{item.title}</DropdownMenuItem>
+          <DropdownMenuItem render={<a href={withBase(item.href)} />}>
+            {item.title}
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           {item.children.map((child) => (
-            <DropdownMenuItem key={child.href} render={<a href={child.href} />}>
+            <DropdownMenuItem key={child.href} render={<a href={withBase(child.href)} />}>
               {child.title}
             </DropdownMenuItem>
           ))}
@@ -97,7 +100,7 @@ function NavLink({
   } else {
     button = (
       <SidebarMenuButton
-        render={<a href={item.href} />}
+        render={<a href={withBase(item.href)} />}
         isActive={active}
         tooltip={item.title}
         className={`font-medium ${activeClasses}`}
@@ -116,7 +119,7 @@ function NavLink({
           {item.children.map((child) => (
             <SidebarMenuSubItem key={child.href}>
               <SidebarMenuSubButton
-                render={<a href={child.href} />}
+                render={<a href={withBase(child.href)} />}
                 isActive={isActive(child.href, pathname)}
                 className="data-active:border-2 data-active:border-sidebar-border data-active:shadow-sticker-sm"
               >
@@ -203,8 +206,12 @@ function NavUser() {
           </>
         )}
         <DropdownMenuSeparator />
-        <DropdownMenuItem render={<a href="/settings" />}>{t("nav.settings")}</DropdownMenuItem>
-        <DropdownMenuItem render={<a href="/about" />}>{t("nav.about")}</DropdownMenuItem>
+        <DropdownMenuItem render={<a href={withBase("/settings")} />}>
+          {t("nav.settings")}
+        </DropdownMenuItem>
+        <DropdownMenuItem render={<a href={withBase("/about")} />}>
+          {t("nav.about")}
+        </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => {
             applyTheme(!dark);
@@ -258,11 +265,11 @@ export function AppSidebar({ pathname }: { pathname: string }) {
           <SidebarMenuItem>
             <SidebarMenuButton
               size="lg"
-              render={<a href="/" />}
+              render={<a href={withBase("/")} />}
               tooltip={t("app.name")}
               className="font-medium"
             >
-              <img src="/logo.svg" alt="" className="size-8 shrink-0" />
+              <img src={withBase("/logo.svg")} alt="" className="size-8 shrink-0" />
               <span className="flex min-w-0 flex-col leading-tight">
                 <span className="truncate font-semibold">{t("app.short")}</span>
                 <span className="truncate text-xs text-muted-foreground">{t("app.tagline")}</span>
