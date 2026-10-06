@@ -61,8 +61,9 @@ export async function go(page: Page, url: string) {
   );
 }
 
-/** The planner's end-weapon picker (a group of weapon buttons, one tab per weapon type). */
-export const targetPicker = (page: Page) =>
-  page.getByRole("group", { name: "Choose the end weapon" });
-export const startPicker = (page: Page) =>
-  page.getByRole("group", { name: "Choose the start weapon" });
+/** The planner's target-weapon dropdown (the weapons of the active type tab). */
+export const targetPicker = (page: Page) => page.getByLabel("Choose the end weapon");
+/** The planner's custom start-weapon dropdown (limited to the target's build-up ancestors). */
+export const startPicker = (page: Page) => page.getByLabel("Choose the start weapon");
+/** The planner's weapon-type tab strip (icon-only tabs on the left of the generator). */
+export const typeTabs = (page: Page) => page.getByRole("tablist", { name: "Weapon type" });

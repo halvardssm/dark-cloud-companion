@@ -20,6 +20,11 @@ describe("weapons data", () => {
     expect(byId.size).toBe(data.weapons.length);
   });
 
+  test("SP tiers are only 3 (low), 4 (mid) or 6 (high) — the planner groups weapons by them", () => {
+    for (const w of data.weapons) expect(w.spPerLevel, w.name).toBeLessThanOrEqual(6);
+    expect(new Set(data.weapons.map((w) => w.spPerLevel))).toEqual(new Set([3, 4, 6]));
+  });
+
   test("all references resolve", () => {
     for (const w of data.weapons)
       for (const t of w.buildsUpTo) expect(byId.has(t), `${w.id} -> ${t}`).toBe(true);

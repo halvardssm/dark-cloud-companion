@@ -108,17 +108,43 @@ describe("planner inputs", () => {
       ...p,
       planner: {
         targetId: "grade-zero",
-        baseGuideId: "",
         objective: "abs" as const,
-        goal: "max" as const,
         maxChapter: 7,
         budget: "15000",
         abilities: ["poison" as const],
+        customStart: false,
+        endLevel: 0,
         start,
       },
     };
     const state = { version: 2, activeProfile: p.id, profiles: { [p.id]: withInputs } };
-    expect(parseState(JSON.stringify(state)).profiles[p.id].planner?.goal).toBe("max");
+    const planner = parseState(JSON.stringify(state)).profiles[p.id].planner;
+    expect(planner?.targetId).toBe("grade-zero");
+    expect(planner?.customStart).toBe(false);
+    // Inputs remembered by an older version (startMode/goal/endMode) still load.
+    const legacy = parseState(
+      JSON.stringify({
+        ...state,
+        profiles: {
+          [p.id]: {
+            ...withInputs,
+            planner: {
+              targetId: "grade-zero",
+              baseGuideId: "",
+              objective: "abs",
+              goal: "max",
+              maxChapter: 7,
+              budget: "",
+              abilities: [],
+              startMode: "custom",
+              endMode: "existing",
+              start,
+            },
+          },
+        },
+      }),
+    ).profiles[p.id].planner;
+    expect(legacy?.customStart).toBe(true);
     // Invalid inputs make the whole state fall back rather than corrupt the planner.
     const bad = {
       ...state,

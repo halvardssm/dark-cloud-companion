@@ -39,7 +39,8 @@ test("the planner still runs offline (solver bundled)", async ({ page, context }
   });
   await context.setOffline(true);
   await page.reload();
-  await targetPicker(page).getByRole("button", { name: "Drill Wrench", exact: true }).click();
+  await targetPicker(page).selectOption({ label: "Drill Wrench" });
+  await page.getByRole("button", { name: "Min", exact: true }).click();
   await page.getByRole("button", { name: "Generate plan" }).click();
   await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
 });

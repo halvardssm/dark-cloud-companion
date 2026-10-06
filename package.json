@@ -12,7 +12,7 @@
     "fmt:check": "oxfmt --check",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
-    "check": "pnpm run fmt:check && pnpm run lint && typecheck",
+    "check": "pnpm run fmt:check && pnpm run lint && pnpm run typecheck",
     "fix": "pnpm run fmt && pnpm run lint:fix",
     "test": "vitest run",
     "typecheck": "tsc --noEmit -p .",

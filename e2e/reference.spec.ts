@@ -17,9 +17,7 @@ test.describe("reference pages", () => {
     await expect(page.getByRole("heading", { name: "Poison Wrench" })).toBeVisible();
     await expect(page.getByRole("link", { name: "Sigma Breaker" })).toBeVisible();
     await page.getByRole("link", { name: "Plan a build-up to this weapon" }).click();
-    await expect(
-      targetPicker(page).getByRole("button", { name: "Poison Wrench", exact: true }),
-    ).toHaveAttribute("aria-pressed", "true");
+    await expect(targetPicker(page)).toHaveValue("poison-wrench");
   });
 
   test("Ridepod parts can be ticked", async ({ page }) => {

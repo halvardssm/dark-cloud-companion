@@ -1,11 +1,11 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { activeProfile, go, startPicker, targetPicker } from "./helpers";
+import { activeProfile, go, startPicker, targetPicker, typeTabs } from "./helpers";
 
 test.describe("guides, planner and editor", () => {
   test("generate a weapon build, save it as a guide and see it in My guides", async ({ page }) => {
     await go(page, "/planner");
-    await targetPicker(page).getByRole("button", { name: "Smash Wrench", exact: true }).click();
+    await targetPicker(page).selectOption({ label: "Smash Wrench" });
     await page.getByRole("button", { name: "Generate plan" }).click();
     await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
     await expect(
@@ -18,12 +18,10 @@ test.describe("guides, planner and editor", () => {
 
   test("the planner remembers its inputs", async ({ page }) => {
     await go(page, "/planner");
-    await targetPicker(page).getByRole("button", { name: "LEGEND", exact: true }).click();
+    await targetPicker(page).selectOption({ label: "LEGEND" });
     await page.getByLabel("Optimise for").selectOption("gilda");
     await page.reload();
-    await expect(
-      targetPicker(page).getByRole("button", { name: "LEGEND", exact: true }),
-    ).toHaveAttribute("aria-pressed", "true");
+    await expect(targetPicker(page)).toHaveValue("legend");
     await expect(page.getByLabel("Optimise for")).toHaveValue("gilda");
   });
 
@@ -127,12 +125,12 @@ test("remembered planner inputs that point at unknown weapons are ignored instea
             dashboard: { view: "chapter", currentChapter: null },
             planner: {
               targetId: "no-such-weapon",
-              baseGuideId: "",
               objective: "abs",
-              goal: "reach",
               maxChapter: 3,
               budget: "",
               abilities: [],
+              customStart: false,
+              endLevel: 0,
               start: {
                 weaponId: "gone-weapon",
                 level: 0,
@@ -155,41 +153,64 @@ test("remembered planner inputs that point at unknown weapons are ignored instea
 });
 
 test.describe("custom start and end weapons, one tab per weapon type", () => {
-  test("weapons are picked from tabs per type", async ({ page }) => {
+  test("the target weapon is picked from weapon-type tabs", async ({ page }) => {
     await go(page, "/planner");
-    const picker = targetPicker(page);
-    await expect(picker.getByRole("tab")).toHaveCount(5);
-    await picker.getByRole("tab", { name: /Guns/ }).click();
-    await expect(picker.getByRole("button", { name: "Supernova", exact: true })).toBeVisible();
-    await expect(picker.getByRole("button", { name: "Grade Zero", exact: true })).toHaveCount(0);
-    await picker.getByRole("button", { name: "Supernova", exact: true }).click();
-    // The start picker follows: only weapons that can build up into the Supernova remain (guns).
-    await expect(startPicker(page).getByRole("tab")).toHaveCount(1);
+    // Wrenches (the first tab) are active by default, with the type's highest-tier weapon selected.
+    await expect(typeTabs(page).getByRole("tab").first()).toHaveAttribute("aria-selected", "true");
+    await expect(targetPicker(page)).toHaveValue("grade-zero");
+    await expect(targetPicker(page).getByRole("option", { name: "Grade Zero" })).toHaveCount(1);
+    // Options are grouped by SP tier, highest first: LEGEND's group at the top, the Battle Wrench's at the bottom.
+    const groups = targetPicker(page).locator("optgroup");
+    await expect(groups).toHaveCount(3);
+    await expect(groups.first()).toHaveAttribute("label", "6 SP per level");
+    await expect(groups.last()).toHaveAttribute("label", "3 SP per level");
+    await expect(targetPicker(page).locator("option").first()).toHaveText("Grade Zero");
+    await expect(targetPicker(page).locator("option").last()).toHaveText("Turtle Shell Hammer");
+    await typeTabs(page).getByRole("tab", { name: "Guns" }).click();
+    // Switching tabs defaults to the type's highest-tier weapon again (Desperado is the first 6-SP gun).
+    await expect(targetPicker(page)).toHaveValue("desperado");
+    await expect(targetPicker(page).getByRole("option", { name: "Supernova" })).toHaveCount(1);
+    await expect(targetPicker(page).getByRole("option", { name: "Grade Zero" })).toHaveCount(0);
+    await targetPicker(page).selectOption({ label: "Supernova" });
+    // A custom start point only offers weapons that can build up into the Supernova (guns).
+    await page
+      .getByRole("region", { name: "Start point" })
+      .getByLabel("Choose the start point")
+      .selectOption("custom");
+    await expect(startPicker(page).getByRole("option", { name: "Steal Gun" })).toHaveCount(1);
+    await expect(startPicker(page).getByRole("option", { name: "Grade Zero" })).toHaveCount(0);
   });
 
   test("custom start weapon (specs + abilities) and custom end weapon (required specs)", async ({
     page,
   }) => {
     await go(page, "/planner");
-    await targetPicker(page).getByRole("button", { name: "Smash Wrench", exact: true }).click();
+    await targetPicker(page).selectOption({ label: "Smash Wrench" });
+    const startSection = page.getByRole("region", { name: "Start point" });
+    const targetSection = page.getByRole("region", { name: "Target weapon" });
+    // Selecting a target prefills its maximum stats; Min goes back to the weapon's base stats.
+    await expect(targetSection.getByLabel(/^Flame ≤/)).toHaveValue("60");
+    await targetSection.getByRole("button", { name: "Min", exact: true }).click();
+    await expect(targetSection.getByLabel(/^Flame ≤/)).toHaveValue("20");
+    await targetSection.getByRole("button", { name: "Max", exact: true }).click();
+    await expect(targetSection.getByLabel(/^Flame ≤/)).toHaveValue("60");
 
     // Custom start weapon: a Battle Wrench that is already leveled and has a few stats.
-    await page.getByRole("radio", { name: "Custom weapon" }).first().click();
-    await page.getByLabel("Level", { exact: true }).first().fill("3");
-    await page.getByLabel("Attack", { exact: true }).first().fill("14");
-    await page.getByLabel("Poison", { exact: true }).first().check();
+    await startSection.getByLabel("Choose the start point").selectOption("custom");
+    await startSection.getByLabel("Level", { exact: true }).fill("3");
+    await startSection.getByLabel("Attack", { exact: true }).fill("14");
+    await startSection.getByLabel("Poison", { exact: true }).check();
 
     // Custom end weapon: Smash Wrench with required minimum Flame and the Dark ability.
-    await page.getByRole("radio", { name: "Custom weapon" }).nth(1).click();
-    await page.getByLabel(/^Flame ≤/).fill("30");
-    await page.getByLabel("Dark", { exact: true }).last().check();
+    await targetSection.getByRole("button", { name: "Min", exact: true }).click();
+    await targetSection.getByLabel(/^Flame ≤/).fill("30");
+    await targetSection.getByLabel("Dark", { exact: true }).check();
     await page.getByRole("button", { name: "Generate plan" }).click();
     await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
 
     const stored = await activeProfile(page);
     expect(stored.planner).toMatchObject({
-      startMode: "custom",
-      endMode: "custom",
+      customStart: true,
       endStats: { fl: 30 },
       abilities: ["dark"],
     });

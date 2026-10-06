@@ -27,26 +27,31 @@ export const viewSettings = z.object({
   buyableOnly: z.boolean().default(true),
 });
 
-/** The planner's last inputs, remembered per profile. */
-export const plannerInputs = z.object({
+/** The planner's last inputs, remembered per profile (current shape). */
+const plannerInputsData = z.object({
   targetId: z.string(),
-  baseGuideId: z.string(),
   objective: z.enum(["abs", "gilda", "steps"]),
-  goal: z.enum(["reach", "max"]),
   maxChapter: z.number().int().min(1).max(8),
   budget: z.string(),
   abilities: z.array(abilityId),
-  /** How the start weapon is chosen: a fresh existing weapon, a custom one (own specs), or a guide's end state. */
-  startMode: z.enum(["fresh", "custom", "guide"]).default("fresh"),
-  /** The end weapon is an existing one (reach / max) or one with custom required specs. */
-  endMode: z.enum(["existing", "custom"]).default("existing"),
-  /** Minimum stats and level required when the end weapon is custom. */
+  /** Whether the start weapon is chosen by the planner (the line's first weapon) or set by hand. */
+  customStart: z.boolean().default(false),
+  /** Minimum stats and level required for the finished weapon; the UI prefills the target's max stats. */
   endStats: stats.default({ at: 0, fl: 0, ch: 0, li: 0, cy: 0, sm: 0, ex: 0, be: 0, sc: 0 }),
   endLevel: z.number().int().min(0).max(99).default(0),
   /** Start weapon and specs (also holds the support-character bonus). */
   start: buildStart.omit({ acquire: true }),
 });
-export type PlannerInputs = z.infer<typeof plannerInputs>;
+
+/** Planner inputs as stored today; inputs saved by older versions (startMode/goal/endMode fields) still load. */
+export const plannerInputs = z.preprocess((v) => {
+  if (v && typeof v === "object" && !("customStart" in v)) {
+    const old = v as Record<string, unknown>;
+    return { ...old, customStart: old.startMode === "custom" };
+  }
+  return v;
+}, plannerInputsData);
+export type PlannerInputs = z.infer<typeof plannerInputsData>;
 
 export const profile = z.object({
   id: z.string(),
