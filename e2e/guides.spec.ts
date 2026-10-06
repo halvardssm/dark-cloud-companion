@@ -1,11 +1,11 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { activeProfile, go } from "./helpers";
+import { activeProfile, go, startPicker, targetPicker } from "./helpers";
 
 test.describe("guides, planner and editor", () => {
   test("generate a weapon build, save it as a guide and see it in My guides", async ({ page }) => {
     await go(page, "/planner");
-    await page.getByLabel("Target weapon").selectOption("smash-wrench");
+    await targetPicker(page).getByRole("button", { name: "Smash Wrench", exact: true }).click();
     await page.getByRole("button", { name: "Generate plan" }).click();
     await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
     await expect(
@@ -18,10 +18,12 @@ test.describe("guides, planner and editor", () => {
 
   test("the planner remembers its inputs", async ({ page }) => {
     await go(page, "/planner");
-    await page.getByLabel("Target weapon").selectOption("legend");
+    await targetPicker(page).getByRole("button", { name: "LEGEND", exact: true }).click();
     await page.getByLabel("Optimise for").selectOption("gilda");
     await page.reload();
-    await expect(page.getByLabel("Target weapon")).toHaveValue("legend");
+    await expect(
+      targetPicker(page).getByRole("button", { name: "LEGEND", exact: true }),
+    ).toHaveAttribute("aria-pressed", "true");
     await expect(page.getByLabel("Optimise for")).toHaveValue("gilda");
   });
 
@@ -97,5 +99,102 @@ test.describe("guides, planner and editor", () => {
       buffer: Buffer.from("{ nope"),
     });
     await expect(page.getByText(/Import failed: Not valid JSON/)).toBeVisible();
+  });
+});
+
+test("remembered planner inputs that point at unknown weapons are ignored instead of breaking the page", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    const id = "p1";
+    const stats = Object.fromEntries(
+      ["at", "fl", "ch", "li", "cy", "sm", "ex", "be", "sc"].map((k) => [k, 0]),
+    );
+    localStorage.setItem(
+      "dcc:state",
+      JSON.stringify({
+        version: 2,
+        activeProfile: id,
+        profiles: {
+          [id]: {
+            id,
+            name: "Broken planner",
+            createdAt: 1,
+            checks: {},
+            view: { hideDone: false, hidePostgame: false, showFacts: true, buyableOnly: true },
+            activeGuides: ["main"],
+            guides: [],
+            dashboard: { view: "chapter", currentChapter: null },
+            planner: {
+              targetId: "no-such-weapon",
+              baseGuideId: "",
+              objective: "abs",
+              goal: "reach",
+              maxChapter: 3,
+              budget: "",
+              abilities: [],
+              start: {
+                weaponId: "gone-weapon",
+                level: 0,
+                abs: 0,
+                stats,
+                du: 0,
+                sp: 0,
+                abilities: [],
+                spBonus: 1,
+              },
+            },
+          },
+        },
+      }),
+    );
+  });
+  await go(page, "/planner");
+  await expect(targetPicker(page)).toBeVisible();
+  await expect(page.getByRole("alert")).toHaveCount(0);
+});
+
+test.describe("custom start and end weapons, one tab per weapon type", () => {
+  test("weapons are picked from tabs per type", async ({ page }) => {
+    await go(page, "/planner");
+    const picker = targetPicker(page);
+    await expect(picker.getByRole("tab")).toHaveCount(5);
+    await picker.getByRole("tab", { name: /Guns/ }).click();
+    await expect(picker.getByRole("button", { name: "Supernova", exact: true })).toBeVisible();
+    await expect(picker.getByRole("button", { name: "Grade Zero", exact: true })).toHaveCount(0);
+    await picker.getByRole("button", { name: "Supernova", exact: true }).click();
+    // The start picker follows: only weapons that can build up into the Supernova remain (guns).
+    await expect(startPicker(page).getByRole("tab")).toHaveCount(1);
+  });
+
+  test("custom start weapon (specs + abilities) and custom end weapon (required specs)", async ({
+    page,
+  }) => {
+    await go(page, "/planner");
+    await targetPicker(page).getByRole("button", { name: "Smash Wrench", exact: true }).click();
+
+    // Custom start weapon: a Battle Wrench that is already leveled and has a few stats.
+    await page.getByRole("radio", { name: "Custom weapon" }).first().click();
+    await page.getByLabel("Level", { exact: true }).first().fill("3");
+    await page.getByLabel("Attack", { exact: true }).first().fill("14");
+    await page.getByLabel("Poison", { exact: true }).first().check();
+
+    // Custom end weapon: Smash Wrench with required minimum Flame and the Dark ability.
+    await page.getByRole("radio", { name: "Custom weapon" }).nth(1).click();
+    await page.getByLabel(/^Flame ≤/).fill("30");
+    await page.getByLabel("Dark", { exact: true }).last().check();
+    await page.getByRole("button", { name: "Generate plan" }).click();
+    await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
+
+    const stored = await activeProfile(page);
+    expect(stored.planner).toMatchObject({
+      startMode: "custom",
+      endMode: "custom",
+      endStats: { fl: 30 },
+      abilities: ["dark"],
+    });
+    expect(stored.planner.start).toMatchObject({ level: 3, abilities: ["poison"] });
+    // The plan starts from the custom weapon, so its first stage doesn't level a fresh weapon from +0.
+    await expect(page.getByText("Dark Coin").first()).toBeVisible();
   });
 });

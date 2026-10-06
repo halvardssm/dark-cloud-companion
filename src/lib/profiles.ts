@@ -10,7 +10,7 @@ import {
 import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./guide/legacy";
 import { MAIN_GUIDE_ID } from "./guide/main";
 import { buildStart, guide, type Guide } from "./guide/types";
-import { abilityId } from "@/data/weapons-schema";
+import { abilityId, stats } from "@/data/weapons-schema";
 
 export const STORAGE_KEY = "dcc:state";
 export const STATE_VERSION = 2;
@@ -36,6 +36,13 @@ export const plannerInputs = z.object({
   maxChapter: z.number().int().min(1).max(8),
   budget: z.string(),
   abilities: z.array(abilityId),
+  /** How the start weapon is chosen: a fresh existing weapon, a custom one (own specs), or a guide's end state. */
+  startMode: z.enum(["fresh", "custom", "guide"]).default("fresh"),
+  /** The end weapon is an existing one (reach / max) or one with custom required specs. */
+  endMode: z.enum(["existing", "custom"]).default("existing"),
+  /** Minimum stats and level required when the end weapon is custom. */
+  endStats: stats.default({ at: 0, fl: 0, ch: 0, li: 0, cy: 0, sm: 0, ex: 0, be: 0, sc: 0 }),
+  endLevel: z.number().int().min(0).max(99).default(0),
   /** Start weapon and specs (also holds the support-character bonus). */
   start: buildStart.omit({ acquire: true }),
 });

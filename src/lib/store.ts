@@ -89,6 +89,14 @@ export function setPlannerInputs(inputs: PlannerInputs) {
   updateProfile((p) => ({ ...p, planner: inputs }));
 }
 
+/** Forgets the planner's remembered inputs (a way out if they ever cause trouble). */
+export function clearPlannerInputs() {
+  updateProfile((p) => {
+    const { planner: _drop, ...rest } = p;
+    return rest;
+  });
+}
+
 export function toggleGuide(id: string, on: boolean) {
   updateProfile((p) => ({
     ...p,

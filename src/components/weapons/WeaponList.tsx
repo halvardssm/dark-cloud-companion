@@ -33,18 +33,20 @@ export function WeaponList() {
           onChange={(e) => setQ(e.target.value)}
           aria-label={t("weapons.search")}
         />
-        <select
-          className="bg-background h-9 rounded-md border px-3 text-sm"
-          value={type}
-          onChange={(e) => setType(e.target.value)}
-        >
-          <option value="all">{t("weapons.all")}</option>
-          {weaponType.options.map((ty) => (
-            <option key={ty} value={ty}>
-              {t(`weapon.type.${ty}` as const)}
-            </option>
+        <div role="tablist" aria-label={t("weapons.title")} className="flex flex-wrap gap-1">
+          {(["all", ...weaponType.options] as const).map((ty) => (
+            <button
+              key={ty}
+              type="button"
+              role="tab"
+              aria-selected={type === ty}
+              onClick={() => setType(ty)}
+              className={`rounded-md border px-3 py-1.5 text-sm ${type === ty ? "bg-primary text-primary-foreground border-primary" : "hover:bg-muted"}`}
+            >
+              {ty === "all" ? t("weapons.all") : t(`weapon.type.${ty}` as const)}
+            </button>
           ))}
-        </select>
+        </div>
       </div>
       {groups.map((g) => (
         <section key={g.type} className="flex flex-col gap-2">

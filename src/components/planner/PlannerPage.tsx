@@ -2,6 +2,8 @@ import { useStore } from "@nanostores/react";
 import { useEffect, useState } from "react";
 import { useTranslations } from "@/i18n";
 import { $draft } from "@/lib/guide/draft";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { clearPlannerInputs } from "@/lib/store";
 import { EditorSection } from "./EditorSection";
 import { GeneratorSection } from "./GeneratorSection";
 
@@ -39,10 +41,17 @@ export function PlannerPage() {
       </div>
       {/* Both sections stay mounted so a generated result and an open draft survive switching tabs. */}
       <div hidden={tab !== "generate"}>
-        <GeneratorSection onOpenEditor={() => setTab("create")} />
+        <ErrorBoundary
+          label="the planner"
+          recover={{ label: "Reset remembered planner inputs", run: clearPlannerInputs }}
+        >
+          <GeneratorSection onOpenEditor={() => setTab("create")} />
+        </ErrorBoundary>
       </div>
       <div hidden={tab !== "create"}>
-        <EditorSection />
+        <ErrorBoundary label="the guide editor">
+          <EditorSection />
+        </ErrorBoundary>
       </div>
     </div>
   );

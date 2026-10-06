@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { go } from "./helpers";
+import { go, targetPicker } from "./helpers";
 
 test.describe("reference pages", () => {
   test("items can be filtered by buyable / found-only", async ({ page }) => {
@@ -17,7 +17,9 @@ test.describe("reference pages", () => {
     await expect(page.getByRole("heading", { name: "Poison Wrench" })).toBeVisible();
     await expect(page.getByRole("link", { name: "Sigma Breaker" })).toBeVisible();
     await page.getByRole("link", { name: "Plan a build-up to this weapon" }).click();
-    await expect(page.getByLabel("Target weapon")).toHaveValue("poison-wrench");
+    await expect(
+      targetPicker(page).getByRole("button", { name: "Poison Wrench", exact: true }),
+    ).toHaveAttribute("aria-pressed", "true");
   });
 
   test("Ridepod parts can be ticked", async ({ page }) => {
@@ -33,4 +35,12 @@ test.describe("reference pages", () => {
     await expect(page).toHaveURL(/\/\?chapter=c3$/);
     await expect(page.getByRole("heading", { name: /The Sage of the Stars/ })).toBeVisible();
   });
+});
+
+test("the weapons list has one tab per weapon type", async ({ page }) => {
+  await go(page, "/weapons");
+  await expect(page.getByRole("tab")).toHaveCount(6); // All + 5 types
+  await page.getByRole("tab", { name: "Armbands" }).click();
+  await expect(page.getByRole("link", { name: /Five-Star Armlet/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Grade Zero/ })).toHaveCount(0);
 });

@@ -35,11 +35,21 @@ function GuideCard({ guide }: { guide: Guide }) {
         </div>
         <GuideToggle guideId={guide.id} />
         <div className="flex flex-wrap gap-2">
-          <Button variant="outline" size="sm" render={<a href={`/guides/view?id=${q}`} />}>
+          <Button
+            variant="outline"
+            size="sm"
+            nativeButton={false}
+            render={<a href={`/guides/view?id=${q}`} />}
+          >
             {t("guides.open")}
           </Button>
           {mine && (
-            <Button variant="outline" size="sm" render={<a href={`/planner?edit=${q}`} />}>
+            <Button
+              variant="outline"
+              size="sm"
+              nativeButton={false}
+              render={<a href={`/planner?edit=${q}`} />}
+            >
               {t("guides.edit")}
             </Button>
           )}
@@ -98,7 +108,7 @@ export function GuidesPage() {
       <section className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-2">
           <h2 className="text-lg font-semibold">{t("guides.custom")}</h2>
-          <Button size="sm" render={<a href="/planner?new" />}>
+          <Button size="sm" nativeButton={false} render={<a href="/planner?new" />}>
             {t("guides.new")}
           </Button>
         </div>

@@ -78,8 +78,21 @@ export const en = {
 
   "planner.tab.generate": "Generate a build",
   "planner.tab.create": "Create or edit",
+  "planner.startSection": "Start weapon",
+  "planner.startMode.fresh": "Existing weapon",
+  "planner.startMode.custom": "Custom weapon",
+  "planner.startMode.guide": "Continue a guide",
+  "planner.endSection": "End weapon",
+  "planner.endMode.existing": "Existing weapon",
+  "planner.endMode.custom": "Custom weapon",
+  "planner.pickStart": "Choose the start weapon",
+  "planner.pickTarget": "Choose the end weapon",
+  "planner.targetSpecsHint":
+    "The finished weapon will have at least these stats and this level. Leave stats at 0 to only require the build-up itself.",
+  "planner.targetLevel": "Level",
+  "planner.customGoal": "Custom specs",
   "planner.startFromGuide": "Start from a guide (optional)",
-  "planner.startFromGuideNone": "My own weapon",
+  "planner.startFromGuideNone": "Custom weapon",
   "planner.startFromGuideHint":
     "Continues from the weapon you'd have after that guide's build steps.",
   "planner.openInEditor": "Open in editor",

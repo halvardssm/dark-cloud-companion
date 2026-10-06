@@ -34,7 +34,12 @@ export function NavBar({ pathname }: { pathname: string }) {
   const ready = useStore($ready);
   const state = useStore($state);
   const [dark, setDark] = useState(false);
-  useEffect(() => setDark(document.documentElement.classList.contains("dark")), []);
+  // Profile names come from localStorage, so show them only after mounting (the server renders a placeholder).
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setDark(document.documentElement.classList.contains("dark"));
+    setMounted(true);
+  }, []);
 
   const active = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
   const tab = (href: string, label: string) => (
@@ -57,10 +62,10 @@ export function NavBar({ pathname }: { pathname: string }) {
         render={<Button variant="outline" size="sm" />}
         aria-label={t("nav.profile")}
       >
-        {ready && current ? current.name : t("nav.profile")} ▾
+        {mounted && ready && current ? current.name : t("nav.profile")} ▾
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
-        {ready && profiles.length > 1 && (
+        {mounted && ready && profiles.length > 1 && (
           <>
             <DropdownMenuGroup>
               <DropdownMenuLabel>{t("profiles.active")}</DropdownMenuLabel>

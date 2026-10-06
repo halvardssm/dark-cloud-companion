@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import type { StepFilters } from "@/components/guide/StepCard";
@@ -15,7 +16,7 @@ import { useActiveGuides } from "./useActiveGuides";
 
 const views: DashboardView[] = ["chapter", "overview", "byGuide"];
 
-export function Dashboard() {
+function DashboardInner() {
   const t = useTranslations();
   const { profile, checks, guides } = useActiveGuides();
   const [needle, setNeedle] = useState("");
@@ -176,5 +177,13 @@ function Toggle({
       <Switch checked={checked} onCheckedChange={onChange} />
       {label}
     </Label>
+  );
+}
+
+export function Dashboard() {
+  return (
+    <ErrorBoundary label="the dashboard">
+      <DashboardInner />
+    </ErrorBoundary>
   );
 }

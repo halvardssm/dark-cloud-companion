@@ -60,3 +60,9 @@ export async function go(page: Page, url: string) {
     () => ![...document.querySelectorAll("astro-island")].some((i) => i.hasAttribute("ssr")),
   );
 }
+
+/** The planner's end-weapon picker (a group of weapon buttons, one tab per weapon type). */
+export const targetPicker = (page: Page) =>
+  page.getByRole("group", { name: "Choose the end weapon" });
+export const startPicker = (page: Page) =>
+  page.getByRole("group", { name: "Choose the start weapon" });

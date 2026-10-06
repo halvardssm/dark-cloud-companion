@@ -15,19 +15,81 @@ import { cancelPlanner, runPlanner } from "@/lib/planner/client";
 import { ancestorsOf, rootWeaponIds } from "@/lib/planner/graph";
 import { earliestChapter, type PlanProgress, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
-import { getWeapon, weaponData } from "@/lib/planner/sources";
-import { OPPOSITES, freshState, type WeaponState } from "@/lib/weapons/mechanics";
-import { abilityId, type AbilityId } from "@/data/weapons-schema";
+import { getWeapon, weaponById, weaponData } from "@/lib/planner/sources";
+import { OPPOSITES, emptyStats, freshState, type WeaponState } from "@/lib/weapons/mechanics";
+import { abilityId, type AbilityId, type Stats } from "@/data/weapons-schema";
 import { $profile, saveGuide, setPlannerInputs, setView } from "@/lib/store";
 import { useStore } from "@nanostores/react";
 import { PlanPreview } from "./PlanPreview";
 import { StartSpecs } from "./StartSpecs";
-import { WeaponSelect, selectClass } from "./WeaponSelect";
+import { selectClass } from "./WeaponSelect";
+import { TargetSpecs } from "./TargetSpecs";
+import { WeaponPicker } from "./WeaponPicker";
 
 function defaultStart(targetId: string): string {
   const anc = [...ancestorsOf(targetId)];
   return anc.find((id) => rootWeaponIds.has(id)) ?? targetId;
 }
+
+/** Ability checkboxes with the usual preset; opposites exclude each other. */
+function AbilityPicker({
+  abilities,
+  onChange,
+}: {
+  abilities: AbilityId[];
+  onChange: (a: AbilityId[]) => void;
+}) {
+  const t = useTranslations();
+  return (
+    <fieldset className="flex flex-col gap-2">
+      <legend className="text-muted-foreground mb-1 text-xs">{t("planner.wantAbilities")}</legend>
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
+        {abilityId.options.map((a) => {
+          const opposite = OPPOSITES[a];
+          const blocked = !!opposite && abilities.includes(opposite);
+          return (
+            <Label
+              key={a}
+              className={`flex items-center gap-2 text-sm ${blocked ? "opacity-50" : ""}`}
+            >
+              <input
+                type="checkbox"
+                disabled={blocked}
+                checked={abilities.includes(a)}
+                onChange={(e) =>
+                  onChange(e.target.checked ? [...abilities, a] : abilities.filter((x) => x !== a))
+                }
+              />
+              {t(`ability.${a}` as const)}
+            </Label>
+          );
+        })}
+      </div>
+      <div className="flex flex-wrap items-center gap-2">
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          onClick={() =>
+            onChange(["poison", "stop", "abs-up", "steal", "wealth", "dark", "durable", "absorb"])
+          }
+        >
+          {t("planner.abilitiesPreset")}
+        </Button>
+        <Button type="button" variant="ghost" size="sm" onClick={() => onChange([])}>
+          {t("planner.abilitiesClear")}
+        </Button>
+        <span className="text-muted-foreground text-xs">{t("planner.abilitiesHint")}</span>
+      </div>
+    </fieldset>
+  );
+}
+
+type StartMode = "fresh" | "custom" | "guide";
+type EndMode = "existing" | "custom";
+
+const segment = (active: boolean) =>
+  `rounded-md border px-3 py-1.5 text-sm ${active ? "bg-primary text-primary-foreground border-primary" : "hover:bg-muted"}`;
 
 /** Generates an optimal weapon build; the result can be opened in the editor or saved as a guide. */
 export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void }) {
@@ -35,12 +97,20 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
   const { guides: own, view } = useStore($profile);
   // The same setting as the dashboard toggle: plans only use buyable items unless it is switched off.
   const allowFound = !view.buyableOnly;
-  // The last inputs are remembered per profile.
-  const saved0 = $profile.get().planner;
+  // The last inputs are remembered per profile; ignore ones that point at weapons that no longer exist.
+  const remembered = $profile.get().planner;
+  const saved0 =
+    remembered && weaponById.has(remembered.targetId) && weaponById.has(remembered.start.weaponId)
+      ? remembered
+      : undefined;
   const [targetId, setTargetId] = useState(saved0?.targetId ?? "grade-zero");
   const [start, setStart] = useState<WeaponState>(() =>
     saved0 ? startToState(saved0.start) : freshState(getWeapon(defaultStart("grade-zero"))),
   );
+  const [startMode, setStartMode] = useState<StartMode>(saved0?.startMode ?? "fresh");
+  const [endMode, setEndMode] = useState<EndMode>(saved0?.endMode ?? "existing");
+  const [endStats, setEndStats] = useState<Stats>(saved0?.endStats ?? emptyStats());
+  const [endLevel, setEndLevel] = useState(saved0?.endLevel ?? 0);
   const [baseGuideId, setBaseGuideId] = useState(saved0?.baseGuideId ?? "");
   const [objective, setObjective] = useState<Objective>(saved0?.objective ?? "abs");
   const [goal, setGoal] = useState<"reach" | "max">(saved0?.goal ?? "reach");
@@ -54,9 +124,12 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
   const [elapsed, setElapsed] = useState(0);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
-  const [used, setUsed] = useState<{ start: WeaponState; spBonus: number; baseId: string } | null>(
-    null,
-  );
+  const [used, setUsed] = useState<{
+    start: WeaponState;
+    spBonus: number;
+    baseId: string;
+    goalLabel: string;
+  } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
 
@@ -65,7 +138,8 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     () => allGuides(own).filter((g) => g.steps.some((s) => s.build)),
     [own],
   );
-  const baseGuide = baseOptions.find((g) => g.id === baseGuideId);
+  const baseGuide =
+    startMode === "guide" ? baseOptions.find((g) => g.id === baseGuideId) : undefined;
 
   // Remember the inputs whenever they change.
   useEffect(() => {
@@ -78,9 +152,27 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
       maxChapter,
       budget,
       abilities,
+      startMode,
+      endMode,
+      endStats,
+      endLevel,
       start: startPart,
     });
-  }, [targetId, baseGuideId, objective, goal, maxChapter, budget, abilities, start, support]);
+  }, [
+    targetId,
+    baseGuideId,
+    objective,
+    goal,
+    maxChapter,
+    budget,
+    abilities,
+    start,
+    support,
+    startMode,
+    endMode,
+    endStats,
+    endLevel,
+  ]);
 
   // Elapsed time while planning, so a long solve doesn't look stuck.
   useEffect(() => {
@@ -95,6 +187,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
 
   const changeTarget = (id: string) => {
     setTargetId(id);
+    setEndStats(emptyStats());
     if (!baseGuide) {
       const from = ancestorsOf(id).has(start.weaponId) ? start.weaponId : defaultStart(id);
       if (from !== start.weaponId) setStart(freshState(getWeapon(from)));
@@ -111,14 +204,24 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const chooseStartMode = (mode: StartMode) => {
+    setStartMode(mode);
+    setResult(null);
+    if (mode === "guide") {
+      const first = baseGuideId || baseOptions[0]?.id || "";
+      if (first) chooseBase(first);
+      return;
+    }
+    setBaseGuideId("");
+    // Back to a weapon of the chosen line.
+    if (!startOptions.has(start.weaponId)) setStart(freshState(getWeapon(defaultStart(targetId))));
+  };
+
   const chooseBase = (id: string) => {
     setBaseGuideId(id);
     setResult(null);
     const g = baseOptions.find((x) => x.id === id);
-    if (!g) {
-      setStart(freshState(getWeapon(defaultStart(targetId))));
-      return;
-    }
+    if (!g) return;
     // Continue from the weapon the guide leaves you with.
     const final = derivedFor(g).final;
     if (final) {
@@ -132,6 +235,9 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     }
   };
 
+  const goalLabel =
+    endMode === "custom" ? t("planner.customGoal") : t(`planner.goal.${goal}` as const);
+
   const generate = async () => {
     setRunning(true);
     setError(null);
@@ -144,7 +250,10 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
           start,
           targetId,
           objective,
-          goal: { kind: goal },
+          goal:
+            endMode === "custom"
+              ? { kind: "stats", stats: endStats, level: endLevel }
+              : { kind: goal },
           maxChapter,
           spBonus: support ? 1 : 0,
           allowFound,
@@ -154,7 +263,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
         setProgress,
       );
       setResult(r);
-      setUsed({ start, spBonus: support ? 1 : 0, baseId: baseGuideId });
+      setUsed({ start, spBonus: support ? 1 : 0, baseId: baseGuide?.id ?? "", goalLabel });
     } catch (e) {
       if (String(e).includes("cancelled")) return;
       setError(String(e instanceof Error ? e.message : e));
@@ -169,7 +278,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     const title = `${getWeapon(targetId).name} — ${t(`planner.obj.${objective}` as const)}`;
     const generated = planResultToGuide({
       title,
-      description: `${t(`planner.obj.${objective}` as const)} · ${t(`planner.goal.${goal}` as const)} · ${t("planner.chapterOption", { n: maxChapter })}`,
+      description: `${t(`planner.obj.${objective}` as const)} · ${used.goalLabel} · ${t("planner.chapterOption", { n: maxChapter })}`,
       result,
       start: used.start,
       spBonus: used.spBonus,
@@ -194,36 +303,119 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     <div className="flex flex-col gap-6">
       <p className="text-muted-foreground text-sm">{t("planner.intro")}</p>
 
-      <Label className="flex flex-col items-start gap-1">
-        {t("planner.startFromGuide")}
-        <select
-          className={selectClass}
-          value={baseGuideId}
-          onChange={(e) => chooseBase(e.target.value)}
+      <section
+        className="flex flex-col gap-3 rounded-md border p-3"
+        aria-label={t("planner.startSection")}
+      >
+        <h3 className="font-medium">{t("planner.startSection")}</h3>
+        <div
+          role="radiogroup"
+          aria-label={t("planner.startSection")}
+          className="flex flex-wrap gap-2"
         >
-          <option value="">{t("planner.startFromGuideNone")}</option>
-          {baseOptions.map((g) => (
-            <option key={g.id} value={g.id}>
-              {g.title}
-            </option>
+          {(["fresh", "custom", "guide"] as const).map((m) => (
+            <button
+              key={m}
+              type="button"
+              role="radio"
+              aria-checked={startMode === m}
+              disabled={m === "guide" && baseOptions.length === 0}
+              onClick={() => chooseStartMode(m)}
+              className={segment(startMode === m)}
+            >
+              {t(`planner.startMode.${m}` as const)}
+            </button>
           ))}
-        </select>
-        <span className="text-muted-foreground text-xs">{t("planner.startFromGuideHint")}</span>
-      </Label>
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Label className="flex flex-col items-start gap-1">
-          {t("planner.target")}
-          <WeaponSelect value={targetId} onChange={changeTarget} />
-        </Label>
-        <Label className="flex flex-col items-start gap-1">
-          {t("planner.start")}
-          <WeaponSelect
+        </div>
+        {startMode === "guide" ? (
+          <Label className="flex flex-col items-start gap-1">
+            {t("planner.startFromGuide")}
+            <select
+              className={selectClass}
+              value={baseGuideId}
+              onChange={(e) => chooseBase(e.target.value)}
+            >
+              {baseOptions.map((g) => (
+                <option key={g.id} value={g.id}>
+                  {g.title}
+                </option>
+              ))}
+            </select>
+            <span className="text-muted-foreground text-xs">
+              {t("planner.startFromGuideHint")} — {getWeapon(start.weaponId).name} +{start.level}
+            </span>
+          </Label>
+        ) : (
+          <WeaponPicker
+            label={t("planner.pickStart")}
             value={start.weaponId}
-            ids={baseGuide ? new Set([start.weaponId]) : startOptions}
+            ids={startOptions}
             onChange={(id) => setStart(freshState(getWeapon(id)))}
           />
+        )}
+        {startMode === "custom" && <StartSpecs state={start} onChange={setStart} />}
+        <Label className="flex items-center gap-2 text-sm">
+          <Switch checked={support} onCheckedChange={setSupport} />
+          {t("planner.support")}
         </Label>
+      </section>
+
+      <section
+        className="flex flex-col gap-3 rounded-md border p-3"
+        aria-label={t("planner.endSection")}
+      >
+        <h3 className="font-medium">{t("planner.endSection")}</h3>
+        <div
+          role="radiogroup"
+          aria-label={t("planner.endSection")}
+          className="flex flex-wrap gap-2"
+        >
+          {(["existing", "custom"] as const).map((m) => (
+            <button
+              key={m}
+              type="button"
+              role="radio"
+              aria-checked={endMode === m}
+              onClick={() => {
+                setEndMode(m);
+                setResult(null);
+              }}
+              className={segment(endMode === m)}
+            >
+              {t(`planner.endMode.${m}` as const)}
+            </button>
+          ))}
+        </div>
+        <WeaponPicker label={t("planner.pickTarget")} value={targetId} onChange={changeTarget} />
+        {endMode === "existing" ? (
+          <div className="flex flex-col gap-3">
+            <Label className="flex w-fit flex-col items-start gap-1">
+              {t("planner.goal")}
+              <select
+                className={selectClass}
+                value={goal}
+                onChange={(e) => setGoal(e.target.value as "reach" | "max")}
+              >
+                <option value="reach">{t("planner.goal.reach")}</option>
+                <option value="max">{t("planner.goal.max")}</option>
+              </select>
+            </Label>
+            <AbilityPicker abilities={abilities} onChange={setAbilities} />
+          </div>
+        ) : (
+          <TargetSpecs
+            weaponId={targetId}
+            stats={endStats}
+            level={endLevel}
+            abilities={abilities}
+            onStats={setEndStats}
+            onLevel={setEndLevel}
+            onAbilities={setAbilities}
+          />
+        )}
+      </section>
+
+      <div className="grid gap-4 sm:grid-cols-2">
         <Label className="flex flex-col items-start gap-1">
           {t("planner.objective")}
           <select
@@ -236,17 +428,6 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
                 {t(`planner.obj.${o}` as const)}
               </option>
             ))}
-          </select>
-        </Label>
-        <Label className="flex flex-col items-start gap-1">
-          {t("planner.goal")}
-          <select
-            className={selectClass}
-            value={goal}
-            onChange={(e) => setGoal(e.target.value as "reach" | "max")}
-          >
-            <option value="reach">{t("planner.goal.reach")}</option>
-            <option value="max">{t("planner.goal.max")}</option>
           </select>
         </Label>
         <Label className="flex flex-col items-start gap-1">
@@ -276,10 +457,6 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
         </Label>
         <div className="flex flex-col justify-end gap-3">
           <Label className="flex items-center gap-2 text-sm">
-            <Switch checked={support} onCheckedChange={setSupport} />
-            {t("planner.support")}
-          </Label>
-          <Label className="flex items-center gap-2 text-sm">
             <Switch
               checked={view.buyableOnly}
               onCheckedChange={(v) => setView({ buyableOnly: v })}
@@ -288,66 +465,6 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
           </Label>
         </div>
       </div>
-
-      <fieldset className="flex flex-col gap-2 rounded-md border p-3">
-        <legend className="px-1 text-sm font-medium">{t("planner.wantAbilities")}</legend>
-        <div className="flex flex-wrap gap-x-4 gap-y-2">
-          {abilityId.options.map((a) => {
-            const opposite = OPPOSITES[a];
-            const blocked = !!opposite && abilities.includes(opposite);
-            return (
-              <Label
-                key={a}
-                className={`flex items-center gap-2 text-sm ${blocked ? "opacity-50" : ""}`}
-              >
-                <input
-                  type="checkbox"
-                  disabled={blocked}
-                  checked={abilities.includes(a)}
-                  onChange={(e) =>
-                    setAbilities(
-                      e.target.checked ? [...abilities, a] : abilities.filter((x) => x !== a),
-                    )
-                  }
-                />
-                {t(`ability.${a}` as const)}
-              </Label>
-            );
-          })}
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            onClick={() =>
-              setAbilities([
-                "poison",
-                "stop",
-                "abs-up",
-                "steal",
-                "wealth",
-                "dark",
-                "durable",
-                "absorb",
-              ])
-            }
-          >
-            {t("planner.abilitiesPreset")}
-          </Button>
-          <Button type="button" variant="ghost" size="sm" onClick={() => setAbilities([])}>
-            {t("planner.abilitiesClear")}
-          </Button>
-          <span className="text-muted-foreground text-xs">{t("planner.abilitiesHint")}</span>
-        </div>
-      </fieldset>
-
-      <details className="rounded-md border p-3">
-        <summary className="cursor-pointer text-sm font-medium">{t("planner.specs")}</summary>
-        <div className="mt-3">
-          <StartSpecs state={start} onChange={setStart} />
-        </div>
-      </details>
 
       <div className="flex gap-2">
         <Button onClick={generate} disabled={running}>

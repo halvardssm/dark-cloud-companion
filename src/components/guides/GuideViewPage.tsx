@@ -52,7 +52,12 @@ export function GuideViewPage() {
         )}
         <GuideToggle guideId={guide.id} />
         {guide.kind === "custom" && (
-          <Button variant="outline" size="sm" render={<a href={`/planner?edit=${q}`} />}>
+          <Button
+            variant="outline"
+            size="sm"
+            nativeButton={false}
+            render={<a href={`/planner?edit=${q}`} />}
+          >
             {t("guides.edit")}
           </Button>
         )}

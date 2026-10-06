@@ -38,8 +38,14 @@ const pathname = Astro.url.pathname;
       <slot />
     </main>
     <script>
-      if ("serviceWorker" in navigator && import.meta.env.PROD) {
-        navigator.serviceWorker.register("/sw.js").catch(() => {});
+      if ("serviceWorker" in navigator) {
+        if (import.meta.env.PROD) {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        } else {
+          // A service worker left over from an earlier production preview on this origin would serve stale pages
+          // in development; remove it.
+          navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));
+        }
       }
     </script>
   </body>
