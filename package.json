@@ -17,7 +17,7 @@
     "check": "pnpm run fmt:check && pnpm run lint && pnpm run typecheck",
     "fix": "pnpm run fmt && pnpm run lint:fix",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit -p .",
+    "typecheck": "astro sync && tsc --noEmit -p .",
     "e2e": "playwright test",
     "test:all": "pnpm run check && pnpm test && pnpm e2e"
   },
