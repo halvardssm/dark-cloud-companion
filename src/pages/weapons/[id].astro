@@ -28,6 +28,8 @@ const into = buildsInto(w.id);
       </p>
     </header>
 
+    {w.description && <p class="text-sm italic">{w.description}</p>}
+
     <dl class="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
       <div><dt class="text-muted-foreground text-xs">{t("weapons.baseAbs")}</dt><dd>{w.baseAbs}</dd></div>
       <div><dt class="text-muted-foreground text-xs">{t("weapons.spPerLevel")}</dt><dd>{w.spPerLevel}</dd></div>

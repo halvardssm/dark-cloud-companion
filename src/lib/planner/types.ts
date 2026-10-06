@@ -77,4 +77,6 @@ export interface SimulationResult {
   log: LogEntry[];
   /** Rule violations; an empty list means the plan is valid. */
   errors: string[];
+  /** Per top-level stage: its own errors and cost (only set by `simulatePlan`). */
+  stages?: { errors: string[]; cost: Cost }[];
 }

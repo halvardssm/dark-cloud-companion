@@ -35,8 +35,14 @@ interface Run {
 const acquireGilda = (a: Acquire) =>
   a.kind === "shop" ? a.price : a.kind === "invent" ? a.gilda : 0;
 
-function runStages(run: Run, stages: Stage[], opts: SimOptions, depth: number) {
-  stages.forEach((stage, i) => {
+function runStages(
+  run: Run,
+  stages: Stage[],
+  opts: SimOptions,
+  depth: number,
+  onStage?: (i: number, phase: "start" | "end") => void,
+) {
+  const runOne = (stage: Stage, i: number) => {
     const weapon = getWeapon(stage.weaponId);
     if (run.state.weaponId !== stage.weaponId) {
       run.errors.push(
@@ -153,6 +159,11 @@ function runStages(run: Run, stages: Stage[], opts: SimOptions, depth: number) {
       run.cost.steps += 1;
       run.log.push({ type: "buildup", from: weapon.id, to: target.id, depth });
     }
+  };
+  stages.forEach((stage, i) => {
+    onStage?.(i, "start");
+    runOne(stage, i);
+    onStage?.(i, "end");
   });
 }
 
@@ -178,8 +189,22 @@ export function simulatePlan(
   opts: SimOptions = defaultSimOptions,
 ): SimulationResult & { state: WeaponState } {
   const run: Run = { state: start, cost: { abs: 0, gilda: 0, steps: 0 }, log: [], errors: [] };
+  const perStage: { errors: string[]; cost: Cost }[] = [];
+  let mark = { errors: 0, cost: { ...run.cost } };
   if (plan.stages[0] && plan.stages[0].weaponId !== start.weaponId)
     run.errors.push("plan does not start with the start weapon");
-  else runStages(run, plan.stages, opts, 0);
-  return { state: run.state, cost: run.cost, log: run.log, errors: run.errors };
+  else
+    runStages(run, plan.stages, opts, 0, (i, phase) => {
+      if (phase === "start") mark = { errors: run.errors.length, cost: { ...run.cost } };
+      else
+        perStage[i] = {
+          errors: run.errors.slice(mark.errors),
+          cost: {
+            abs: run.cost.abs - mark.cost.abs,
+            gilda: run.cost.gilda - mark.cost.gilda,
+            steps: run.cost.steps - mark.cost.steps,
+          },
+        };
+    });
+  return { state: run.state, cost: run.cost, log: run.log, errors: run.errors, stages: perStage };
 }
