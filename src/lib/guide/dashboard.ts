@@ -1,6 +1,6 @@
 // Which chapter the dashboard follows, and which steps of a guide belong to a chapter.
-import { chapters } from "@/lib/data";
-import { stepsProgress } from "./progress";
+import { chapters, checklist } from "@/lib/data";
+import { stepTickIds } from "./progress";
 import type { Guide, Step } from "./types";
 
 export const MAIN_CHAPTERS = chapters.filter((c) => c.phase === "main");
@@ -34,23 +34,51 @@ export function carriedSteps(
     );
 }
 
-/** First main chapter whose steps in the main walkthrough aren't all done (the last one when everything is). */
-export function firstIncompleteChapter(main: Guide, checks: Record<string, true>): string {
-  for (const c of MAIN_CHAPTERS) {
-    const p = stepsProgress(
-      main,
-      stepsInChapter(main, c.id).map((x) => x.step),
-      checks,
-    );
-    if (p.total > 0 && p.done < p.total) return c.id;
-  }
-  return MAIN_CHAPTERS[MAIN_CHAPTERS.length - 1].id;
+/** Progress over the given steps of several guides; ticks shared between guides (data items) count once. */
+export function unionProgress(
+  guides: Guide[],
+  pick: (guide: Guide) => Step[],
+  checks: Record<string, true>,
+): { done: number; total: number } {
+  const ids = new Set<string>();
+  for (const g of guides) for (const s of pick(g)) for (const id of stepTickIds(g, s)) ids.add(id);
+  let done = 0;
+  for (const id of ids) if (checks[id]) done++;
+  return { done, total: ids.size };
 }
 
-export function chapterProgressOf(guide: Guide, chapterId: string, checks: Record<string, true>) {
-  return stepsProgress(
-    guide,
-    stepsInChapter(guide, chapterId).map((x) => x.step),
-    checks,
-  );
+/** Progress of a chapter across the switched-on guides. */
+export const chapterProgressOfGuides = (
+  guides: Guide[],
+  chapterId: string,
+  checks: Record<string, true>,
+) => unionProgress(guides, (g) => stepsInChapter(g, chapterId).map((x) => x.step), checks);
+
+/** First main chapter that isn't finished in the switched-on guides (the first chapter when no guide is on). */
+export function firstIncompleteChapter(guides: Guide[], checks: Record<string, true>): string {
+  for (const c of MAIN_CHAPTERS) {
+    const p = chapterProgressOfGuides(guides, c.id, checks);
+    if (p.total > 0 && p.done < p.total) return c.id;
+  }
+  return guides.length ? MAIN_CHAPTERS[MAIN_CHAPTERS.length - 1].id : MAIN_CHAPTERS[0].id;
+}
+
+/** Missable collectables referenced by the switched-on guides that are still open, up to a chapter number. */
+export function openMissable(
+  guides: Guide[],
+  checks: Record<string, true>,
+  upToChapterNumber: number,
+) {
+  const seen = new Set<string>();
+  const out: typeof checklist = [];
+  for (const g of guides)
+    for (const s of g.steps)
+      for (const e of s.entries) {
+        if (e.kind !== "item" || seen.has(e.ref)) continue;
+        seen.add(e.ref);
+        const item = checklist.find((i) => i.id === e.ref);
+        if (!item?.missable || checks[item.id]) continue;
+        if ((chapterNumber(item.chapterId) ?? 99) <= upToChapterNumber) out.push(item);
+      }
+  return out;
 }

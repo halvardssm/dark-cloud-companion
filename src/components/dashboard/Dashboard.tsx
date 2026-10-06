@@ -4,7 +4,6 @@ import { Switch } from "@/components/ui/switch";
 import type { StepFilters } from "@/components/guide/StepCard";
 import { useTranslations } from "@/i18n";
 import { chapterById } from "@/lib/data";
-import { builtinGuideById } from "@/lib/guide/builtin";
 import { firstIncompleteChapter } from "@/lib/guide/dashboard";
 import { guideProgress } from "@/lib/guide/progress";
 import type { DashboardView } from "@/lib/profiles";
@@ -19,7 +18,6 @@ const views: DashboardView[] = ["chapter", "overview", "byGuide"];
 export function Dashboard() {
   const t = useTranslations();
   const { profile, checks, guides } = useActiveGuides();
-  const main = builtinGuideById.get("main")!;
   const [needle, setNeedle] = useState("");
   const [viewChapter, setViewChapter] = useState<string | null>(null);
 
@@ -29,10 +27,13 @@ export function Dashboard() {
     if (id && chapterById.has(id)) setViewChapter(id);
   }, []);
 
-  const currentId = profile.dashboard.currentChapter ?? firstIncompleteChapter(main, checks);
+  const currentId = profile.dashboard.currentChapter ?? firstIncompleteChapter(guides, checks);
   const chapterId = viewChapter ?? currentId;
-  const overall = useMemo(() => guideProgress(main, checks), [checks]);
-  const pct = overall.total ? Math.round((overall.done / overall.total) * 100) : 0;
+  // Each switched-on guide tracks its own progress; nothing is shown for guides that are off.
+  const perGuide = useMemo(
+    () => guides.map((g) => ({ guide: g, progress: guideProgress(g, checks) })),
+    [guides, checks],
+  );
 
   const filters: StepFilters = {
     hideDone: profile.view.hideDone,
@@ -48,16 +49,47 @@ export function Dashboard() {
 
   return (
     <div className="flex flex-col gap-5">
-      <section className="flex flex-col gap-2">
-        <div className="flex items-baseline justify-between gap-3">
-          <h1 className="text-2xl font-semibold">{t("nav.dashboard")}</h1>
-          <span className="text-muted-foreground text-sm tabular-nums">
-            {t("home.overall", { done: overall.done, total: overall.total })}
-          </span>
-        </div>
-        <div className="bg-muted h-2 overflow-hidden rounded-full">
-          <div className="bg-primary h-full" style={{ width: `${pct}%` }} />
-        </div>
+      <section className="flex flex-col gap-3">
+        <h1 className="text-2xl font-semibold">{t("nav.dashboard")}</h1>
+        {perGuide.length === 0 ? (
+          <p className="text-muted-foreground text-sm">
+            {t("dash.noActive")}{" "}
+            <a className="underline" href="/guides">
+              {t("nav.guides")}
+            </a>
+          </p>
+        ) : (
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {perGuide.map(({ guide, progress }) => {
+              const pct = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
+              return (
+                <li key={guide.id} className="flex flex-col gap-1">
+                  <div className="flex items-baseline justify-between gap-3 text-sm">
+                    <a
+                      className="truncate hover:underline"
+                      href={`/guides/view?id=${encodeURIComponent(guide.id)}`}
+                    >
+                      {guide.title}
+                    </a>
+                    <span className="text-muted-foreground tabular-nums">
+                      {t("step.progress", { done: progress.done, total: progress.total })}
+                    </span>
+                  </div>
+                  <div
+                    className="bg-muted h-2 overflow-hidden rounded-full"
+                    role="progressbar"
+                    aria-label={guide.title}
+                    aria-valuenow={pct}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                  >
+                    <div className="bg-primary h-full" style={{ width: `${pct}%` }} />
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </section>
 
       <div role="tablist" className="flex flex-wrap gap-1 border-b">

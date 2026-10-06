@@ -7,15 +7,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Input } from "@/components/ui/input";
 import { useTranslations } from "@/i18n";
-import { chapterById, chapters, checklist } from "@/lib/data";
+import { chapterById, chapters } from "@/lib/data";
 import {
   carriedSteps,
   anytimeSteps,
-  chapterProgressOf,
+  chapterProgressOfGuides,
+  openMissable,
   stepsInChapter,
 } from "@/lib/guide/dashboard";
 import { isStepDone } from "@/lib/guide/progress";
-import { builtinGuideById } from "@/lib/guide/builtin";
 import { derivedFor } from "@/lib/guide/useDerived";
 import type { Guide } from "@/lib/guide/types";
 import { setChecked, setCurrentChapter } from "@/lib/store";
@@ -47,18 +47,12 @@ export function ChapterView({
   const index = chapters.findIndex((c) => c.id === chapterId);
   const prev = chapters[index - 1];
   const next = chapters[index + 1];
-  const main = builtinGuideById.get("main")!;
-  const mainProgress = chapterProgressOf(main, chapterId, checks);
+  const mainProgress = chapterProgressOfGuides(guides, chapterId, checks);
   const pct = mainProgress.total ? Math.round((mainProgress.done / mainProgress.total) * 100) : 0;
   const [showAnytime, setShowAnytime] = useState(false);
 
-  // Missable items still open up to and including this chapter.
-  const missable = checklist.filter(
-    (i) =>
-      i.missable &&
-      !checks[i.id] &&
-      (chapters.find((c) => c.id === i.chapterId)?.number ?? 99) <= chapter.number,
-  );
+  // Missable items from the switched-on guides that are still open up to and including this chapter.
+  const missable = openMissable(guides, checks, chapter.number);
 
   const blocks = guides
     .map((guide) => {
@@ -86,19 +80,23 @@ export function ChapterView({
             {chapter.phase === "main" ? `${chapter.number}. ` : ""}
             {chapter.title}
           </h2>
-          <span className="text-muted-foreground text-sm tabular-nums">
-            {t("step.progress", { done: mainProgress.done, total: mainProgress.total })}
-          </span>
+          {mainProgress.total > 0 && (
+            <span className="text-muted-foreground text-sm tabular-nums">
+              {t("step.progress", { done: mainProgress.done, total: mainProgress.total })}
+            </span>
+          )}
         </div>
-        <div
-          className="bg-muted h-2 overflow-hidden rounded-full"
-          role="progressbar"
-          aria-valuenow={pct}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        >
-          <div className="bg-primary h-full transition-all" style={{ width: `${pct}%` }} />
-        </div>
+        {mainProgress.total > 0 && (
+          <div
+            className="bg-muted h-2 overflow-hidden rounded-full"
+            role="progressbar"
+            aria-valuenow={pct}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div className="bg-primary h-full transition-all" style={{ width: `${pct}%` }} />
+          </div>
+        )}
         <div className="flex flex-wrap items-center gap-2">
           <select
             className="bg-background h-9 rounded-md border px-2 text-sm"
