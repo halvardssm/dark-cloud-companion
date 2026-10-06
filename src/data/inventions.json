@@ -1,0 +1,4284 @@
+[
+  {
+    "name": "Aquarium",
+    "chapter": 1,
+    "recipeFound": "City Hall, mayor's bookshelf",
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Window",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 5
+      },
+      {
+        "name": "Glass Material",
+        "qty": 4
+      },
+      {
+        "name": "Water Element",
+        "qty": 15
+      }
+    ],
+    "price": 1080
+  },
+  {
+    "name": "Bandit Brassard",
+    "chapter": 1,
+    "recipeFound": "Max's House, 1F S. Quarters",
+    "ideas": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Show Window",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Wind Element",
+        "qty": 10
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      },
+      {
+        "name": "Bandit Coin",
+        "qty": 1
+      }
+    ],
+    "price": 8100
+  },
+  {
+    "name": "Cannonball Arm",
+    "chapter": 1,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Manhole",
+        "scoop": false
+      },
+      {
+        "name": "Old-Style Robot",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 2
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 340
+  },
+  {
+    "name": "Caterpillar",
+    "chapter": 1,
+    "recipeFound": "Train Station, book on table",
+    "ideas": [
+      {
+        "name": "Car",
+        "scoop": false
+      },
+      {
+        "name": "Cart",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 3
+      }
+    ],
+    "price": 450
+  },
+  {
+    "name": "Clown Hand",
+    "chapter": 1,
+    "recipeFound": "Parn's Studio, book stack",
+    "ideas": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      },
+      {
+        "name": "Paint (Black)",
+        "qty": 10
+      },
+      {
+        "name": "Paint (Green)",
+        "qty": 5
+      }
+    ],
+    "price": 1400
+  },
+  {
+    "name": "Energy Pack",
+    "chapter": 1,
+    "recipeFound": "Cedric tells you it",
+    "ideas": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 1
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 2
+      }
+    ],
+    "price": 350
+  },
+  {
+    "name": "Energy Pack (Barrel)",
+    "chapter": 1,
+    "recipeFound": "Max's Room, right bookshelf",
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      }
+    ],
+    "price": 600
+  },
+  {
+    "name": "Knight Boots",
+    "chapter": 1,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Shield",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 120
+  },
+  {
+    "name": "Tasty Water",
+    "chapter": 1,
+    "recipeFound": "Lin's House, book on table",
+    "ideas": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Water Element",
+        "qty": 5
+      }
+    ],
+    "price": 300
+  },
+  {
+    "name": "Trumpet Gun",
+    "chapter": 1,
+    "recipeFound": "Furbits' House, bookshelf",
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Rapper",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Wind Element",
+        "qty": 1
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 2
+      }
+    ],
+    "price": 260
+  },
+  {
+    "name": "Anti-Petrify Amulet",
+    "chapter": 2,
+    "recipeFound": "Dell Clinic, book near door",
+    "ideas": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Jurak's Eye",
+        "scoop": false
+      },
+      {
+        "name": "Morning Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Stone Berry",
+        "qty": 3
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 200
+  },
+  {
+    "name": "Barrel Cannon",
+    "chapter": 2,
+    "recipeFound": "Cedric's Shop, lower left",
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Mushroom",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 10
+      }
+    ],
+    "price": 400
+  },
+  {
+    "name": "Bell Trigger",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Phone",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Wind Element",
+        "qty": 2
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 2
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      }
+    ],
+    "price": 620
+  },
+  {
+    "name": "Bomb",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      },
+      {
+        "name": "Weapon Shop Sign",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Flame Crystal",
+        "qty": 1
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 5
+      },
+      {
+        "name": "Wind Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 400
+  },
+  {
+    "name": "Bone Rapier",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Withered Jurak",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Life Element",
+        "qty": 5
+      },
+      {
+        "name": "Unknown Bone",
+        "qty": 30
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 5
+      }
+    ],
+    "price": 1350
+  },
+  {
+    "name": "Bread",
+    "chapter": 2,
+    "recipeFound": "Police Station, counter",
+    "ideas": [
+      {
+        "name": "Fireplace",
+        "scoop": false
+      },
+      {
+        "name": "Polly's Bakery Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wheat Flour",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Flour",
+        "qty": 3
+      },
+      {
+        "name": "Water Element",
+        "qty": 1
+      },
+      {
+        "name": "Fire Element",
+        "qty": 1
+      }
+    ],
+    "price": 180
+  },
+  {
+    "name": "Cannonball Arm II",
+    "chapter": 2,
+    "recipeFound": "Max's House, 2F S. Quarters",
+    "ideas": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 1350
+  },
+  {
+    "name": "Clown Body",
+    "chapter": 2,
+    "recipeFound": "Claire's House, 1st bedroom",
+    "ideas": [
+      {
+        "name": "Cup",
+        "scoop": false
+      },
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 25
+      },
+      {
+        "name": "Paint (Green)",
+        "qty": 10
+      }
+    ],
+    "price": 2350
+  },
+  {
+    "name": "Clown Foot",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Eyeball",
+        "scoop": false
+      },
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "alternate": [
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": false
+      },
+      {
+        "name": "Egg",
+        "scoop": false
+      },
+      {
+        "name": "Scale",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Paint (Green)",
+        "qty": 10
+      }
+    ],
+    "price": 900
+  },
+  {
+    "name": "Clown Shoes",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Sturdy Cloth",
+        "qty": 4
+      },
+      {
+        "name": "Wind Crystal",
+        "qty": 2
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      }
+    ],
+    "price": 480
+  },
+  {
+    "name": "Double Pudding",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Wheat Flour",
+        "scoop": false
+      },
+      {
+        "name": "Find the Golden Egg!",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Cheese",
+        "qty": 4
+      },
+      {
+        "name": "Life Element",
+        "qty": 10
+      },
+      {
+        "name": "Tasty Water",
+        "qty": 4
+      }
+    ],
+    "price": 1160
+  },
+  {
+    "name": "Gift Capsule",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "Letter",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Unknown Bone",
+        "qty": 12
+      },
+      {
+        "name": "Sticky Clay",
+        "qty": 15
+      }
+    ],
+    "price": 540
+  },
+  {
+    "name": "Grenade Launcher",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Egg",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 2
+      },
+      {
+        "name": "Bomb",
+        "qty": 2
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 4
+      }
+    ],
+    "price": 520
+  },
+  {
+    "name": "Iron Leg",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fence",
+        "scoop": false
+      },
+      {
+        "name": "Old-Style Robot",
+        "scoop": false
+      },
+      {
+        "name": "Trashcan",
+        "scoop": false
+      }
+    ],
+    "alternate": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Phonograph",
+        "scoop": false
+      },
+      {
+        "name": "Saw",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 2
+      }
+    ],
+    "price": 300
+  },
+  {
+    "name": "Improved Bomb",
+    "chapter": 2,
+    "recipeFound": "G-ITEMS, lower right shelf",
+    "ideas": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Coal",
+        "scoop": false
+      },
+      {
+        "name": "Egg",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Flame Crystal",
+        "qty": 3
+      },
+      {
+        "name": "Bomb",
+        "qty": 1
+      },
+      {
+        "name": "Wind Crystal",
+        "qty": 3
+      }
+    ],
+    "price": 1100
+  },
+  {
+    "name": "Leather Shoes",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Chair",
+        "scoop": false
+      },
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Gyumo's Yell",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      }
+    ],
+    "price": 100
+  },
+  {
+    "name": "Lightspeed",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Flower",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Light Element",
+        "qty": 10
+      },
+      {
+        "name": "Holy Stone",
+        "qty": 1
+      },
+      {
+        "name": "Lightning Crystal",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "name": "Lure Rod",
+    "chapter": 2,
+    "recipeFound": "Pau's House, rock table",
+    "ideas": [
+      {
+        "name": "Fish",
+        "scoop": false
+      },
+      {
+        "name": "River",
+        "scoop": false
+      },
+      {
+        "name": "Lafrescia Stem",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      },
+      {
+        "name": "Sea Dragon Crystal",
+        "qty": 3
+      }
+    ],
+    "price": 750
+  },
+  {
+    "name": "Swan",
+    "chapter": 2,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Boat",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 3
+      },
+      {
+        "name": "Wind Element",
+        "qty": 3
+      }
+    ],
+    "price": 240
+  },
+  {
+    "name": "Work Shoes",
+    "chapter": 2,
+    "recipeFound": "Cedric's shop, top level",
+    "ideas": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Ladder",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sturdy Cloth",
+        "qty": 3
+      },
+      {
+        "name": "Protect Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 210
+  },
+  {
+    "name": "Anti-Curse Amulet",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      },
+      {
+        "name": "Saint's Writings",
+        "scoop": false
+      },
+      {
+        "name": "Hmmmm! Jurak",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Holy Water",
+        "qty": 3
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 140
+  },
+  {
+    "name": "Antidote Amulet",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Bed",
+        "scoop": false
+      },
+      {
+        "name": "Dell Clinic Sign",
+        "scoop": false
+      },
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Antidote Drink",
+        "qty": 3
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 140
+  },
+  {
+    "name": "Antidote Drink",
+    "chapter": 3,
+    "recipeFound": "Dell Clinic, bookshelf",
+    "ideas": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Dell Clinic Sign",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Poison",
+        "qty": 2
+      },
+      {
+        "name": "Tasty Water",
+        "qty": 2
+      },
+      {
+        "name": "Poison Apple",
+        "qty": 1
+      }
+    ],
+    "price": 260
+  },
+  {
+    "name": "Anti-Goo Amulet",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Laundry",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      },
+      {
+        "name": "Ruler of the Pond",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Soap",
+        "qty": 3
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 140
+  },
+  {
+    "name": "Barrel Cannon II",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 15
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 20
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 4
+      }
+    ],
+    "price": 780
+  },
+  {
+    "name": "Bucket Leg",
+    "chapter": 3,
+    "recipeFound": "P.B. Bar, barrel",
+    "ideas": [
+      {
+        "name": "Can",
+        "scoop": false
+      },
+      {
+        "name": "River",
+        "scoop": false
+      },
+      {
+        "name": "Well",
+        "scoop": false
+      }
+    ],
+    "alternate": [
+      {
+        "name": "River",
+        "scoop": false
+      },
+      {
+        "name": "Trashcan",
+        "scoop": false
+      },
+      {
+        "name": "Water Tank",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Water Element",
+        "qty": 5
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      }
+    ],
+    "price": 600
+  },
+  {
+    "name": "Bucket Pack",
+    "chapter": 3,
+    "recipeFound": "Lab 2 computer",
+    "ideas": [
+      {
+        "name": "Mailbox",
+        "scoop": false
+      },
+      {
+        "name": "Trashcan",
+        "scoop": false
+      },
+      {
+        "name": "Warehouse",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 40
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      },
+      {
+        "name": "Paint (Red)",
+        "qty": 30
+      }
+    ],
+    "price": 2300
+  },
+  {
+    "name": "Cannonball Arm III",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 10
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 20
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 2
+      }
+    ],
+    "price": 3300
+  },
+  {
+    "name": "Cheese",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Cafe Sign",
+        "scoop": false
+      },
+      {
+        "name": "Lao Chao's Trademark",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Flour",
+        "qty": 8
+      },
+      {
+        "name": "Water Element",
+        "qty": 2
+      },
+      {
+        "name": "Tasty Water",
+        "qty": 1
+      }
+    ],
+    "price": 360
+  },
+  {
+    "name": "Clown Hand II",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Scale",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Hunk of Copper",
+        "qty": 12
+      },
+      {
+        "name": "Paint (Red)",
+        "qty": 10
+      },
+      {
+        "name": "Paint (Yellow)",
+        "qty": 10
+      }
+    ],
+    "price": 1800
+  },
+  {
+    "name": "Dragon Shoes",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sturdy Cloth",
+        "qty": 3
+      },
+      {
+        "name": "Flame Stone",
+        "qty": 2
+      },
+      {
+        "name": "Thunder Element",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "name": "Drill Arm",
+    "chapter": 3,
+    "recipeFound": "Lab 3 computer",
+    "ideas": [
+      {
+        "name": "Auto Book Reader",
+        "scoop": false
+      },
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 3
+      }
+    ],
+    "price": 800
+  },
+  {
+    "name": "Holy Water",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Holy Emblem",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Tasty Water",
+        "qty": 2
+      },
+      {
+        "name": "Holy Element",
+        "qty": 5
+      },
+      {
+        "name": "Light Element",
+        "qty": 5
+      }
+    ],
+    "price": 760
+  },
+  {
+    "name": "Machine Gun Arm",
+    "chapter": 3,
+    "recipeFound": "Georama Church, book on altar",
+    "ideas": [
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 15
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 15
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      }
+    ],
+    "price": 700
+  },
+  {
+    "name": "Machine Gun Arm II",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Telescope",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 8
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 20
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      }
+    ],
+    "price": 2150
+  },
+  {
+    "name": "Magic Gun",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ],
+    "alternate": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Holy Crystal",
+        "qty": 3
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      },
+      {
+        "name": "Glass Material",
+        "qty": 3
+      }
+    ],
+    "price": 1510
+  },
+  {
+    "name": "Milk Can Body",
+    "chapter": 3,
+    "recipeFound": "Starlight Items, left shelf",
+    "ideas": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Milk Can",
+        "scoop": false
+      },
+      {
+        "name": "Peeping Hole",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Glass Material",
+        "qty": 10
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 40
+      }
+    ],
+    "price": 600
+  },
+  {
+    "name": "Missile Pod Arm",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Mushroom",
+        "scoop": false
+      },
+      {
+        "name": "Rotating Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 20
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      }
+    ],
+    "price": 700
+  },
+  {
+    "name": "Non-Stop Amulet",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Clock",
+        "scoop": false
+      },
+      {
+        "name": "Monument",
+        "scoop": false
+      },
+      {
+        "name": "Starglass",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Heart-Throb Cherry",
+        "qty": 3
+      },
+      {
+        "name": "Sturdy Cloth",
+        "qty": 1
+      }
+    ],
+    "price": 200
+  },
+  {
+    "name": "Premium Chicken",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Burning Dragon Fire",
+        "scoop": false
+      },
+      {
+        "name": "Pork Dumpling",
+        "scoop": false
+      },
+      {
+        "name": "Special Peking Duck",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Life Element",
+        "qty": 10
+      },
+      {
+        "name": "Fire Element",
+        "qty": 10
+      },
+      {
+        "name": "Super Hot Pepper",
+        "qty": 2
+      }
+    ],
+    "price": 1240
+  },
+  {
+    "name": "Roller Foot",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Freight Train",
+        "scoop": false
+      },
+      {
+        "name": "Rotating Sign",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ],
+    "alternate": [
+      {
+        "name": "Freight Train",
+        "scoop": false
+      },
+      {
+        "name": "Ventilation",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      }
+    ],
+    "price": 500
+  },
+  {
+    "name": "Samurai Arm",
+    "chapter": 3,
+    "recipeFound": "Starlight Weapons, small book",
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 10
+      }
+    ],
+    "price": 800
+  },
+  {
+    "name": "Samurai Body",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Cedric's Shop Sign",
+        "scoop": false
+      },
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Telescope",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Paint (Red)",
+        "qty": 10
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 40
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      }
+    ],
+    "price": 2400
+  },
+  {
+    "name": "Sand Breaker",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Hand-Sewn Silk Flag",
+        "scoop": false
+      },
+      {
+        "name": "Horn",
+        "scoop": false
+      },
+      {
+        "name": "Spinning Ivanoff",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Rough Rock",
+        "qty": 20
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 5
+      },
+      {
+        "name": "Sticky Clay",
+        "qty": 20
+      }
+    ],
+    "price": 900
+  },
+  {
+    "name": "Smash Wrench",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      },
+      {
+        "name": "Star Lamp",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 2
+      }
+    ],
+    "price": 400
+  },
+  {
+    "name": "Soap",
+    "chapter": 3,
+    "recipeFound": "Claire's House, 1F bookshelf",
+    "ideas": [
+      {
+        "name": "Laundry",
+        "scoop": false
+      },
+      {
+        "name": "Palm Tree",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Bomb Nut",
+        "qty": 1
+      },
+      {
+        "name": "Unknown Bone",
+        "qty": 5
+      }
+    ],
+    "price": 160
+  },
+  {
+    "name": "Spike Boots",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Pumpkin",
+        "scoop": false
+      },
+      {
+        "name": "Moon Crystal",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hide",
+        "qty": 4
+      },
+      {
+        "name": "Holy Crystal",
+        "qty": 2
+      }
+    ],
+    "price": 500
+  },
+  {
+    "name": "Stamina Drink",
+    "chapter": 3,
+    "recipeFound": "Starlight Items, right shelf",
+    "ideas": [
+      {
+        "name": "Bottle",
+        "scoop": false
+      },
+      {
+        "name": "Chinese Lantern",
+        "scoop": false
+      },
+      {
+        "name": "King Mardan",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Tasty Water",
+        "qty": 2
+      },
+      {
+        "name": "Super Hot Pepper",
+        "qty": 30
+      },
+      {
+        "name": "Mighty Healing",
+        "qty": 5
+      }
+    ],
+    "price": 2260
+  },
+  {
+    "name": "Star Breaker",
+    "chapter": 3,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Fire House",
+        "scoop": false
+      },
+      {
+        "name": "Phantom Memo Eater",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 6
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 6
+      }
+    ],
+    "price": 1470
+  },
+  {
+    "name": "Wise Owl Sword",
+    "chapter": 3,
+    "recipeFound": "P.B. Weapon Shop, lower left",
+    "ideas": [
+      {
+        "name": "Grass",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Charging Ram",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Hunter Crystal",
+        "qty": 4
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      }
+    ],
+    "price": 1200
+  },
+  {
+    "name": "Wooden Box Body",
+    "chapter": 3,
+    "recipeFound": "Morton's Sundries, counter",
+    "ideas": [
+      {
+        "name": "Giant Yorda Tree",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      },
+      {
+        "name": "Hmmmm! Jurak",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 20
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      }
+    ],
+    "price": 1200
+  },
+  {
+    "name": "Barrel Cannon III",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Water Tank",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 17
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 25
+      },
+      {
+        "name": "Hunter Crystal",
+        "qty": 4
+      }
+    ],
+    "price": 1440
+  },
+  {
+    "name": "Buggy",
+    "chapter": 4,
+    "recipeFound": "Dell Clinic, small stand",
+    "ideas": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Car",
+        "scoop": false
+      },
+      {
+        "name": "System 5WP2",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Fire Element",
+        "qty": 7
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 8
+      }
+    ],
+    "price": 1120
+  },
+  {
+    "name": "Cannonball Arm IV",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Egg Chair",
+        "scoop": false
+      },
+      {
+        "name": "Rock",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 3
+      },
+      {
+        "name": "Silver Bar",
+        "qty": 5
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 4
+      }
+    ],
+    "price": 4600
+  },
+  {
+    "name": "Cleaner Pack",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Vacuum",
+        "scoop": false
+      }
+    ],
+    "alternate": [
+      {
+        "name": "Can",
+        "scoop": false
+      },
+      {
+        "name": "Vacuum Bag",
+        "scoop": false
+      },
+      {
+        "name": "Water Tank",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Thick Hide",
+        "qty": 4
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 8
+      }
+    ],
+    "price": 2300
+  },
+  {
+    "name": "Clown Hand III",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Flag",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Paint (Purple)",
+        "qty": 20
+      },
+      {
+        "name": "Paint (Green)",
+        "qty": 20
+      }
+    ],
+    "price": 3400
+  },
+  {
+    "name": "Cubic Hammer",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Dresser",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      },
+      {
+        "name": "Light Element",
+        "qty": 2
+      }
+    ],
+    "price": 1320
+  },
+  {
+    "name": "Dark Viper",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Night Stalker",
+        "scoop": true
+      },
+      {
+        "name": "Puppet Shingala",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 6
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 3
+      },
+      {
+        "name": "Unknown Bone",
+        "qty": 6
+      }
+    ],
+    "price": 840
+  },
+  {
+    "name": "Flamingo",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Light of Luna Stone",
+        "scoop": false
+      },
+      {
+        "name": "Palm Tree",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 5
+      },
+      {
+        "name": "Paint (Pink)",
+        "qty": 3
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 1
+      }
+    ],
+    "price": 480
+  },
+  {
+    "name": "Hammer Arm",
+    "chapter": 4,
+    "recipeFound": "Lab 1 computer",
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      }
+    ],
+    "price": 1000
+  },
+  {
+    "name": "Missile Pod Arm II",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Wooden Box",
+        "scoop": false
+      },
+      {
+        "name": "Symbol of Luna Lab",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Hunk of Copper",
+        "qty": 20
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 30
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 10
+      }
+    ],
+    "price": 1700
+  },
+  {
+    "name": "Multi Feet",
+    "chapter": 4,
+    "recipeFound": "City Hall, mayor's desk",
+    "ideas": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 15
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      }
+    ],
+    "price": 3300
+  },
+  {
+    "name": "Propeller Leg",
+    "chapter": 4,
+    "recipeFound": "Lab 4 computer",
+    "ideas": [
+      {
+        "name": "Cart",
+        "scoop": false
+      },
+      {
+        "name": "Fan",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 10
+      },
+      {
+        "name": "Wind Element",
+        "qty": 7
+      }
+    ],
+    "price": 2420
+  },
+  {
+    "name": "Question Shooter",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Neo-Projector",
+        "scoop": false
+      },
+      {
+        "name": "Brave Little Linda",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 3
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      }
+    ],
+    "price": 1600
+  },
+  {
+    "name": "Refrigerator Body",
+    "chapter": 4,
+    "recipeFound": "Cedric's Shop, bedroom",
+    "ideas": [
+      {
+        "name": "Refrigerator",
+        "scoop": false
+      },
+      {
+        "name": "Small Generator",
+        "scoop": false
+      },
+      {
+        "name": "Traffic Light",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      },
+      {
+        "name": "Chill Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 1150
+  },
+  {
+    "name": "Stinger Wrench",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Wheel",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      },
+      {
+        "name": "Bandit Coin",
+        "qty": 1
+      }
+    ],
+    "price": 7150
+  },
+  {
+    "name": "Super Alloy Body",
+    "chapter": 4,
+    "recipeFound": "G-PARTS, note on crate",
+    "ideas": [
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Search Light",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      }
+    ],
+    "price": 2500
+  },
+  {
+    "name": "Turkey",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Special Peking Duck",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 3
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 3
+      }
+    ],
+    "price": 90
+  },
+  {
+    "name": "Wild Cat",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Work Equipment",
+        "scoop": false
+      },
+      {
+        "name": "Charging Ram",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 10
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 15
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 8
+      }
+    ],
+    "price": 2550
+  },
+  {
+    "name": "Wing Boots",
+    "chapter": 4,
+    "recipeFound": "Claire's House, 2nd bedroom",
+    "ideas": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Weather Vane",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sturdy Cloth",
+        "qty": 3
+      },
+      {
+        "name": "Wind Element",
+        "qty": 1
+      }
+    ],
+    "price": 120
+  },
+  {
+    "name": "Wing Shoes",
+    "chapter": 4,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Cloth",
+        "scoop": false
+      },
+      {
+        "name": "Parasol",
+        "scoop": false
+      },
+      {
+        "name": "Windmill Feather",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hides",
+        "qty": 2
+      },
+      {
+        "name": "Wind Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 250
+  },
+  {
+    "name": "Albatross",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Geyser",
+        "scoop": false
+      },
+      {
+        "name": "Tree",
+        "scoop": false
+      },
+      {
+        "name": "Fire Squall",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 7
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      },
+      {
+        "name": "Holy Element",
+        "qty": 2
+      }
+    ],
+    "price": 1260
+  },
+  {
+    "name": "Barrel Cannon IV",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Air Cleaner",
+        "scoop": false
+      },
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Fire Squall",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 20
+      },
+      {
+        "name": "Gunpowder",
+        "qty": 40
+      },
+      {
+        "name": "Bull's-Eye Coin",
+        "qty": 1
+      }
+    ],
+    "price": 7700
+  },
+  {
+    "name": "Clown Hand IV",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Paints",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Clown Robo's Attack",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 10
+      },
+      {
+        "name": "Paint (Red)",
+        "qty": 6
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 2
+      }
+    ],
+    "price": 4360
+  },
+  {
+    "name": "Digi Hammer",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Computer",
+        "scoop": false
+      },
+      {
+        "name": "Constructor",
+        "scoop": false
+      },
+      {
+        "name": "Decorative Lights",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 3
+      }
+    ],
+    "price": 800
+  },
+  {
+    "name": "Drill Arm II",
+    "chapter": 5,
+    "recipeFound": "G-ITEMS, lower left shelf",
+    "ideas": [
+      {
+        "name": "Electric Sesame",
+        "scoop": false
+      },
+      {
+        "name": "Horn",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 2
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 4
+      },
+      {
+        "name": "Power Crystal",
+        "qty": 2
+      }
+    ],
+    "price": 820
+  },
+  {
+    "name": "Drum Can Body",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Chair",
+        "scoop": false
+      },
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Lamp",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 40
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 5
+      },
+      {
+        "name": "Glass Material",
+        "qty": 4
+      }
+    ],
+    "price": 580
+  },
+  {
+    "name": "Energy Pack (Urn)",
+    "chapter": 5,
+    "recipeFound": "G-ITEMS, upper left shelf",
+    "ideas": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 20
+      },
+      {
+        "name": "Sturdy Rock",
+        "qty": 20
+      },
+      {
+        "name": "Earth Element",
+        "qty": 10
+      }
+    ],
+    "price": 1400
+  },
+  {
+    "name": "Escape Powder",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Elevator",
+        "scoop": false
+      },
+      {
+        "name": "Transmission Device",
+        "scoop": false
+      },
+      {
+        "name": "Ancient Mural",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Wind Element",
+        "qty": 10
+      },
+      {
+        "name": "Holy Water",
+        "qty": 2
+      }
+    ],
+    "price": 680
+  },
+  {
+    "name": "Falcon",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Large Crane",
+        "scoop": false
+      },
+      {
+        "name": "Withered Jurak",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Rolling Log",
+        "qty": 5
+      },
+      {
+        "name": "Hunter Crystal",
+        "qty": 3
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 1
+      }
+    ],
+    "price": 750
+  },
+  {
+    "name": "Final Bomb",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Cinders",
+        "scoop": false
+      },
+      {
+        "name": "Oven",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Flame Crystal",
+        "qty": 7
+      },
+      {
+        "name": "Bomb",
+        "qty": 10
+      },
+      {
+        "name": "Power Crystal",
+        "qty": 3
+      }
+    ],
+    "price": 3650
+  },
+  {
+    "name": "Hammer Arm II",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Post",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Rough Rock",
+        "qty": 20
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 1
+      }
+    ],
+    "price": 1100
+  },
+  {
+    "name": "Heavy Hammer",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Paznos",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 30
+      },
+      {
+        "name": "Sturdy Rock",
+        "qty": 5
+      },
+      {
+        "name": "Power Crystal",
+        "qty": 2
+      }
+    ],
+    "price": 800
+  },
+  {
+    "name": "Laser Arm",
+    "chapter": 5,
+    "recipeFound": "G-WEAPONS, near counter",
+    "ideas": [
+      {
+        "name": "Barrel",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Geyser",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Light Element",
+        "qty": 10
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 10
+      }
+    ],
+    "price": 1800
+  },
+  {
+    "name": "Machine Gun Arm III",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Propeller",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      },
+      {
+        "name": "Windmill",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Thunder Element",
+        "qty": 30
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      }
+    ],
+    "price": 3800
+  },
+  {
+    "name": "Metal Boots",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Belt",
+        "scoop": false
+      },
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Work Robot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hide",
+        "qty": 2
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "name": "Missile Pod Arm III",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Gold Store",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Flame Stone",
+        "qty": 3
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "name": "Nova Cannon",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Generator",
+        "scoop": false
+      },
+      {
+        "name": "Rapper",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 10
+      },
+      {
+        "name": "Sun Stone",
+        "qty": 1
+      },
+      {
+        "name": "Fire Element",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "name": "Panther Boots",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Bone",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      },
+      {
+        "name": "The Ultimate Gaspard",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Thick Hide",
+        "qty": 4
+      },
+      {
+        "name": "Unknown Bone",
+        "qty": 1
+      },
+      {
+        "name": "Hunter Crystal",
+        "qty": 1
+      }
+    ],
+    "price": 370
+  },
+  {
+    "name": "Poison Wrench",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Mushroom",
+        "scoop": false
+      },
+      {
+        "name": "Sulfur-Colored Juice",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      },
+      {
+        "name": "Poison",
+        "qty": 5
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 3
+      }
+    ],
+    "price": 650
+  },
+  {
+    "name": "Ruler's Sword",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Figure",
+        "scoop": false
+      },
+      {
+        "name": "Iron Maiden",
+        "scoop": false
+      },
+      {
+        "name": "Paznos",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Holy Element",
+        "qty": 20
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 10
+      },
+      {
+        "name": "Light Element",
+        "qty": 20
+      }
+    ],
+    "price": 4400
+  },
+  {
+    "name": "Samurai Arm II",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Runaway Dragon",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      },
+      {
+        "name": "Work Crane",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 15
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 15
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      }
+    ],
+    "price": 1450
+  },
+  {
+    "name": "Soul Breaker",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Geyser",
+        "scoop": false
+      },
+      {
+        "name": "Transmission Device",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Destruction Crystal",
+        "qty": 5
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Glass Material",
+        "qty": 7
+      }
+    ],
+    "price": 1890
+  },
+  {
+    "name": "Steal Gun",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Book",
+        "scoop": false
+      },
+      {
+        "name": "Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Work Crane",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Light Element",
+        "qty": 10
+      },
+      {
+        "name": "Bandit Coin",
+        "qty": 1
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 10
+      }
+    ],
+    "price": 9600
+  },
+  {
+    "name": "Sun & Moon Armor",
+    "chapter": 5,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Electric Sesame",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      },
+      {
+        "name": "The Moon",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Light Element",
+        "qty": 50
+      },
+      {
+        "name": "Holy Element",
+        "qty": 50
+      },
+      {
+        "name": "Sticky Clay",
+        "qty": 50
+      }
+    ],
+    "price": 8000
+  },
+  {
+    "name": "Drill Arm III",
+    "chapter": 6,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Luna Stone Shards",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Ixion",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 2
+      },
+      {
+        "name": "Destruction Crystal",
+        "qty": 5
+      },
+      {
+        "name": "Power Crystal",
+        "qty": 4
+      }
+    ],
+    "price": 3550
+  },
+  {
+    "name": "Hammer Arm III",
+    "chapter": 6,
+    "recipeFound": "Operations Room computer",
+    "ideas": [
+      {
+        "name": "Chimney",
+        "scoop": false
+      },
+      {
+        "name": "Hammer",
+        "scoop": false
+      },
+      {
+        "name": "Earth Gem Altar",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 50
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 30
+      }
+    ],
+    "price": 2750
+  },
+  {
+    "name": "Laser Arm II",
+    "chapter": 6,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Crescent-Shaped Light",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Ixion",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 5
+      },
+      {
+        "name": "Light Element",
+        "qty": 20
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 12
+      }
+    ],
+    "price": 2440
+  },
+  {
+    "name": "Machine Gun Arm IV",
+    "chapter": 6,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Drum Can",
+        "scoop": false
+      },
+      {
+        "name": "Propeller",
+        "scoop": false
+      },
+      {
+        "name": "Wind Gem Altar",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "SIlver Ball",
+        "qty": 10
+      },
+      {
+        "name": "Thunder Element",
+        "qty": 40
+      },
+      {
+        "name": "Ruby",
+        "qty": 1
+      }
+    ],
+    "price": 14400
+  },
+  {
+    "name": "Missile Pod Arm IV",
+    "chapter": 6,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Gold Store",
+        "scoop": false
+      },
+      {
+        "name": "Mount Gundor",
+        "scoop": false
+      },
+      {
+        "name": "Fire Gem Altar",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 3
+      },
+      {
+        "name": "Flame Stone",
+        "qty": 8
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "name": "Nova Cannon II",
+    "chapter": 6,
+    "recipeFound": "Hinted at by old man in P.B.",
+    "ideas": [
+      {
+        "name": "Streetlight",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      },
+      {
+        "name": "Fire Gem Altar",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 12
+      },
+      {
+        "name": "Holy Element",
+        "qty": 50
+      },
+      {
+        "name": "Fire Element",
+        "qty": 20
+      }
+    ],
+    "price": 4440
+  },
+  {
+    "name": "Drill Arm IV",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Work Arm",
+        "scoop": false
+      },
+      {
+        "name": "Flower of the Sun",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 15
+      },
+      {
+        "name": "Indestructible Coin",
+        "qty": 1
+      },
+      {
+        "name": "Diamond",
+        "qty": 1
+      }
+    ],
+    "price": 34500
+  },
+  {
+    "name": "Hammer Arm IV",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Power Arm",
+        "scoop": false
+      },
+      {
+        "name": "Tiny Hammer",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Protector Crystal",
+        "qty": 7
+      },
+      {
+        "name": "Diamond",
+        "qty": 1
+      }
+    ],
+    "price": 31250
+  },
+  {
+    "name": "Jet Hover",
+    "chapter": 7,
+    "recipeFound": "G-PARTS, note on pillar",
+    "ideas": [
+      {
+        "name": "Candle",
+        "scoop": false
+      },
+      {
+        "name": "Fire House",
+        "scoop": false
+      },
+      {
+        "name": "Relaxation Fountain",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 30
+      },
+      {
+        "name": "Fire Element",
+        "qty": 6
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 15
+      }
+    ],
+    "price": 1710
+  },
+  {
+    "name": "Laser Arm III",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Relaxation Fountain",
+        "scoop": false
+      },
+      {
+        "name": "Search Light",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Silver Ball",
+        "qty": 9
+      },
+      {
+        "name": "Light Element",
+        "qty": 15
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 20
+      }
+    ],
+    "price": 5700
+  },
+  {
+    "name": "Laser Arm IV",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Blue Lantern",
+        "scoop": false
+      },
+      {
+        "name": "Energy Pipe",
+        "scoop": false
+      },
+      {
+        "name": "Legend of the Moon",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 4
+      },
+      {
+        "name": "Holy Stone",
+        "qty": 4
+      },
+      {
+        "name": "Diamond",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "name": "Level-Up Powder",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Sun Chair",
+        "scoop": false
+      },
+      {
+        "name": "Sun Table",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Diamond",
+        "qty": 1
+      },
+      {
+        "name": "Experience Coin",
+        "qty": 1
+      },
+      {
+        "name": "Final Bomb",
+        "qty": 1
+      }
+    ],
+    "price": 45600
+  },
+  {
+    "name": "Nova Cannon III",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Stove",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 14
+      },
+      {
+        "name": "Holy Element",
+        "qty": 99
+      },
+      {
+        "name": "Holy Stone",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "name": "Princess Boots",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Waterfall Curtain",
+        "scoop": false
+      },
+      {
+        "name": "Moon Flower Palace",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Sturdy Cloth",
+        "qty": 4
+      },
+      {
+        "name": "Holy Water",
+        "qty": 2
+      },
+      {
+        "name": "Glass Material",
+        "qty": 2
+      }
+    ],
+    "price": 200
+  },
+  {
+    "name": "Resurrection Powder",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Fruit",
+        "scoop": false
+      },
+      {
+        "name": "Lotus Flower",
+        "scoop": false
+      },
+      {
+        "name": "Hot Springs Spirit",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Life Element",
+        "qty": 50
+      },
+      {
+        "name": "Holy Stone",
+        "qty": 5
+      },
+      {
+        "name": "Stamina Drink",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "name": "Ridepod Fuel",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Luna Stone Shards",
+        "scoop": false
+      },
+      {
+        "name": "Mud",
+        "scoop": false
+      },
+      {
+        "name": "Stardust Pond",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Poison",
+        "qty": 20
+      },
+      {
+        "name": "Improved Bomb",
+        "qty": 5
+      },
+      {
+        "name": "Stamina Drink",
+        "qty": 5
+      }
+    ],
+    "price": 7700
+  },
+  {
+    "name": "Samurai Arm III",
+    "chapter": 7,
+    "recipeFound": "Alexandra's Room, book on bed",
+    "ideas": [
+      {
+        "name": "Deer Horn",
+        "scoop": false
+      },
+      {
+        "name": "Moon Column",
+        "scoop": false
+      },
+      {
+        "name": "Weapon",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 20
+      },
+      {
+        "name": "Life Element",
+        "qty": 30
+      }
+    ],
+    "price": 2400
+  },
+  {
+    "name": "Sexy Panther",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Elena's Portrait",
+        "scoop": false
+      },
+      {
+        "name": "Flower Bathed in Light",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 15
+      },
+      {
+        "name": "Ruby",
+        "qty": 1
+      },
+      {
+        "name": "Silver Ball",
+        "qty": 14
+      }
+    ],
+    "price": 13100
+  },
+  {
+    "name": "Treasure Chest Key",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Golden Door",
+        "scoop": false
+      },
+      {
+        "name": "Labyrinth Door",
+        "scoop": false
+      },
+      {
+        "name": "Sun Chamber Gatekeeper",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Gold Bar",
+        "qty": 1
+      },
+      {
+        "name": "Silver Bar",
+        "qty": 5
+      },
+      {
+        "name": "Hunk of Copper",
+        "qty": 10
+      }
+    ],
+    "price": 2500
+  },
+  {
+    "name": "Triple-Urn Pack",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Light of Luna Stone",
+        "scoop": false
+      },
+      {
+        "name": "Pot",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Sticky Clay",
+        "qty": 40
+      },
+      {
+        "name": "Earth Element",
+        "qty": 20
+      },
+      {
+        "name": "Sturdy Rock",
+        "qty": 40
+      }
+    ],
+    "price": 2800
+  },
+  {
+    "name": "Twin Buster",
+    "chapter": 7,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Flower Chandelier",
+        "scoop": false
+      },
+      {
+        "name": "Jurak's Nose",
+        "scoop": false
+      },
+      {
+        "name": "Rifle",
+        "scoop": false
+      }
+    ],
+    "components": [
+      {
+        "name": "Gunpowder",
+        "qty": 15
+      },
+      {
+        "name": "Gold Bar",
+        "qty": 2
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 20
+      }
+    ],
+    "price": 2500
+  },
+  {
+    "name": "Nova Cannon IV",
+    "chapter": 8,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "Pot Torch",
+        "scoop": false
+      },
+      {
+        "name": "The Sun",
+        "scoop": false
+      },
+      {
+        "name": "Flotsam, Revived!",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Sun Stone",
+        "qty": 1
+      },
+      {
+        "name": "Holy Stone",
+        "qty": 5
+      },
+      {
+        "name": "Sticky Clay",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "name": "Samurai Arm IV",
+    "chapter": 8,
+    "recipeFound": null,
+    "ideas": [
+      {
+        "name": "A Surviving Soldier",
+        "scoop": true
+      },
+      {
+        "name": "Flotsam, Revived!",
+        "scoop": true
+      },
+      {
+        "name": "Legend of the Moon",
+        "scoop": true
+      }
+    ],
+    "components": [
+      {
+        "name": "Diamond",
+        "qty": 2
+      },
+      {
+        "name": "Rolling Log",
+        "qty": 25
+      },
+      {
+        "name": "Scrap of Metal",
+        "qty": 25
+      }
+    ],
+    "price": 60750
+  }
+]

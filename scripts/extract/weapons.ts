@@ -12,6 +12,18 @@ import {
   type WeaponsData,
 } from "../../src/data/weapons-schema.ts";
 
+// The walkthrough's own weapon list (scripts/extract/weapons-walkthrough.ts) supplies descriptions and a second opinion on stats.
+const walkthrough: { id: string; description: string; maxStats: number[] }[] = JSON.parse(
+  readFileSync("src/data/weapons-walkthrough.json", "utf8"),
+);
+
+/**
+ * Cross-source corrections. The FAQ's maximum-stat rows for Angel Shooter and Mobius Bangle have their elemental
+ * columns swapped relative to the walkthrough; only the walkthrough's version is consistent with Angel Shooter's
+ * base Cyclone (170), so those two rows are taken from the walkthrough.
+ */
+const MAX_STATS_FROM_WALKTHROUGH = new Set(["angel-shooter", "mobius-bangle"]);
+
 const lines = readFileSync(".local/guides/DC weapon guide.txt", "utf8")
   .replace(/\r/g, "")
   .split("\n");
@@ -172,6 +184,11 @@ for (const sec of typeSections) {
     const m = max[g.name];
     if (!b || !m) throw new Error(`missing stats for ${g.name}`);
     const id = slug(g.name);
+    const wt = walkthrough.find((x) => x.id === id);
+    if (wt && MAX_STATS_FROM_WALKTHROUGH.has(id)) {
+      // Walkthrough order: At, Du, Fl, Ch, Li, Cy, Sm, Ex, Be, Sc.
+      m.splice(0, m.length, wt.maxStats[0], wt.maxStats[1], ...wt.maxStats.slice(2));
+    }
     nameToId.set(g.name, id);
     rawBuilds.set(id, g.builds);
     weapons.push({
@@ -186,6 +203,7 @@ for (const sec of typeSections) {
       spPerLevel: g.spPerLevel,
       abilities: g.abilities,
       buildsUpTo: [],
+      ...(wt?.description ? { description: wt.description } : {}),
       requiresKills: reqs[g.name] ?? [],
       baseStats: Object.fromEntries(STAT_KEYS.map((k, i) => [k, b[i]])) as Weapon["baseStats"],
       baseSp: b[9],

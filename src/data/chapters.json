@@ -15,7 +15,18 @@
       "c1-chest",
       "c1-clown",
       "c1-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 48,
+      "maxDef": 8,
+      "monicaHp": 48,
+      "monicaDef": 8,
+      "ideas": 85,
+      "scoops": 4,
+      "inventions": 10,
+      "level": 2,
+      "points": 190
+    }
   },
   {
     "id": "c2",
@@ -41,7 +52,18 @@
       "c2-lafresc",
       "c2-butterf",
       "c2-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 64,
+      "maxDef": 16,
+      "monicaHp": 64,
+      "monicaDef": 16,
+      "ideas": 139,
+      "scoops": 16,
+      "inventions": 30,
+      "level": 3,
+      "points": 358
+    }
   },
   {
     "id": "c3",
@@ -75,7 +97,18 @@
       "c3-appears",
       "c3-cape",
       "c3-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 96,
+      "maxDef": 32,
+      "monicaHp": 88,
+      "monicaDef": 28,
+      "ideas": 168,
+      "scoops": 26,
+      "inventions": 59,
+      "level": 4,
+      "points": 466
+    }
   },
   {
     "id": "c4",
@@ -105,7 +138,18 @@
       "c4-healing",
       "c4-jaming",
       "c4-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 120,
+      "maxDef": 44,
+      "monicaHp": 120,
+      "monicaDef": 44,
+      "ideas": 191,
+      "scoops": 32,
+      "inventions": 81,
+      "level": 5,
+      "points": 542
+    }
   },
   {
     "id": "c5",
@@ -137,7 +181,18 @@
       "c5-river",
       "c5-gaspard",
       "c5-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 152,
+      "maxDef": 60,
+      "monicaHp": 152,
+      "monicaDef": 60,
+      "ideas": 212,
+      "scoops": 40,
+      "inventions": 105,
+      "level": 7,
+      "points": 624
+    }
   },
   {
     "id": "c6",
@@ -165,7 +220,18 @@
       "c6-crazy",
       "c6-inferno",
       "c6-finish"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 200,
+      "maxDef": 80,
+      "monicaHp": 200,
+      "monicaDef": 80,
+      "ideas": 220,
+      "scoops": 49,
+      "inventions": 111,
+      "level": 7,
+      "points": 685
+    }
   },
   {
     "id": "c7",
@@ -203,7 +269,18 @@
       "c7-beware",
       "c7-final",
       "c7-sun"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 240,
+      "maxDef": 104,
+      "monicaHp": 240,
+      "monicaDef": 104,
+      "ideas": 239,
+      "scoops": 52,
+      "inventions": 126,
+      "level": 7,
+      "points": 738
+    }
   },
   {
     "id": "c8",
@@ -251,7 +328,18 @@
       "c8-belief",
       "c8-seeping",
       "c8-boss5"
-    ]
+    ],
+    "endStats": {
+      "maxHp": 248,
+      "maxDef": 112,
+      "monicaHp": 248,
+      "monicaDef": 112,
+      "ideas": 241,
+      "scoops": 53,
+      "inventions": 128,
+      "level": 7,
+      "points": 747
+    }
   },
   {
     "id": "postgame",

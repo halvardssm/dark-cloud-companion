@@ -37,6 +37,8 @@ export const weapon = z.object({
   gunType: z.enum(["N", "M", "G", "B"]).optional(),
   /** Combo length as printed in the source (e.g. "5", "5F" fast, "5b" variant). */
   combo: z.string().optional(),
+  /** In-game item description (from the walkthrough's weapon list). */
+  description: z.string().optional(),
   /** Attack changes with time of day (Lamb's Sword). */
   attackVariesByTime: z.boolean().optional(),
   /** ABS needed to reach +1 (B in the ABS formulas). May be .5 for some guns. */

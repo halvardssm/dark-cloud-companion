@@ -1,0 +1,1404 @@
+[
+  {
+    "name": "Donny Mart",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Bread",
+        "price": 30
+      },
+      {
+        "name": "Antidote Drink",
+        "price": 40
+      },
+      {
+        "name": "Repair Powder",
+        "price": 80
+      },
+      {
+        "name": "Gun Repair Powder",
+        "price": 160
+      },
+      {
+        "name": "Treasure Chest Key",
+        "price": 500
+      },
+      {
+        "name": "Denim Overalls",
+        "price": 500,
+        "chapter": 4
+      },
+      {
+        "name": "Hunting Cap",
+        "price": 200,
+        "chapter": 4
+      },
+      {
+        "name": "Fashionable Cap",
+        "price": 220,
+        "chapter": 5
+      },
+      {
+        "name": "Maintenance Cap",
+        "price": 200,
+        "chapter": 6
+      },
+      {
+        "name": "Two-Tone Beret",
+        "price": 240,
+        "chapter": 7
+      }
+    ]
+  },
+  {
+    "name": "Morton's Sundries",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Gunpowder",
+        "price": 20
+      },
+      {
+        "name": "Scrap of Metal",
+        "price": 10
+      },
+      {
+        "name": "Thick Hide",
+        "price": 50
+      },
+      {
+        "name": "Antidote Drink",
+        "price": 40
+      },
+      {
+        "name": "Bomb",
+        "price": 200
+      },
+      {
+        "name": "Monster Notes",
+        "price": 1000
+      },
+      {
+        "name": "Cooking Stove",
+        "price": 300
+      },
+      {
+        "name": "Repair Powder"
+      },
+      {
+        "name": "Gun Repair Powder"
+      },
+      {
+        "name": "Armband Repair Powder",
+        "price": 160,
+        "chapter": 2
+      },
+      {
+        "name": "Seal-Breaking Scroll",
+        "price": 1500,
+        "chapter": 3
+      },
+      {
+        "name": "Improved Bomb",
+        "price": 1000,
+        "chapter": 4
+      },
+      {
+        "name": "Ridepod Fuel",
+        "price": 2000,
+        "chapter": 5
+      },
+      {
+        "name": "Final Bomb",
+        "price": 3600,
+        "chapter": 6
+      },
+      {
+        "name": "Gold Paint",
+        "price": 1000,
+        "chapter": 8
+      },
+      {
+        "name": "Garnet",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Amethyst",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Aquamarine",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Diamond",
+        "price": 30000,
+        "chapter": 8
+      },
+      {
+        "name": "Emerald",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Pearl",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Ruby",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Peridot",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Sapphire",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Opal",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Topaz",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Turquoise",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Wealth Coin",
+        "price": 4500,
+        "chapter": 8
+      },
+      {
+        "name": "Poison Coin",
+        "price": 4000,
+        "chapter": 8
+      },
+      {
+        "name": "Time Coin",
+        "price": 6500,
+        "chapter": 8
+      },
+      {
+        "name": "Bandit Coin",
+        "price": 7000,
+        "chapter": 8
+      },
+      {
+        "name": "Absorption Coin",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Healing Coin",
+        "price": 10000,
+        "chapter": 8
+      },
+      {
+        "name": "Bull's-Eye Coin",
+        "price": 6500,
+        "chapter": 8
+      },
+      {
+        "name": "Experience Coin",
+        "price": 12000,
+        "chapter": 8
+      }
+    ]
+  },
+  {
+    "name": "Polly's Bakery",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Flour",
+        "price": 20
+      },
+      {
+        "name": "Sugar Cane",
+        "price": 20
+      },
+      {
+        "name": "Super Hot Pepper",
+        "price": 20
+      },
+      {
+        "name": "Bread",
+        "price": 30
+      },
+      {
+        "name": "Tasty Water",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "name": "Milane's Weapon Shop",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Battle Wrench",
+        "price": 200
+      },
+      {
+        "name": "Classic Gun",
+        "price": 150
+      },
+      {
+        "name": "Baselard",
+        "price": 250
+      },
+      {
+        "name": "Gladius",
+        "price": 300
+      },
+      {
+        "name": "Repair Powder"
+      },
+      {
+        "name": "Gun Repair Powder"
+      },
+      {
+        "name": "Armband Repair Powder",
+        "price": 2
+      },
+      {
+        "name": "Drill Wrench",
+        "price": 350,
+        "chapter": 2
+      },
+      {
+        "name": "Gold Brassard",
+        "price": 350,
+        "chapter": 2
+      },
+      {
+        "name": "Kubera's Hand",
+        "price": 500,
+        "chapter": 3
+      },
+      {
+        "name": "Smash Wrench",
+        "price": 600,
+        "chapter": 4
+      },
+      {
+        "name": "Shamshir",
+        "price": 600,
+        "chapter": 4
+      },
+      {
+        "name": "Thorn Armlet",
+        "price": 820,
+        "chapter": 4
+      }
+    ]
+  },
+  {
+    "name": "Erik's Gunpowder",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Gunpowder",
+        "price": 20
+      }
+    ]
+  },
+  {
+    "name": "Borneo's Fine Ore",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Rough Rock",
+        "price": 20
+      },
+      {
+        "name": "Gold Bar",
+        "price": 1000
+      },
+      {
+        "name": "Silver Ore",
+        "price": 200
+      },
+      {
+        "name": "Hunk of Copper",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "name": "House of Healing",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Antidote Drink",
+        "price": 40
+      },
+      {
+        "name": "Holy Water",
+        "price": 40
+      },
+      {
+        "name": "Soap",
+        "price": 40
+      },
+      {
+        "name": "Medusa's Tear",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "name": "Conda's Goods",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Rolling Log",
+        "price": 20
+      },
+      {
+        "name": "Sturdy Rock",
+        "price": 20
+      },
+      {
+        "name": "Rough Rock",
+        "price": 20
+      },
+      {
+        "name": "Bundle of Hay",
+        "price": 20
+      },
+      {
+        "name": "Sturdy Cloth",
+        "price": 20
+      },
+      {
+        "name": "Gunpowder",
+        "price": 20
+      },
+      {
+        "name": "Glass Material",
+        "price": 20
+      },
+      {
+        "name": "Unknown Bone",
+        "price": 20
+      },
+      {
+        "name": "Sticky Clay",
+        "price": 20
+      },
+      {
+        "name": "Flour",
+        "price": 20
+      },
+      {
+        "name": "Sugar Cane",
+        "price": 20
+      },
+      {
+        "name": "Super Hot Pepper",
+        "price": 20
+      },
+      {
+        "name": "Poison",
+        "price": 20
+      },
+      {
+        "name": "Forest Dew",
+        "price": 20
+      },
+      {
+        "name": "Scrap of Metal",
+        "price": 10
+      },
+      {
+        "name": "Gold Bar",
+        "price": 1000
+      },
+      {
+        "name": "Silver Ball",
+        "price": 200
+      },
+      {
+        "name": "Hunk of Copper",
+        "price": 50
+      },
+      {
+        "name": "Light Element",
+        "price": 60
+      },
+      {
+        "name": "Holy Element",
+        "price": 60
+      },
+      {
+        "name": "Earth Element",
+        "price": 60
+      },
+      {
+        "name": "Water Element",
+        "price": 60
+      },
+      {
+        "name": "Chill Element",
+        "price": 60
+      },
+      {
+        "name": "Thunder Element",
+        "price": 60
+      },
+      {
+        "name": "Wind Element",
+        "price": 60
+      },
+      {
+        "name": "Fire Element",
+        "price": 60
+      },
+      {
+        "name": "Life Element",
+        "price": 60
+      }
+    ]
+  },
+  {
+    "name": "Rosa's Amulets",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Anti-Petrify Amulet",
+        "price": 50
+      },
+      {
+        "name": "Non-Stop Amulet",
+        "price": 50
+      },
+      {
+        "name": "Anti-Curse Amulet",
+        "price": 50
+      },
+      {
+        "name": "Anti-Goo Amulet",
+        "price": 50
+      },
+      {
+        "name": "Antidote Amulet",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "name": "Fabio's Bait Shop",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Prickly",
+        "price": 80
+      },
+      {
+        "name": "Mimi",
+        "price": 80
+      },
+      {
+        "name": "Evy",
+        "price": 80
+      },
+      {
+        "name": "Carrot",
+        "price": 80
+      },
+      {
+        "name": "Potato Cake",
+        "price": 80
+      },
+      {
+        "name": "Minon",
+        "price": 80
+      },
+      {
+        "name": "Battan",
+        "price": 80
+      },
+      {
+        "name": "Petite Fish",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "name": "Olivie's Lures",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Spinner\tLure",
+        "price": 300
+      },
+      {
+        "name": "Frog Lure",
+        "price": 300
+      },
+      {
+        "name": "Minnow Lure",
+        "price": 300
+      },
+      {
+        "name": "Fork Lure",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "name": "Rufio's Elements",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Flame Crystal",
+        "price": 150
+      },
+      {
+        "name": "Chill Crystal",
+        "price": 150
+      },
+      {
+        "name": "Lightning Crystal",
+        "price": 150
+      },
+      {
+        "name": "Wind Crystal",
+        "price": 150
+      },
+      {
+        "name": "Light Element",
+        "price": 60
+      },
+      {
+        "name": "Holy Element",
+        "price": 60
+      },
+      {
+        "name": "Earth Element",
+        "price": 60
+      },
+      {
+        "name": "Water Element",
+        "price": 60
+      },
+      {
+        "name": "Chill Element",
+        "price": 60
+      },
+      {
+        "name": "Thunder Element",
+        "price": 60
+      },
+      {
+        "name": "Wind Element",
+        "price": 60
+      },
+      {
+        "name": "Fire Element",
+        "price": 60
+      },
+      {
+        "name": "Life Element",
+        "price": 60
+      },
+      {
+        "name": "Hunter Crystal",
+        "price": 150,
+        "chapter": 8
+      },
+      {
+        "name": "Holy Crystal",
+        "price": 150,
+        "chapter": 8
+      },
+      {
+        "name": "Destruction Crystal",
+        "price": 150,
+        "chapter": 8
+      },
+      {
+        "name": "Sea Dragon Crystal",
+        "price": 150,
+        "chapter": 8
+      },
+      {
+        "name": "Power Crystal",
+        "price": 150,
+        "chapter": 8
+      },
+      {
+        "name": "Protector Crystal",
+        "price": 150,
+        "chapter": 8
+      }
+    ]
+  },
+  {
+    "name": "Parn's Paints",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Paint (Red)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Blue)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Black)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Green)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Orange)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Yellow)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Purple)",
+        "price": 30
+      },
+      {
+        "name": "Paint (Pink)",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "name": "Gordon's Bonsai",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Rolling Log",
+        "price": 20
+      },
+      {
+        "name": "Sturdy Rock",
+        "price": 20
+      },
+      {
+        "name": "Forest Dew",
+        "price": 20
+      },
+      {
+        "name": "Plum Rice Ball",
+        "price": 800,
+        "chapter": 5
+      }
+    ]
+  },
+  {
+    "name": "Claire's Place",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Gift Capsule",
+        "price": 400
+      }
+    ]
+  },
+  {
+    "name": "Adel's Fruits",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Tasty Water",
+        "price": 80
+      },
+      {
+        "name": "Heart-Throb Cherry",
+        "price": 60
+      },
+      {
+        "name": "Stone Berry",
+        "price": 60
+      },
+      {
+        "name": "Gooey Peach",
+        "price": 60
+      },
+      {
+        "name": "Poison Apple",
+        "price": 60
+      },
+      {
+        "name": "Mellow Banana",
+        "price": 60
+      }
+    ]
+  },
+  {
+    "name": "Dell's Clinic",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Mighty Healing",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "name": "Ferdinand's Takeout",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Premium Chicken",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "name": "Gerald's Guns",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Trumpet Gun",
+        "price": 300
+      },
+      {
+        "name": "Grenade Launcher",
+        "price": 500,
+        "chapter": 3
+      },
+      {
+        "name": "Magic Gun",
+        "price": 560,
+        "chapter": 4
+      },
+      {
+        "name": "Turkey",
+        "price": 460,
+        "chapter": 4
+      },
+      {
+        "name": "Wild Cat",
+        "price": 900,
+        "chapter": 5
+      }
+    ]
+  },
+  {
+    "name": "Julia's Ringware",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Magic Brassard",
+        "price": 200
+      },
+      {
+        "name": "Gold Brassard",
+        "price": 350,
+        "chapter": 3
+      },
+      {
+        "name": "Crystal Brassard",
+        "price": 740,
+        "chapter": 4
+      },
+      {
+        "name": "Pocklekul",
+        "price": 860,
+        "chapter": 5
+      },
+      {
+        "name": "Indestructible Coin",
+        "price": 1500
+      }
+    ]
+  },
+  {
+    "name": "Stewart's Shoes",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Leather Shoes",
+        "price": 200
+      },
+      {
+        "name": "Wing Shoes",
+        "price": 225
+      },
+      {
+        "name": "Work Shoes",
+        "price": 210
+      },
+      {
+        "name": "Dragon Shoes",
+        "price": 250
+      }
+    ]
+  },
+  {
+    "name": "Mena's Apparel",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Pumpkin Shorts",
+        "price": 200
+      },
+      {
+        "name": "Striped Dress",
+        "price": 250
+      },
+      {
+        "name": "Knight Boots",
+        "price": 200
+      },
+      {
+        "name": "Metal Boots",
+        "price": 240
+      },
+      {
+        "name": "Wing Boots",
+        "price": 260
+      },
+      {
+        "name": "Spike Boots",
+        "price": 260
+      }
+    ]
+  },
+  {
+    "name": "Corrine's Hiarpins",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Yellow Ribbon",
+        "price": 200
+      },
+      {
+        "name": "Striped Ribbon",
+        "price": 220
+      },
+      {
+        "name": "Zipangu Comb",
+        "price": 350
+      },
+      {
+        "name": "Swallowtail",
+        "price": 240
+      }
+    ]
+  },
+  {
+    "name": "Woody Tailor",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Green Overalls",
+        "price": 500
+      },
+      {
+        "name": "Red Vest",
+        "price": 500
+      },
+      {
+        "name": "Denim Overalls",
+        "price": 500
+      },
+      {
+        "name": "Pumpkin Shorts",
+        "price": 200
+      },
+      {
+        "name": "Dark Coin",
+        "price": 1500
+      },
+      {
+        "name": "Indestructible Coin",
+        "price": 1500
+      },
+      {
+        "name": "Himarra Badge",
+        "price": 500
+      },
+      {
+        "name": "Gift Capsule",
+        "price": 400
+      },
+      {
+        "name": "Gold Paint",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "name": "Mushroom Burgers",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Flour",
+        "price": 20
+      },
+      {
+        "name": "Sugar Cane",
+        "price": 20
+      },
+      {
+        "name": "Bread",
+        "price": 30
+      },
+      {
+        "name": "Roasted Chestnut",
+        "price": 300
+      },
+      {
+        "name": "Tasty Water",
+        "price": 80
+      },
+      {
+        "name": "Heart-Throb Cherry",
+        "price": 60
+      },
+      {
+        "name": "Gooey Peach",
+        "price": 60
+      },
+      {
+        "name": "Bomb Nut",
+        "price": 60
+      },
+      {
+        "name": "Poison Apple",
+        "price": 60
+      },
+      {
+        "name": "Mellow Banana",
+        "price": 60
+      },
+      {
+        "name": "Mimi",
+        "price": 80
+      },
+      {
+        "name": "Carrot",
+        "price": 80
+      },
+      {
+        "name": "Potato Cake",
+        "price": 80
+      },
+      {
+        "name": "Battan",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "name": "Jurak Arms",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Dryer Gun",
+        "price": 160
+      },
+      {
+        "name": "Bell Trigger",
+        "price": 400
+      },
+      {
+        "name": "Long Sword",
+        "price": 250
+      },
+      {
+        "name": "Bone Rapier",
+        "price": 500
+      },
+      {
+        "name": "Dark Coin",
+        "price": 1500
+      },
+      {
+        "name": "Repair Powder"
+      },
+      {
+        "name": "Gun Repair Powder"
+      },
+      {
+        "name": "Armband Repair Powder"
+      },
+      {
+        "name": "Frozen Tuna",
+        "price": 700,
+        "chapter": 4
+      },
+      {
+        "name": "Kitchen Knife",
+        "price": 440,
+        "chapter": 4
+      },
+      {
+        "name": "Antique Sword",
+        "price": 880,
+        "chapter": 5
+      }
+    ]
+  },
+  {
+    "name": "Star Items",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Star Leotard",
+        "price": 600
+      },
+      {
+        "name": "Flame Crystal",
+        "price": 150
+      },
+      {
+        "name": "Chill Crystal",
+        "price": 150
+      },
+      {
+        "name": "Lightning Crystal",
+        "price": 150
+      },
+      {
+        "name": "Hunter Crystal",
+        "price": 150
+      },
+      {
+        "name": "Holy Crystal",
+        "price": 150
+      },
+      {
+        "name": "Destruction Crystal",
+        "price": 150
+      },
+      {
+        "name": "Wind Crystal",
+        "price": 150
+      },
+      {
+        "name": "Sea Dragon Crystal",
+        "price": 150
+      },
+      {
+        "name": "Power Crystal",
+        "price": 150
+      },
+      {
+        "name": "Protector Crystal",
+        "price": 150
+      },
+      {
+        "name": "Cheese",
+        "price": 60
+      },
+      {
+        "name": "Antidote Drink",
+        "price": 40
+      },
+      {
+        "name": "Mighty Healing",
+        "price": 300
+      },
+      {
+        "name": "Tasty Water",
+        "price": 80
+      },
+      {
+        "name": "Repair Powder"
+      },
+      {
+        "name": "Starglass",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "name": "Starlight Weapons",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Swan",
+        "price": 450
+      },
+      {
+        "name": "Sand Breaker",
+        "price": 900
+      },
+      {
+        "name": "Gold Brassard",
+        "price": 350
+      },
+      {
+        "name": "Bandit Brassard",
+        "price": 700
+      },
+      {
+        "name": "Wise Owl Sword",
+        "price": 600,
+        "chapter": 4
+      },
+      {
+        "name": "Platinum Brassard",
+        "price": 900,
+        "chapter": 5
+      },
+      {
+        "name": "Moon Armlet",
+        "price": 1800,
+        "chapter": 6
+      },
+      {
+        "name": "Armband Repair Powder"
+      }
+    ]
+  },
+  {
+    "name": "G-Tools",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Cheese",
+        "price": 60
+      },
+      {
+        "name": "Tasty Water",
+        "price": 80
+      },
+      {
+        "name": "Repair Powder"
+      },
+      {
+        "name": "Gun Repair Powder"
+      },
+      {
+        "name": "Armband Repair Powder"
+      }
+    ]
+  },
+  {
+    "name": "G-Weapons",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Cubic Hammer",
+        "price": 950
+      },
+      {
+        "name": "Falcon",
+        "price": 900
+      },
+      {
+        "name": "Question Shooter",
+        "price": 900
+      },
+      {
+        "name": "Choora",
+        "price": 960
+      },
+      {
+        "name": "Dusack",
+        "price": 860
+      },
+      {
+        "name": "Platinum Brassard",
+        "price": 900
+      },
+      {
+        "name": "Digi Hammer",
+        "price": 1100,
+        "chapter": 6
+      },
+      {
+        "name": "Claymore",
+        "price": 1100,
+        "chapter": 6
+      }
+    ]
+  },
+  {
+    "name": "Need's Medal Exchange",
+    "currency": "medals",
+    "items": [
+      {
+        "name": "Clown Suit",
+        "price": 55
+      },
+      {
+        "name": "Clown Hat",
+        "price": 40
+      },
+      {
+        "name": "Clown Shoes",
+        "price": 40
+      },
+      {
+        "name": "Princess Dress",
+        "price": 60
+      },
+      {
+        "name": "Panther Ensemble",
+        "price": 65
+      },
+      {
+        "name": "Princess Orb",
+        "price": 40
+      },
+      {
+        "name": "Kitty Bell",
+        "price": 45
+      },
+      {
+        "name": "Princess Boots",
+        "price": 40
+      },
+      {
+        "name": "Panther Boots",
+        "price": 50
+      },
+      {
+        "name": "Name-Change Ticket",
+        "price": 40
+      }
+    ]
+  },
+  {
+    "name": "G-Parts",
+    "currency": "exp",
+    "items": [
+      {
+        "name": "Refridgerator Body",
+        "price": 700
+      },
+      {
+        "name": "Machine Gun Arm",
+        "price": 900
+      },
+      {
+        "name": "Propeller Leg",
+        "price": 900
+      },
+      {
+        "name": "Energy Pack (Barrel)",
+        "price": 600
+      },
+      {
+        "name": "Ridepod Fuel",
+        "price": 2000
+      }
+    ]
+  },
+  {
+    "name": "Cedric's Parts",
+    "currency": "exp",
+    "items": [
+      {
+        "name": "Improved Core",
+        "price": 900
+      },
+      {
+        "name": "Core II",
+        "price": 1400
+      },
+      {
+        "name": "Core III",
+        "price": 2000
+      },
+      {
+        "name": "Super Core",
+        "price": 3500
+      },
+      {
+        "name": "Hyper Core",
+        "price": 5000
+      },
+      {
+        "name": "Master Grade Core",
+        "price": 6500
+      },
+      {
+        "name": "Caterpillar",
+        "price": 600,
+        "chapter": 2
+      },
+      {
+        "name": "Barrel Cannon",
+        "price": 400,
+        "chapter": 2
+      },
+      {
+        "name": "Roller Foot",
+        "price": 700,
+        "chapter": 3
+      },
+      {
+        "name": "Samurai Arm",
+        "price": 1100,
+        "chapter": 4
+      },
+      {
+        "name": "Energy Pack (Barrel)",
+        "price": 600,
+        "chapter": 4
+      },
+      {
+        "name": "Wooden Box Body",
+        "price": 800,
+        "chapter": 5
+      },
+      {
+        "name": "Refridgerator Body",
+        "price": 700,
+        "chapter": 6
+      },
+      {
+        "name": "Hammer Arm",
+        "price": 800,
+        "chapter": 6
+      },
+      {
+        "name": "Super-Alloy Body",
+        "price": 1100,
+        "chapter": 7
+      },
+      {
+        "name": "Buggy",
+        "price": 800,
+        "chapter": 7
+      },
+      {
+        "name": "Shield Kit\t\tVaries"
+      }
+    ]
+  },
+  {
+    "name": "NOTE: You have to buy the Cores in order (so you cannot buy the Master",
+    "currency": "gilda",
+    "items": [
+      {
+        "name": "Grade Core right off the bat).  Each time you buy a Core, the next model"
+      },
+      {
+        "name": "goes up for sale."
+      }
+    ]
+  }
+]

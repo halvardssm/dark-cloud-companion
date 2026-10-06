@@ -1,0 +1,1888 @@
+[
+  {
+    "name": "Bread",
+    "category": "functional",
+    "effect": "Restores 30 HP",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Mellow Banana",
+    "category": "functional",
+    "effect": "Restores 50 HP, causes Thirsty",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Roasted Chestnut",
+    "category": "functional",
+    "effect": "Restores 80 HP",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Cheese",
+    "category": "functional",
+    "effect": "Restores 120 HP",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Premium Chicken",
+    "category": "functional",
+    "effect": "Restores all HP",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Crunchy Bread",
+    "category": "functional",
+    "effect": "Restores all HP",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Double Pudding",
+    "category": "functional",
+    "effect": "Restores all HP for both",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Plum Rice Ball",
+    "category": "functional",
+    "effect": "Restores all HP, causes Thirsty",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Antidote Drink",
+    "category": "functional",
+    "effect": "Removes Poison status",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Tasty Water",
+    "category": "functional",
+    "effect": "Removes Thirsty status",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Holy Water",
+    "category": "functional",
+    "effect": "Removes Cursed status",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Soap",
+    "category": "functional",
+    "effect": "Removes Gooey status",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Medusa's Tear",
+    "category": "functional",
+    "effect": "Removes Petrify status",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Heart-Throb Cherry",
+    "category": "functional",
+    "effect": "Removes Stop status",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Mighty Healing",
+    "category": "functional",
+    "effect": "Removes all negative status",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Stamina Drink",
+    "category": "functional",
+    "effect": "Boosts defense temporarily",
+    "synth": {
+      "At": 1
+    }
+  },
+  {
+    "name": "Repair Powder",
+    "category": "functional",
+    "effect": "Repairs melee weapons",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Gun Repair Powder",
+    "category": "functional",
+    "effect": "Repairs Max's gun",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Armband Repair Powder",
+    "category": "functional",
+    "effect": "Repair's Monica's armband",
+    "synth": {
+      "Ch": 1
+    }
+  },
+  {
+    "name": "Escape Powder",
+    "category": "functional",
+    "effect": "Escapes from current dungeon",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Level Up Powder",
+    "category": "functional",
+    "effect": "Raises a weapon's level by 1",
+    "synth": {
+      "At": 1
+    }
+  },
+  {
+    "name": "Ressurection Powder",
+    "category": "functional",
+    "effect": "Revives a fallen ally",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Ridepod Fuel",
+    "category": "functional",
+    "effect": "Recovers all energy for Steve",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Seal-Breakng Scroll",
+    "category": "functional",
+    "effect": "Removes a seal from a floor",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Antidote Amulet",
+    "category": "functional",
+    "effect": "Prevents Poison when equipped",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Anti-Goo Amulet",
+    "category": "functional",
+    "effect": "Prevents Gooey when equipped",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Non-Stop Amulet",
+    "category": "functional",
+    "effect": "Prevents Stop when equipped",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Bomb",
+    "category": "functional",
+    "effect": "Does a small radius of damage",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Improved Bomb",
+    "category": "functional",
+    "effect": "Does a medium radius of damage",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Final Bomb",
+    "category": "functional",
+    "effect": "Does a large radius of damage",
+    "synth": {
+      "Fl": 3
+    }
+  },
+  {
+    "name": "Bomb Nut",
+    "category": "functional",
+    "effect": "Does a small radius of damage",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Stone",
+    "category": "functional",
+    "effect": "Does non-elemental damage",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Flame Stone",
+    "category": "functional",
+    "effect": "Does fire damage",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Chill Stone",
+    "category": "functional",
+    "effect": "Does chill damage",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Lightning Stone",
+    "category": "functional",
+    "effect": "Does lightning damage",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Wind Stone",
+    "category": "functional",
+    "effect": "Does cyclone damage",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Holy Stone",
+    "category": "functional",
+    "effect": "Does exorcism damage",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Stone Berry",
+    "category": "functional",
+    "effect": "Petrifies target enemy",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Gooey Peach",
+    "category": "functional",
+    "effect": "Gooeys target enemy",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Poison Apple",
+    "category": "functional",
+    "effect": "Poisons target enemy",
+    "synth": {}
+  },
+  {
+    "name": "Camera",
+    "category": "functional",
+    "effect": "Lets you take pictures",
+    "synth": {}
+  },
+  {
+    "name": "Cooking Stove",
+    "category": "functional",
+    "effect": "Cooks fish into edible items",
+    "synth": {}
+  },
+  {
+    "name": "Inside Scoop Memo",
+    "category": "functional",
+    "effect": "Holds info about scoops",
+    "synth": {}
+  },
+  {
+    "name": "Monster Notes",
+    "category": "functional",
+    "effect": "Gives you info about enemies",
+    "synth": {}
+  },
+  {
+    "name": "Notebook",
+    "category": "functional",
+    "effect": "Holds info on recruit quests",
+    "synth": {}
+  },
+  {
+    "name": "Photo Album",
+    "category": "functional",
+    "effect": "Lets you access saved photos",
+    "synth": {}
+  },
+  {
+    "name": "Denim Overalls",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Hunting Cap",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Leather Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Green Overalls",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Maintenance Cap",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Work Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Red Vest",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Fashionable Cap",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Wing Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Two-Tone Beret",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Dragon Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Explorer's Outfit",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Explorer's Helmet",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Explorer's Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Clown Suit",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Clown Hat",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Clown Shoes",
+    "category": "clothing",
+    "who": "Max",
+    "slot": "Feet",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Pumpkin Shorts",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Yellow Ribbon",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Knight Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Princess Dress",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Princess Orb",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Princess Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Striped Dress",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Striped Ribbon",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Metal Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Star Leotard",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Zipangu Comb",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Wing Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Swallowtail",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Spike Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Panther Ensemble",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Body",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Kitty Bell",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Head",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Panther Boots",
+    "category": "clothing",
+    "who": "Monica",
+    "slot": "Feet",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Cannonball Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 15,
+    "value": "60",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Cannonball Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 43,
+    "value": "100",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Cannonball Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 70,
+    "value": "145",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Cannonball Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 110,
+    "value": "190",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Clown Hand",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 23,
+    "value": "100",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Clown Hand II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 50,
+    "value": "140",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Clown Hand III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 80,
+    "value": "180",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Clown Hand IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 120,
+    "value": "245",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Samurai Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 30,
+    "value": "145",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Samurai Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 70,
+    "value": "260",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Samurai Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 130,
+    "value": "460",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Samurai Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 160,
+    "value": "1800",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Hammer Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 40,
+    "value": "192",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Hammer Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 70,
+    "value": "250",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Hammer Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 100,
+    "value": "315",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Hammer Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 140,
+    "value": "450",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Drill Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 40,
+    "value": "80",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Drill Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 70,
+    "value": "128",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Drill Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 100,
+    "value": "155",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Drill Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 140,
+    "value": "225",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Barrel Cannon",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 23,
+    "value": "95",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Barrel Cannon II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 50,
+    "value": "140",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Barrel Cannon III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 80,
+    "value": "180",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Barrel Cannon IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 120,
+    "value": "240",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Machine Gun Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 30,
+    "value": "138",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Machine Gun Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 60,
+    "value": "180",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Machine Gun Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 90,
+    "value": "230",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Machine Gun Arm IIV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 130,
+    "value": "295",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Missile Pod Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 30,
+    "value": "138",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Missile Pod Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 60,
+    "value": "185",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Missile Pod Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 90,
+    "value": "242",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Missile Pod Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 130,
+    "value": "300",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Nova Cannon",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 50,
+    "value": "240",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Nova Cannon II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 80,
+    "value": "300",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Nova Cannon III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 110,
+    "value": "435",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Nova Cannon IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 165,
+    "value": "1600",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Laser Arm",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 50,
+    "value": "235",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Laser Arm II",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 80,
+    "value": "295",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Laser Arm III",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 115,
+    "value": "430",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Laser Arm IV",
+    "category": "ridepod",
+    "part": "Weapon",
+    "capacity": 140,
+    "value": "800",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Drum Can Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 10,
+    "value": "6",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Milk Can Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 14,
+    "value": "12",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Clown Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 19,
+    "value": "12",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Wooden Box Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 20,
+    "value": "18",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Samurai Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 24,
+    "value": "19",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Refridgerator Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 24,
+    "value": "22",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Super Alloy Body",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 30,
+    "value": "24",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Sun & Moon Armor",
+    "category": "ridepod",
+    "part": "Body",
+    "capacity": 40,
+    "value": "30",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Iron Leg",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 10,
+    "value": "N/A",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Caterpillar",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 15,
+    "value": "N/A",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Bucket Leg",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 15,
+    "value": "N/A",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Clown Foot",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 20,
+    "value": "N/A",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Roller Foot",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 20,
+    "value": "N/A",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Multi Feet",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 20,
+    "value": "N/A",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Buggy",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 30,
+    "value": "N/A",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Propeller Leg",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 35,
+    "value": "N/A",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Jet Hover",
+    "category": "ridepod",
+    "part": "Legs",
+    "capacity": 40,
+    "value": "N/A",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Energy Pack",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 15,
+    "value": "80",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Energy Pack (Barrel)",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 30,
+    "value": "120",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Bucket Pack",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 35,
+    "value": "160",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Cleaner Pack",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 45,
+    "value": "200",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Energy Pack (Urn)",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 50,
+    "value": "240",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Triple-Urn Pack",
+    "category": "ridepod",
+    "part": "Power",
+    "capacity": 60,
+    "value": "300",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Potato Cake",
+    "category": "material",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Carrot",
+    "category": "material",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Battan",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Mimi",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Minon",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Prickly",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Evy",
+    "category": "material",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Petite Fish",
+    "category": "material",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Spinner",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Frog Lure",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Minnow Lure",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Fork Lure",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Treasure Chest Key",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Sticky Clay",
+    "category": "material",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Gunpowder",
+    "category": "material",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Sugar Cane",
+    "category": "material",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Super Hot Pepper",
+    "category": "material",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Glass Material",
+    "category": "material",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Hunk of Copper",
+    "category": "material",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Silver Ball",
+    "category": "material",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Poison",
+    "category": "material",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Scrap of Metal",
+    "category": "material",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Bundle of Hay",
+    "category": "material",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Forest Dew",
+    "category": "material",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Rolling Log",
+    "category": "material",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Rough Rock",
+    "category": "material",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Sturdy Rock",
+    "category": "material",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Flour",
+    "category": "material",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Unknown Bone",
+    "category": "material",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Sturdy Cloth",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Thick Hide",
+    "category": "material",
+    "synth": {
+      "Be": 2
+    }
+  },
+  {
+    "name": "Life Element",
+    "category": "material",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Fire Element",
+    "category": "material",
+    "synth": {
+      "Fl": 2
+    }
+  },
+  {
+    "name": "Chill Element",
+    "category": "material",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Water Element",
+    "category": "material",
+    "synth": {
+      "Ch": 2
+    }
+  },
+  {
+    "name": "Thunder Element",
+    "category": "material",
+    "synth": {
+      "Li": 2
+    }
+  },
+  {
+    "name": "Wind Element",
+    "category": "material",
+    "synth": {
+      "Cy": 2
+    }
+  },
+  {
+    "name": "Earth Element",
+    "category": "material",
+    "synth": {
+      "Sm": 2
+    }
+  },
+  {
+    "name": "Holy Element",
+    "category": "material",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "Light Element",
+    "category": "material",
+    "synth": {
+      "Ex": 2
+    }
+  },
+  {
+    "name": "(All types of fish)",
+    "category": "material",
+    "synth": {
+      "Sc": 2
+    }
+  },
+  {
+    "name": "Paint (Red)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Blue)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Black)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Green)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Orange)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Yellow)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Purple)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Paint (Pink)",
+    "category": "material",
+    "synth": {}
+  },
+  {
+    "name": "Power Crystal",
+    "category": "material",
+    "synth": {
+      "At": 2
+    }
+  },
+  {
+    "name": "Protector Crystal",
+    "category": "material",
+    "synth": {
+      "Du": 2
+    }
+  },
+  {
+    "name": "Flame Crystal",
+    "category": "material",
+    "synth": {
+      "Fl": 3
+    }
+  },
+  {
+    "name": "Chill Crystal",
+    "category": "material",
+    "synth": {
+      "Ch": 3
+    }
+  },
+  {
+    "name": "Lightning Crystal",
+    "category": "material",
+    "synth": {
+      "Li": 3
+    }
+  },
+  {
+    "name": "Wind Crystal",
+    "category": "material",
+    "synth": {
+      "Cy": 3
+    }
+  },
+  {
+    "name": "Destruction Crystal",
+    "category": "material",
+    "synth": {
+      "Sm": 3
+    }
+  },
+  {
+    "name": "Holy Crystal",
+    "category": "material",
+    "synth": {
+      "Ex": 3
+    }
+  },
+  {
+    "name": "Hunter Crystal",
+    "category": "material",
+    "synth": {
+      "Be": 3
+    }
+  },
+  {
+    "name": "Sea Dragon Crystal",
+    "category": "material",
+    "synth": {
+      "Sc": 3
+    }
+  },
+  {
+    "name": "Opal",
+    "category": "material",
+    "synth": {
+      "Li": 10,
+      "Sm": 10
+    }
+  },
+  {
+    "name": "Amethyst",
+    "category": "material",
+    "synth": {
+      "At": 10,
+      "Li": 10,
+      "Sm": 5
+    }
+  },
+  {
+    "name": "Peridot",
+    "category": "material",
+    "synth": {
+      "At": 5,
+      "Fl": 8,
+      "Ex": 8,
+      "Be": 8
+    }
+  },
+  {
+    "name": "Turquoise",
+    "category": "material",
+    "synth": {
+      "At": 5,
+      "Li": 5,
+      "Be": 10,
+      "Sc": 10
+    }
+  },
+  {
+    "name": "Pearl",
+    "category": "material",
+    "synth": {
+      "Du": 10,
+      "Li": 10,
+      "Ex": 10
+    }
+  },
+  {
+    "name": "Sapphire",
+    "category": "material",
+    "synth": {
+      "Du": 5,
+      "Fl": 5,
+      "Cy": 15,
+      "Ex": 5
+    }
+  },
+  {
+    "name": "Aquamarine",
+    "category": "material",
+    "synth": {
+      "Du": 5,
+      "Ch": 10,
+      "Cy": 10,
+      "Sc": 5
+    }
+  },
+  {
+    "name": "Ruby",
+    "category": "material",
+    "synth": {
+      "Fl": 15,
+      "Sm": 15
+    }
+  },
+  {
+    "name": "Emerald",
+    "category": "material",
+    "synth": {
+      "Fl": 10,
+      "Ex": 10,
+      "Be": 10
+    }
+  },
+  {
+    "name": "Topaz",
+    "category": "material",
+    "synth": {
+      "Ch": 10,
+      "Cy": 10,
+      "Sc": 10
+    }
+  },
+  {
+    "name": "Garnet",
+    "category": "material",
+    "synth": {
+      "Ch": 10,
+      "Ex": 10,
+      "Sc": 10
+    }
+  },
+  {
+    "name": "Diamond",
+    "category": "material",
+    "synth": {
+      "At": 5,
+      "Du": 5,
+      "Fl": 5,
+      "Ch": 5,
+      "Li": 5,
+      "Cy": 5,
+      "Sm": 10,
+      "Ex": 5,
+      "Be": 5,
+      "Sc": 5
+    }
+  },
+  {
+    "name": "Moon Stone",
+    "category": "material",
+    "synth": {
+      "At": 8,
+      "Du": 8,
+      "Ch": 15,
+      "Li": 8,
+      "Cy": 8,
+      "Sm": 8,
+      "Ex": 8,
+      "Be": 8,
+      "Sc": 8
+    }
+  },
+  {
+    "name": "Sun Stone",
+    "category": "material",
+    "synth": {
+      "At": 8,
+      "Du": 8,
+      "Fl": 15,
+      "Li": 8,
+      "Cy": 8,
+      "Sm": 8,
+      "Ex": 8,
+      "Be": 8,
+      "Sc": 8
+    }
+  },
+  {
+    "name": "Poison Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Poison"
+  },
+  {
+    "name": "Wealth Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Wealth"
+  },
+  {
+    "name": "Bandit Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Steal"
+  },
+  {
+    "name": "Indestructible Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Durable"
+  },
+  {
+    "name": "Dark Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Dark"
+  },
+  {
+    "name": "Absorption Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Absorb"
+  },
+  {
+    "name": "Bull's-Eye Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Critical"
+  },
+  {
+    "name": "Healing Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Heal"
+  },
+  {
+    "name": "Time Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "Stop"
+  },
+  {
+    "name": "Experience Coin",
+    "category": "coin",
+    "synth": {},
+    "ability": "ABS Up"
+  }
+]

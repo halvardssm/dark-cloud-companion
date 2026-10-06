@@ -35,14 +35,10 @@ describe("weapons data", () => {
       for (const t of w.buildsUpTo) expect(byId.get(t)!.type, `${w.id} -> ${t}`).toBe(w.type);
   });
 
-  test("max stats are never below base stats (one known source anomaly)", () => {
-    // The source lists Angel Shooter base Cy 170 but max Cy 150; unresolved, so excluded explicitly.
-    const known = new Set(["angel-shooter:cy"]);
+  test("max stats are never below base stats", () => {
     for (const w of data.weapons)
-      for (const k of STAT_KEYS) {
-        if (known.has(`${w.id}:${k}`)) continue;
+      for (const k of STAT_KEYS)
         expect(w.maxStats[k], `${w.id} ${k}`).toBeGreaterThanOrEqual(w.baseStats[k]);
-      }
   });
 
   test("kill requirements all have a defined enemy entry", () => {

@@ -61,6 +61,25 @@ export const section = z.object({
   newPhotos: z.array(z.string()),
   newScoops: z.array(z.string()),
   newInventions: z.array(z.object({ name: z.string(), recipe: z.array(recipePart) })),
+  /** Boss fought in this section (from the "Boss:" line); `scoop` when it can be photographed. */
+  boss: z.object({ name: z.string(), scoop: z.boolean() }).optional(),
+  /** Restriction line such as "Ridepod only". */
+  special: z.string().optional(),
+  /** Scoops the guide marks for this section; `onlyChance` when it can't be retaken. */
+  scoopNotes: z.array(z.object({ name: z.string(), onlyChance: z.boolean() })),
+  /** Running photo totals after this section, as printed by the source. */
+  photoCount: z
+    .object({
+      ideas: z.number().int(),
+      scoops: z.number().int(),
+      level: z.number().int().optional(),
+      points: z.number().int().optional(),
+    })
+    .optional(),
+  /** Georama parts the guide says to build in this section ("build the following" lists). */
+  georamaBuild: z.array(z.object({ name: z.string(), qty: z.number().int() })),
+  /** Characters recruited here and where they can be found. */
+  recruits: z.array(z.object({ name: z.string(), location: z.string() })),
 });
 export type Section = z.infer<typeof section>;
 
@@ -71,6 +90,20 @@ export const chapter = z.object({
   phase: z.enum(["main", "postgame"]),
   seals: z.array(z.string()),
   sectionIds: z.array(z.string()),
+  /** Party stats and photo totals at the end of the chapter. */
+  endStats: z
+    .object({
+      maxHp: z.number().int(),
+      maxDef: z.number().int(),
+      monicaHp: z.number().int(),
+      monicaDef: z.number().int(),
+      ideas: z.number().int(),
+      scoops: z.number().int(),
+      inventions: z.number().int(),
+      level: z.number().int(),
+      points: z.number().int(),
+    })
+    .optional(),
 });
 export type Chapter = z.infer<typeof chapter>;
 

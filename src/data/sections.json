@@ -35,7 +35,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-rats",
@@ -83,7 +86,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-ghost",
@@ -126,7 +132,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-photos",
@@ -357,19 +366,42 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 81,
+      "scoops": 0,
+      "level": 2,
+      "points": 162
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-linda",
     "chapterId": "c1",
     "code": "C1LINDA",
     "title": "Boss Fight ~ Brave Little Linda",
-    "kind": "story",
+    "kind": "boss",
     "order": 4,
     "enemies": [],
     "newPhotos": [],
     "newScoops": ["Brave Little Linda"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [
+      {
+        "name": "Brave Little Linda",
+        "onlyChance": true
+      }
+    ],
+    "photoCount": {
+      "ideas": 81,
+      "scoops": 1,
+      "level": 2,
+      "points": 167
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-steve",
@@ -417,7 +449,16 @@
     },
     "newPhotos": [],
     "newScoops": ["Night Stalker", "Baron's Hangin' On"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 81,
+      "scoops": 3,
+      "level": 2,
+      "points": 177
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-chest",
@@ -460,14 +501,17 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-clown",
     "chapterId": "c1",
     "code": "C1CLOWN",
     "title": "Boss Fight ~ Halloween the Clown Robo",
-    "kind": "story",
+    "kind": "boss",
     "order": 7,
     "enemies": [],
     "newPhotos": [],
@@ -490,7 +534,21 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [
+      {
+        "name": "Clown Robo's Attack",
+        "onlyChance": true
+      }
+    ],
+    "photoCount": {
+      "ideas": 81,
+      "scoops": 4,
+      "level": 2,
+      "points": 182
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c1-finish",
@@ -520,7 +578,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 85,
+      "scoops": 4,
+      "level": 2,
+      "points": 190
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-photos",
@@ -809,7 +876,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 122,
+      "scoops": 5,
+      "level": 3,
+      "points": 269
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-firbits",
@@ -839,7 +915,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 127,
+      "scoops": 5,
+      "level": 3,
+      "points": 279
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-fright",
@@ -878,7 +963,16 @@
     },
     "newPhotos": [],
     "newScoops": ["Spooky Grass Smile"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 127,
+      "scoops": 6,
+      "level": 3,
+      "points": 274
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-strange",
@@ -917,7 +1011,16 @@
     },
     "newPhotos": [],
     "newScoops": ["Dangerous Pumpkin", "Floatin' Earth Digger", "Tore's Nap"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 127,
+      "scoops": 9,
+      "level": 3,
+      "points": 299
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-shells",
@@ -962,7 +1065,10 @@
     "seal": "Red",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-swamp",
@@ -974,7 +1080,16 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": ["Master Utan", "King Mardan"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 127,
+      "scoops": 11,
+      "level": 4,
+      "points": 309
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-carpent",
@@ -986,7 +1101,10 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-geoston",
@@ -1031,7 +1149,10 @@
     "geostone": "Wooden House, Iron Chimney 1, Thorn Tree, Wooden Stand, River,",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-noise",
@@ -1076,7 +1197,10 @@
     "geostone": "Eye Tree 1, Eye Tree 2, Nose Tree",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-pixie",
@@ -1122,7 +1246,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-snake",
@@ -1189,7 +1316,17 @@
           }
         ]
       }
-    ]
+    ],
+    "special": "Ridepod only",
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 127,
+      "scoops": 12,
+      "level": 4,
+      "points": 314
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-recruit",
@@ -1201,7 +1338,63 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": [
+      {
+        "name": "Gerald",
+        "location": "He's in Max's house, in his study."
+      },
+      {
+        "name": "Stewart",
+        "location": "In the foyer of Max's house."
+      },
+      {
+        "name": "Granny Rosa",
+        "location": "Usually in the waterfall room of Max's house."
+      },
+      {
+        "name": "Ferdinand",
+        "location": "In the kitchen of Max's house."
+      },
+      {
+        "name": "Adel",
+        "location": "In the servants' quarters of Max's house, which is just beyond the kitchen."
+      },
+      {
+        "name": "Corrine",
+        "location": "As said above, in Morton's house."
+      },
+      {
+        "name": "Priest Bruno",
+        "location": "None too surprisingly, in the church."
+      },
+      {
+        "name": "Fabio",
+        "location": "On the pier up at the lake."
+      },
+      {
+        "name": "Sheriff Blinkhorn",
+        "location": "In front of the police station. You took a photo of his belt the previous chapter, remember?"
+      },
+      {
+        "name": "Milane",
+        "location": "Inside the weapons shop."
+      },
+      {
+        "name": "Aunt Polly",
+        "location": "Usually in her bakery."
+      },
+      {
+        "name": "Rufio",
+        "location": "Walking around the lake."
+      },
+      {
+        "name": "Mayor Need",
+        "location": "In his second-floor office at City Hall."
+      }
+    ]
   },
   {
     "id": "c2-spider",
@@ -1246,7 +1439,10 @@
     "geostone": "Pot Torch, Wooden Gate, Waterwheel",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-falls",
@@ -1292,7 +1488,10 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-lafresc",
@@ -1302,8 +1501,19 @@
     "kind": "interlude",
     "order": 14,
     "enemies": [],
-    "newPhotos": [],
-    "newScoops": [],
+    "newPhotos": [
+      "Fruit",
+      "Jurak Arms Sign",
+      "Jurak's Eye",
+      "Jurak's Nose",
+      "Mushroom",
+      "Mushroom Burgers Sign",
+      "Pot Torch",
+      "Quartz",
+      "Water Wheel",
+      "Woody Tailor Sign"
+    ],
+    "newScoops": ["Find the Golden Egg!", "Hmmmm! Jurak", "Lafrescia Stem"],
     "newInventions": [
       {
         "name": "Anti-Petrify Amulet",
@@ -1373,6 +1583,28 @@
           }
         ]
       }
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 137,
+      "scoops": 15,
+      "level": 4,
+      "points": 349
+    },
+    "georamaBuild": [],
+    "recruits": [
+      {
+        "name": "Parn & Julia",
+        "location": "Inside Parn's studio; his shop has a sign with a purple icon on it, so it's easy to find if you're observant."
+      },
+      {
+        "name": "Donny",
+        "location": "Down in the Underground Channel Entrance."
+      },
+      {
+        "name": "Claire",
+        "location": "In the house you found Corrine in earlier, most of the time. At the cafe the rest of the time."
+      }
     ]
   },
   {
@@ -1380,12 +1612,26 @@
     "chapterId": "c2",
     "code": "C2BUTTERF",
     "title": "Boss ~ Rainbow Butterfly",
-    "kind": "story",
+    "kind": "boss",
     "order": 15,
     "enemies": [],
     "newPhotos": [],
     "newScoops": ["R. Butterfly United!"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [
+      {
+        "name": "R. Butterfly United!",
+        "onlyChance": true
+      }
+    ],
+    "photoCount": {
+      "ideas": 137,
+      "scoops": 16,
+      "level": 4,
+      "points": 354
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c2-finish",
@@ -1397,7 +1643,16 @@
     "enemies": [],
     "newPhotos": ["Torch", "Lin's House"],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 139,
+      "scoops": 16,
+      "level": 4,
+      "points": 358
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-balance",
@@ -1409,7 +1664,10 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-dash",
@@ -1466,7 +1724,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 139,
+      "scoops": 18,
+      "level": 4,
+      "points": 368
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-fireice",
@@ -1515,7 +1782,10 @@
     "geostone": "Weather Vane, Chinese Stand",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-demon",
@@ -1559,7 +1829,16 @@
     "geostone": "Warehouse, Brick Chimney",
     "newPhotos": [],
     "newScoops": ["Changing Dog Statue", "Hurray for Rock Man!"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 139,
+      "scoops": 20,
+      "level": 4,
+      "points": 378
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-collect",
@@ -1648,7 +1927,29 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 146,
+      "scoops": 20,
+      "level": 4,
+      "points": 392
+    },
+    "georamaBuild": [
+      {
+        "name": "Weather Vane",
+        "qty": 1
+      },
+      {
+        "name": "Chinese Stand",
+        "qty": 1
+      },
+      {
+        "name": "Warehouse",
+        "qty": 1
+      }
+    ],
+    "recruits": []
   },
   {
     "id": "c3-yoyo",
@@ -1687,7 +1988,10 @@
     "geostone": "Iron Fence",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-elephan",
@@ -1727,7 +2031,10 @@
     "seal": "Red",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-warrior",
@@ -1772,15 +2079,24 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-fairy",
     "chapterId": "c3",
     "code": "C3FAIRY",
     "title": "Smiling Fairy Village",
-    "kind": "story",
+    "kind": "dungeon",
     "order": 8,
+    "medals": {
+      "timeAttack": "6:45",
+      "clearGoal": "Monster Transformation only",
+      "prize": "Improved Bomb x4",
+      "prizeType": "spheda"
+    },
     "enemies": [
       {
         "name": "Fire Gemron",
@@ -1815,7 +2131,10 @@
     "geostone": "Church",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-laochao",
@@ -1825,7 +2144,17 @@
     "kind": "interlude",
     "order": 9,
     "enemies": [],
-    "newPhotos": [],
+    "newPhotos": [
+      "Fresco Painting",
+      "Hat",
+      "Holy Emblem",
+      "Horn",
+      "Lao Chao's Trademark",
+      "Runaway Dragon",
+      "Saint's Writings",
+      "Scroll",
+      "Special Peking Duck"
+    ],
     "newScoops": [],
     "newInventions": [
       {
@@ -1930,7 +2259,29 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 155,
+      "scoops": 20,
+      "level": 5,
+      "points": 410
+    },
+    "georamaBuild": [
+      {
+        "name": "Brick House",
+        "qty": 1
+      },
+      {
+        "name": "Wooden Fence",
+        "qty": 7
+      },
+      {
+        "name": "Church",
+        "qty": 1
+      }
+    ],
+    "recruits": []
   },
   {
     "id": "c3-treasur",
@@ -1979,7 +2330,10 @@
     "geostone": "Iron Lamp 1",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-counter",
@@ -2029,7 +2383,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-bargas",
@@ -2059,7 +2416,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 156,
+      "scoops": 20,
+      "level": 5,
+      "points": 412
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-saving",
@@ -2140,7 +2506,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 159,
+      "scoops": 20,
+      "level": 5,
+      "points": 418
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-cursed",
@@ -2189,7 +2564,10 @@
     "geostone": "Iron Lamp 2",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-roly",
@@ -2256,7 +2634,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 159,
+      "scoops": 22,
+      "level": 5,
+      "points": 428
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-dragon",
@@ -2318,14 +2705,23 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 159,
+      "scoops": 23,
+      "level": 5,
+      "points": 433
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-memo",
     "chapterId": "c3",
     "code": "C3MEMO",
     "title": "Boss ~ Phantom Memo Eater",
-    "kind": "story",
+    "kind": "boss",
     "order": 17,
     "enemies": [],
     "newPhotos": ["Giant Yorda Tree", "Laundry"],
@@ -2399,7 +2795,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 161,
+      "scoops": 24,
+      "level": 5,
+      "points": 442
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-rama",
@@ -2443,7 +2848,10 @@
     "geostone": "Block, Block 2",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-nature",
@@ -2488,15 +2896,25 @@
     "geostone": "Well",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-baron",
     "chapterId": "c3",
     "code": "C3BARON",
     "title": "Moon Baron",
-    "kind": "story",
+    "kind": "dungeon",
     "order": 20,
+    "medals": {
+      "timeAttack": "7:30",
+      "fishingGoal": "66cm",
+      "clearGoal": "Ridepod only",
+      "prize": "Level-Up Powder",
+      "prizeType": "spheda"
+    },
     "enemies": [
       {
         "name": "Holy Gemron",
@@ -2526,7 +2944,10 @@
     "geostone": "Feeble Tree",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-fishing",
@@ -2614,7 +3035,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 167,
+      "scoops": 24,
+      "level": 5,
+      "points": 454
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-appears",
@@ -2664,14 +3094,17 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-cape",
     "chapterId": "c3",
     "code": "C3CAPE",
     "title": "Lighthouse on the Cape ~ Dual Boss Battle",
-    "kind": "story",
+    "kind": "boss",
     "order": 23,
     "enemies": [],
     "newPhotos": [],
@@ -2728,7 +3161,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 167,
+      "scoops": 26,
+      "level": 5,
+      "points": 464
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c3-finish",
@@ -2775,7 +3217,10 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-pau",
@@ -2787,7 +3232,16 @@
     "enemies": [],
     "newPhotos": ["Luna Stone Shards", "Red House"],
     "newScoops": ["A Surviving Soldier", "Veniccio's Evening Sun"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 170,
+      "scoops": 28,
+      "level": 5,
+      "points": 480
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-pirates",
@@ -2825,7 +3279,10 @@
     "geostone": "Pier, Shop Boat",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-fish",
@@ -2868,7 +3325,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-tank",
@@ -2912,7 +3372,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-build",
@@ -3072,7 +3535,33 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 180,
+      "scoops": 28,
+      "level": 6,
+      "points": 500
+    },
+    "georamaBuild": [
+      {
+        "name": "Pier",
+        "qty": 8
+      },
+      {
+        "name": "Iron House",
+        "qty": 4
+      },
+      {
+        "name": "Shop Boat",
+        "qty": 2
+      },
+      {
+        "name": "Pot Torch",
+        "qty": 1
+      }
+    ],
+    "recruits": []
   },
   {
     "id": "c4-water",
@@ -3125,7 +3614,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-medusa",
@@ -3173,7 +3665,10 @@
     "geostone": "Iron Stand",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-molers",
@@ -3217,7 +3712,10 @@
     "geostone": "Bridge Block, Block 3",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-batden",
@@ -3256,7 +3754,16 @@
     "geostone": "Iron Shed",
     "newPhotos": ["Iron Shed"],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 181,
+      "scoops": 28,
+      "level": 6,
+      "points": 502
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-hideout",
@@ -3305,14 +3812,17 @@
     "geostone": "Iron Stairs",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-puppet",
     "chapterId": "c4",
     "code": "C4PUPPET",
     "title": "Boss ~ Puppet Shingala",
-    "kind": "story",
+    "kind": "boss",
     "order": 10,
     "enemies": [],
     "newPhotos": [],
@@ -3335,7 +3845,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 181,
+      "scoops": 30,
+      "level": 6,
+      "points": 507
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-zappy",
@@ -3385,7 +3904,10 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-banquet",
@@ -3434,7 +3956,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-improve",
@@ -3502,7 +4027,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 182,
+      "scoops": 30,
+      "level": 6,
+      "points": 514
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-serpent",
@@ -3550,7 +4084,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-finny",
@@ -3580,7 +4117,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 185,
+      "scoops": 30,
+      "level": 6,
+      "points": 520
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-cursed",
@@ -3628,7 +4174,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-atrocit",
@@ -3676,7 +4225,10 @@
     "geostone": "Windmill",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-healing",
@@ -3757,18 +4309,27 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 186,
+      "scoops": 30,
+      "level": 6,
+      "points": 522
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-jaming",
     "chapterId": "c4",
     "code": "C4JAMING",
     "title": "Boss ~ Doctor Jaming",
-    "kind": "story",
+    "kind": "boss",
     "order": 19,
     "enemies": [],
     "newPhotos": ["Futuron 800", "Neo-Projector", "Search Light", "System 5WP2", "Work Arm"],
-    "newScoops": ["Dr. Jaming", "Symbol of Luna Lab"],
+    "newScoops": ["Doctor Jaming", "Symbol of Luna Lab"],
     "newInventions": [
       {
         "name": "Buggy",
@@ -3855,7 +4416,21 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [
+      {
+        "name": "Doctor Jaming",
+        "onlyChance": true
+      }
+    ],
+    "photoCount": {
+      "ideas": 191,
+      "scoops": 32,
+      "level": 6,
+      "points": 542
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c4-finish",
@@ -3867,7 +4442,10 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-build",
@@ -3955,7 +4533,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 197,
+      "scoops": 33,
+      "level": 6,
+      "points": 559
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-griffon",
@@ -4029,7 +4616,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 199,
+      "scoops": 33,
+      "level": 6,
+      "points": 563
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-wind",
@@ -4092,7 +4688,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 200,
+      "scoops": 33,
+      "level": 6,
+      "points": 565
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-little",
@@ -4141,7 +4746,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-goyone",
@@ -4191,7 +4799,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-baddie",
@@ -4235,7 +4846,10 @@
     "geostone": "Generator",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-squall",
@@ -4246,14 +4860,14 @@
     "order": 6,
     "enemies": [],
     "newPhotos": [
-      "Decorative Light",
+      "Decorative Lights",
       "Display Robo",
       "Drum Can",
       "Electric Sesame",
       "Generator",
       "Hammer",
       "Patterned Rug",
-      "Sulphur-Colored Juice"
+      "Sulfur-Colored Juice"
     ],
     "newScoops": [],
     "newInventions": [
@@ -4427,7 +5041,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 208,
+      "scoops": 33,
+      "level": 6,
+      "points": 581
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-magmano",
@@ -4476,7 +5099,10 @@
     "geostone": "Stair Block",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-danger",
@@ -4524,8 +5150,17 @@
     },
     "geostone": "Requirements only",
     "newPhotos": [],
-    "newScoops": [],
-    "newInventions": []
+    "newScoops": ["Bomber Head Boom!"],
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 208,
+      "scoops": 34,
+      "level": 6,
+      "points": 586
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-secret",
@@ -4569,7 +5204,10 @@
     "geostone": "Iron Chimney 2",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-death",
@@ -4618,7 +5256,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-despera",
@@ -4667,7 +5308,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-pains",
@@ -4711,7 +5355,10 @@
     "geostone": "Hardened Mud Pile",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-before",
@@ -4758,19 +5405,31 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 209,
+      "scoops": 35,
+      "level": 6,
+      "points": 593
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-flying",
     "chapterId": "c5",
     "code": "C5FLYING",
     "title": "Boss ~ Flying Battleship",
-    "kind": "story",
+    "kind": "boss",
     "order": 14,
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-horn",
@@ -4817,7 +5476,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 211,
+      "scoops": 35,
+      "level": 6,
+      "points": 597
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-walking",
@@ -4861,7 +5529,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-burning",
@@ -4910,7 +5581,16 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": ["Faintin' Bone Lord"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 211,
+      "scoops": 36,
+      "level": 7,
+      "points": 602
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-dragon",
@@ -4960,7 +5640,10 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-chest",
@@ -5009,7 +5692,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-river",
@@ -5053,18 +5739,21 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-gaspard",
     "chapterId": "c5",
     "code": "C5GASPARD",
     "title": "Boss ~ Ultimate Gaspard",
-    "kind": "story",
+    "kind": "boss",
     "order": 21,
     "enemies": [],
     "newPhotos": [],
-    "newScoops": [],
+    "newScoops": ["Fallen Battleship", "Lava Road", "The Ultimate Gaspard"],
     "newInventions": [
       {
         "name": "Panther Boots",
@@ -5083,7 +5772,20 @@
           }
         ]
       }
-    ]
+    ],
+    "boss": {
+      "name": "Gaspard",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 211,
+      "scoops": 39,
+      "level": 7,
+      "points": 617
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c5-finish",
@@ -5093,8 +5795,8 @@
     "kind": "story",
     "order": 22,
     "enemies": [],
-    "newPhotos": [],
-    "newScoops": [],
+    "newPhotos": ["Paznos Pattern"],
+    "newScoops": ["Paznos"],
     "newInventions": [
       {
         "name": "Heavy Hammer",
@@ -5130,14 +5832,23 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 212,
+      "scoops": 40,
+      "level": 7,
+      "points": 624
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-palace",
     "chapterId": "c6",
     "code": "C6PALACE",
     "title": "The Locked Palace",
-    "kind": "story",
+    "kind": "boss",
     "order": 0,
     "enemies": [],
     "newPhotos": ["Dead Tree", "Gold Gate", "Hooked Nose", "Pinky"],
@@ -5177,7 +5888,20 @@
           }
         ]
       }
-    ]
+    ],
+    "boss": {
+      "name": "Emperor Griffon",
+      "scoop": true
+    },
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 216,
+      "scoops": 43,
+      "level": 7,
+      "points": 647
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-kazarov",
@@ -5189,7 +5913,16 @@
     "enemies": [],
     "newPhotos": ["Earth Altar", "Fire Altar", "Water Altar", "Wind Altar"],
     "newScoops": ["Kazarov Stonehenge"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 44,
+      "level": 7,
+      "points": 660
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-earth",
@@ -5234,7 +5967,10 @@
     "geostone": "Chimney Pot",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-rare",
@@ -5273,7 +6009,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-scary",
@@ -5313,18 +6052,21 @@
     "geostone": "Leafy Tree",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-trentos",
     "chapterId": "c6",
     "code": "C6TRENTOS",
     "title": "Boss ~ Trentos",
-    "kind": "story",
+    "kind": "boss",
     "order": 5,
     "enemies": [],
     "newPhotos": [],
-    "newScoops": [],
+    "newScoops": ["Earth Gem Altar"],
     "newInventions": [
       {
         "name": "Hammer Arm III",
@@ -5343,7 +6085,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 45,
+      "level": 7,
+      "points": 665
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-wind",
@@ -5386,7 +6137,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-spirit",
@@ -5430,7 +6184,10 @@
     "geostone": "Barrel",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-warrior",
@@ -5474,14 +6231,17 @@
     "geostone": "Hay and Hoe",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-lapis",
     "chapterId": "c6",
     "code": "C6LAPIS",
     "title": "Boss ~ Lapis Garter",
-    "kind": "story",
+    "kind": "boss",
     "order": 9,
     "enemies": [],
     "newPhotos": [],
@@ -5504,7 +6264,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 46,
+      "level": 7,
+      "points": 670
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-water",
@@ -5552,7 +6321,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-pirate",
@@ -5595,7 +6367,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-death",
@@ -5643,19 +6418,31 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-dragon",
     "chapterId": "c6",
     "code": "C6DRAGON",
     "title": "Boss ~ Sea Dragon",
-    "kind": "story",
+    "kind": "boss",
     "order": 13,
     "enemies": [],
     "newPhotos": [],
     "newScoops": ["Water Gem Altar"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 47,
+      "level": 7,
+      "points": 675
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-fire",
@@ -5703,7 +6490,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-spring",
@@ -5751,7 +6541,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-crazy",
@@ -5799,14 +6592,17 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-inferno",
     "chapterId": "c6",
     "code": "C6INFERNO",
     "title": "Boss ~ Inferno",
-    "kind": "story",
+    "kind": "boss",
     "order": 17,
     "enemies": [],
     "newPhotos": [],
@@ -5846,7 +6642,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 48,
+      "level": 7,
+      "points": 680
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c6-finish",
@@ -5858,7 +6663,16 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": ["Gigantor Paznos"],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 220,
+      "scoops": 49,
+      "level": 7,
+      "points": 685
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-moonpal",
@@ -5905,7 +6719,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 222,
+      "scoops": 49,
+      "level": 7,
+      "points": 689
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-ancient",
@@ -5949,7 +6772,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-card",
@@ -5998,7 +6824,10 @@
     "geostone": "Camellia Tree",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-danger",
@@ -6032,7 +6861,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-zombie",
@@ -6081,7 +6913,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-feeling",
@@ -6126,7 +6961,10 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-living",
@@ -6170,7 +7008,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-zone",
@@ -6214,7 +7055,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-scary",
@@ -6258,7 +7102,10 @@
     "geostone": "Starlight Stairs",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-hell",
@@ -6297,7 +7144,10 @@
     "geostone": "Requirements only",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-crush",
@@ -6346,7 +7196,10 @@
     "geostone": "Road",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-build1",
@@ -6356,8 +7209,18 @@
     "kind": "interlude",
     "order": 11,
     "enemies": [],
-    "newPhotos": [],
-    "newScoops": [],
+    "newPhotos": [
+      "Blue Lantern",
+      "Flower Bathed in Light",
+      "Lotus Flower",
+      "Road to Golbad",
+      "Starlight Stairway",
+      "Starlight Tunnel",
+      "Sun Chair",
+      "Sun Table",
+      "Waterfall Curtain"
+    ],
+    "newScoops": ["Flower of the Sun"],
     "newInventions": [
       {
         "name": "Drill Arm IV",
@@ -6427,7 +7290,29 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 231,
+      "scoops": 50,
+      "level": 8,
+      "points": 712
+    },
+    "georamaBuild": [
+      {
+        "name": "Road to Golbad",
+        "qty": 8
+      },
+      {
+        "name": "Road",
+        "qty": 6
+      },
+      {
+        "name": "Starlight Stair",
+        "qty": 2
+      }
+    ],
+    "recruits": []
   },
   {
     "id": "c7-missing",
@@ -6476,7 +7361,10 @@
     "geostone": "Hall of Sorrow",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-longest",
@@ -6526,7 +7414,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-corrido",
@@ -6570,7 +7461,10 @@
     "geostone": "Palace Stairs",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-monica",
@@ -6620,7 +7514,10 @@
     "seal": "Red",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-raging",
@@ -6669,7 +7566,10 @@
     "geostone": "Flower Bed",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-lonely",
@@ -6717,7 +7617,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-nobilit",
@@ -6760,7 +7663,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-watch",
@@ -6809,7 +7715,10 @@
     "geostone": "Moon Column",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-build2",
@@ -6873,7 +7782,45 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 234,
+      "scoops": 50,
+      "level": 8,
+      "points": 718
+    },
+    "georamaBuild": [
+      {
+        "name": "Moon Column",
+        "qty": 16
+      },
+      {
+        "name": "Petal Stream",
+        "qty": 14
+      },
+      {
+        "name": "Flower Bed",
+        "qty": 6
+      },
+      {
+        "name": "Camelia Tree",
+        "qty": 2
+      },
+      {
+        "name": "Silver Bench",
+        "qty": 2
+      },
+      {
+        "name": "Hall of Sorrow",
+        "qty": 1
+      },
+      {
+        "name": "Palace Stairs",
+        "qty": 1
+      }
+    ],
+    "recruits": []
   },
   {
     "id": "c7-memorie",
@@ -6921,7 +7868,16 @@
     },
     "newPhotos": ["Alexandra's Bed"],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 235,
+      "scoops": 50,
+      "level": 8,
+      "points": 720
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-trump",
@@ -6975,7 +7931,10 @@
     "geostone": "Stardust Pond",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-build3",
@@ -7005,7 +7964,16 @@
           }
         ]
       }
-    ]
+    ],
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 236,
+      "scoops": 50,
+      "level": 8,
+      "points": 722
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-element",
@@ -7054,7 +8022,10 @@
     "seal": "Blue",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-wander",
@@ -7102,7 +8073,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-beware",
@@ -7150,7 +8124,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-final",
@@ -7199,18 +8176,21 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c7-sun",
     "chapterId": "c7",
     "code": "C7SUN",
     "title": "Sun Chamber ~ The End of an Adventure Awaits",
-    "kind": "story",
+    "kind": "boss",
     "order": 28,
     "enemies": [],
     "newPhotos": ["Flower Chandelier", "Golden Door", "Labyrinth Door"],
-    "newScoops": ["Sun Chamber Gatekeeper"],
+    "newScoops": ["Sun Chamber Gatekeeper", "Legend of the Moon"],
     "newInventions": [
       {
         "name": "Princess Boots",
@@ -7279,8 +8259,38 @@
             "scoop": false
           }
         ]
+      },
+      {
+        "name": "Laser Arm IV",
+        "recipe": [
+          {
+            "name": "Blue Lantern",
+            "scoop": false
+          },
+          {
+            "name": "Energy Pipe",
+            "scoop": false
+          },
+          {
+            "name": "Legend of the Moon",
+            "scoop": true
+          }
+        ]
       }
-    ]
+    ],
+    "boss": {
+      "name": "Emperor Griffon, Ruler of Darkness",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 239,
+      "scoops": 52,
+      "level": 7,
+      "points": 738
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-mine",
@@ -7292,7 +8302,10 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-zelmite",
@@ -7335,7 +8348,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-mole",
@@ -7378,7 +8394,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-frog",
@@ -7421,7 +8440,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-evilbat",
@@ -7464,7 +8486,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-warrior",
@@ -7476,7 +8501,10 @@
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-destiny",
@@ -7524,7 +8552,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-scary",
@@ -7572,7 +8603,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boar",
@@ -7620,7 +8654,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-murder",
@@ -7674,19 +8711,29 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boss1",
     "chapterId": "c8",
     "code": "C8BOSS1",
     "title": "Dead End 1 ~ Burst One and Two",
-    "kind": "story",
+    "kind": "boss",
     "order": 10,
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "boss": {
+      "name": "Burst One and Burst Two",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-which",
@@ -7729,7 +8776,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-woman",
@@ -7762,7 +8812,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-snake",
@@ -7810,7 +8863,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-soldier",
@@ -7858,7 +8914,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-ward1",
@@ -7901,19 +8960,29 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boss2",
     "chapterId": "c8",
     "code": "C8BOSS2",
     "title": "Dead End 2 ~ Exploding Skeletal Dudes",
-    "kind": "story",
+    "kind": "boss",
     "order": 16,
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "boss": {
+      "name": "Red Jacket x8",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-truth",
@@ -7956,7 +9025,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-crossro",
@@ -7999,7 +9071,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-lost",
@@ -8042,7 +9117,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-indecis",
@@ -8090,19 +9168,29 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boss3",
     "chapterId": "c8",
     "code": "C8BOSS3",
     "title": "Dead End 3 ~ Flappin' Brothers",
-    "kind": "story",
+    "kind": "boss",
     "order": 21,
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "boss": {
+      "name": "2x Sphinx",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-dragon",
@@ -8150,14 +9238,17 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-opening",
     "chapterId": "c8",
     "code": "C8OPENING",
     "title": "A Suspicious Opening ~ Flotsam, Revived!",
-    "kind": "story",
+    "kind": "boss",
     "order": 23,
     "enemies": [],
     "newPhotos": ["Flotsam", "Revived!"],
@@ -8197,7 +9288,20 @@
           }
         ]
       }
-    ]
+    ],
+    "boss": {
+      "name": "Metal Flotsam",
+      "scoop": true
+    },
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 239,
+      "scoops": 53,
+      "level": 8,
+      "points": 743
+    },
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-captain",
@@ -8235,7 +9339,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-turning",
@@ -8278,7 +9385,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-mummy",
@@ -8321,19 +9431,29 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boss4",
     "chapterId": "c8",
     "code": "C8BOSS4",
     "title": "Boss 4 ~ The Mandrakerz",
-    "kind": "story",
+    "kind": "boss",
     "order": 27,
     "enemies": [],
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "boss": {
+      "name": "Mandrake x8",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-ward3en",
@@ -8381,7 +9501,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-flotsam",
@@ -8429,7 +9552,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-ward3",
@@ -8472,7 +9598,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-element",
@@ -8520,7 +9649,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-mariner",
@@ -8563,7 +9695,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-ultimat",
@@ -8611,7 +9746,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-anxiety",
@@ -8659,7 +9797,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-omen",
@@ -8708,7 +9849,10 @@
     "seal": "White",
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-belief",
@@ -8756,7 +9900,10 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-seeping",
@@ -8804,18 +9951,34 @@
     },
     "newPhotos": [],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "scoopNotes": [],
+    "georamaBuild": [],
+    "recruits": []
   },
   {
     "id": "c8-boss5",
     "chapterId": "c8",
     "code": "C8BOSS5",
     "title": "Boss ~ Mr. Big Shot Shadow",
-    "kind": "story",
+    "kind": "boss",
     "order": 38,
     "enemies": [],
     "newPhotos": ["Zelmite Found!", "Mr. Big Shot Shadow"],
     "newScoops": [],
-    "newInventions": []
+    "newInventions": [],
+    "boss": {
+      "name": "Dark Genie",
+      "scoop": false
+    },
+    "scoopNotes": [],
+    "photoCount": {
+      "ideas": 241,
+      "scoops": 53,
+      "level": 7,
+      "points": 747
+    },
+    "georamaBuild": [],
+    "recruits": []
   }
 ]

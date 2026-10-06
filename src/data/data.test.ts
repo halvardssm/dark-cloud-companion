@@ -50,7 +50,7 @@ describe("extracted data", () => {
   });
 
   test("dungeons have enemies and totals", () => {
-    for (const s of sec.filter((s) => s.kind === "dungeon" || s.kind === "boss")) {
+    for (const s of sec.filter((s) => s.medals)) {
       expect(s.enemies.length, s.id).toBeGreaterThan(0);
       expect(s.totals, s.id).toBeDefined();
     }

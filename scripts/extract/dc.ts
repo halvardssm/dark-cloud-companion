@@ -13,7 +13,12 @@ import {
 
 // Spelling inconsistencies in the source, normalised to the correct spelling.
 function fixName(s: string) {
-  return s.replace(/Vaccuum/g, "Vacuum").replace(/Peeping Pole/g, "Peeping Hole");
+  return s
+    .replace(/Vaccuum/g, "Vacuum")
+    .replace(/Peeping Pole/g, "Peeping Hole")
+    .replace(/Dr\. Jaming/g, "Doctor Jaming")
+    .replace(/Sulphur-Colored/g, "Sulfur-Colored")
+    .replace(/Decorative Lights?\b/g, "Decorative Lights");
 }
 
 const SRC = ".local/guides/DC.txt";
@@ -124,7 +129,11 @@ for (let ci = 0; ci < chapterHeaders.length; ci++) {
     }
     const b = blocks(body);
     const id = `${chapterId}-${slug(h.code.replace(/^C\d/, ""))}`;
-    const medalLines = b["medals"] ?? [];
+    // Usually a "Medals:" block; a few sections use "Medal:" or list the goals without a heading.
+    const medalLines =
+      b["medals"] ??
+      b["medal"] ??
+      body.filter((l) => /^(Time Attack|Fishing Goal|Clear Goal|Sp?h?eda Prize):/.test(l));
     const medalsObj: NonNullable<Section["medals"]> = {};
     for (const l of medalLines) {
       const m = l.match(/^([^:]+):\s*(.+)$/);
@@ -149,37 +158,90 @@ for (let ci = 0; ci < chapterHeaders.length; ci++) {
     const geostone = body.map((l) => l.match(/^Geostone:\s*(.+)$/)).find(Boolean)?.[1];
     const seal = body.map((l) => l.match(/^(\w+) Seal\s*$/)).find(Boolean)?.[1];
 
-    // Photos: "New Photos: A, B,\n C" until blank / next label
+    // Photos and inventions: a section can contain several "New Photos:" / "New Inventions:" blocks.
     const newPhotos: string[] = [];
-    const pi = body.findIndex((l) => l.startsWith("New Photos:"));
-    if (pi >= 0) {
-      let s = body[pi].replace("New Photos:", "");
-      for (
-        let j = pi + 1;
-        j < body.length && body[j].trim() && !/^[A-Z][A-Za-z ]*:/.test(body[j]);
-        j++
-      )
-        s += " " + body[j];
-      newPhotos.push(
-        ...s
-          .split(",")
-          .map((x) => x.trim())
-          .filter(Boolean),
-      );
-    }
     const newInventions: Section["newInventions"] = [];
-    const ii = body.findIndex((l) => l.startsWith("New Inventions:"));
-    if (ii >= 0) {
-      const blk: string[] = [];
-      for (let j = ii + 1; j < body.length && body[j].trim(); j++) blk.push(body[j]);
-      for (const l of joinWrapped(blk, /^- /)) {
-        const m = l.match(/^- (.+?) \[(.+)\]$/);
-        if (m) newInventions.push({ name: m[1].trim(), recipe: parseRecipe(m[2]) });
+    for (let pi = 0; pi < body.length; pi++) {
+      const label = ["New Photos:", "New Ideas:"].find((lb) => body[pi].startsWith(lb));
+      if (label) {
+        let text = body[pi].replace(label, "");
+        for (
+          let j = pi + 1;
+          j < body.length && body[j].trim() && !/^[A-Z][A-Za-z ]*:/.test(body[j]);
+          j++
+        )
+          text += " " + body[j];
+        newPhotos.push(
+          ...text
+            .split(",")
+            .map((x) => x.trim())
+            .filter(Boolean),
+        );
+      } else if (body[pi].startsWith("New Inventions:")) {
+        const blk: string[] = [];
+        for (let j = pi + 1; j < body.length && body[j].trim(); j++) blk.push(body[j]);
+        for (const l of joinWrapped(blk, /^- /)) {
+          const m = l.match(/^- (.+?) \[(.+)\]$/);
+          if (m) newInventions.push({ name: m[1].trim(), recipe: parseRecipe(m[2]) });
+        }
+      }
+    }
+
+    // Boss, restriction, per-section scoop notes, photo totals and recruits.
+    const bossLine = body.map((l) => l.match(/^Boss:\s*(.+?)(\s*\(scoop\))?\s*$/)).find(Boolean);
+    const boss = bossLine ? { name: bossLine[1].trim(), scoop: !!bossLine[2] } : undefined;
+    const special = body
+      .map((l) => l.match(/^Special:\s*(.+)$/))
+      .find(Boolean)?.[1]
+      ?.trim();
+    const scoopNotes = body.flatMap((l) => {
+      const m = l.match(/^Scoop:\s*(.+?)(\s*\((only chance)\))?\s*$/);
+      return m ? [{ name: m[1].trim(), onlyChance: !!m[3] }] : [];
+    });
+    const pc = [...body]
+      .reverse()
+      .map((l) =>
+        l.match(
+          /^Photo Count:\s*(\d+) ideas?[^,]*,\s*(\d+) scoops?[^(]*(?:\([^)]*new\)\s*)?(?:\(Lv\. (\d+), (\d+) pts\))?/,
+        ),
+      )
+      .find(Boolean);
+    const photoCount = pc
+      ? {
+          ideas: Number(pc[1]),
+          scoops: Number(pc[2]),
+          ...(pc[3] ? { level: Number(pc[3]), points: Number(pc[4]) } : {}),
+        }
+      : undefined;
+    const georamaBuild: { name: string; qty: number }[] = [];
+    for (let j = 0; j < body.length; j++) {
+      if (!/(build|make) the following:?\s*$/i.test(body[j])) continue;
+      for (let k = j + 1; k < body.length; k++) {
+        const m = body[k].match(/^(\d+) (.+?)\s*$/);
+        if (m) georamaBuild.push({ qty: Number(m[1]), name: m[2] });
+        else if (body[k].trim() !== "") break;
+        else if (georamaBuild.length && body[k].trim() === "") break;
+      }
+    }
+    const recruits: { name: string; location: string }[] = [];
+    {
+      let current: string | undefined;
+      for (let j = 0; j < body.length; j++) {
+        const r = body[j].match(/^\* ([^-]+?) - /);
+        if (r) current = r[1].trim();
+        const loc = body[j].match(/^Location:\s*(.+)$/);
+        if (loc && current) {
+          let text = loc[1];
+          for (let k = j + 1; k < body.length && body[k].trim() && !body[k].startsWith("* "); k++)
+            text += " " + body[k].trim();
+          recruits.push({ name: current, location: text.replace(/\s+/g, " ").trim() });
+          current = undefined;
+        }
       }
     }
 
     const kind: Section["kind"] =
-      /boss|dead end/i.test(h.title) && medalLines.length
+      boss || /boss|dead end/i.test(h.title)
         ? "boss"
         : medalLines.length
           ? "dungeon"
@@ -209,10 +271,40 @@ for (let ci = 0; ci < chapterHeaders.length; ci++) {
       newPhotos: newPhotos.filter((p) => !p.startsWith("*")),
       newScoops: newPhotos.filter((p) => p.startsWith("*")).map((p) => p.slice(1)),
       newInventions,
+      ...(boss ? { boss } : {}),
+      ...(special ? { special } : {}),
+      scoopNotes,
+      georamaBuild,
+      ...(photoCount ? { photoCount } : {}),
+      recruits,
     };
     chapterSections.push(section);
     usedIds.add(id);
   });
+
+  const endIdx = lines.findIndex(
+    (l, i) => i > ch.line && i < endLine && /^End-[Cc]hapter [Ss]tats:/.test(l),
+  );
+  if (endIdx >= 0) {
+    const mx = lines[endIdx + 1].match(/Max: (\d+) ?HP, (\d+) DEF/);
+    const mo = lines[endIdx + 2].match(/Monica: (\d+) ?HP, (\d+) DEF/);
+    const tot = lines[endIdx + 3].match(
+      /(\d+) ideas, (\d+) scoops, (\d+) inventions \(Lv\. (\d+), (\d+) pts\)/,
+    );
+    if (mx && mo && tot) {
+      chapter.endStats = {
+        maxHp: Number(mx[1]),
+        maxDef: Number(mx[2]),
+        monicaHp: Number(mo[1]),
+        monicaDef: Number(mo[2]),
+        ideas: Number(tot[1]),
+        scoops: Number(tot[2]),
+        inventions: Number(tot[3]),
+        level: Number(tot[4]),
+        points: Number(tot[5]),
+      };
+    }
+  }
 
   chapter.sectionIds = chapterSections.map((s) => s.id);
   sections.push(...chapterSections);
@@ -229,7 +321,15 @@ for (let ci = 0; ci < chapterHeaders.length; ci++) {
   const sectionForPhoto = (name: string, scoop: boolean) =>
     chapterSections.find((s) =>
       (scoop ? s.newScoops : s.newPhotos).some((p) => norm(p) === norm(name)),
-    );
+    ) ??
+    // Scoops named in a section title (e.g. "Flotsam, Revived!") or marked by its Scoop: line.
+    (scoop
+      ? chapterSections.find(
+          (s) =>
+            norm(s.title).includes(norm(name)) ||
+            s.scoopNotes.some((n) => norm(n.name) === norm(name)),
+        )
+      : undefined);
 
   const mk = (
     category: ChecklistItem["category"],
@@ -289,7 +389,15 @@ for (let ci = 0; ci < chapterHeaders.length; ci++) {
   )) {
     const m = raw.replace(/^\[ \]\s*/, "").match(/^(.+?)\s*\[(.+)\]\s*$/);
     if (!m) continue;
-    items.push(mk("invention", m[1].trim(), { recipe: parseRecipe(m[2]) }));
+    const sec = chapterSections.find((x) =>
+      x.newInventions.some((n) => norm(n.name) === norm(m[1])),
+    );
+    items.push(
+      mk("invention", m[1].trim(), {
+        recipe: parseRecipe(m[2]),
+        ...(sec ? { sectionId: sec.id } : {}),
+      }),
+    );
   }
 
   const powerKey = Object.keys(ob).find((k) => k === "power-ups");

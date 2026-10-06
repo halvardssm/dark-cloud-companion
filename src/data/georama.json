@@ -1,0 +1,1698 @@
+{
+  "parts": [
+    {
+      "name": "Firbit's House",
+      "polyn": 300,
+      "cp": 10,
+      "components": [],
+      "geostone": null
+    },
+    {
+      "name": "Grass",
+      "polyn": 20,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 120,
+      "geostone": null
+    },
+    {
+      "name": "Log",
+      "polyn": 50,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 8
+        }
+      ],
+      "cost": 160,
+      "geostone": null
+    },
+    {
+      "name": "Rock",
+      "polyn": 100,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rough Rock",
+          "qty": 8
+        }
+      ],
+      "cost": 160,
+      "geostone": null
+    },
+    {
+      "name": "Iron Chimey 1",
+      "polyn": 20,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        }
+      ],
+      "cost": 80,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "River",
+      "polyn": 40,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 60,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "Thorn Tree",
+      "polyn": 40,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Forest Dew",
+          "qty": 1
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 140,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "Wooden House",
+      "polyn": 150,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 20
+        },
+        {
+          "name": "Sugar Cane",
+          "qty": 2
+        },
+        {
+          "name": "Glass Material",
+          "qty": 1
+        },
+        {
+          "name": "Sturdy Cloth",
+          "qty": 1
+        }
+      ],
+      "cost": 480,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "Wooden Stairs",
+      "polyn": 20,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 3
+        }
+      ],
+      "cost": 60,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "Wooden Stand",
+      "polyn": 30,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "This is a Geostone?"
+    },
+    {
+      "name": "Eye Tree 1",
+      "polyn": 200,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Forest Dew",
+          "qty": 2
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        }
+      ],
+      "cost": 260,
+      "geostone": "Noise in the Forest"
+    },
+    {
+      "name": "Eye Tree 2",
+      "polyn": 200,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Forest Dew",
+          "qty": 2
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        }
+      ],
+      "cost": 260,
+      "geostone": "Noise in the Forest"
+    },
+    {
+      "name": "Nose Tree",
+      "polyn": 200,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        },
+        {
+          "name": "Forest Dew",
+          "qty": 2
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        }
+      ],
+      "cost": 260,
+      "geostone": "Noise in the Forest"
+    },
+    {
+      "name": "Bench",
+      "polyn": 20,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 3
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 1
+        }
+      ],
+      "cost": 80,
+      "geostone": "I'm a Pixie"
+    },
+    {
+      "name": "Rough Wooden Fence",
+      "polyn": 12,
+      "cp": 1,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        }
+      ],
+      "cost": 40,
+      "geostone": "I'm a Pixie"
+    },
+    {
+      "name": "Shed",
+      "polyn": 45,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Bundle of Hay",
+          "qty": 6
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        }
+      ],
+      "cost": 160,
+      "geostone": "I'm a Pixie"
+    },
+    {
+      "name": "Straw House",
+      "polyn": 80,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Bundle of Hay",
+          "qty": 20
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        },
+        {
+          "name": "Rough Rock",
+          "qty": 2
+        }
+      ],
+      "cost": 520,
+      "geostone": "I'm a Pixie"
+    },
+    {
+      "name": "Cart",
+      "polyn": 30,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Legendary Killer Snake"
+    },
+    {
+      "name": "Pot",
+      "polyn": 15,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Sticky Clay",
+          "qty": 4
+        }
+      ],
+      "cost": 80,
+      "geostone": "Legendary Killer Snake"
+    },
+    {
+      "name": "Wooden Bridge",
+      "polyn": 30,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "Legendary Killer Snake"
+    },
+    {
+      "name": "Pot Torch",
+      "polyn": 20,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Sticky Clay",
+          "qty": 4
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        }
+      ],
+      "cost": 220,
+      "geostone": "Grotesque Spider Lady"
+    },
+    {
+      "name": "Waterwheel",
+      "polyn": 150,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 140,
+      "geostone": "Grotesque Spider Lady"
+    },
+    {
+      "name": "Wooden Gate",
+      "polyn": 20,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        }
+      ],
+      "cost": 80,
+      "geostone": "Grotesque Spider Lady"
+    },
+    {
+      "name": "Fruit Tree",
+      "polyn": 40,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Earth Element",
+          "qty": 2
+        },
+        {
+          "name": "Forest Dew",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 200,
+      "geostone": "Rainbow Falls Entrance"
+    },
+    {
+      "name": "Hill",
+      "polyn": 50,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sticky Clay",
+          "qty": 5
+        },
+        {
+          "name": "Earth Element",
+          "qty": 3
+        }
+      ],
+      "cost": 280,
+      "geostone": "Rainbow Falls Entrance"
+    },
+    {
+      "name": "Brick House",
+      "polyn": 150,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 8
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 4
+        },
+        {
+          "name": "Glass Material",
+          "qty": 2
+        }
+      ],
+      "cost": 280,
+      "geostone": "Headlong Dash"
+    },
+    {
+      "name": "Chinese Stand",
+      "polyn": 300,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 6
+        },
+        {
+          "name": "Sturdy Cloth",
+          "qty": 3
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 300,
+      "geostone": "Fire and Ice Don't Mix"
+    },
+    {
+      "name": "Weather Vane",
+      "polyn": 80,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 3
+        },
+        {
+          "name": "Unknown Bone",
+          "qty": 1
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 110,
+      "geostone": "Fire and Ice Don't Mix"
+    },
+    {
+      "name": "Brick Chimney",
+      "polyn": 20,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 3
+        },
+        {
+          "name": "Sticky Clay",
+          "qty": 1
+        }
+      ],
+      "cost": 80,
+      "geostone": "Earth-Shaking Demon"
+    },
+    {
+      "name": "Warehouse",
+      "polyn": 20,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        }
+      ],
+      "cost": 80,
+      "geostone": "Earth-Shaking Demon"
+    },
+    {
+      "name": "Iron Fence",
+      "polyn": 25,
+      "cp": 1,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        }
+      ],
+      "cost": 20,
+      "geostone": "Powerful Yo-Yo Robot"
+    },
+    {
+      "name": "Wooden Fence",
+      "polyn": 12,
+      "cp": 1,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 1
+        }
+      ],
+      "cost": 20,
+      "geostone": "Elephant Army in the Valley"
+    },
+    {
+      "name": "Church",
+      "polyn": 200,
+      "cp": 8,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 8
+        },
+        {
+          "name": "Glass Material",
+          "qty": 4
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 3
+        }
+      ],
+      "cost": 330,
+      "geostone": "Smiling Fairy Village"
+    },
+    {
+      "name": "Iron Lamp 1",
+      "polyn": 20,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Glass Material",
+          "qty": 1
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 1
+        }
+      ],
+      "cost": 90,
+      "geostone": "Dangerous Treasure Chest"
+    },
+    {
+      "name": "Iron Gate",
+      "polyn": 60,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 5
+        }
+      ],
+      "cost": 50,
+      "geostone": "Little Dragon Counterattack"
+    },
+    {
+      "name": "Star Lamp",
+      "polyn": 40,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        },
+        {
+          "name": "Glass Material",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Little Dragon Counterattack"
+    },
+    {
+      "name": "Iron Lamp 2",
+      "polyn": 25,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 5
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        }
+      ],
+      "cost": 110,
+      "geostone": "Cursed Mask"
+    },
+    {
+      "name": "Barn",
+      "polyn": 150,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        }
+      ],
+      "cost": 80,
+      "geostone": "We're the Roly-Poly Brothers"
+    },
+    {
+      "name": "Mailbox",
+      "polyn": 30,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 3
+        }
+      ],
+      "cost": 30,
+      "geostone": "We're the Roly-Poly Brothers"
+    },
+    {
+      "name": "Laundry",
+      "polyn": 20,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Sturdy Cloth",
+          "qty": 3
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 170,
+      "geostone": "Dragon Slayer"
+    },
+    {
+      "name": "Block",
+      "polyn": 10,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "Rama Priests Like Cheese"
+    },
+    {
+      "name": "Block 2",
+      "polyn": 20,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 10
+        }
+      ],
+      "cost": 200,
+      "geostone": "Rama Priests Like Cheese"
+    },
+    {
+      "name": "Well",
+      "polyn": 40,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 2
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 220,
+      "geostone": "Nature's Threat"
+    },
+    {
+      "name": "Feeble Tree",
+      "polyn": 40,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Forest Dew",
+          "qty": 1
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 140,
+      "geostone": "Moon Baron"
+    },
+    {
+      "name": "Pier",
+      "polyn": 15,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        }
+      ],
+      "cost": 80,
+      "geostone": "Pirates!"
+    },
+    {
+      "name": "Shop Boat",
+      "polyn": 100,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 8
+        },
+        {
+          "name": "Sturdy Cloth",
+          "qty": 4
+        },
+        {
+          "name": "Bundle of Hay",
+          "qty": 2
+        }
+      ],
+      "cost": 280,
+      "geostone": "Pirates!"
+    },
+    {
+      "name": "Iron House",
+      "polyn": 200,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 20
+        },
+        {
+          "name": "Glass Material",
+          "qty": 5
+        }
+      ],
+      "cost": 300,
+      "geostone": "Tank and Boss"
+    },
+    {
+      "name": "Iron Stand",
+      "polyn": 100,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 10
+        }
+      ],
+      "cost": 100,
+      "geostone": "Scary Auntie Medusa"
+    },
+    {
+      "name": "Block 3",
+      "polyn": 20,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 10
+        }
+      ],
+      "cost": 200,
+      "geostone": "Sand Molers"
+    },
+    {
+      "name": "Bridge Block",
+      "polyn": 10,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "Sand Molers"
+    },
+    {
+      "name": "Iron Shed",
+      "polyn": 100,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 5
+        }
+      ],
+      "cost": 50,
+      "geostone": "Bat Den"
+    },
+    {
+      "name": "Iron Stairs",
+      "polyn": 50,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 5
+        }
+      ],
+      "cost": 50,
+      "geostone": "Pirates' Hideout"
+    },
+    {
+      "name": "Luna Stone Light",
+      "polyn": 40,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Fire Element",
+          "qty": 1
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        },
+        {
+          "name": "Rolling Log",
+          "qty": 1
+        }
+      ],
+      "cost": 150,
+      "geostone": "Improvements"
+    },
+    {
+      "name": "Windmill",
+      "polyn": 100,
+      "cp": 5,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 4
+        },
+        {
+          "name": "Sturdy Rock",
+          "qty": 4
+        },
+        {
+          "name": "Sturdy Cloth",
+          "qty": 2
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 260,
+      "geostone": "Sea of Atrocity"
+    },
+    {
+      "name": "Great Crane",
+      "polyn": 60,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 4
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 1
+        },
+        {
+          "name": "Thunder Element",
+          "qty": 1
+        }
+      ],
+      "cost": 150,
+      "geostone": "Battle with Griffon's Army"
+    },
+    {
+      "name": "Power Arm",
+      "polyn": 60,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 4
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 1
+        },
+        {
+          "name": "Thunder Element",
+          "qty": 1
+        }
+      ],
+      "cost": 150,
+      "geostone": "Mt. Gundor Wind"
+    },
+    {
+      "name": "Generator",
+      "polyn": 300,
+      "cp": 3,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 6
+        },
+        {
+          "name": "Fire Element",
+          "qty": 2
+        },
+        {
+          "name": "Hunk of Copper",
+          "qty": 2
+        }
+      ],
+      "cost": 400,
+      "geostone": "Mountain Baddie Appears"
+    },
+    {
+      "name": "Stair Block",
+      "polyn": 10,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "Magmanoff"
+    },
+    {
+      "name": "Iron Chimney 2",
+      "polyn": 20,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Scrap of Metal",
+          "qty": 4
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Secret of Fire Mountain"
+    },
+    {
+      "name": "Hardened Mud Pile",
+      "polyn": 20,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Sticky Clay",
+          "qty": 5
+        }
+      ],
+      "cost": 100,
+      "geostone": "Pains in the Neck"
+    },
+    {
+      "name": "Chimney Pot",
+      "polyn": 20,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Sticky Clay",
+          "qty": 4
+        },
+        {
+          "name": "Fire Element",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Looking for the Earth Gem"
+    },
+    {
+      "name": "Leafy Tree",
+      "polyn": 40,
+      "cp": 0,
+      "components": [
+        {
+          "name": "Forest Dew",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 140,
+      "geostone": "Scary Tree"
+    },
+    {
+      "name": "Barrel",
+      "polyn": 15,
+      "cp": 2,
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 1
+        },
+        {
+          "name": "Thick Hide",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Evil Spirit in the Valley"
+    },
+    {
+      "name": "Hay and Hoe",
+      "polyn": 50,
+      "cp": 4,
+      "components": [
+        {
+          "name": "Bundle of Hay",
+          "qty": 2
+        },
+        {
+          "name": "Scrap of Metal",
+          "qty": 1
+        }
+      ],
+      "cost": 50,
+      "geostone": "Brave Warriors in the Valley"
+    },
+    {
+      "name": "Fountain",
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        },
+        {
+          "name": "Water Element",
+          "qty": 2
+        }
+      ],
+      "cost": 220,
+      "geostone": null
+    },
+    {
+      "name": "Camellia Tree",
+      "components": [
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Life Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 180,
+      "geostone": "Card Warriors Gather"
+    },
+    {
+      "name": "Road to Golbad",
+      "components": [
+        {
+          "name": "Rough Rock",
+          "qty": 2
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 160,
+      "geostone": "Feeling Out of Place"
+    },
+    {
+      "name": "Starlight Stairs",
+      "components": [
+        {
+          "name": "Rough Rock",
+          "qty": 5
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        }
+      ],
+      "cost": 160,
+      "geostone": "Scary Women"
+    },
+    {
+      "name": "Road",
+      "components": [
+        {
+          "name": "Rough Rock",
+          "qty": 2
+        }
+      ],
+      "cost": 40,
+      "geostone": "Crush the Undead"
+    },
+    {
+      "name": "Hall of Sorrow",
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 10
+        },
+        {
+          "name": "Glass Material",
+          "qty": 2
+        },
+        {
+          "name": "Rough Rock",
+          "qty": 2
+        },
+        {
+          "name": "Wind Element",
+          "qty": 1
+        }
+      ],
+      "cost": 340,
+      "geostone": "Missing Gem Dealer"
+    },
+    {
+      "name": "Silver Bench",
+      "components": [
+        {
+          "name": "Rolling Log",
+          "qty": 2
+        },
+        {
+          "name": "Gold Bar",
+          "qty": 1
+        }
+      ],
+      "cost": 1040,
+      "geostone": "Max's Longest Day"
+    },
+    {
+      "name": "Palace Stairs",
+      "components": [
+        {
+          "name": "Rough Rock",
+          "qty": 2
+        },
+        {
+          "name": "Earth Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 160,
+      "geostone": "Hell's Corridor"
+    },
+    {
+      "name": "Petal Stream",
+      "components": [
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 60,
+      "geostone": "Monica All Alone"
+    },
+    {
+      "name": "Flower Bed",
+      "components": [
+        {
+          "name": "Earth Element",
+          "qty": 2
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 180,
+      "geostone": "Raging Spirits"
+    },
+    {
+      "name": "Moon Column",
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 2
+        },
+        {
+          "name": "Holy Element",
+          "qty": 1
+        }
+      ],
+      "cost": 100,
+      "geostone": "Palace Watchdog"
+    },
+    {
+      "name": "Stardust Pond",
+      "components": [
+        {
+          "name": "Sturdy Rock",
+          "qty": 5
+        },
+        {
+          "name": "Light Element",
+          "qty": 1
+        },
+        {
+          "name": "Water Element",
+          "qty": 1
+        }
+      ],
+      "cost": 220,
+      "geostone": "Final Trump Card"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Sindain",
+      "tasks": [
+        {
+          "name": "Forest Lake restored",
+          "percent": 10,
+          "conditions": ["15 River Parts placed"]
+        },
+        {
+          "name": "Glowing Mushrooms restored",
+          "percent": 10,
+          "conditions": ["Elder Jurak revived", "10 Trees placed"]
+        },
+        {
+          "name": "Withered Tree restored",
+          "percent": 15,
+          "conditions": ["Nose Tree between Eye Trees", "Nose and Eye Trees near River"]
+        },
+        {
+          "name": "Elder Jurak revived",
+          "percent": 15,
+          "conditions": [
+            "Withered Tree restored",
+            "Forest Lake restored",
+            "Gordon resides in Sindain"
+          ]
+        },
+        {
+          "name": "Tailor Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Elder Jurak revived",
+            "Adel resides in Sindain",
+            "30 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Eatery restored",
+          "percent": 10,
+          "conditions": [
+            "Elder Jurak revived",
+            "Polly resides in Sindain",
+            "40 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Weapon Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Elder Jurak revived",
+            "Milane resides in Sindain",
+            "Elder Jurak's Branch restored",
+            "50 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Elder Jurak's Branch restored",
+          "percent": 10,
+          "conditions": [
+            "10 Trees placed",
+            "Fence around Firbits' House (at least 15 fence pieces; any type will do)"
+          ]
+        },
+        {
+          "name": "Golden Eggs restored",
+          "percent": 10,
+          "conditions": ["Elder Jurak's Branch restored", "Resident in Straw House"]
+        }
+      ],
+      "reward": "Jurak Gun"
+    },
+    {
+      "name": "Balance Valley",
+      "tasks": [
+        {
+          "name": "Lower Prayer Site restored",
+          "percent": 10,
+          "conditions": ["All 4 Plateaus at same height", "20 Culture Points obtained"]
+        },
+        {
+          "name": "Suspension Bridge restored",
+          "percent": 10,
+          "conditions": ["Lower Prayer Site restored", "15 Trees placed"]
+        },
+        {
+          "name": "Starlight Temple restored",
+          "percent": 10,
+          "conditions": [
+            "Prayer Site and Bridge restored",
+            "2 People reside in Valley",
+            "Crystal Prayer Site restored"
+          ]
+        },
+        {
+          "name": "Sacred Torch restored",
+          "percent": 10,
+          "conditions": ["Starlight Temple restored", "4 Pot Torches placed"]
+        },
+        {
+          "name": "Crystal Prayer Site restored",
+          "percent": 10,
+          "conditions": ["Lower Prayer Site restored", "Priest Bruno resides in Village"]
+        },
+        {
+          "name": "Sacred Gate restored",
+          "percent": 10,
+          "conditions": [
+            "Starlight Temple restored",
+            "Stewart resides in Valley",
+            "40 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Lao Chao's Bistro restored",
+          "percent": 10,
+          "conditions": [
+            "Starlight Temple restored",
+            "Ferdinand at the Chinese Stand",
+            "30 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Tool Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Lin helped",
+            "Star Lamp on Brick House",
+            "Parn resides in Valley",
+            "Starlight Temple restored"
+          ]
+        },
+        {
+          "name": "Weapon Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Starlight Temple restored",
+            "Blinkhorn resides in Valley",
+            "30 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Moon Crystal and Crest revived",
+          "percent": 10,
+          "conditions": ["Starlight Temple restored", "Lighthouse Moon Crystal restored"]
+        }
+      ],
+      "reward": "Serpent Slicer"
+    },
+    {
+      "name": "Veniccio",
+      "tasks": [
+        {
+          "name": "Luna Lab foundation restored",
+          "percent": 15,
+          "conditions": [
+            "8 blocks of Pier Parts placed",
+            "Someone resides in Veniccio",
+            "30 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Lab 1 restored",
+          "percent": 10,
+          "conditions": [
+            "Luna Lab foundation restored",
+            "Red Iron House placed",
+            "Claire lives in Red Iron House",
+            "Boat near Red Iron House"
+          ]
+        },
+        {
+          "name": "Lab 2 restored",
+          "percent": 10,
+          "conditions": [
+            "Luna Lab foundation restored",
+            "Blue Iron House placed",
+            "Donny lives in Blue Iron House",
+            "Boat near Blue Iron House"
+          ]
+        },
+        {
+          "name": "Lab 3 restored",
+          "percent": 10,
+          "conditions": [
+            "Luna Lab foundation restored",
+            "Purple Iron House placed",
+            "Boat near Purple Iron House"
+          ]
+        },
+        {
+          "name": "Lab 4 restored",
+          "percent": 10,
+          "conditions": [
+            "Luna Lab foundation restored",
+            "Green Iron House placed",
+            "Boat near Green Iron House"
+          ]
+        },
+        {
+          "name": "Luna Lab restored",
+          "percent": 10,
+          "conditions": [
+            "All 4 Labs restored",
+            "Shigura Village saved",
+            "50 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Search Lights restored",
+          "percent": 10,
+          "conditions": [
+            "Luna Lab restored",
+            "8 Luna Stone Lights placed",
+            "60 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Weather Vanes restored",
+          "percent": 10,
+          "conditions": ["Luna Lab restored", "Windmill placed"]
+        },
+        {
+          "name": "Symbol of Luna Lab restored",
+          "percent": 15,
+          "conditions": ["Luna Lab restored", "80 Culture Points obtained"]
+        }
+      ],
+      "reward": "Nova Cannon"
+    },
+    {
+      "name": "Heim Rada",
+      "tasks": [
+        {
+          "name": "2nd Floor of Workshop restored",
+          "percent": 5,
+          "conditions": ["3 sturdy houses placed", "30 Culture Points obtained"]
+        },
+        {
+          "name": "3rd Floor of Workshop restored",
+          "percent": 5,
+          "conditions": ["House placed 3 blocks high", "2nd Floor of Workshop restored"]
+        },
+        {
+          "name": "Workshop Elevator restored",
+          "percent": 10,
+          "conditions": [
+            "Resident in house with Chimney",
+            "3rd Floor of Workshop restored",
+            "60 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Gundorada Workshop restored",
+          "percent": 10,
+          "conditions": [
+            "Workshop Elevator restored",
+            "Borneo resides in Heim Rada",
+            "Work Crane and Arm restored",
+            "Generator placed"
+          ]
+        },
+        {
+          "name": "Work Crane restored",
+          "percent": 10,
+          "conditions": [
+            "Resident in house with Crane",
+            "3rd Floor of Workshop restored",
+            "Windmill placed"
+          ]
+        },
+        {
+          "name": "Work Arm restored",
+          "percent": 10,
+          "conditions": [
+            "Resident in house with Arm",
+            "2nd Floor of Workshop restored",
+            "10 Pots placed"
+          ]
+        },
+        {
+          "name": "Operations Room restored",
+          "percent": 10,
+          "conditions": [
+            "Fire Squall destroyed",
+            "Gerald resides in Heim Rada",
+            "Gundorada Workshop restored",
+            "100 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Parts Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Cedric resides in Heim Rada",
+            "Gundorada Workshop restored",
+            "70 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Item Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Resident in house with Chimney",
+            "Gundorada Workshop restored",
+            "70 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Weapon Shop restored",
+          "percent": 10,
+          "conditions": [
+            "Erik in house near Windmill",
+            "Gundorada Workshop restored",
+            "70 Culture Points obtained"
+          ]
+        },
+        {
+          "name": "Paznos completed",
+          "percent": 10,
+          "conditions": ["Gaspard defeated", "Operations Room restored"]
+        }
+      ],
+      "reward": "Holy Daedalus Blade"
+    },
+    {
+      "name": "Moon Flower Palace",
+      "tasks": [
+        {
+          "name": "The Scent of Water in the Sun",
+          "percent": 10,
+          "conditions": ["(Place the Fountain dead center in the courtyard)"]
+        },
+        {
+          "name": "The Path of Flowers we walked",
+          "percent": 10,
+          "conditions": ["(Place 8 Road to Golbads, 4 closer to the Palace, 4 closer to the Stop,"]
+        },
+        {
+          "name": "The Door and the Moon Column",
+          "percent": 10,
+          "conditions": ["(Place 16 Moon Columns, 8 per side of the Road to Golbad)"]
+        },
+        {
+          "name": "The Path of the Sun",
+          "percent": 10,
+          "conditions": ["(Place 2 roads on either side of the Fountain, and 1 at the end of each"]
+        },
+        {
+          "name": "A Stream and a Starlight Stair",
+          "percent": 10,
+          "conditions": [
+            "(Place a Starlight Stair on each side of the Fountain, at the end of 2",
+            "(Place 7 Petal Streams per side of the Road to Golbad)"
+          ]
+        },
+        {
+          "name": "Flower Bed of Recollections",
+          "percent": 10,
+          "conditions": ["(Place 4 Flower Beds right of the Road to Golbad, near the Palace, and 2"]
+        },
+        {
+          "name": "You, sitting by the stairs",
+          "percent": 10,
+          "conditions": [
+            "(Place the Palace Stairs left of the Road to Golbad, near the Palace)",
+            "(Place both Silver Benches, one per side of the Palace Stairs)"
+          ]
+        },
+        {
+          "name": "The end of the Hall of Sorrow",
+          "percent": 10,
+          "conditions": ["(Place the Hall of Sorrow right of the Road to Golbad, near the Stop)"]
+        },
+        {
+          "name": "Feelings deep in Stardust Pond",
+          "percent": 10,
+          "conditions": ["(Place the Stardust Pond left of the Road to Golbad, near the Stop)"]
+        },
+        {
+          "name": "The Murmur of the Trees",
+          "percent": 10,
+          "conditions": ["(Place both Camellia Trees on either side of the Hall of Sorrow's front)"]
+        }
+      ],
+      "reward": "Sun Stone & Moon Stone"
+    }
+  ]
+}

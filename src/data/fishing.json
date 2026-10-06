@@ -1,0 +1,124 @@
+{
+  "baits": [
+    {
+      "name": "Battan",
+      "type": "Any",
+      "fish": ["Niler"]
+    },
+    {
+      "name": "Mimi",
+      "type": "Any",
+      "fish": ["Niler", "Nonky", "Tartan", "Bobo"]
+    },
+    {
+      "name": "Minon",
+      "type": "Any",
+      "fish": ["Bobo", "Den", "Niler", "Gobbler"]
+    },
+    {
+      "name": "Potato Cake",
+      "type": "Any",
+      "fish": ["Tarton", "Priscleen"]
+    },
+    {
+      "name": "Prickly",
+      "type": "Any",
+      "fish": ["Niler"]
+    },
+    {
+      "name": "Banana",
+      "type": "Any",
+      "fish": ["Piccoly", "Niler"]
+    },
+    {
+      "name": "Bomb Nuts",
+      "type": "Any",
+      "fish": ["Piccoly", "Bon"]
+    },
+    {
+      "name": "Gooey Peach",
+      "type": "Any",
+      "fish": ["Bobo"]
+    },
+    {
+      "name": "H-T Cherry",
+      "type": "Any",
+      "fish": []
+    },
+    {
+      "name": "Evy",
+      "type": "Ocean",
+      "fish": ["Tarton", "Bobo"]
+    },
+    {
+      "name": "Petit Fish",
+      "type": "Ocean",
+      "fish": ["Kaji", "Den", "Hama Hama"]
+    },
+    {
+      "name": "Carrot",
+      "type": "Special",
+      "fish": ["Umadakara"]
+    },
+    {
+      "name": "Poison Apple",
+      "type": "Special",
+      "fish": ["Mardan Garayan"]
+    }
+  ],
+  "lures": [
+    {
+      "name": "Frog",
+      "fish": []
+    },
+    {
+      "name": "Minnow",
+      "fish": ["Baku Baku", "Den", "Hama Hama", "Kaji"]
+    },
+    {
+      "name": "Spinner",
+      "fish": ["Baku Baku", "Tarton"]
+    },
+    {
+      "name": "Fork",
+      "fish": ["Baron Garayan"]
+    }
+  ],
+  "photoRewards": [
+    {
+      "level": 2,
+      "points": 100,
+      "reward": "Diamond"
+    },
+    {
+      "level": 3,
+      "points": 200,
+      "reward": "Bandit Coin"
+    },
+    {
+      "level": 4,
+      "points": 300,
+      "reward": "Explorer's Helmet"
+    },
+    {
+      "level": 5,
+      "points": 400,
+      "reward": "Explorer's Shoes"
+    },
+    {
+      "level": 6,
+      "points": 500,
+      "reward": "Explorer's Outfit"
+    },
+    {
+      "level": 7,
+      "points": 600,
+      "reward": "Moon Badge"
+    },
+    {
+      "level": 8,
+      "points": 700,
+      "reward": "Sun Badge"
+    }
+  ]
+}
