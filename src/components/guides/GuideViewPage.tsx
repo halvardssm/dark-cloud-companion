@@ -33,6 +33,7 @@ export function GuideViewPage() {
     hideDone: profile.view.hideDone,
     hidePostgame: profile.view.hidePostgame,
     showFacts: profile.view.showFacts,
+    buyableOnly: profile.view.buyableOnly,
     needle: needle.trim().toLowerCase(),
   };
   const q = encodeURIComponent(guide.id);

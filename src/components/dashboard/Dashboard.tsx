@@ -39,6 +39,7 @@ export function Dashboard() {
     hideDone: profile.view.hideDone,
     hidePostgame: profile.view.hidePostgame,
     showFacts: profile.view.showFacts,
+    buyableOnly: profile.view.buyableOnly,
     needle: needle.trim().toLowerCase(),
   };
 
@@ -113,6 +114,12 @@ export function Dashboard() {
           onChange={(v) => setView({ showFacts: v })}
         />
         <Toggle
+          label={t("view.buyableOnly")}
+          hint={t("view.buyableOnlyHint")}
+          checked={profile.view.buyableOnly}
+          onChange={(v) => setView({ buyableOnly: v })}
+        />
+        <Toggle
           label={t("view.hideDone")}
           checked={profile.view.hideDone}
           onChange={(v) => setView({ hideDone: v })}
@@ -157,13 +164,15 @@ function Toggle({
   label,
   checked,
   onChange,
+  hint,
 }: {
   label: string;
   checked: boolean;
   onChange: (v: boolean) => void;
+  hint?: string;
 }) {
   return (
-    <Label className="flex items-center gap-2 text-sm">
+    <Label className="flex items-center gap-2 text-sm" title={hint}>
       <Switch checked={checked} onCheckedChange={onChange} />
       {label}
     </Label>

@@ -2,7 +2,8 @@ import { STAT_KEYS } from "@/data/weapons-schema";
 import { useTranslations, type Translate } from "@/i18n";
 import type { DerivedStep } from "@/lib/guide/derive";
 import type { Step } from "@/lib/guide/types";
-import { getWeapon } from "@/lib/planner/sources";
+import { getWeapon, itemAvailability } from "@/lib/planner/sources";
+import { Badge } from "@/components/ui/badge";
 import type { Acquire, Recipe, Stage } from "@/lib/planner/types";
 
 const name = (id: string) => getWeapon(id).name;
@@ -55,11 +56,27 @@ export function RecipeView({ recipe }: { recipe: Recipe }) {
 }
 
 /** One weapon-build stage: what to do and what the weapon looks like afterwards (derived by the simulator). */
-export function BuildStepBody({ step, derived }: { step: Step; derived?: DerivedStep }) {
+export function BuildStepBody({
+  step,
+  derived,
+  buyableOnly = false,
+}: {
+  step: Step;
+  derived?: DerivedStep;
+  /** When set, a warning is shown if the step uses items that can't be bought. */
+  buyableOnly?: boolean;
+}) {
   const t = useTranslations();
   const stage = step.build;
   if (!stage) return null;
   const groups = groupSynths(stage);
+  const foundItems = [
+    ...new Set(
+      groups.flatMap((g) =>
+        g.kind === "item" && itemAvailability(g.name).kind === "found" ? [g.name] : [],
+      ),
+    ),
+  ];
   const last = (r: Recipe) => r.stages[r.stages.length - 1];
   return (
     <div className="flex flex-col gap-2 text-sm">
@@ -68,7 +85,12 @@ export function BuildStepBody({ step, derived }: { step: Step; derived?: Derived
       )}
       {groups.map((g, i) =>
         g.kind === "item" ? (
-          <p key={i}>{t("planner.step.itemFree", { count: g.count, name: g.name })}</p>
+          <p key={i} className="flex flex-wrap items-center gap-2">
+            {t("planner.step.itemFree", { count: g.count, name: g.name })}
+            {itemAvailability(g.name).kind === "found" && (
+              <Badge variant="outline">{t("items.foundOnly")}</Badge>
+            )}
+          </p>
         ) : (
           <div key={i}>
             <p>
@@ -87,6 +109,11 @@ export function BuildStepBody({ step, derived }: { step: Step; derived?: Derived
             </details>
           </div>
         ),
+      )}
+      {buyableOnly && foundItems.length > 0 && (
+        <p className="text-destructive text-xs">
+          {t("step.foundItems", { items: foundItems.join(", ") })}
+        </p>
       )}
       {derived && (
         <>

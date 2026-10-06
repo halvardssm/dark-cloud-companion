@@ -15,6 +15,8 @@ import { $ready, $state, switchProfile } from "@/lib/store";
 
 const referenceLinks = [
   { href: "/weapons", key: "nav.weapons" },
+  { href: "/items", key: "nav.items" },
+  { href: "/items", key: "nav.items" },
   { href: "/ridepod", key: "nav.ridepod" },
   { href: "/monsters", key: "nav.monsters" },
   { href: "/spheda", key: "nav.spheda" },

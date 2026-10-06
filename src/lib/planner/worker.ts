@@ -1,15 +1,29 @@
 /// <reference lib="webworker" />
-import { planPath, type PlanRequest, type PlanResult } from "./plan";
+import { planPath, type PlanProgress, type PlanRequest, type PlanResult } from "./plan";
+import type { Template } from "./solve";
+import { generateTemplates, type TemplateOptions } from "./templates";
 
-export type WorkerRequest = { id: number; req: PlanRequest };
-export type WorkerResponse = { id: number; result?: PlanResult; error?: string };
+export type WorkerRequest =
+  | { id: number; kind: "plan"; req: PlanRequest }
+  | { id: number; kind: "templates"; opts: TemplateOptions };
+export type WorkerResponse =
+  | { id: number; progress: PlanProgress }
+  | { id: number; result: PlanResult }
+  | { id: number; templates: Template[] }
+  | { id: number; error: string };
+
+const post = (m: WorkerResponse) => (self as unknown as Worker).postMessage(m);
 
 self.onmessage = async (e: MessageEvent<WorkerRequest>) => {
-  const { id, req } = e.data;
+  const msg = e.data;
   try {
-    const result = await planPath(req);
-    (self as unknown as Worker).postMessage({ id, result } satisfies WorkerResponse);
+    if (msg.kind === "plan") {
+      const result = await planPath(msg.req, (progress) => post({ id: msg.id, progress }));
+      post({ id: msg.id, result });
+    } else {
+      post({ id: msg.id, templates: await generateTemplates(msg.opts) });
+    }
   } catch (err) {
-    (self as unknown as Worker).postMessage({ id, error: String(err) } satisfies WorkerResponse);
+    post({ id: msg.id, error: String(err) });
   }
 };

@@ -12,8 +12,12 @@ import { deriveBuild, startToState } from "@/lib/guide/derive";
 import { emptyStep } from "@/lib/guide/ops";
 import { resolveEntry } from "@/lib/guide/refs";
 import { newId, type BuildStart, type Entry, type Guide, type Step } from "@/lib/guide/types";
-import { getWeapon, synthSources } from "@/lib/planner/sources";
+import { getWeapon, itemAvailability, synthSources } from "@/lib/planner/sources";
 import type { Stage } from "@/lib/planner/types";
+import { loadTemplates } from "@/lib/planner/client";
+import type { Template } from "@/lib/planner/solve";
+import { $profile } from "@/lib/store";
+import { useStore } from "@nanostores/react";
 import { freshState, type WeaponState } from "@/lib/weapons/mechanics";
 
 const itemSources = synthSources.filter(
@@ -203,13 +207,99 @@ function AddEntries({ chapterId, onAdd }: { chapterId?: string; onAdd: (e: Entry
 
 // ---------------- build stage ----------------
 
+/** Adds a sphere weapon (a side weapon prepared and spectrumized onto this one) from the planner's templates. */
+function SphereAdder({ spBonus, onAdd }: { spBonus: number; onAdd: (t: Template) => void }) {
+  const t = useTranslations();
+  const { view } = useStore($profile);
+  const [open, setOpen] = useState(false);
+  const [maxChapter, setMaxChapter] = useState(8);
+  const [templates, setTemplates] = useState<Template[] | null>(null);
+  const [q, setQ] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    let cancelled = false;
+    setLoading(true);
+    setTemplates(null);
+    loadTemplates({ maxChapter, spBonus, allowFound: !view.buyableOnly })
+      .then((list) => !cancelled && setTemplates(list))
+      .catch(() => !cancelled && setTemplates([]))
+      .finally(() => !cancelled && setLoading(false));
+    return () => {
+      cancelled = true;
+    };
+  }, [open, maxChapter, spBonus, view.buyableOnly]);
+
+  const needle = q.trim().toLowerCase();
+  const shown = (templates ?? [])
+    .filter((x) => !needle || getWeapon(x.weaponId).name.toLowerCase().includes(needle))
+    .sort((a, b) => a.abs - b.abs || a.gilda - b.gilda)
+    .slice(0, 30);
+
+  if (!open)
+    return (
+      <Button size="sm" variant="outline" className="w-fit" onClick={() => setOpen(true)}>
+        {t("editor.addSphere")}
+      </Button>
+    );
+  return (
+    <div className="flex flex-col gap-2 rounded-md border p-2">
+      <div className="flex flex-wrap items-center gap-2">
+        <Input
+          className="max-w-48"
+          type="search"
+          placeholder={t("editor.sphereSearch")}
+          aria-label={t("editor.sphereSearch")}
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+        />
+        <select
+          className={`${selectClass} h-9 w-auto`}
+          value={maxChapter}
+          onChange={(e) => setMaxChapter(Number(e.target.value))}
+          aria-label={t("planner.chapter")}
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+            <option key={n} value={n}>
+              {t("planner.chapterOption", { n })}
+            </option>
+          ))}
+        </select>
+        <Button size="sm" variant="ghost" onClick={() => setOpen(false)}>
+          {t("editor.close")}
+        </Button>
+      </div>
+      {loading && <p className="text-muted-foreground text-xs">{t("editor.loadingSpheres")}</p>}
+      <ul className="flex max-h-64 flex-col overflow-y-auto">
+        {shown.map((x) => (
+          <li key={x.id}>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-auto w-full justify-start py-1 text-left whitespace-normal"
+              onClick={() => onAdd(x)}
+            >
+              {getWeapon(x.weaponId).name} +{x.level} · {Math.round(x.abs).toLocaleString()} ABS ·{" "}
+              {Math.round(x.gilda).toLocaleString()} gilda ·{" "}
+              {t("guides.stepChapter", { n: x.chapter })}
+            </Button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function StageEditor({
   stage,
   allowed,
+  spBonus,
   onChange,
 }: {
   stage: Stage;
   allowed: Set<string>;
+  spBonus: number;
   onChange: (s: Stage) => void;
 }) {
   const t = useTranslations();
@@ -264,6 +354,7 @@ function StageEditor({
                 {itemSources.map((it) => (
                   <option key={it.name} value={it.name}>
                     {it.name}
+                    {itemAvailability(it.name).kind === "found" ? ` (${t("items.foundOnly")})` : ""}
                   </option>
                 ))}
               </select>
@@ -325,6 +416,12 @@ function StageEditor({
           </Button>
         </p>
       )}
+      <SphereAdder
+        spBonus={spBonus}
+        onAdd={(tpl) =>
+          onChange({ ...stage, synths: [...stage.synths, { kind: "sphere", recipe: tpl.recipe }] })
+        }
+      />
     </div>
   );
 }
@@ -545,6 +642,7 @@ export function GuideEditor({ initial, persisted, onSave }: Props) {
                   <StageEditor
                     stage={s.build}
                     allowed={allowedFor(i)}
+                    spBonus={draft.build?.spBonus ?? 1}
                     onChange={(stage) => setStep(i, { ...s, build: stage })}
                   />
                   <BuildStepBody step={s} derived={derived.steps.get(s.id)} />

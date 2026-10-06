@@ -33,6 +33,13 @@ export interface PlanRequest {
   timeLimitSec?: number;
 }
 
+/** Coarse progress reported while planning (phases run in this order). */
+export interface PlanProgress {
+  phase: "templates" | "rank" | "solve" | "finish";
+  done: number;
+  total: number;
+}
+
 export interface ChainOutcome {
   chain: string[];
   cost?: Cost;
@@ -109,7 +116,10 @@ function addCoins(
   return { plan: next, missing };
 }
 
-export async function planPath(req: PlanRequest): Promise<PlanResult> {
+export async function planPath(
+  req: PlanRequest,
+  onProgress?: (p: PlanProgress) => void,
+): Promise<PlanResult> {
   const chains = findChains(req.start.weaponId, req.targetId, req.maxChapter);
   if (!chains.length)
     return {
@@ -120,6 +130,7 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
 
   const target = getWeapon(req.targetId);
   const items = itemCandidates({ maxChapter: req.maxChapter, allowFound: req.allowFound });
+  onProgress?.({ phase: "templates", done: 0, total: 1 });
   const templates = await generateTemplates({
     maxChapter: req.maxChapter,
     allowFound: req.allowFound,
@@ -149,7 +160,8 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
 
   // Rank chains by the continuous relaxation, then solve the best few exactly.
   const ranked: ChainOutcome[] = [];
-  for (const chain of chains) {
+  for (const [n, chain] of chains.entries()) {
+    onProgress?.({ phase: "rank", done: n, total: chains.length });
     const r = await solveChain({ ...base, chain, relax: true, timeLimitSec: 20 });
     ranked.push({ chain, bound: r.value, status: r.status === "optimal" ? "optimal" : r.status });
   }
@@ -165,6 +177,7 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
       o.status = o.bound === undefined ? o.status : "skipped";
       continue;
     }
+    onProgress?.({ phase: "solve", done: i, total: Math.min(exact, ranked.length) });
     // If the coins don't fit in the SP left over, retry with a larger reserve.
     let r: Awaited<ReturnType<typeof solveChain>> | undefined;
     let plan: Plan | undefined;
@@ -204,6 +217,7 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
       best = { chain: o.chain, plan, simulation: sim, missing };
     }
   }
+  onProgress?.({ phase: "finish", done: 1, total: 1 });
   if (!best)
     return {
       status: "infeasible",

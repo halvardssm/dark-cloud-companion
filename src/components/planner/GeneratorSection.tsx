@@ -5,18 +5,20 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useTranslations } from "@/i18n";
 import { allGuides } from "@/lib/guide/builtin";
+import { startToState } from "@/lib/guide/derive";
+import { stateToBuildStart } from "@/lib/guide/fromPlan";
 import { $draft } from "@/lib/guide/draft";
 import { deriveBuild } from "@/lib/guide/derive";
 import { appendPlanToGuide, planResultToGuide } from "@/lib/guide/fromPlan";
 import { derivedFor } from "@/lib/guide/useDerived";
 import { cancelPlanner, runPlanner } from "@/lib/planner/client";
 import { ancestorsOf, rootWeaponIds } from "@/lib/planner/graph";
-import { earliestChapter, type PlanResult } from "@/lib/planner/plan";
+import { earliestChapter, type PlanProgress, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
 import { getWeapon, weaponData } from "@/lib/planner/sources";
 import { OPPOSITES, freshState, type WeaponState } from "@/lib/weapons/mechanics";
 import { abilityId, type AbilityId } from "@/data/weapons-schema";
-import { $profile, saveGuide } from "@/lib/store";
+import { $profile, saveGuide, setPlannerInputs, setView } from "@/lib/store";
 import { useStore } from "@nanostores/react";
 import { PlanPreview } from "./PlanPreview";
 import { StartSpecs } from "./StartSpecs";
@@ -30,21 +32,26 @@ function defaultStart(targetId: string): string {
 /** Generates an optimal weapon build; the result can be opened in the editor or saved as a guide. */
 export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void }) {
   const t = useTranslations();
-  const { guides: own } = useStore($profile);
-  const [targetId, setTargetId] = useState("grade-zero");
+  const { guides: own, view } = useStore($profile);
+  // The same setting as the dashboard toggle: plans only use buyable items unless it is switched off.
+  const allowFound = !view.buyableOnly;
+  // The last inputs are remembered per profile.
+  const saved0 = $profile.get().planner;
+  const [targetId, setTargetId] = useState(saved0?.targetId ?? "grade-zero");
   const [start, setStart] = useState<WeaponState>(() =>
-    freshState(getWeapon(defaultStart("grade-zero"))),
+    saved0 ? startToState(saved0.start) : freshState(getWeapon(defaultStart("grade-zero"))),
   );
-  const [baseGuideId, setBaseGuideId] = useState("");
-  const [objective, setObjective] = useState<Objective>("abs");
-  const [goal, setGoal] = useState<"reach" | "max">("reach");
-  const [maxChapter, setMaxChapter] = useState(() =>
-    earliestChapter(defaultStart("grade-zero"), "grade-zero"),
+  const [baseGuideId, setBaseGuideId] = useState(saved0?.baseGuideId ?? "");
+  const [objective, setObjective] = useState<Objective>(saved0?.objective ?? "abs");
+  const [goal, setGoal] = useState<"reach" | "max">(saved0?.goal ?? "reach");
+  const [maxChapter, setMaxChapter] = useState(
+    () => saved0?.maxChapter ?? earliestChapter(defaultStart("grade-zero"), "grade-zero"),
   );
-  const [budget, setBudget] = useState("");
-  const [support, setSupport] = useState(true);
-  const [allowFound, setAllowFound] = useState(false);
-  const [abilities, setAbilities] = useState<AbilityId[]>([]);
+  const [budget, setBudget] = useState(saved0?.budget ?? "");
+  const [support, setSupport] = useState(saved0 ? saved0.start.spBonus === 1 : true);
+  const [abilities, setAbilities] = useState<AbilityId[]>(saved0?.abilities ?? []);
+  const [progress, setProgress] = useState<PlanProgress | null>(null);
+  const [elapsed, setElapsed] = useState(0);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
   const [used, setUsed] = useState<{ start: WeaponState; spBonus: number; baseId: string } | null>(
@@ -59,6 +66,30 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     [own],
   );
   const baseGuide = baseOptions.find((g) => g.id === baseGuideId);
+
+  // Remember the inputs whenever they change.
+  useEffect(() => {
+    const { acquire: _a, ...startPart } = stateToBuildStart(start, support ? 1 : 0);
+    setPlannerInputs({
+      targetId,
+      baseGuideId,
+      objective,
+      goal,
+      maxChapter,
+      budget,
+      abilities,
+      start: startPart,
+    });
+  }, [targetId, baseGuideId, objective, goal, maxChapter, budget, abilities, start, support]);
+
+  // Elapsed time while planning, so a long solve doesn't look stuck.
+  useEffect(() => {
+    if (!running) return;
+    const began = Date.now();
+    setElapsed(0);
+    const timer = setInterval(() => setElapsed(Math.floor((Date.now() - began) / 1000)), 500);
+    return () => clearInterval(timer);
+  }, [running]);
 
   const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
 
@@ -106,18 +137,22 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     setError(null);
     setResult(null);
     setSaved(false);
+    setProgress(null);
     try {
-      const r = await runPlanner({
-        start,
-        targetId,
-        objective,
-        goal: { kind: goal },
-        maxChapter,
-        spBonus: support ? 1 : 0,
-        allowFound,
-        maxGilda: budget.trim() ? Math.max(0, Number(budget)) : undefined,
-        abilities,
-      });
+      const r = await runPlanner(
+        {
+          start,
+          targetId,
+          objective,
+          goal: { kind: goal },
+          maxChapter,
+          spBonus: support ? 1 : 0,
+          allowFound,
+          maxGilda: budget.trim() ? Math.max(0, Number(budget)) : undefined,
+          abilities,
+        },
+        setProgress,
+      );
       setResult(r);
       setUsed({ start, spBonus: support ? 1 : 0, baseId: baseGuideId });
     } catch (e) {
@@ -245,7 +280,10 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
             {t("planner.support")}
           </Label>
           <Label className="flex items-center gap-2 text-sm">
-            <Switch checked={allowFound} onCheckedChange={setAllowFound} />
+            <Switch
+              checked={view.buyableOnly}
+              onCheckedChange={(v) => setView({ buyableOnly: v })}
+            />
             {t("planner.found")}
           </Label>
         </div>
@@ -327,6 +365,28 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
           </Button>
         )}
       </div>
+
+      {running && (
+        <div className="flex flex-col gap-1" role="status" aria-live="polite">
+          <p className="text-sm">
+            {t(`planner.progress.${progress?.phase ?? "templates"}` as const, {
+              done: (progress?.done ?? 0) + 1,
+              total: progress?.total ?? 1,
+            })}{" "}
+            <span className="text-muted-foreground tabular-nums">
+              · {t("planner.elapsed", { s: elapsed })}
+            </span>
+          </p>
+          <div className="bg-muted h-1.5 overflow-hidden rounded-full">
+            <div
+              className="bg-primary h-full transition-all"
+              style={{
+                width: `${progress ? Math.round(((["templates", "rank", "solve", "finish"].indexOf(progress.phase) + progress.done / Math.max(1, progress.total)) / 4) * 100) : 5}%`,
+              }}
+            />
+          </div>
+        </div>
+      )}
 
       {error && (
         <p className="text-destructive text-sm">{t("planner.error", { message: error })}</p>

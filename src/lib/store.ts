@@ -12,6 +12,7 @@ import {
   type AppState,
   type DashboardView,
   type ExportFile,
+  type PlannerInputs,
   type Profile,
   type ViewSettings,
 } from "./profiles";
@@ -81,6 +82,11 @@ export function setDashboardView(view: DashboardView) {
 /** `null` follows progress automatically. */
 export function setCurrentChapter(chapterId: string | null) {
   updateProfile((p) => ({ ...p, dashboard: { ...p.dashboard, currentChapter: chapterId } }));
+}
+
+/** Remembers the planner's inputs in the active profile. */
+export function setPlannerInputs(inputs: PlannerInputs) {
+  updateProfile((p) => ({ ...p, planner: inputs }));
 }
 
 export function toggleGuide(id: string, on: boolean) {

@@ -19,6 +19,8 @@ export interface StepFilters {
   hideDone: boolean;
   hidePostgame: boolean;
   showFacts: boolean;
+  /** Warn about build steps that use items which can't be bought. */
+  buyableOnly: boolean;
   /** Lowercased search text; entries that don't match are hidden. */
   needle: string;
 }
@@ -116,7 +118,7 @@ export function StepCard({
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         {step.notes && <p className="text-sm whitespace-pre-wrap">{step.notes}</p>}
-        <BuildStepBody step={step} derived={derived} />
+        <BuildStepBody step={step} derived={derived} buyableOnly={filters.buyableOnly} />
         {entries.map((e, i) => {
           if (e.kind === "text") {
             const id = textTickId(guide.id, step.id, e.id);

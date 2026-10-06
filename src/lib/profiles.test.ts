@@ -55,7 +55,12 @@ describe("profile migration v1 -> v2", () => {
         `g:${old.walkthroughs[0].id}:s1:i1`,
       ].sort(),
     );
-    expect(next.view).toEqual({ hideDone: true, hidePostgame: false, showFacts: true });
+    expect(next.view).toEqual({
+      hideDone: true,
+      hidePostgame: false,
+      showFacts: true,
+      buyableOnly: true,
+    });
     // Main walkthrough on by default, existing toggles kept.
     expect(next.activeGuides[0]).toBe("main");
     expect(next.activeGuides).toContain("custom-a");
@@ -79,5 +84,46 @@ describe("profile migration v1 -> v2", () => {
 
   test("new profiles start with the main walkthrough on", () => {
     expect(createProfile("x").activeGuides).toEqual(["main"]);
+  });
+});
+
+describe("buyable-only setting", () => {
+  test("defaults to on for new, migrated and older v2 profiles", () => {
+    expect(createProfile("x").view.buyableOnly).toBe(true);
+    const old = createProfile("old");
+    // A v2 state saved before the setting existed has no such key.
+    const { buyableOnly: _drop, ...view } = old.view;
+    const state = { version: 2, activeProfile: old.id, profiles: { [old.id]: { ...old, view } } };
+    expect(parseState(JSON.stringify(state)).profiles[old.id].view.buyableOnly).toBe(true);
+  });
+});
+
+describe("planner inputs", () => {
+  test("are optional, validated and round-trip through state", async () => {
+    const p = createProfile("p");
+    expect(p.planner).toBeUndefined();
+    const { stateToBuildStart } = await import("@/lib/guide/fromPlan");
+    const { acquire: _a, ...start } = stateToBuildStart(freshState(getWeapon("battle-wrench")), 1);
+    const withInputs = {
+      ...p,
+      planner: {
+        targetId: "grade-zero",
+        baseGuideId: "",
+        objective: "abs" as const,
+        goal: "max" as const,
+        maxChapter: 7,
+        budget: "15000",
+        abilities: ["poison" as const],
+        start,
+      },
+    };
+    const state = { version: 2, activeProfile: p.id, profiles: { [p.id]: withInputs } };
+    expect(parseState(JSON.stringify(state)).profiles[p.id].planner?.goal).toBe("max");
+    // Invalid inputs make the whole state fall back rather than corrupt the planner.
+    const bad = {
+      ...state,
+      profiles: { [p.id]: { ...withInputs, planner: { ...withInputs.planner, maxChapter: 99 } } },
+    };
+    expect(parseState(JSON.stringify(bad)).profiles[p.id]?.planner).toBeUndefined();
   });
 });

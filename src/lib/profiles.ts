@@ -9,7 +9,8 @@ import {
 } from "./profiles-v1";
 import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./guide/legacy";
 import { MAIN_GUIDE_ID } from "./guide/main";
-import { guide, type Guide } from "./guide/types";
+import { buildStart, guide, type Guide } from "./guide/types";
+import { abilityId } from "@/data/weapons-schema";
 
 export const STORAGE_KEY = "dcc:state";
 export const STATE_VERSION = 2;
@@ -22,7 +23,23 @@ export const viewSettings = z.object({
   hidePostgame: z.boolean(),
   /** Show section facts (enemies, totals, medals) inside steps. */
   showFacts: z.boolean(),
+  /** Planning and build steps only use items that can be bought; found-only items are flagged. */
+  buyableOnly: z.boolean().default(true),
 });
+
+/** The planner's last inputs, remembered per profile. */
+export const plannerInputs = z.object({
+  targetId: z.string(),
+  baseGuideId: z.string(),
+  objective: z.enum(["abs", "gilda", "steps"]),
+  goal: z.enum(["reach", "max"]),
+  maxChapter: z.number().int().min(1).max(8),
+  budget: z.string(),
+  abilities: z.array(abilityId),
+  /** Start weapon and specs (also holds the support-character bonus). */
+  start: buildStart.omit({ acquire: true }),
+});
+export type PlannerInputs = z.infer<typeof plannerInputs>;
 
 export const profile = z.object({
   id: z.string(),
@@ -35,6 +52,7 @@ export const profile = z.object({
   activeGuides: z.array(z.string()),
   /** The user's own guides, including hand-made, pinned and imported ones. */
   guides: z.array(guide),
+  planner: plannerInputs.optional(),
   dashboard: z.object({
     view: dashboardView,
     /** Chapter shown by the dashboard's chapter view; null follows progress. */
@@ -67,6 +85,7 @@ export function migrateProfile(p: ProfileV1): Profile {
       hideDone: p.view.hideDone,
       hidePostgame: p.view.hidePostgame,
       showFacts: p.view.layers.facts,
+      buyableOnly: true,
     },
     // The main walkthrough is on by default, including for migrated profiles.
     activeGuides: [...new Set([MAIN_GUIDE_ID, ...p.activeGuides])],
@@ -93,7 +112,7 @@ export function createProfile(name: string, now = Date.now()): Profile {
     name,
     createdAt: now,
     checks: {},
-    view: { hideDone: false, hidePostgame: false, showFacts: true },
+    view: { hideDone: false, hidePostgame: false, showFacts: true, buyableOnly: true },
     activeGuides: [MAIN_GUIDE_ID],
     guides: [],
     dashboard: { view: "chapter", currentChapter: null },

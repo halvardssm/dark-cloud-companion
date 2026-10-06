@@ -60,6 +60,22 @@ const coinSources: SynthSource[] = Object.entries(COIN_ABILITIES).map(([name, ab
 });
 
 export const synthSources: SynthSource[] = [...statSources, ...coinSources];
+
+export type ItemAvailability =
+  | { kind: "buyable"; price: number; fromChapter: number; shops: string[] }
+  | { kind: "found" };
+
+/**
+ * Whether a synth item can be bought. Items without a price are found-only (dungeon chests, drops, fishing,
+ * inventions). The chapter is the first chapter a shop *stocks* it; neither guide says when the item shops
+ * themselves open, so for item shops it is approximate (see src/data/INCONSISTENCIES.md, section 4).
+ */
+export function itemAvailability(name: string): ItemAvailability {
+  const shop = shopItems.get(name);
+  return shop
+    ? { kind: "buyable", price: shop.price, fromChapter: shop.fromChapter, shops: shop.shops }
+    : { kind: "found" };
+}
 export const coinFor = (ability: AbilityId) => coinSources.find((c) => c.ability === ability);
 export const synthSourceByName = new Map(synthSources.map((s) => [s.name, s]));
 
