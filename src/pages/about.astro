@@ -1,0 +1,20 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { useTranslations } from "@/i18n";
+
+const t = useTranslations();
+---
+
+<Layout title={`${t("about.title")} · ${t("app.name")}`}>
+  <div class="flex max-w-2xl flex-col gap-4 text-sm">
+    <h1 class="text-2xl font-semibold">{t("about.title")}</h1>
+    <p>{t("about.intro")}</p>
+    <h2 class="text-lg font-semibold">{t("about.dataTitle")}</h2>
+    <p>{t("about.data")}</p>
+    <p>{t("about.thanks")}</p>
+    <h2 class="text-lg font-semibold">{t("about.optimiserTitle")}</h2>
+    <p>{t("about.optimiser")}</p>
+    <h2 class="text-lg font-semibold">{t("about.privacyTitle")}</h2>
+    <p>{t("about.privacy")}</p>
+  </div>
+</Layout>

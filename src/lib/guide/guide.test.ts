@@ -1,6 +1,11 @@
 import { describe, expect, test } from "vitest";
 import { checklist, sections } from "@/lib/data";
-import { curatedGuides } from "@/lib/guides/data";
+import legacyCuratedRaw from "./fixtures/legacy-curated.json";
+import { guide as legacyGuideSchema, type Guide as LegacyGuide } from "@/lib/guides/types";
+import { z } from "zod";
+import { weaponGuides } from "./builtin";
+
+const curatedGuides: LegacyGuide[] = z.array(legacyGuideSchema).parse(legacyCuratedRaw);
 import { deriveBuild } from "./derive";
 import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./legacy";
 import { mainWalkthrough } from "./main";
@@ -39,6 +44,13 @@ describe("main walkthrough", () => {
       s.entries.flatMap((e) => entryTickIds("main", s.id, e)),
     );
     expect(new Set(ticks).size).toBe(ticks.length);
+  });
+
+  test("post-game items are gathered in the post-game chapter", () => {
+    const post = mainWalkthrough.steps.find((s) => s.chapterId === "postgame");
+    expect(post).toBeTruthy();
+    const refs = post!.entries.flatMap((e) => (e.kind === "item" ? [e.ref] : []));
+    expect(new Set(refs)).toEqual(new Set(checklist.filter((i) => i.postgame).map((i) => i.id)));
   });
 
   test("steps keep their chapter and section placement", () => {
@@ -94,6 +106,18 @@ describe("legacy conversion", () => {
     expect(migrateTickId(`wt:${w.id}:s1`)).toBe(`g:${w.id}:s1`);
     expect(migrateTickId(`guide:custom-a:s2`)).toBe("g:custom-a:s2");
     expect(migrateTickId("c1-scoop-brave-little-linda")).toBe("c1-scoop-brave-little-linda");
+  });
+});
+
+describe("built-in weapon guides (converted from the legacy format)", () => {
+  test("match the conversion of the legacy fixture and derive without errors", () => {
+    expect(weaponGuides.map((g) => g.id)).toEqual(curatedGuides.map((g) => g.id));
+    for (const g of weaponGuides) {
+      expect(g.kind).toBe("builtin");
+      const d = deriveBuild(g);
+      expect(d.errors, g.id).toEqual([]);
+      for (const s of d.steps.values()) expect(s.errors, `${g.id} ${s.stepId}`).toEqual([]);
+    }
   });
 });
 

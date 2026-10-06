@@ -97,6 +97,7 @@ export function NavBar({ pathname }: { pathname: string }) {
             </>
           )}
           <DropdownMenuItem render={<a href="/settings" />}>{t("nav.settings")}</DropdownMenuItem>
+          <DropdownMenuItem render={<a href="/about" />}>{t("nav.about")}</DropdownMenuItem>
           <DropdownMenuItem
             onClick={() => {
               applyTheme(!dark);

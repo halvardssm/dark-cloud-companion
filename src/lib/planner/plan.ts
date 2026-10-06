@@ -1,11 +1,11 @@
 // Top-level planner: enumerates build-up chains from the start weapon to the target, ranks them with the
 // LP relaxation, solves the best few exactly, and verifies the winner with the rule-checking simulator.
-import type { Stats } from "@/data/weapons-schema";
+import type { AbilityId, Stats } from "@/data/weapons-schema";
 import type { WeaponState } from "@/lib/weapons/mechanics";
 import { itemCandidates } from "./candidates";
 import { simulatePlan, type SimOptions } from "./simulate";
 import { solveChain, type Objective, type SolveResult } from "./solve";
-import { getWeapon, weaponData } from "./sources";
+import { coinFor, getWeapon, weaponData } from "./sources";
 import { generateTemplates } from "./templates";
 import type { Cost, Plan, SimulationResult } from "./types";
 
@@ -26,6 +26,8 @@ export interface PlanRequest {
   allowFound?: boolean;
   /** Optional cap on gilda spent on items and sphere weapons. */
   maxGilda?: number;
+  /** Abilities the finished weapon should carry; coins are added at the end where the chain doesn't provide them. */
+  abilities?: AbilityId[];
   /** Number of chains to solve exactly (the best by LP bound). */
   exactChains?: number;
   timeLimitSec?: number;
@@ -46,6 +48,8 @@ export interface PlanResult {
   simulation?: SimulationResult & { state: WeaponState };
   alternatives: ChainOutcome[];
   message?: string;
+  /** Requested abilities that could not be provided (coin not yet available, or SP ran out). */
+  abilitiesMissing?: AbilityId[];
 }
 
 const enemyChapter = new Map(weaponData.killEnemies.map((e) => [e.name, e.chapter ?? 8]));
@@ -74,6 +78,37 @@ export function findChains(
   return out;
 }
 
+/** Appends ability coins to the last stage until the finished weapon carries every wanted ability. */
+function addCoins(
+  start: PlanRequest["start"],
+  plan: Plan,
+  wanted: AbilityId[],
+  maxChapter: number,
+  opts: SimOptions,
+): { plan: Plan; missing: AbilityId[] } {
+  const next: Plan = structuredClone(plan);
+  const last = next.stages[next.stages.length - 1];
+  const missing: AbilityId[] = [];
+  const used = new Map<AbilityId, number>();
+  for (let guard = 0; guard < 32; guard++) {
+    const sim = simulatePlan(start, next, opts);
+    const need = wanted.filter((a) => !sim.state.abilities.includes(a) && !missing.includes(a));
+    if (!need.length) break;
+    const a = need[0];
+    const coin = coinFor(a);
+    // A coin can cancel an opposite ability first, so up to two coins per ability may be needed.
+    if (!coin || (coin.fromChapter ?? 1) > maxChapter || (used.get(a) ?? 0) >= 2) {
+      missing.push(a);
+      continue;
+    }
+    used.set(a, (used.get(a) ?? 0) + 1);
+    const existing = last.synths.find((s) => s.kind === "item" && s.name === coin.name);
+    if (existing && existing.kind === "item") existing.count++;
+    else last.synths.push({ kind: "item", name: coin.name, count: 1 });
+  }
+  return { plan: next, missing };
+}
+
 export async function planPath(req: PlanRequest): Promise<PlanResult> {
   const chains = findChains(req.start.weaponId, req.targetId, req.maxChapter);
   if (!chains.length)
@@ -96,13 +131,18 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
       : req.goal.kind === "stats"
         ? { finalStats: req.goal.stats, finalLevel: req.goal.level ?? 0 }
         : {};
+  const wanted = req.abilities ?? [];
+  // Coins cost gilda too: take their (cheapest) price off the budget the optimiser may spend elsewhere.
+  const coinBudget = wanted.reduce((n, a) => n + (coinFor(a)?.price ?? 0), 0);
+  const baseReserve = Math.min(16, wanted.length * 2);
   const base = {
     start: req.start,
     objective: req.objective,
     spBonus: req.spBonus,
     items,
     templates,
-    maxGilda: req.maxGilda,
+    maxGilda: req.maxGilda === undefined ? undefined : Math.max(0, req.maxGilda - coinBudget),
+    reserveSp: baseReserve,
     ...goalInputs,
   };
   const simOpts: SimOptions = { spBonus: req.spBonus };
@@ -115,7 +155,9 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
   }
   ranked.sort((a, b) => (a.bound ?? Infinity) - (b.bound ?? Infinity));
 
-  let best: { chain: string[]; plan: Plan; simulation: PlanResult["simulation"] } | undefined;
+  let best:
+    | { chain: string[]; plan: Plan; simulation: PlanResult["simulation"]; missing: AbilityId[] }
+    | undefined;
   let bestKey = Infinity;
   const exact = req.exactChains ?? 2;
   for (const [i, o] of ranked.entries()) {
@@ -123,10 +165,31 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
       o.status = o.bound === undefined ? o.status : "skipped";
       continue;
     }
-    const r = await solveChain({ ...base, chain: o.chain, timeLimitSec: req.timeLimitSec ?? 30 });
-    o.status = r.status;
-    if (!r.plan) continue;
-    const sim = simulatePlan(req.start, r.plan, simOpts);
+    // If the coins don't fit in the SP left over, retry with a larger reserve.
+    let r: Awaited<ReturnType<typeof solveChain>> | undefined;
+    let plan: Plan | undefined;
+    let sim: ReturnType<typeof simulatePlan> | undefined;
+    let missing: AbilityId[] = [];
+    for (const extra of wanted.length ? [0, 4, 8] : [0]) {
+      r = await solveChain({
+        ...base,
+        reserveSp: baseReserve + extra,
+        chain: o.chain,
+        timeLimitSec: req.timeLimitSec ?? 30,
+      });
+      o.status = r.status;
+      if (!r.plan) break;
+      plan = r.plan;
+      missing = [];
+      if (wanted.length) {
+        const withCoins = addCoins(req.start, r.plan, wanted, req.maxChapter, simOpts);
+        plan = withCoins.plan;
+        missing = withCoins.missing;
+      }
+      sim = simulatePlan(req.start, plan, simOpts);
+      if (!sim.errors.length) break;
+    }
+    if (!plan || !sim) continue;
     o.cost = sim.cost;
     if (sim.errors.length) continue;
     const primary =
@@ -138,7 +201,7 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
     const key = primary + 1e-3 * (req.objective === "abs" ? sim.cost.gilda : sim.cost.abs);
     if (key < bestKey) {
       bestKey = key;
-      best = { chain: o.chain, plan: r.plan, simulation: sim };
+      best = { chain: o.chain, plan, simulation: sim, missing };
     }
   }
   if (!best)
@@ -147,7 +210,13 @@ export async function planPath(req: PlanRequest): Promise<PlanResult> {
       alternatives: ranked,
       message: "No valid plan found within the available content.",
     };
-  return { status: "ok", ...best, alternatives: ranked };
+  const { missing, ...rest } = best;
+  return {
+    status: "ok",
+    ...rest,
+    alternatives: ranked,
+    ...(missing.length ? { abilitiesMissing: missing } : {}),
+  };
 }
 
 /** Earliest chapter by which any build-up chain to `targetId` becomes possible (kill requirements). */

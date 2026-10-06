@@ -16,7 +16,9 @@ import { getWeapon, synthSources } from "@/lib/planner/sources";
 import type { Stage } from "@/lib/planner/types";
 import { freshState, type WeaponState } from "@/lib/weapons/mechanics";
 
-const itemSources = synthSources.filter((s) => Object.keys(s.gains).some((k) => k !== "du"));
+const itemSources = synthSources.filter(
+  (s) => s.ability || Object.keys(s.gains).some((k) => k !== "du"),
+);
 
 function move<T>(list: T[], from: number, to: number): T[] {
   if (to < 0 || to >= list.length) return list;

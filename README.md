@@ -1,43 +1,49 @@
-# Astro Starter Kit: Minimal
+# Dark Chronicles Companion
+
+An unofficial companion web app for **Dark Chronicles (Dark Cloud 2)**, meant to be used on a phone while playing.
+
+- **Dashboard** – follow your current chapter (or an overview / per-guide view): collectables, medals and prizes, missable warnings, and the steps of every guide you switched on.
+- **Guides** – the generated main walkthrough, weapon build guides, and your own guides. Everything is a guide; chapters are optional. Guides can be duplicated, edited, exported and imported.
+- **Planner** – generate an optimal weapon build (least ABS, gilda or steps, with abilities, a gilda budget and an optional existing guide as the starting point) and hand-craft guides; generated builds prefill the editor.
+- **Reference** – weapons, Ridepod parts, monster classes and Spheda prizes.
+
+Progress is stored locally in the browser (multiple profiles, JSON export/import). The site is fully static and works offline once loaded.
+
+## Development
 
 ```sh
-pnpm create astro@latest -- --template minimal
+pnpm install
+pnpm dev            # astro dev
+pnpm build          # static site in dist/
+pnpm preview
+pnpm test           # vitest
+pnpm check          # oxfmt --check + oxlint
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+`PUBLIC_SITE_URL` sets Astro's `site` (the app is served from the root of its origin).
 
-## 🚀 Project Structure
+## Data pipeline
 
-Inside of your Astro project, you'll see the following folders and files:
+The structured data in `src/data/` was extracted once from two community guides that are **not** part of this repository (they live in the git-ignored `.local/guides/`):
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Script                                                 | Output                                                     |
+| ------------------------------------------------------ | ---------------------------------------------------------- |
+| `scripts/extract/dc.ts`                                | chapters, sections, checklists                             |
+| `scripts/extract/gamedata.ts`                          | inventions, Georama, shops, items, fishing                 |
+| `scripts/extract/minigames.ts`                         | Ridepod parts, monster classes                             |
+| `scripts/extract/weapons-walkthrough.ts`, `weapons.ts` | weapons, build-up, synth items (cross-checked)             |
+| `scripts/planner/curated.ts`                           | built-in weapon guides (runs the planner offline, ~20 min) |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Only facts (names, numbers, recipes, locations) are kept; no guide prose. Tests under `src/data/` cross-check the sources against each other.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Structure
 
-Any static assets, like images, can be placed in the `public/` directory.
+- `src/lib/weapons` – game mechanics (ABS, levelling, spectrumize, build-up).
+- `src/lib/planner` – simulator and MILP optimiser (HiGHS WebAssembly, run in a web worker).
+- `src/lib/guide` – unified guide model, main-walkthrough generator, derived build data.
+- `src/lib/profiles.ts`, `src/lib/store.ts` – profiles, progress, migration, persistence.
+- `src/components`, `src/pages` – UI (Astro + React islands, shadcn/ui, Tailwind).
 
-## 🧞 Commands
+## Credits
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Data derived from the Dark Cloud 2 Walkthrough v1.20 by Sky Render and the Weapon FAQ v3.1 by JungleJim. Dark Cloud 2 / Dark Chronicles is © Level-5 / Sony Interactive Entertainment.

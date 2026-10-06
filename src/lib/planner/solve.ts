@@ -46,6 +46,8 @@ export interface SolveInput {
   finalLevel?: number;
   /** Highest level the model may level a weapon to (bounds model size). */
   maxLevel?: number;
+  /** SP to leave unspent on the weapon when the last modelled stage ends (for ability coins added afterwards). */
+  reserveSp?: number;
   /** Upper bound on gilda spent on items and sphere weapons (optional). */
   maxGilda?: number;
   /** Solver time limit in seconds. */
@@ -186,7 +188,7 @@ export function buildModel(input: SolveInput) {
     let constant = start.sp;
     for (let i = 0; i <= j; i++) constant -= spPerLevel[i] * lStart[i];
     const c = `cSp${j}`;
-    row(c, { min: -constant });
+    row(c, { min: -constant + (j === nStages - 1 ? (input.reserveSp ?? 0) : 0) });
     for (let i = 0; i <= j; i++) {
       coef(c, `vL${i}`, spPerLevel[i]);
       for (const s of spend[i]) coef(c, s.v, -s.amount);

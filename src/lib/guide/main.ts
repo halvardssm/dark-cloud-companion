@@ -1,7 +1,7 @@
 // The built-in main walkthrough, generated from the extracted data (no source prose): per chapter an overview step
 // with the items not tied to a section, then one step per section with its facts/medals and the items found there.
 import type { ChecklistCategory, ChecklistItem } from "@/data/schema";
-import { chapters, itemsOf, sectionsOf } from "@/lib/data";
+import { chapters, checklist, itemsOf, sectionsOf } from "@/lib/data";
 import type { Entry, Guide, Step } from "./types";
 
 export const MAIN_GUIDE_ID = "main";
@@ -24,8 +24,23 @@ function itemEntries(items: ChecklistItem[]): Entry[] {
 
 export function buildMainWalkthrough(): Guide {
   const steps: Step[] = [];
+  // Items that only become available after the story ends are collected in the post-game chapter,
+  // wherever in the world they are found.
+  const postgameItems = checklist.filter((i) => i.postgame);
   for (const chapter of chapters) {
-    const items = itemsOf(chapter.id);
+    if (chapter.phase === "postgame") {
+      if (postgameItems.length) {
+        steps.push({
+          id: `ch-${chapter.id}`,
+          title: chapter.title,
+          notes: "",
+          chapterId: chapter.id,
+          entries: itemEntries(postgameItems),
+        });
+      }
+      continue;
+    }
+    const items = itemsOf(chapter.id).filter((i) => !i.postgame);
     const loose = items.filter((i) => !i.sectionId);
     if (loose.length) {
       steps.push({

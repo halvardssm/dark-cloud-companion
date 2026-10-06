@@ -85,3 +85,54 @@ test("earliestChapter follows enemy kill requirements", async () => {
   expect(earliestChapter("battle-wrench", "drill-wrench")).toBe(1);
   expect(earliestChapter("battle-wrench", "grade-zero")).toBe(7);
 });
+
+describe("ability goals", () => {
+  test("coins are added so the finished weapon carries the wanted abilities", async () => {
+    const r = await planPath({
+      start: start("battle-wrench"),
+      targetId: "smash-wrench",
+      objective: "abs",
+      goal: { kind: "reach" },
+      maxChapter: 8,
+      spBonus: 1,
+      abilities: ["poison", "dark"],
+    });
+    expect(r.status).toBe("ok");
+    expect(r.simulation!.errors).toEqual([]);
+    expect(r.simulation!.state.abilities).toEqual(expect.arrayContaining(["poison", "dark"]));
+    expect(r.abilitiesMissing).toBeUndefined();
+    const last = r.plan!.stages.at(-1)!;
+    expect(last.synths.some((s) => s.kind === "item" && s.name === "Poison Coin")).toBe(true);
+    expect(last.synths.some((s) => s.kind === "item" && s.name === "Dark Coin")).toBe(true);
+  }, 60000);
+
+  test("abilities whose coin isn't sold yet are reported as missing, the rest are still added", async () => {
+    const r = await planPath({
+      start: start("battle-wrench"),
+      targetId: "smash-wrench",
+      objective: "abs",
+      goal: { kind: "reach" },
+      maxChapter: 3,
+      spBonus: 1,
+      abilities: ["poison", "dark"],
+    });
+    expect(r.status).toBe("ok");
+    expect(r.abilitiesMissing).toEqual(["poison"]);
+    expect(r.simulation!.state.abilities).toContain("dark");
+  }, 60000);
+
+  test("an opposite ability on the weapon takes a second coin", async () => {
+    // Thorn Armlet is born with Poverty; Wealth needs two coins (cancel, then add).
+    const r = await planPath({
+      start: start("magic-brassard"),
+      targetId: "pocklekul",
+      objective: "abs",
+      goal: { kind: "reach" },
+      maxChapter: 8,
+      spBonus: 1,
+      abilities: ["wealth"],
+    });
+    expect(r.status).toBe("ok");
+    expect(r.simulation!.state.abilities).toContain("wealth");
+  }, 90000);
+});

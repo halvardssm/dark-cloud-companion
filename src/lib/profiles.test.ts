@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { curatedGuides } from "@/lib/guides/data";
+import { weaponGuides } from "@/lib/guide/builtin";
 import {
   createProfile as createProfileV1,
   initialState as initialStateV1,
@@ -31,7 +31,7 @@ async function legacyProfile() {
     ...p,
     customGuides: [g],
     walkthroughs: [w],
-    activeGuides: ["custom-a", w.id, curatedGuides[0].id],
+    activeGuides: ["custom-a", w.id, weaponGuides[0].id],
     checks: {
       "c1-scoop-brave-little-linda": true as const,
       "guide:custom-a:s1": true as const,

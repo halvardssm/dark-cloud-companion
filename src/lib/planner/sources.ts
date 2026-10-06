@@ -1,6 +1,6 @@
 import weaponsRaw from "@/data/weapons.json";
 import itemsRaw from "@/data/items.json";
-import { weaponsData, type SynthItem, type Weapon } from "@/data/weapons-schema";
+import { weaponsData, type AbilityId, type SynthItem, type Weapon } from "@/data/weapons-schema";
 import { checklist } from "@/lib/data";
 import type { Acquire } from "./types";
 
@@ -25,12 +25,42 @@ export interface SynthSource extends SynthItem {
   price?: number;
   /** Earliest chapter it is sold; undefined when not sold. */
   fromChapter?: number;
+  /** Coins add this ability instead of stats (opposites cancel). */
+  ability?: AbilityId;
 }
 
-export const synthSources: SynthSource[] = weaponData.synthItems.map((s) => {
+/** Coins and the ability each one carries (weapon FAQ 4.2). */
+export const COIN_ABILITIES: Record<string, AbilityId> = {
+  "Wealth Coin": "wealth",
+  "Indestructible Coin": "durable",
+  "Poison Coin": "poison",
+  "Time Coin": "stop",
+  "Bandit Coin": "steal",
+  "Absorption Coin": "absorb",
+  "Healing Coin": "heal",
+  "Bull's-Eye Coin": "critical",
+  "Experience Coin": "abs-up",
+  "Dark Coin": "dark",
+};
+
+const statSources: SynthSource[] = weaponData.synthItems.map((s) => {
   const shop = shopItems.get(s.name);
   return shop ? { ...s, price: shop.price, fromChapter: shop.fromChapter } : s;
 });
+
+const coinSources: SynthSource[] = Object.entries(COIN_ABILITIES).map(([name, ability]) => {
+  const shop = shopItems.get(name);
+  return {
+    name,
+    category: "Coins",
+    gains: {},
+    ability,
+    ...(shop ? { price: shop.price, fromChapter: shop.fromChapter } : {}),
+  };
+});
+
+export const synthSources: SynthSource[] = [...statSources, ...coinSources];
+export const coinFor = (ability: AbilityId) => coinSources.find((c) => c.ability === ability);
 export const synthSourceByName = new Map(synthSources.map((s) => [s.name, s]));
 
 /** Chapter in which an idea or scoop (invention ingredient) first becomes available. */

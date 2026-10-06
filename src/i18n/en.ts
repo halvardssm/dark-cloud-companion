@@ -7,6 +7,7 @@ export const en = {
   "nav.planner": "Planner",
   "nav.weapons": "Weapons",
   "nav.settings": "Settings",
+  "nav.about": "About & credits",
   "nav.profile": "Profile",
   "home.intro":
     "Your companion for Dark Chronicles. Track collectables chapter by chapter and plan weapon build-ups.",
@@ -146,6 +147,12 @@ export const en = {
   "planner.chapter": "Content available up to",
   "planner.chapterOption": "Chapter {n}",
   "planner.support": "Support character bonus (+1 SP per level)",
+  "planner.wantAbilities": "Abilities on the finished weapon",
+  "planner.abilitiesPreset": "The 8 usual abilities",
+  "planner.abilitiesClear": "Clear",
+  "planner.abilitiesHint":
+    "Coins are added at the end where the build doesn't already provide an ability. Opposites (Wealth/Poverty, Critical/Dark, Durable/Fragile, Absorb/Heal) exclude each other.",
+  "planner.abilitiesMissing": "Not added because the coin isn't sold yet: {list}.",
   "planner.budget": "Gilda budget (optional)",
   "planner.budgetPlaceholder": "No limit",
   "planner.found": "Allow items that can't be bought",
@@ -272,6 +279,19 @@ export const en = {
   "section.georama": "Georama to build: {parts}",
   "section.recruits": "Recruit {name}: {where}",
   "section.moreFacts": "Section facts",
+  "about.title": "About & credits",
+  "about.intro":
+    "Dark Chronicles Companion is an unofficial fan project for Dark Chronicles (Dark Cloud 2). It is not affiliated with or endorsed by Level-5 or Sony Interactive Entertainment. The game, its names and its artwork belong to their owners.",
+  "about.dataTitle": "Where the data comes from",
+  "about.data":
+    "The checklists, section facts, item and Georama tables are structured facts (names, numbers, recipes, locations) gathered from the Dark Cloud 2 Walkthrough v1.20 by Sky Render. The weapon, build-up and spectrumize data comes from the Weapon FAQ v3.1 by JungleJim, cross-checked against the walkthrough's own weapon list. None of the guides' prose is reproduced; walkthrough text in the app is written by you.",
+  "about.thanks": "Thank you to both authors for the years of work that made this possible.",
+  "about.optimiserTitle": "The weapon planner",
+  "about.optimiser":
+    "Plans are found by an optimiser that follows the mechanics described in the Weapon FAQ (ABS curve, synth points, spectrumizing, build-up rules) and is checked by a rule-by-rule simulator. Item availability by chapter is approximate; abilities beyond coins are not planned.",
+  "about.privacyTitle": "Your data",
+  "about.privacy":
+    "Everything you track is stored only in this browser. Use Settings to export a backup; guides and walkthroughs can be exported and shared without your progress.",
   "weapons.title": "Weapons",
   "weapons.search": "Search weapons",
   "weapons.all": "All",

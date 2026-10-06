@@ -112,6 +112,8 @@ async function buildTemplates(opts: TemplateOptions): Promise<Template[]> {
   const itemChapter = (name: string) => items.find((i) => i.name === name)?.fromChapter ?? 1;
 
   for (const w of weaponData.weapons) {
+    // Spheres pass their abilities on: never use ones that would add a harmful ability to the main weapon.
+    if (w.abilities.includes("poverty") || w.abilities.includes("fragile")) continue;
     const acquire = cheapestAcquire(w.id, opts.maxChapter);
     if (!acquire) continue;
     for (const level of SPHERE_LEVELS) {

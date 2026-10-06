@@ -12,7 +12,7 @@ import {
   MIN_SPHERE_LEVEL,
   type WeaponState,
 } from "@/lib/weapons/mechanics";
-import { STAT_KEYS } from "@/data/weapons-schema";
+import { STAT_KEYS, type AbilityId } from "@/data/weapons-schema";
 import { getWeapon, synthSourceByName } from "./sources";
 import type { Acquire, Cost, LogEntry, Plan, Recipe, SimulationResult, Stage } from "./types";
 
@@ -80,7 +80,13 @@ function runStages(
         const gains = Object.fromEntries(
           Object.entries(src.gains).map(([k, v]) => [k, (v ?? 0) * use.count]),
         );
-        run.state = synth(run.state, weapon, gains, use.count);
+        run.state = synth(
+          run.state,
+          weapon,
+          gains,
+          use.count,
+          src.ability ? Array<AbilityId>(use.count).fill(src.ability) : [],
+        );
         const gilda = (src.price ?? 0) * use.count;
         run.cost.gilda += gilda;
         run.cost.steps += 1;

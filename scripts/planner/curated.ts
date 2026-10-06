@@ -1,8 +1,8 @@
 // Generates the built-in guides with our own planner (so no guide prose is copied).
 // Run: pnpm exec vite-node --config vitest.config.ts scripts/planner/curated.ts
 import { writeFileSync } from "node:fs";
-import { planToGuide } from "../../src/lib/guides/fromPlan.ts";
-import { guide as guideSchema, type Guide } from "../../src/lib/guides/types.ts";
+import { planResultToGuide } from "../../src/lib/guide/fromPlan.ts";
+import { guide as guideSchema, type Guide } from "../../src/lib/guide/types.ts";
 import { ancestorsOf } from "../../src/lib/planner/graph.ts";
 import { earliestChapter, planPath } from "../../src/lib/planner/plan.ts";
 import { acquisitionOptions, getWeapon } from "../../src/lib/planner/sources.ts";
@@ -89,13 +89,16 @@ for (const targetId of TARGETS) {
     }
     guides.push(
       guideSchema.parse(
-        planToGuide({
+        planResultToGuide({
           id: `${targetId}-${obj.id}`,
           title: `${target.name} — ${obj.label}`,
-          kind: "curated",
-          summary: `${obj.label} · maxed stats · from ${getWeapon(startId).name} · up to chapter ${maxChapter}`,
+          description: `${obj.label} · maxed stats · from ${getWeapon(startId).name} · up to chapter ${maxChapter}`,
+          kind: "builtin",
           result,
-          start: { weaponId: startId, acquire: startAcquire },
+          start: freshState(getWeapon(startId)),
+          spBonus: SUPPORT,
+          acquire: startAcquire,
+          createdAt: 0,
         }),
       ),
     );

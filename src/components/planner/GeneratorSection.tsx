@@ -14,7 +14,8 @@ import { ancestorsOf, rootWeaponIds } from "@/lib/planner/graph";
 import { earliestChapter, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
 import { getWeapon, weaponData } from "@/lib/planner/sources";
-import { freshState, type WeaponState } from "@/lib/weapons/mechanics";
+import { OPPOSITES, freshState, type WeaponState } from "@/lib/weapons/mechanics";
+import { abilityId, type AbilityId } from "@/data/weapons-schema";
 import { $profile, saveGuide } from "@/lib/store";
 import { useStore } from "@nanostores/react";
 import { PlanPreview } from "./PlanPreview";
@@ -43,6 +44,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
   const [budget, setBudget] = useState("");
   const [support, setSupport] = useState(true);
   const [allowFound, setAllowFound] = useState(false);
+  const [abilities, setAbilities] = useState<AbilityId[]>([]);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
   const [used, setUsed] = useState<{ start: WeaponState; spBonus: number; baseId: string } | null>(
@@ -114,6 +116,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
         spBonus: support ? 1 : 0,
         allowFound,
         maxGilda: budget.trim() ? Math.max(0, Number(budget)) : undefined,
+        abilities,
       });
       setResult(r);
       setUsed({ start, spBonus: support ? 1 : 0, baseId: baseGuideId });
@@ -248,6 +251,59 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
         </div>
       </div>
 
+      <fieldset className="flex flex-col gap-2 rounded-md border p-3">
+        <legend className="px-1 text-sm font-medium">{t("planner.wantAbilities")}</legend>
+        <div className="flex flex-wrap gap-x-4 gap-y-2">
+          {abilityId.options.map((a) => {
+            const opposite = OPPOSITES[a];
+            const blocked = !!opposite && abilities.includes(opposite);
+            return (
+              <Label
+                key={a}
+                className={`flex items-center gap-2 text-sm ${blocked ? "opacity-50" : ""}`}
+              >
+                <input
+                  type="checkbox"
+                  disabled={blocked}
+                  checked={abilities.includes(a)}
+                  onChange={(e) =>
+                    setAbilities(
+                      e.target.checked ? [...abilities, a] : abilities.filter((x) => x !== a),
+                    )
+                  }
+                />
+                {t(`ability.${a}` as const)}
+              </Label>
+            );
+          })}
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() =>
+              setAbilities([
+                "poison",
+                "stop",
+                "abs-up",
+                "steal",
+                "wealth",
+                "dark",
+                "durable",
+                "absorb",
+              ])
+            }
+          >
+            {t("planner.abilitiesPreset")}
+          </Button>
+          <Button type="button" variant="ghost" size="sm" onClick={() => setAbilities([])}>
+            {t("planner.abilitiesClear")}
+          </Button>
+          <span className="text-muted-foreground text-xs">{t("planner.abilitiesHint")}</span>
+        </div>
+      </fieldset>
+
       <details className="rounded-md border p-3">
         <summary className="cursor-pointer text-sm font-medium">{t("planner.specs")}</summary>
         <div className="mt-3">
@@ -279,6 +335,13 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
       {result?.status === "infeasible" && <p className="text-sm">{t("planner.infeasible")}</p>}
       {draft && (
         <>
+          {result?.abilitiesMissing && (
+            <p className="text-sm">
+              {t("planner.abilitiesMissing", {
+                list: result.abilitiesMissing.map((a) => t(`ability.${a}` as const)).join(", "),
+              })}
+            </p>
+          )}
           <PlanPreview guide={draft} />
           <div className="flex flex-wrap items-center gap-2">
             <Button
