@@ -118,3 +118,37 @@ describe("deriveBuild", () => {
     expect(deriveBuild(rest as typeof g).errors.length).toBeGreaterThan(0);
   });
 });
+
+describe("appendPlanToGuide", () => {
+  test("continues a build guide from where it ends and the result derives without errors", async () => {
+    const { planPath } = await import("@/lib/planner/plan");
+    const { planResultToGuide, appendPlanToGuide } = await import("./fromPlan");
+    const { getWeapon } = await import("@/lib/planner/sources");
+    const { freshState } = await import("@/lib/weapons/mechanics");
+    const start = freshState(getWeapon("battle-wrench"));
+    const make = async (from: typeof start, target: string) => {
+      const result = await planPath({
+        start: from,
+        targetId: target,
+        objective: "abs",
+        goal: { kind: "reach" },
+        maxChapter: 3,
+        spBonus: 1,
+      });
+      return {
+        result,
+        guide: planResultToGuide({ title: target, result, start: from, spBonus: 1 }),
+      };
+    };
+    const first = await make(start, "drill-wrench");
+    const d1 = deriveBuild(first.guide);
+    expect(d1.errors).toEqual([]);
+    const second = await make(d1.final!, "smash-wrench");
+    const combined = appendPlanToGuide(first.guide, second.guide, "Both");
+    const d = deriveBuild(combined);
+    expect(d.errors).toEqual([]);
+    for (const s of d.steps.values()) expect(s.errors).toEqual([]);
+    expect(combined.steps.at(-1)!.build!.weaponId).toBe("smash-wrench");
+    expect(d.final!.weaponId).toBe("smash-wrench");
+  }, 120000);
+});

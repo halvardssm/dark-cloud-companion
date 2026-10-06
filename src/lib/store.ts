@@ -1,16 +1,16 @@
 import { atom, computed } from "nanostores";
-import { mergeContent, type ContentFile, type MergeSummary } from "./content-file";
-import type { Guide } from "./guides/types";
-import type { Walkthrough } from "./walkthroughs/types";
+import { mergeGuides, type ContentFile, type MergeSummary } from "./content-file";
+import type { Guide } from "./guide/types";
 import {
   STATE_VERSION,
   STORAGE_KEY,
   createProfile,
-  exportFile,
   importProfiles,
   initialState,
+  parseProfileExport,
   parseState,
   type AppState,
+  type DashboardView,
   type ExportFile,
   type Profile,
   type ViewSettings,
@@ -58,82 +58,81 @@ export function setChecked(id: string, checked: boolean) {
   });
 }
 
-export function setView(
-  patch: Partial<Omit<ViewSettings, "layers">> & { layers?: Partial<ViewSettings["layers"]> },
-) {
-  updateProfile((p) => ({
-    ...p,
-    view: { ...p.view, ...patch, layers: { ...p.view.layers, ...patch.layers } },
-  }));
+/** Sets several ticks at once (e.g. "complete this step"). */
+export function setManyChecked(ids: string[], checked: boolean) {
+  updateProfile((p) => {
+    const checks = { ...p.checks };
+    for (const id of ids) {
+      if (checked) checks[id] = true;
+      else delete checks[id];
+    }
+    return { ...p, checks };
+  });
+}
+
+export function setView(patch: Partial<ViewSettings>) {
+  updateProfile((p) => ({ ...p, view: { ...p.view, ...patch } }));
+}
+
+export function setDashboardView(view: DashboardView) {
+  updateProfile((p) => ({ ...p, dashboard: { ...p.dashboard, view } }));
+}
+
+/** `null` follows progress automatically. */
+export function setCurrentChapter(chapterId: string | null) {
+  updateProfile((p) => ({ ...p, dashboard: { ...p.dashboard, currentChapter: chapterId } }));
 }
 
 export function toggleGuide(id: string, on: boolean) {
   updateProfile((p) => ({
     ...p,
-    // Switching a walkthrough on also turns the walkthrough layer on, otherwise nothing would appear.
-    view:
-      on && id.startsWith("wt-")
-        ? { ...p.view, layers: { ...p.view.layers, walkthrough: true } }
-        : p.view,
     activeGuides: on
       ? [...new Set([...p.activeGuides, id])]
       : p.activeGuides.filter((g) => g !== id),
   }));
 }
 
-export function addCustomGuide(g: Guide) {
-  updateProfile((p) => ({
-    ...p,
-    customGuides: [...p.customGuides.filter((x) => x.id !== g.id), g],
-    activeGuides: [...new Set([...p.activeGuides, g.id])],
-  }));
-}
-
-export function removeCustomGuide(id: string) {
-  updateProfile((p) => ({
-    ...p,
-    customGuides: p.customGuides.filter((g) => g.id !== id),
-    activeGuides: p.activeGuides.filter((g) => g !== id),
-  }));
-}
-
-/** Creates or replaces a walkthrough in the active profile. */
-export function saveWalkthrough(w: Walkthrough) {
+/** Creates or replaces one of the user's own guides. */
+export function saveGuide(g: Guide, opts: { activate?: boolean } = {}) {
   updateProfile((p) => {
-    const next = { ...w, updatedAt: Date.now() };
-    const exists = p.walkthroughs.some((x) => x.id === w.id);
+    const next: Guide = {
+      ...g,
+      kind: "custom",
+      updatedAt: Date.now(),
+      createdAt: g.createdAt ?? Date.now(),
+    };
+    const exists = p.guides.some((x) => x.id === g.id);
     return {
       ...p,
-      walkthroughs: exists
-        ? p.walkthroughs.map((x) => (x.id === w.id ? next : x))
-        : [...p.walkthroughs, next],
+      guides: exists ? p.guides.map((x) => (x.id === g.id ? next : x)) : [...p.guides, next],
+      activeGuides: opts.activate ? [...new Set([...p.activeGuides, g.id])] : p.activeGuides,
     };
   });
 }
 
-export function deleteWalkthrough(id: string) {
+export function deleteGuide(id: string) {
   updateProfile((p) => ({
     ...p,
-    walkthroughs: p.walkthroughs.filter((w) => w.id !== id),
+    guides: p.guides.filter((g) => g.id !== id),
     activeGuides: p.activeGuides.filter((g) => g !== id),
-    // Drop this walkthrough's ticks so stale progress doesn't linger.
+    // Drop this guide's own ticks so stale progress doesn't linger (shared data-item ticks stay).
     checks: Object.fromEntries(
-      Object.entries(p.checks).filter(([k]) => !k.startsWith(`wt:${id}:`)),
+      Object.entries(p.checks).filter(([k]) => !k.startsWith(`g:${id}:`)),
     ) as typeof p.checks,
   }));
 }
 
-/** Merges validated imported guides/walkthroughs into the active profile; returns what happened. */
+/** Merges validated imported guides into the active profile; returns what happened. */
 export function applyContent(file: ContentFile): MergeSummary {
   let summary: MergeSummary = { added: 0, copied: 0, skipped: 0 };
   updateProfile((p) => {
-    const merged = mergeContent(
-      { guides: p.customGuides, walkthroughs: p.walkthroughs },
-      file,
+    const merged = mergeGuides(
+      p.guides,
+      file.guides as Guide[],
       (old) => `${old}-i${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`,
     );
     summary = merged.summary;
-    return { ...p, customGuides: merged.guides, walkthroughs: merged.walkthroughs };
+    return { ...p, guides: merged.guides };
   });
   return summary;
 }
@@ -173,7 +172,7 @@ export function buildExport(ids?: string[]): ExportFile {
   return { app: "dark-chronicles-companion", version: STATE_VERSION, profiles };
 }
 
-/** Returns an error message, or null on success. */
+/** Returns an error message, or null on success. Accepts exports of the current and the previous format. */
 export async function importFromJson(json: string): Promise<string | null> {
   let data: unknown;
   try {
@@ -181,17 +180,14 @@ export async function importFromJson(json: string): Promise<string | null> {
   } catch {
     return "Not valid JSON";
   }
-  const parsed = exportFile.safeParse(data);
-  if (!parsed.success) return "Not a Dark Chronicles Companion export";
-  // Guides and walkthroughs reference weapons, items and chapters: make sure they all exist before accepting.
-  const { validateGuide, validateWalkthrough } = await import("./content-validate");
-  const errors = parsed.data.profiles.flatMap((p) => [
-    ...p.customGuides.flatMap((g) => validateGuide(g).map((e) => `${p.name} / ${g.title}: ${e}`)),
-    ...p.walkthroughs.flatMap((w) =>
-      validateWalkthrough(w).map((e) => `${p.name} / ${w.title}: ${e}`),
-    ),
-  ]);
+  const parsed = parseProfileExport(data);
+  if (!parsed) return "Not a Dark Chronicles Companion export";
+  // Guides reference weapons, items and chapters: make sure they all exist before accepting.
+  const { validateGuide } = await import("./content-validate");
+  const errors = parsed.profiles.flatMap((p) =>
+    p.guides.flatMap((g) => validateGuide(g).map((e) => `${p.name} / ${g.title}: ${e}`)),
+  );
   if (errors.length) return errors.slice(0, 5).join("\n");
-  $state.set(importProfiles($state.get(), parsed.data));
+  $state.set(importProfiles($state.get(), parsed));
   return null;
 }

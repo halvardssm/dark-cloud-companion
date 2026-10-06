@@ -1,63 +1,40 @@
 import { useEffect, useMemo, useState } from "react";
-import { weaponType } from "@/data/weapons-schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useTranslations } from "@/i18n";
+import { allGuides } from "@/lib/guide/builtin";
+import { $draft } from "@/lib/guide/draft";
+import { deriveBuild } from "@/lib/guide/derive";
+import { appendPlanToGuide, planResultToGuide } from "@/lib/guide/fromPlan";
+import { derivedFor } from "@/lib/guide/useDerived";
 import { cancelPlanner, runPlanner } from "@/lib/planner/client";
 import { ancestorsOf, rootWeaponIds } from "@/lib/planner/graph";
 import { earliestChapter, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
 import { getWeapon, weaponData } from "@/lib/planner/sources";
 import { freshState, type WeaponState } from "@/lib/weapons/mechanics";
-import { GuideView } from "@/components/guides/GuideView";
-import { planToGuide } from "@/lib/guides/fromPlan";
-import { addCustomGuide } from "@/lib/store";
+import { $profile, saveGuide } from "@/lib/store";
+import { useStore } from "@nanostores/react";
+import { PlanPreview } from "./PlanPreview";
 import { StartSpecs } from "./StartSpecs";
-
-const selectClass = "bg-background h-10 w-full rounded-md border px-3 text-sm";
-
-function WeaponSelect({
-  value,
-  onChange,
-  ids,
-}: {
-  value: string;
-  onChange: (id: string) => void;
-  ids?: Set<string>;
-}) {
-  const t = useTranslations();
-  return (
-    <select className={selectClass} value={value} onChange={(e) => onChange(e.target.value)}>
-      {weaponType.options.map((type) => {
-        const ws = weaponData.weapons.filter((w) => w.type === type && (!ids || ids.has(w.id)));
-        if (!ws.length) return null;
-        return (
-          <optgroup key={type} label={t(`weapon.type.${type}` as const)}>
-            {ws.map((w) => (
-              <option key={w.id} value={w.id}>
-                {w.name}
-              </option>
-            ))}
-          </optgroup>
-        );
-      })}
-    </select>
-  );
-}
+import { WeaponSelect, selectClass } from "./WeaponSelect";
 
 function defaultStart(targetId: string): string {
   const anc = [...ancestorsOf(targetId)];
   return anc.find((id) => rootWeaponIds.has(id)) ?? targetId;
 }
 
-export function PlannerApp() {
+/** Generates an optimal weapon build; the result can be opened in the editor or saved as a guide. */
+export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void }) {
   const t = useTranslations();
+  const { guides: own } = useStore($profile);
   const [targetId, setTargetId] = useState("grade-zero");
   const [start, setStart] = useState<WeaponState>(() =>
     freshState(getWeapon(defaultStart("grade-zero"))),
   );
+  const [baseGuideId, setBaseGuideId] = useState("");
   const [objective, setObjective] = useState<Objective>("abs");
   const [goal, setGoal] = useState<"reach" | "max">("reach");
   const [maxChapter, setMaxChapter] = useState(() =>
@@ -68,9 +45,30 @@ export function PlannerApp() {
   const [allowFound, setAllowFound] = useState(false);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
+  const [used, setUsed] = useState<{ start: WeaponState; spBonus: number; baseId: string } | null>(
+    null,
+  );
   const [error, setError] = useState<string | null>(null);
-  const [guideName, setGuideName] = useState("");
-  const [pinned, setPinned] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  // Guides that contain a weapon build can serve as the starting point.
+  const baseOptions = useMemo(
+    () => allGuides(own).filter((g) => g.steps.some((s) => s.build)),
+    [own],
+  );
+  const baseGuide = baseOptions.find((g) => g.id === baseGuideId);
+
+  const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
+
+  const changeTarget = (id: string) => {
+    setTargetId(id);
+    if (!baseGuide) {
+      const from = ancestorsOf(id).has(start.weaponId) ? start.weaponId : defaultStart(id);
+      if (from !== start.weaponId) setStart(freshState(getWeapon(from)));
+      setMaxChapter(earliestChapter(from, id));
+    }
+    setResult(null);
+  };
 
   // Deep link from weapon pages: /planner?target=<weapon id>
   useEffect(() => {
@@ -80,49 +78,45 @@ export function PlannerApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
-  const draft = useMemo(
-    () =>
-      result?.status === "ok"
-        ? planToGuide({
-            id: "draft",
-            title: `${getWeapon(targetId).name} — ${t(`planner.obj.${objective}` as const).toLowerCase()}`,
-            kind: "custom",
-            summary: `${t(`planner.obj.${objective}` as const)} · ${t(`planner.goal.${goal}` as const)} · ${getWeapon(start.weaponId).name} · ${t("planner.chapterOption", { n: maxChapter })}`,
-            result,
-          })
-        : null,
-    // The summary should describe the request that produced the result, not later form edits.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [result],
-  );
-
-  const changeTarget = (id: string) => {
-    setTargetId(id);
-    const from = ancestorsOf(id).has(start.weaponId) ? start.weaponId : defaultStart(id);
-    if (from !== start.weaponId) setStart(freshState(getWeapon(from)));
-    setMaxChapter(earliestChapter(from, id));
+  const chooseBase = (id: string) => {
+    setBaseGuideId(id);
     setResult(null);
+    const g = baseOptions.find((x) => x.id === id);
+    if (!g) {
+      setStart(freshState(getWeapon(defaultStart(targetId))));
+      return;
+    }
+    // Continue from the weapon the guide leaves you with.
+    const final = derivedFor(g).final;
+    if (final) {
+      setStart(final);
+      setSupport(g.build?.spBonus === 1);
+      if (!ancestorsOf(targetId).has(final.weaponId)) {
+        // Pick the first weapon the base weapon can build up into as a sensible target.
+        const next = getWeapon(final.weaponId).buildsUpTo[0];
+        if (next) setTargetId(next);
+      }
+    }
   };
 
   const generate = async () => {
     setRunning(true);
     setError(null);
     setResult(null);
-    setPinned(false);
+    setSaved(false);
     try {
-      setResult(
-        await runPlanner({
-          start,
-          targetId,
-          objective,
-          goal: { kind: goal },
-          maxChapter,
-          spBonus: support ? 1 : 0,
-          allowFound,
-          maxGilda: budget.trim() ? Math.max(0, Number(budget)) : undefined,
-        }),
-      );
+      const r = await runPlanner({
+        start,
+        targetId,
+        objective,
+        goal: { kind: goal },
+        maxChapter,
+        spBonus: support ? 1 : 0,
+        allowFound,
+        maxGilda: budget.trim() ? Math.max(0, Number(budget)) : undefined,
+      });
+      setResult(r);
+      setUsed({ start, spBonus: support ? 1 : 0, baseId: baseGuideId });
     } catch (e) {
       if (String(e).includes("cancelled")) return;
       setError(String(e instanceof Error ? e.message : e));
@@ -131,9 +125,53 @@ export function PlannerApp() {
     }
   };
 
+  /** The generated build as a guide: standalone, or appended to the chosen base guide. */
+  const draft = useMemo(() => {
+    if (result?.status !== "ok" || !used) return null;
+    const title = `${getWeapon(targetId).name} — ${t(`planner.obj.${objective}` as const)}`;
+    const generated = planResultToGuide({
+      title,
+      description: `${t(`planner.obj.${objective}` as const)} · ${t(`planner.goal.${goal}` as const)} · ${t("planner.chapterOption", { n: maxChapter })}`,
+      result,
+      start: used.start,
+      spBonus: used.spBonus,
+    });
+    const base = baseOptions.find((g) => g.id === used.baseId);
+    if (!base) return generated;
+    try {
+      const combined = appendPlanToGuide(
+        base,
+        generated,
+        `${base.title} + ${getWeapon(targetId).name}`,
+      );
+      return deriveBuild(combined).errors.length ? generated : combined;
+    } catch {
+      return generated;
+    }
+    // The description should describe the request that produced the result, not later form edits.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [result]);
+
   return (
     <div className="flex flex-col gap-6">
       <p className="text-muted-foreground text-sm">{t("planner.intro")}</p>
+
+      <Label className="flex flex-col items-start gap-1">
+        {t("planner.startFromGuide")}
+        <select
+          className={selectClass}
+          value={baseGuideId}
+          onChange={(e) => chooseBase(e.target.value)}
+        >
+          <option value="">{t("planner.startFromGuideNone")}</option>
+          {baseOptions.map((g) => (
+            <option key={g.id} value={g.id}>
+              {g.title}
+            </option>
+          ))}
+        </select>
+        <span className="text-muted-foreground text-xs">{t("planner.startFromGuideHint")}</span>
+      </Label>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <Label className="flex flex-col items-start gap-1">
@@ -144,7 +182,7 @@ export function PlannerApp() {
           {t("planner.start")}
           <WeaponSelect
             value={start.weaponId}
-            ids={startOptions}
+            ids={baseGuide ? new Set([start.weaponId]) : startOptions}
             onChange={(id) => setStart(freshState(getWeapon(id)))}
           />
         </Label>
@@ -239,44 +277,37 @@ export function PlannerApp() {
       )}
       {result?.status === "no-path" && <p className="text-sm">{t("planner.noPath")}</p>}
       {result?.status === "infeasible" && <p className="text-sm">{t("planner.infeasible")}</p>}
-      {result?.status === "ok" && draft && (
+      {draft && (
         <>
-          <GuideView guide={draft} />
-          <form
-            className="flex flex-wrap items-end gap-2"
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (!result) return;
-              addCustomGuide(
-                planToGuide({
-                  id: `custom-${Date.now().toString(36)}`,
-                  title: guideName.trim() || draft.title,
-                  kind: "custom",
-                  summary: draft.summary,
-                  result,
-                  createdAt: Date.now(),
-                }),
-              );
-              setPinned(true);
-            }}
-          >
-            <Label className="flex min-w-48 flex-1 flex-col items-start gap-1">
-              {t("planner.guideName")}
-              <Input
-                value={guideName}
-                placeholder={draft.title}
-                onChange={(e) => setGuideName(e.target.value)}
-              />
-            </Label>
-            <Button type="submit" disabled={pinned}>
-              {t("planner.pin")}
+          <PlanPreview guide={draft} />
+          <div className="flex flex-wrap items-center gap-2">
+            <Button
+              onClick={() => {
+                $draft.set({ guide: draft, persisted: false });
+                onOpenEditor();
+              }}
+            >
+              {t("planner.openInEditor")}
             </Button>
-          </form>
-          {pinned && (
-            <p className="text-sm" role="status">
-              {t("planner.pinned")}
-            </p>
-          )}
+            <Button
+              variant="outline"
+              disabled={saved}
+              onClick={() => {
+                saveGuide(draft, { activate: true });
+                setSaved(true);
+              }}
+            >
+              {t("planner.saveAsGuide")}
+            </Button>
+            {saved && (
+              <span className="text-sm" role="status">
+                {t("planner.saved")}{" "}
+                <a className="underline" href="/guides">
+                  {t("nav.guides")}
+                </a>
+              </span>
+            )}
+          </div>
         </>
       )}
     </div>

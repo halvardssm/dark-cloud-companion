@@ -4,7 +4,7 @@ import { getWeapon, synthSourceByName, weaponData } from "@/lib/planner/sources"
 import type { Acquire, Recipe, Stage } from "@/lib/planner/types";
 import type { Guide, GuideStep } from "./types";
 
-const enemyChapter = new Map(weaponData.killEnemies.map((e) => [e.name, e.chapter ?? 8]));
+export const enemyChapter = new Map(weaponData.killEnemies.map((e) => [e.name, e.chapter ?? 8]));
 
 const itemChapter = (name: string) => synthSourceByName.get(name)?.fromChapter ?? 1;
 
@@ -16,7 +16,7 @@ function recipeChapter(r: Recipe): number {
 }
 
 /** Latest chapter among the items, sphere weapons and enemy kills this stage depends on. */
-function stageResourceChapter(stage: Stage): number {
+export function stageResourceChapter(stage: Stage): number {
   let ch = 1;
   for (const u of stage.synths) {
     ch = Math.max(ch, u.kind === "item" ? itemChapter(u.name) : recipeChapter(u.recipe));

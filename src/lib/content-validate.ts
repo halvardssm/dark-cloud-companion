@@ -1,10 +1,10 @@
-// Deep validation for user-supplied content (imports). Structural zod checks run first; these checks make sure
-// everything a page will look up (weapons, items, chapters, sections) actually exists, so rendering can't throw.
+// Deep validation for user-supplied guides (imports and editor). Structural zod checks run first; these checks make
+// sure everything a page will look up (weapons, items, chapters, sections, referenced data) actually exists.
 import { chapterById, sectionById } from "@/lib/data";
+import { knownItemIds, knownSectionIds } from "@/lib/guide/refs";
+import type { Guide } from "@/lib/guide/types";
 import { synthSourceByName, weaponById } from "@/lib/planner/sources";
 import type { Recipe, Stage } from "@/lib/planner/types";
-import type { Guide } from "@/lib/guides/types";
-import type { Walkthrough } from "@/lib/walkthroughs/types";
 
 function checkStage(stage: Stage, path: string, errors: string[], depth = 0) {
   if (depth > 3) {
@@ -34,35 +34,33 @@ function checkRecipe(r: Recipe, path: string, errors: string[], depth: number) {
 
 export function validateGuide(g: Guide): string[] {
   const errors: string[] = [];
-  if (!weaponById.has(g.targetId)) errors.push(`unknown target weapon "${g.targetId}"`);
-  if (g.start && !weaponById.has(g.start.weaponId))
-    errors.push(`unknown start weapon "${g.start.weaponId}"`);
-  g.steps.forEach((s, i) => {
-    checkStage(s.stage as Stage, `step ${i + 1}`, errors);
-    if (s.buildsUpTo && !weaponById.has(s.buildsUpTo))
-      errors.push(`step ${i + 1}: unknown weapon "${s.buildsUpTo}"`);
-  });
-  return errors;
-}
-
-export function validateWalkthrough(w: Walkthrough): string[] {
-  const errors: string[] = [];
+  if (g.build && !weaponById.has(g.build.weaponId))
+    errors.push(`unknown start weapon "${g.build.weaponId}"`);
+  if (g.steps.some((s) => s.build) && !g.build) errors.push("has build steps but no start weapon");
   const stepIds = new Set<string>();
-  w.steps.forEach((s, i) => {
-    if (stepIds.has(s.id)) errors.push(`step ${i + 1}: duplicate id`);
+  g.steps.forEach((s, i) => {
+    const at = `step ${i + 1}`;
+    if (stepIds.has(s.id)) errors.push(`${at}: duplicate id`);
     stepIds.add(s.id);
-    if (!chapterById.has(s.chapterId))
-      errors.push(`step ${i + 1}: unknown chapter "${s.chapterId}"`);
+    if (s.chapterId && !chapterById.has(s.chapterId))
+      errors.push(`${at}: unknown chapter "${s.chapterId}"`);
     if (s.sectionId) {
       const sec = sectionById.get(s.sectionId);
-      if (!sec || sec.chapterId !== s.chapterId)
-        errors.push(`step ${i + 1}: section "${s.sectionId}" is not in ${s.chapterId}`);
+      if (!sec) errors.push(`${at}: unknown section "${s.sectionId}"`);
+      else if (s.chapterId && sec.chapterId !== s.chapterId)
+        errors.push(`${at}: section "${s.sectionId}" is not in ${s.chapterId}`);
     }
-    const items = new Set<string>();
-    for (const it of s.checklist) {
-      if (items.has(it.id)) errors.push(`step ${i + 1}: duplicate checklist id`);
-      items.add(it.id);
+    const textIds = new Set<string>();
+    for (const e of s.entries) {
+      if (e.kind === "text") {
+        if (textIds.has(e.id)) errors.push(`${at}: duplicate checklist id`);
+        textIds.add(e.id);
+      } else if (e.kind === "item" && !knownItemIds.has(e.ref))
+        errors.push(`${at}: unknown item "${e.ref}"`);
+      else if (e.kind === "section" && !knownSectionIds.has(e.ref))
+        errors.push(`${at}: unknown section "${e.ref}"`);
     }
+    if (s.build) checkStage(s.build, at, errors);
   });
   return errors;
 }

@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { PlannerApp } from "@/components/planner/PlannerApp";
+import { PlannerPage } from "@/components/planner/PlannerPage";
 import { useTranslations } from "@/i18n";
 
 const t = useTranslations();
@@ -8,5 +8,5 @@ const t = useTranslations();
 
 <Layout title={`${t("planner.title")} · ${t("app.name")}`}>
   <h1 class="mb-4 text-2xl font-semibold">{t("planner.title")}</h1>
-  <PlannerApp client:only="react" />
+  <PlannerPage client:only="react" />
 </Layout>

@@ -1,13 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { Dashboard } from "@/components/Dashboard";
+import { Dashboard } from "@/components/dashboard/Dashboard";
 import { useTranslations } from "@/i18n";
 
 const t = useTranslations();
 ---
 
-<Layout>
-  <h1 class="text-2xl font-semibold">{t("app.name")}</h1>
-  <p class="text-muted-foreground mt-2 mb-6">{t("home.intro")}</p>
+<Layout title={`${t("nav.dashboard")} · ${t("app.name")}`}>
   <Dashboard client:load />
 </Layout>

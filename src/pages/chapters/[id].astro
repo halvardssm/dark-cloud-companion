@@ -1,0 +1,23 @@
+---
+// Old chapter URLs now open the dashboard on that chapter.
+import { chapters } from "@/lib/data";
+
+export function getStaticPaths() {
+  return chapters.map((c) => ({ params: { id: c.id } }));
+}
+const { id } = Astro.params;
+const target = `/?chapter=${id}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={target} />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <a href={target}>Open the dashboard</a>
+  </body>
+</html>

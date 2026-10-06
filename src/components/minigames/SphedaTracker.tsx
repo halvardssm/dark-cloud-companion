@@ -38,7 +38,7 @@ export function SphedaTracker() {
           return (
             <section key={c.id} className="flex flex-col">
               <h2 className="mb-1 flex items-baseline justify-between text-lg font-semibold">
-                <a className="hover:underline" href={`/chapters/${c.id}`}>
+                <a className="hover:underline" href={`/?chapter=${c.id}`}>
                   {c.number}. {c.title}
                 </a>
                 <span className="text-muted-foreground text-sm tabular-nums">

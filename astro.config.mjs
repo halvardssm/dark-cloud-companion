@@ -8,6 +8,12 @@ import pwa from "./integrations/pwa.mjs";
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL,
   output: "static",
+  // Old routes from before the guides/dashboard restructuring.
+  redirects: {
+    "/walkthroughs": "/guides",
+    "/walkthroughs/edit": "/planner",
+    "/walkthroughs/view": "/guides",
+  },
   integrations: [react(), pwa()],
   vite: {
     plugins: [tailwindcss()],

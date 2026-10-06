@@ -1,33 +1,36 @@
 // Profile/state schema for the unified guide model (state version 2) and the migration from version 1.
+// Version 1 lives in profiles-v1.ts and is only read for migration.
 import { z } from "zod";
 import {
   appState as appStateV1,
+  exportFile as exportFileV1,
   type AppState as AppStateV1,
   type Profile as ProfileV1,
-} from "@/lib/profiles";
-import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./legacy";
-import { MAIN_GUIDE_ID } from "./main";
-import { guide, type Guide } from "./types";
+} from "./profiles-v1";
+import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./guide/legacy";
+import { MAIN_GUIDE_ID } from "./guide/main";
+import { guide, type Guide } from "./guide/types";
 
-export const STATE_VERSION_2 = 2;
+export const STORAGE_KEY = "dcc:state";
+export const STATE_VERSION = 2;
 
 export const dashboardView = z.enum(["chapter", "overview", "byGuide"]);
 export type DashboardView = z.infer<typeof dashboardView>;
 
-export const viewSettingsV2 = z.object({
+export const viewSettings = z.object({
   hideDone: z.boolean(),
   hidePostgame: z.boolean(),
   /** Show section facts (enemies, totals, medals) inside steps. */
   showFacts: z.boolean(),
 });
 
-export const profileV2 = z.object({
+export const profile = z.object({
   id: z.string(),
   name: z.string().min(1),
   createdAt: z.number(),
   /** Ticks: data item ids, medal ids, and `g:<guide>:<step>[:<entry>]` for steps and text entries. */
   checks: z.record(z.string(), z.literal(true)),
-  view: viewSettingsV2,
+  view: viewSettings,
   /** Guides switched on (built-in ids and the ids of the user's own guides). */
   activeGuides: z.array(z.string()),
   /** The user's own guides, including hand-made, pinned and imported ones. */
@@ -38,16 +41,16 @@ export const profileV2 = z.object({
     currentChapter: z.string().nullable(),
   }),
 });
-export type ProfileV2 = z.infer<typeof profileV2>;
+export type Profile = z.infer<typeof profile>;
 
-export const appStateV2 = z.object({
-  version: z.literal(STATE_VERSION_2),
+export const appState = z.object({
+  version: z.literal(STATE_VERSION),
   activeProfile: z.string(),
-  profiles: z.record(z.string(), profileV2),
+  profiles: z.record(z.string(), profile),
 });
-export type AppStateV2 = z.infer<typeof appStateV2>;
+export type AppState = z.infer<typeof appState>;
 
-export function migrateProfile(p: ProfileV1): ProfileV2 {
+export function migrateProfile(p: ProfileV1): Profile {
   const guides: Guide[] = [
     ...p.customGuides.map((g) => fromLegacyGuide(g)),
     ...p.walkthroughs.map(fromLegacyWalkthrough),
@@ -72,9 +75,9 @@ export function migrateProfile(p: ProfileV1): ProfileV2 {
   };
 }
 
-export function migrateState(s: AppStateV1): AppStateV2 {
+export function migrateState(s: AppStateV1): AppState {
   return {
-    version: STATE_VERSION_2,
+    version: STATE_VERSION,
     activeProfile: s.activeProfile,
     profiles: Object.fromEntries(
       Object.entries(s.profiles).map(([id, p]) => [id, migrateProfile(p)]),
@@ -82,7 +85,7 @@ export function migrateState(s: AppStateV1): AppStateV2 {
   };
 }
 
-export function createProfileV2(name: string, now = Date.now()): ProfileV2 {
+export function createProfile(name: string, now = Date.now()): Profile {
   return {
     id:
       globalThis.crypto?.randomUUID?.() ??
@@ -98,22 +101,59 @@ export function createProfileV2(name: string, now = Date.now()): ProfileV2 {
 }
 
 /** Reads persisted JSON of either version; falls back to a fresh state. */
-export function parseStateAnyVersion(raw: string | null): AppStateV2 {
+export function parseState(raw: string | null): AppState {
   const fresh = () => {
-    const p = createProfileV2("Playthrough 1");
+    const p = createProfile("Playthrough 1");
     return {
-      version: STATE_VERSION_2,
+      version: STATE_VERSION,
       activeProfile: p.id,
       profiles: { [p.id]: p },
-    } satisfies AppStateV2;
+    } satisfies AppState;
   };
   if (!raw) return fresh();
   try {
     const data = JSON.parse(raw);
-    const v2 = appStateV2.safeParse(data);
+    const v2 = appState.safeParse(data);
     if (v2.success && v2.data.profiles[v2.data.activeProfile]) return v2.data;
     const v1 = appStateV1.safeParse(data);
     if (v1.success && v1.data.profiles[v1.data.activeProfile]) return migrateState(v1.data);
   } catch {}
   return fresh();
+}
+
+export type ViewSettings = z.infer<typeof viewSettings>;
+
+export const initialState = (): AppState => {
+  const p = createProfile("Playthrough 1");
+  return { version: STATE_VERSION, activeProfile: p.id, profiles: { [p.id]: p } };
+};
+
+/** Export file wrapper (profiles including their progress). */
+export const exportFile = z.object({
+  app: z.literal("dark-chronicles-companion"),
+  version: z.literal(STATE_VERSION),
+  profiles: z.array(profile).min(1),
+});
+export type ExportFile = z.infer<typeof exportFile>;
+
+/** Reads a profile export of either version; version 1 files are migrated. */
+export function parseProfileExport(data: unknown): ExportFile | null {
+  const v2 = exportFile.safeParse(data);
+  if (v2.success) return v2.data;
+  const v1 = exportFileV1.safeParse(data);
+  if (v1.success) {
+    return {
+      app: "dark-chronicles-companion",
+      version: STATE_VERSION,
+      profiles: v1.data.profiles.map(migrateProfile),
+    };
+  }
+  return null;
+}
+
+/** Merge imported profiles into state. Same-id profiles are replaced; others added. */
+export function importProfiles(state: AppState, file: ExportFile): AppState {
+  const profiles = { ...state.profiles };
+  for (const p of file.profiles) profiles[p.id] = p;
+  return { ...state, profiles, activeProfile: file.profiles[0].id };
 }
