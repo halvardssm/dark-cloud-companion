@@ -50,12 +50,55 @@ export function NavBar({ pathname }: { pathname: string }) {
   const profiles = Object.values(state.profiles);
   const current = state.profiles[state.activeProfile];
 
+  const profileMenu = (
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={<Button variant="outline" size="sm" />}
+        aria-label={t("nav.profile")}
+      >
+        {ready && current ? current.name : t("nav.profile")} ▾
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-56">
+        {ready && profiles.length > 1 && (
+          <>
+            <DropdownMenuGroup>
+              <DropdownMenuLabel>{t("profiles.active")}</DropdownMenuLabel>
+              {profiles.map((p) => (
+                <DropdownMenuItem key={p.id} onClick={() => switchProfile(p.id)}>
+                  {p.id === state.activeProfile ? "✓ " : ""}
+                  {p.name}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuGroup>
+            <DropdownMenuSeparator />
+          </>
+        )}
+        <DropdownMenuItem render={<a href="/settings" />}>{t("nav.settings")}</DropdownMenuItem>
+        <DropdownMenuItem render={<a href="/about" />}>{t("nav.about")}</DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => {
+            applyTheme(!dark);
+            setDark(!dark);
+          }}
+        >
+          {dark ? t("theme.light") : t("theme.dark")}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+
   return (
-    <nav
-      className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2"
-      aria-label="Main"
-    >
-      <div className="flex items-center gap-1 overflow-x-auto">
+    <div className="mx-auto flex max-w-5xl flex-col gap-1 px-4 pt-3 pb-2">
+      <div className="flex items-center justify-between gap-2">
+        <a href="/" className="min-w-0 truncate font-semibold">
+          {t("app.name")}
+        </a>
+        {profileMenu}
+      </div>
+      <nav
+        className="-mx-1 flex items-center gap-1 overflow-x-auto px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        aria-label="Main"
+      >
         {tab("/", t("nav.dashboard"))}
         {tab("/guides", t("nav.guides"))}
         {tab("/planner", t("nav.planner"))}
@@ -73,41 +116,7 @@ export function NavBar({ pathname }: { pathname: string }) {
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
-      </div>
-      <DropdownMenu>
-        <DropdownMenuTrigger
-          render={<Button variant="outline" size="sm" />}
-          aria-label={t("nav.profile")}
-        >
-          {ready && current ? current.name : t("nav.profile")} ▾
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="w-56">
-          {ready && profiles.length > 1 && (
-            <>
-              <DropdownMenuGroup>
-                <DropdownMenuLabel>{t("profiles.active")}</DropdownMenuLabel>
-                {profiles.map((p) => (
-                  <DropdownMenuItem key={p.id} onClick={() => switchProfile(p.id)}>
-                    {p.id === state.activeProfile ? "✓ " : ""}
-                    {p.name}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuGroup>
-              <DropdownMenuSeparator />
-            </>
-          )}
-          <DropdownMenuItem render={<a href="/settings" />}>{t("nav.settings")}</DropdownMenuItem>
-          <DropdownMenuItem render={<a href="/about" />}>{t("nav.about")}</DropdownMenuItem>
-          <DropdownMenuItem
-            onClick={() => {
-              applyTheme(!dark);
-              setDark(!dark);
-            }}
-          >
-            {dark ? t("theme.light") : t("theme.dark")}
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </nav>
+      </nav>
+    </div>
   );
 }

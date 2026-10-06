@@ -76,8 +76,8 @@ export const en = {
   "profiles.importOk": "Import complete.",
   "profiles.hint": "Progress is stored only in this browser. Export regularly to keep a backup.",
 
-  "planner.tab.generate": "Generate a weapon build",
-  "planner.tab.create": "Create or edit a guide",
+  "planner.tab.generate": "Generate a build",
+  "planner.tab.create": "Create or edit",
   "planner.startFromGuide": "Start from a guide (optional)",
   "planner.startFromGuideNone": "My own weapon",
   "planner.startFromGuideHint":
@@ -256,6 +256,8 @@ export const en = {
   "dash.views.overview": "Overview",
   "dash.views.byGuide": "By guide",
   "dash.chapter": "Chapter",
+  "dash.prev": "Previous chapter",
+  "dash.next": "Next chapter",
   "dash.setCurrent": "Set as current chapter",
   "dash.isCurrent": "Current chapter",
   "dash.followProgress": "Follow my progress",
@@ -325,7 +327,7 @@ export const en = {
   "planner.guideName": "Guide name",
   "guides.title": "Guides",
   "guides.intro":
-    "Step-by-step weapon build-ups. Turn a guide on to see its steps inside the matching chapter.",
+    "Switch guides on to see their steps on the dashboard. The main walkthrough is on by default; weapon guides and your own guides can be added alongside it.",
   "guides.curated": "Built-in guides",
   "guides.custom": "My guides",
   "guides.customEmpty":

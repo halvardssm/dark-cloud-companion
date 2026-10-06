@@ -75,6 +75,9 @@ importers:
       oxlint:
         specifier: ^1.87.0
         version: 1.87.0
+      sharp:
+        specifier: ^0.35.5
+        version: 0.35.5(@types/node@26.6.4)
       vite-node:
         specifier: ^6.0.0
         version: 6.0.0(@types/node@26.6.4)(esbuild@0.28.2)(jiti@2.7.0)
@@ -3835,8 +3838,7 @@ snapshots:
     dependencies:
       hono: 4.13.13
 
-  '@img/colour@1.1.0':
-    optional: true
+  '@img/colour@1.1.0': {}
 
   '@img/sharp-darwin-arm64@0.35.5':
     optionalDependencies:
@@ -5877,7 +5879,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.5
       '@img/sharp-win32-x64': 0.35.5
       '@types/node': 26.6.4
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:

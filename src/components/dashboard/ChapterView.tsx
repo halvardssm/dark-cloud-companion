@@ -116,6 +116,7 @@ export function ChapterView({
           <Button
             variant="outline"
             size="sm"
+            aria-label={t("dash.prev")}
             disabled={!prev}
             onClick={() => prev && onChapter(prev.id)}
           >
@@ -124,6 +125,7 @@ export function ChapterView({
           <Button
             variant="outline"
             size="sm"
+            aria-label={t("dash.next")}
             disabled={!next}
             onClick={() => next && onChapter(next.id)}
           >
