@@ -10,7 +10,7 @@ import {
   type SynthItem,
   type Weapon,
   type WeaponsData,
-} from "../../src/data/weapons-schema.ts";
+} from "../../src/lib/schemas.ts";
 
 // The walkthrough's own weapon list (scripts/extract/weapons-walkthrough.ts) supplies descriptions and a second opinion on stats.
 const walkthrough: { id: string; description: string; maxStats: number[] }[] = JSON.parse(

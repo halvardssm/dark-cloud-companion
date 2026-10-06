@@ -3,7 +3,7 @@ import { CheckRow } from "@/components/chapter/CheckRow";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import ridepodRaw from "@/data/ridepod.json";
-import { ridepodData, type RidepodPart } from "@/data/minigames-schema";
+import { ridepodData, type RidepodPart } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 import { ingredientIdByName } from "@/lib/data";
 import { $checks, setChecked } from "@/lib/store";

@@ -1,4 +1,4 @@
-import { STAT_KEYS } from "@/data/weapons-schema";
+import { STAT_KEYS } from "@/lib/schemas";
 import { synthSources, type SynthSource } from "./sources";
 
 export interface ItemFilter {

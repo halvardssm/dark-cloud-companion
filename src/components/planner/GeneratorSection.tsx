@@ -12,7 +12,7 @@ import {
   type Stats,
   type Weapon,
   type WeaponType,
-} from "@/data/weapons-schema";
+} from "@/lib/schemas";
 import { startToState } from "@/lib/guide/derive";
 import { $draft } from "@/lib/guide/draft";
 import { planResultToGuide, stateToBuildStart } from "@/lib/guide/fromPlan";
@@ -266,6 +266,9 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
       const r = await runPlanner(
         {
           start,
+          // "Optimal" searches every acquirable weapon in the target's build-up line for the
+          // cheapest start; a custom start is used exactly as given.
+          optimalStart: !customStart,
           targetId,
           objective,
           goal: { kind: "stats", stats: endStats, level: endLevel },
@@ -278,7 +281,12 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
         setProgress,
       );
       setResult(r);
-      setUsed({ start, spBonus: support ? 1 : 0, goalLabel });
+      // The optimal search may start from a different weapon than the form's default.
+      const startUsed =
+        !customStart && r.plan?.stages[0]
+          ? freshState(getWeapon(r.plan.stages[0].weaponId))
+          : start;
+      setUsed({ start: startUsed, spBonus: support ? 1 : 0, goalLabel });
     } catch (e) {
       if (String(e).includes("cancelled")) return;
       setError(String(e instanceof Error ? e.message : e));
@@ -297,6 +305,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
       result,
       start: used.start,
       spBonus: used.spBonus,
+      ...(result.acquire ? { acquire: result.acquire } : {}),
     });
     // The description should describe the request that produced the result, not later form edits.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -389,9 +398,7 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
                 <StartSpecs state={start} onChange={setStart} />
               </div>
             ) : (
-              <p className="text-muted-foreground text-xs">
-                {t("planner.startPoint.optimalHint", { weapon: getWeapon(start.weaponId).name })}
-              </p>
+              <p className="text-muted-foreground text-xs">{t("planner.startPoint.optimalHint")}</p>
             )}
             <Label className="flex items-center gap-2 text-sm">
               <Switch checked={support} onCheckedChange={setSupport} />

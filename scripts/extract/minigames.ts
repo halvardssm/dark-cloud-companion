@@ -1,7 +1,7 @@
 // One-off extraction: Ridepod parts and monster classes from DC.txt (Game Data) -> src/data/{ridepod,monsters}.json
 // Run: node scripts/extract/minigames.ts
 import { readFileSync, writeFileSync } from "node:fs";
-import { monstersData, ridepodData, type RidepodPart } from "../../src/data/minigames-schema.ts";
+import { monstersData, ridepodData, type RidepodPart } from "../../src/lib/schemas.ts";
 
 const text = new TextDecoder("utf-16le")
   .decode(readFileSync(".local/guides/DC.txt"))

@@ -1,4 +1,4 @@
-import { STAT_KEYS, abilityId, type AbilityId, type StatKey } from "@/data/weapons-schema";
+import { STAT_KEYS, abilityId, type AbilityId, type StatKey } from "@/lib/schemas";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

@@ -1,6 +1,6 @@
 // The built-in main walkthrough, generated from the extracted data (no source prose): per chapter an overview step
 // with the items not tied to a section, then one step per section with its facts/medals and the items found there.
-import type { ChecklistCategory, ChecklistItem } from "@/data/schema";
+import type { ChecklistCategory, ChecklistItem } from "@/lib/schemas";
 import { chapters, checklist, itemsOf, sectionsOf } from "@/lib/data";
 import type { Entry, Guide, Step } from "./types";
 

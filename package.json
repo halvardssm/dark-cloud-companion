@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "plans": "vite-node --config vitest.config.ts scripts/planner/predefined.ts",
+    "plans:force": "vite-node --config vitest.config.ts scripts/planner/predefined.ts --force",
     "preview": "astro preview",
     "astro": "astro",
     "fmt": "oxfmt",

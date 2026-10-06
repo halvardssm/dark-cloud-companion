@@ -1,6 +1,6 @@
 import { CheckRow } from "@/components/chapter/CheckRow";
 import { Badge } from "@/components/ui/badge";
-import type { ChecklistItem } from "@/data/schema";
+import type { ChecklistItem } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 import { inventionReady, sectionById } from "@/lib/data";
 import { setChecked } from "@/lib/store";

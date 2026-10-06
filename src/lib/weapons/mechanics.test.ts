@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import raw from "@/data/weapons.json";
-import { weaponsData } from "@/data/weapons-schema";
+import { weaponsData } from "@/lib/schemas";
 import {
   absBetween,
   absForNextLevel,

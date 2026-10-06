@@ -86,7 +86,7 @@ export const en = {
   "planner.startPoint": "Choose the start point",
   "planner.startPoint.optimal": "Optimal start point",
   "planner.startPoint.optimalHint":
-    "Starts from a fresh {weapon} and lets the planner pick the route.",
+    "Searches every acquirable weapon in the target's build-up line and starts from the cheapest.",
   "planner.startPoint.custom": "Custom start point",
   "planner.pickStart": "Choose the start weapon",
   "planner.pickTarget": "Choose the end weapon",

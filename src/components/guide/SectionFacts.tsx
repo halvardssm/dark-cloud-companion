@@ -2,7 +2,7 @@ import { CheckRow } from "@/components/chapter/CheckRow";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "@/i18n";
 import type { medalItems } from "@/lib/data";
-import type { Section } from "@/data/schema";
+import type { Section } from "@/lib/schemas";
 import { setChecked } from "@/lib/store";
 
 /** A section's facts (enemies, totals, boss, …) with its medal and prize checkboxes. */

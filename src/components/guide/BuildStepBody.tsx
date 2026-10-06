@@ -1,4 +1,4 @@
-import { STAT_KEYS } from "@/data/weapons-schema";
+import { STAT_KEYS } from "@/lib/schemas";
 import { useTranslations, type Translate } from "@/i18n";
 import type { DerivedStep } from "@/lib/guide/derive";
 import type { Step } from "@/lib/guide/types";
@@ -8,7 +8,7 @@ import type { Acquire, Recipe, Stage } from "@/lib/planner/types";
 
 const name = (id: string) => getWeapon(id).name;
 
-function acquireText(t: Translate, a: Acquire) {
+export function acquireText(t: Translate, a: Acquire) {
   if (a.kind === "shop") return t("planner.acquire.shop", { shop: a.shop, price: a.price });
   if (a.kind === "invent") return t("planner.acquire.invent", { gilda: a.gilda });
   return t("planner.acquire.have");

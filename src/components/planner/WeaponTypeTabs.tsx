@@ -1,6 +1,6 @@
 import { CircleDashedIcon, CrosshairIcon, GemIcon, SwordIcon, WrenchIcon } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import type { WeaponType } from "@/data/weapons-schema";
+import type { WeaponType } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 
 /** One tab per weapon type, in the order the planner shows them. */

@@ -1,4 +1,4 @@
-import type { Stats } from "@/data/weapons-schema";
+import type { Stats } from "@/lib/schemas";
 
 /** How a weapon enters the plan. */
 export type Acquire =

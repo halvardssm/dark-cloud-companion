@@ -1,5 +1,5 @@
 import { weaponData, weaponById } from "@/lib/planner/sources";
-import type { Weapon } from "@/data/weapons-schema";
+import type { Weapon } from "@/lib/schemas";
 import { absToReach } from "./mechanics";
 
 export const buildsFrom = (id: string): Weapon[] =>

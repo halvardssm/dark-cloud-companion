@@ -1,4 +1,4 @@
-import { BuildStepBody } from "@/components/guide/BuildStepBody";
+import { BuildStepBody, acquireText } from "@/components/guide/BuildStepBody";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "@/i18n";
@@ -13,6 +13,7 @@ export function PlanPreview({ guide }: { guide: Guide }) {
   const route = [...new Set(guide.steps.flatMap((s) => (s.build ? [s.build.weaponId] : [])))];
   const last = guide.steps.filter((s) => s.build).at(-1)?.build?.weaponId;
   if (last && !route.includes(last)) route.push(last);
+  const acquire = guide.build?.acquire;
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap gap-2">
@@ -28,6 +29,13 @@ export function PlanPreview({ guide }: { guide: Guide }) {
         <span className="text-muted-foreground">{t("planner.route")}: </span>
         {route.map((id) => getWeapon(id).name).join(" → ")}
       </p>
+      {/* The optimal start may be a weapon the player does not own yet: say how to get it. */}
+      {guide.build && acquire && acquire.kind !== "have" && (
+        <p className="text-muted-foreground text-xs">
+          {t("planner.step.acquire", { weapon: getWeapon(guide.build.weaponId).name })}:{" "}
+          {acquireText(t, acquire)}
+        </p>
+      )}
       <ol className="flex flex-col gap-3">
         {guide.steps.map((s, i) => (
           <li key={s.id}>

@@ -1,6 +1,6 @@
 // Derived data for a guide's weapon-build steps. Stats, costs and requirement checks are never stored: they are
 // recomputed with the rule-checking simulator so edited or imported guides always show the truth.
-import type { Stats } from "@/data/weapons-schema";
+import type { Stats } from "@/lib/schemas";
 import { simulatePlan } from "@/lib/planner/simulate";
 import { getWeapon, weaponById } from "@/lib/planner/sources";
 import type { Cost } from "@/lib/planner/types";
@@ -77,9 +77,18 @@ export function deriveBuild(guide: Guide): DerivedBuild {
     });
   });
   const attributed = new Set((sim.stages ?? []).flatMap((st) => st.errors));
+  // The simulator starts from an already-owned weapon; obtaining it (shop purchase, invention)
+  // is part of the guide's cost when the start says how it was acquired.
+  const acquire = guide.build.acquire;
+  const acquireGilda =
+    acquire?.kind === "shop" ? acquire.price : acquire?.kind === "invent" ? acquire.gilda : 0;
   return {
     steps,
-    total: sim.cost,
+    total: {
+      abs: sim.cost.abs,
+      gilda: sim.cost.gilda + acquireGilda,
+      steps: sim.cost.steps + (acquire && acquire.kind !== "have" ? 1 : 0),
+    },
     errors: sim.errors.filter((e) => !attributed.has(e)),
     final: sim.state,
   };

@@ -2,7 +2,7 @@ import { useStore } from "@nanostores/react";
 import { CheckRow } from "@/components/chapter/CheckRow";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import monstersRaw from "@/data/monsters.json";
-import { monstersData } from "@/data/minigames-schema";
+import { monstersData } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 import { $checks, setChecked } from "@/lib/store";
 

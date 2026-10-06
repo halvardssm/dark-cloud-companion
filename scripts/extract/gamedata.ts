@@ -2,7 +2,7 @@
 // full shop lists, item overview, fishing baits/lures and Donny's photo rewards.
 // Run: node scripts/extract/gamedata.ts
 import { readFileSync, writeFileSync } from "node:fs";
-import { gamedata } from "../../src/data/gamedata-schema.ts";
+import { gamedata } from "../../src/lib/schemas.ts";
 
 const text = new TextDecoder("utf-16le")
   .decode(readFileSync(".local/guides/DC.txt"))

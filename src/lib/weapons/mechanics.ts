@@ -1,12 +1,6 @@
 // Pure game mechanics for weapon leveling, synthing and building up.
 // Formulas follow the weapon FAQ (sections 4.1–4.5). No React or DOM here.
-import {
-  STAT_KEYS,
-  type AbilityId,
-  type StatKey,
-  type Stats,
-  type Weapon,
-} from "@/data/weapons-schema";
+import { STAT_KEYS, type AbilityId, type StatKey, type Stats, type Weapon } from "@/lib/schemas";
 
 export const MAX_LEVEL = 99;
 export const MAX_SP = 999;

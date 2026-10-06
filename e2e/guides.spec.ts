@@ -8,6 +8,8 @@ test.describe("guides, planner and editor", () => {
     await targetPicker(page).selectOption({ label: "Smash Wrench" });
     await page.getByRole("button", { name: "Generate plan" }).click();
     await expect(page.getByText(/Build-up route:/)).toBeVisible({ timeout: 60_000 });
+    // With maxed target specs, building up the whole line from the root is still the cheapest
+    // route — the optimal-start search keeps it (it buys only when that is actually cheaper).
     await expect(
       page.getByText(/Battle Wrench → True Battle Wrench → Drill Wrench → Smash Wrench/),
     ).toBeVisible();

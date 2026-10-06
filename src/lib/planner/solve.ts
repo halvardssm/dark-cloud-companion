@@ -8,7 +8,7 @@
 //   e[j][k] ≥ requirement of the next weapon                                           (build-up gate)
 //   Σ SP gained from levelling (cumulative) ≥ Σ SP spent on items/spheres (cumulative)
 // ABS for levelling is the exact convex cost curve, linearised with secants (tight at integers).
-import { STAT_KEYS, type StatKey, type Stats } from "@/data/weapons-schema";
+import { STAT_KEYS, type StatKey, type Stats } from "@/lib/schemas";
 import {
   absBetween,
   buildUpBonus,

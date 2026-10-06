@@ -20,7 +20,7 @@ Before finishing a change run `pnpm check && pnpm typecheck && pnpm test`, plus 
 
 ## Where things are
 
-- `src/data/` – extracted game data (JSON + zod schemas) and tests that cross-check the two source guides. `INCONSISTENCIES.md` is generated (`node scripts/extract/crosscheck.ts && pnpm fmt`).
+- `src/data/` – the extracted static game data (JSON only; schemas live in `src/lib/schemas.ts`). The cross-check tests live in `scripts/extract/data.test.ts`. `INCONSISTENCIES.md` is generated (`node scripts/extract/crosscheck.ts && pnpm fmt`).
 - `src/lib/weapons/` – pure game mechanics (ABS curve, levelling, spectrumize, build-up). Verified against the weapon FAQ's worked examples; do not "simplify" the formulas.
 - `src/lib/planner/` – `simulate.ts` is the source of truth for rules; `solve.ts` builds a MILP (HiGHS wasm, `highs.ts`) per build-up chain; `plan.ts` ranks chains, solves the best, adds ability coins; `templates.ts` generates sphere-weapon templates; `worker.ts`/`client.ts` run it off the main thread.
 - `src/lib/guide/` – the unified guide model (`types.ts`), generated main walkthrough (`main.ts`), derived build data (`derive.ts`, never stored), progress/dashboard helpers, legacy converters.

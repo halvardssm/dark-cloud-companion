@@ -10,7 +10,7 @@ import {
 import { fromLegacyGuide, fromLegacyWalkthrough, migrateTickId } from "./guide/legacy";
 import { MAIN_GUIDE_ID } from "./guide/main";
 import { buildStart, guide, type Guide } from "./guide/types";
-import { abilityId, stats } from "@/data/weapons-schema";
+import { abilityId, stats } from "@/lib/schemas";
 
 export const STORAGE_KEY = "dcc:state";
 export const STATE_VERSION = 2;

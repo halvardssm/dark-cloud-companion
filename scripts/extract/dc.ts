@@ -9,7 +9,7 @@ import {
   type Chapter,
   type ChecklistItem,
   type Section,
-} from "../../src/data/schema.ts";
+} from "../../src/lib/schemas.ts";
 
 // Spelling inconsistencies in the source, normalised to the correct spelling.
 function fixName(s: string) {

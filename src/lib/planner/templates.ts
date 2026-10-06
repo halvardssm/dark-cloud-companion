@@ -1,6 +1,6 @@
 // Sphere templates: weapons prepared on the side (acquired, levelled, filled with items) purely to be
 // spectrumized onto the main weapon. Generated per option set (chapter limit, SP bonus) and cached.
-import { STAT_KEYS, type Stats } from "@/data/weapons-schema";
+import { STAT_KEYS, type Stats } from "@/lib/schemas";
 import { MIN_SPHERE_LEVEL, sphereFromWeapon, type WeaponState } from "@/lib/weapons/mechanics";
 import { itemCandidates, type ItemFilter } from "./candidates";
 import { simulateRecipe, type SimOptions } from "./simulate";

@@ -1,7 +1,7 @@
 // Unified guide model (D15). A guide is an ordered list of steps; a step may be pinned to a chapter/section,
 // carries a checklist of entries, and may be one stage of a weapon build.
 import { z } from "zod";
-import { abilityId, STAT_KEYS, type StatKey } from "@/data/weapons-schema";
+import { abilityId, STAT_KEYS, type StatKey } from "@/lib/schemas";
 import type { Stage } from "@/lib/planner/types";
 
 const stat = z.number().int().min(0).max(999);

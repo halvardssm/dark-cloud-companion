@@ -1,6 +1,6 @@
 // Resolves checklist entries that point at data items.
 import { checklist, medalItems, sectionById, sections } from "@/lib/data";
-import type { ChecklistItem, Section } from "@/data/schema";
+import type { ChecklistItem, Section } from "@/lib/schemas";
 import type { Entry } from "./types";
 
 const itemById = new Map(checklist.map((i) => [i.id, i]));

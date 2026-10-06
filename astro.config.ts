@@ -1,10 +1,10 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
+import plans from "./integrations/plans";
 import pwa from "./integrations/pwa.mjs";
 
-// https://astro.build/config
+// https://docs.astro.build/en/reference/configuration/
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL,
   output: "static",
@@ -14,7 +14,7 @@ export default defineConfig({
     "/walkthroughs/edit": "/planner",
     "/walkthroughs/view": "/guides",
   },
-  integrations: [react(), pwa()],
+  integrations: [react(), plans(), pwa()],
   vite: {
     plugins: [tailwindcss()],
   },

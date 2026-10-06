@@ -1,8 +1,8 @@
 import chaptersJson from "@/data/chapters.json";
 import sectionsJson from "@/data/sections.json";
 import checklistJson from "@/data/checklist.json";
-import { chaptersFile, checklistFile, sectionsFile } from "@/data/schema";
-import type { Chapter, ChecklistItem, Section } from "@/data/schema";
+import { chaptersFile, checklistFile, sectionsFile } from "@/lib/schemas";
+import type { Chapter, ChecklistItem, Section } from "@/lib/schemas";
 
 export const chapters: Chapter[] = chaptersFile.parse(chaptersJson);
 export const sections: Section[] = sectionsFile.parse(sectionsJson);

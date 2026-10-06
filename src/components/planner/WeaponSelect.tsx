@@ -1,4 +1,4 @@
-import { weaponType } from "@/data/weapons-schema";
+import { weaponType } from "@/lib/schemas";
 import { useTranslations } from "@/i18n";
 import { weaponData } from "@/lib/planner/sources";
 

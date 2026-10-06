@@ -1,6 +1,6 @@
 import weaponsRaw from "@/data/weapons.json";
 import itemsRaw from "@/data/items.json";
-import { weaponsData, type AbilityId, type SynthItem, type Weapon } from "@/data/weapons-schema";
+import { weaponsData, type AbilityId, type SynthItem, type Weapon } from "@/lib/schemas";
 import { checklist } from "@/lib/data";
 import type { Acquire } from "./types";
 

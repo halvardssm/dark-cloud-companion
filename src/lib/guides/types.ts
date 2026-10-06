@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { STAT_KEYS, type StatKey } from "@/data/weapons-schema";
+import { STAT_KEYS, type StatKey } from "@/lib/schemas";
 import type { Stage } from "@/lib/planner/types";
 
 const statRecord = z.object(

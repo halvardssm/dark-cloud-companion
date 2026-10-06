@@ -76,11 +76,14 @@ export function planToGuide(args: {
       ...simulation.cost,
       gilda:
         simulation.cost.gilda +
-        (args.start?.acquire.kind === "shop"
-          ? args.start.acquire.price
-          : args.start?.acquire.kind === "invent"
-            ? args.start.acquire.gilda
-            : 0),
+        // The optimal-start search already charges the acquisition into the simulated cost.
+        (result.acquire
+          ? 0
+          : args.start?.acquire.kind === "shop"
+            ? args.start.acquire.price
+            : args.start?.acquire.kind === "invent"
+              ? args.start.acquire.gilda
+              : 0),
     },
     steps,
     createdAt: args.createdAt,

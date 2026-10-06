@@ -12,7 +12,7 @@ import {
   MIN_SPHERE_LEVEL,
   type WeaponState,
 } from "@/lib/weapons/mechanics";
-import { STAT_KEYS, type AbilityId } from "@/data/weapons-schema";
+import { STAT_KEYS, type AbilityId } from "@/lib/schemas";
 import { getWeapon, synthSourceByName } from "./sources";
 import type { Acquire, Cost, LogEntry, Plan, Recipe, SimulationResult, Stage } from "./types";
 
