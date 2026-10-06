@@ -1,9 +1,13 @@
 export const en = {
   "app.name": "Dark Chronicles Companion",
+  "app.short": "Dark Chronicle",
+  "app.tagline": "Companion",
   "nav.dashboard": "Dashboard",
   "nav.reference": "Reference",
   "nav.chapters": "Chapters",
   "nav.guides": "Guides",
+  "nav.guide": "Guide",
+  "nav.main": "Main walkthrough",
   "nav.planner": "Planner",
   "nav.weapons": "Weapons",
   "nav.settings": "Settings",

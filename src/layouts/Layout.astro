@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { NavBar } from "@/components/NavBar";
+import { AppShell } from "@/components/AppShell";
 import { useTranslations } from "@/i18n";
 
 interface Props {
@@ -20,7 +20,7 @@ const pathname = Astro.url.pathname;
     <meta name="generator" content={Astro.generator} />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
-    <meta name="theme-color" content="#171717" />
+    <meta name="theme-color" content="#fdeedd" />
     <title>{title}</title>
     <script is:inline>
       try {
@@ -31,12 +31,9 @@ const pathname = Astro.url.pathname;
     </script>
   </head>
   <body class="bg-background text-foreground min-h-screen font-sans antialiased">
-    <header class="border-b">
-      <NavBar client:load pathname={pathname} />
-    </header>
-    <main class="mx-auto max-w-5xl px-4 py-6">
+    <AppShell client:load pathname={pathname}>
       <slot />
-    </main>
+    </AppShell>
     <script>
       if ("serviceWorker" in navigator) {
         if (import.meta.env.PROD) {

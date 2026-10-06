@@ -49,72 +49,89 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Sticker sheet (light): Atlamillia colors on warm cream, ink borders and hard offset shadows. */
+  --background: #fdeedd;
+  --foreground: #14110f;
+  --card: #ffffff;
+  --card-foreground: #14110f;
+  --popover: #ffffff;
+  --popover-foreground: #14110f;
+  --primary: #ee5a45;
+  --primary-foreground: #14110f;
+  --secondary: #6aa0e0;
+  --secondary-foreground: #14110f;
+  --muted: #f6e3cf;
+  --muted-foreground: #5c524a;
+  --accent: #ffd45e;
+  --accent-foreground: #14110f;
+  --destructive: #c62d1f;
+  --border: #14110f;
+  --input: #14110f;
+  --ring: #6aa0e0;
+  --chart-1: #ee5a45;
+  --chart-2: #6aa0e0;
+  --chart-3: #ffd45e;
+  --chart-4: #5c524a;
+  --chart-5: #14110f;
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #14110f;
+  --sidebar-primary: #ee5a45;
+  --sidebar-primary-foreground: #14110f;
+  --sidebar-accent: #cfe2fb;
+  --sidebar-accent-foreground: #14110f;
+  --sidebar-border: #14110f;
+  --sidebar-ring: #6aa0e0;
+  /* Sticker sheet shape rules (see .local/design/design-guide.md, section 5). */
+  --border-width: 2px;
+  --shadow-offset: 3px;
+  --shadow-color: #14110f;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Night shift: softened warm borders on deep blue, red hard shadows. */
+  --background: #171a22;
+  --foreground: #f1ebe0;
+  --card: #1f2330;
+  --card-foreground: #f1ebe0;
+  --popover: #1f2330;
+  --popover-foreground: #f1ebe0;
+  --primary: #e5604c;
+  --primary-foreground: #171a22;
+  --secondary: #6aa0e0;
+  --secondary-foreground: #171a22;
+  --muted: #262b39;
+  --muted-foreground: #a89f93;
+  --accent: #ffd45e;
+  --accent-foreground: #171a22;
+  --destructive: #e5604c;
+  --border: #d8d1c3;
+  --input: #d8d1c3;
+  --ring: #6aa0e0;
+  --chart-1: #e5604c;
+  --chart-2: #6aa0e0;
+  --chart-3: #ffd45e;
+  --chart-4: #a89f93;
+  --chart-5: #f1ebe0;
+  --sidebar: #1c202b;
+  --sidebar-foreground: #f1ebe0;
+  --sidebar-primary: #e5604c;
+  --sidebar-primary-foreground: #171a22;
+  --sidebar-accent: #33415e;
+  --sidebar-accent-foreground: #f1ebe0;
+  --sidebar-border: #d8d1c3;
+  --sidebar-ring: #6aa0e0;
+  --shadow-color: #e5604c;
+}
+
+/* Hard offset shadows of the sticker sheet; drop to 0 and translate on press. */
+@utility shadow-sticker {
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color);
+}
+
+@utility shadow-sticker-sm {
+  box-shadow: calc(var(--shadow-offset) - 1px) calc(var(--shadow-offset) - 1px) 0
+    var(--shadow-color);
 }
 
 @layer base {

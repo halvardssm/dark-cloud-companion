@@ -30,12 +30,22 @@ test.describe("phone layout", () => {
 
   test("every main tab is reachable", async ({ page }) => {
     await go(page, "/");
+    // On phones the sidebar lives in a sheet behind the header's trigger button; on desktop it
+    // is already visible and the trigger would collapse it instead. Breadcrumb page crumbs are
+    // exposed as links too, so probe with a label that only exists in the sidebar itself.
+    const openSidebar = async () => {
+      if (!(await page.getByRole("link", { name: "Ridepod" }).isVisible())) {
+        // The header trigger (not the identically-labelled drag rail) opens the sidebar sheet.
+        await page.locator("header").getByRole("button", { name: "Toggle Sidebar" }).click();
+      }
+    };
     for (const name of ["Guides", "Planner"]) {
+      await openSidebar();
       await page.getByRole("link", { name, exact: true }).click();
       await expect(page.getByRole("heading", { name, level: 1 })).toBeVisible();
     }
-    await page.getByRole("button", { name: /Reference/ }).click();
-    await page.getByRole("menuitem", { name: "Items" }).click();
+    await openSidebar();
+    await page.getByRole("link", { name: "Items" }).click();
     await expect(page.getByRole("heading", { name: "Items", level: 1 })).toBeVisible();
   });
 });
