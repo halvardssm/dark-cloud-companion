@@ -20,6 +20,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Format and lint
         run: pnpm check
+      - name: Type check
+        run: pnpm typecheck
       - name: Unit tests
         run: pnpm test
       - name: Install browser
