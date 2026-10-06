@@ -97,7 +97,9 @@ export function generateTemplates(opts: TemplateOptions): Promise<Template[]> {
     opts.maxChapter,
     !!opts.allowFound,
     opts.spBonus,
-    opts.maxAuxBuildUps ?? 0,
+    // Must match the default buildTemplates uses ("?? 2"), or an explicit 0 would poison the
+    // cache entry that default calls share.
+    opts.maxAuxBuildUps ?? 2,
   ]);
   const hit = cache.get(key);
   if (hit) return hit;
@@ -169,6 +171,7 @@ async function chainedTemplates(
       const acquire = cheapestAcquire(chain[0], opts.maxChapter);
       if (!acquire) continue;
       // Solve the cheapest way to reach the chain's last weapon once, then extend the final level.
+      // A 1% gap is plenty for a side weapon's cost estimate and keeps template generation fast.
       const sol = await solveChain({
         start: freshOf(chain[0]),
         chain,
@@ -179,6 +182,7 @@ async function chainedTemplates(
         finalLevel: MIN_SPHERE_LEVEL,
         maxLevel: 20,
         timeLimitSec: 2,
+        mipGap: 0.01,
       });
       if (!sol.plan) continue;
       for (const level of SPHERE_LEVELS) {

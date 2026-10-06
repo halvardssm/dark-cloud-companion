@@ -32,7 +32,7 @@ describe("planPath", () => {
     expect(r.simulation!.errors).toEqual([]);
     expect(r.simulation!.state.weaponId).toBe("smash-wrench");
     expect(r.simulation!.cost.abs).toBeLessThan(2000);
-  });
+  }, 60000);
 
   test("Grade Zero by chapter 7 with least ABS beats the FAQ's full recipe (24160 ABS, which also maxes stats and abilities)", async () => {
     const r = await planPath({

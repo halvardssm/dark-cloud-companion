@@ -68,13 +68,15 @@ export interface LpSolution {
 
 export async function solveLp(
   m: LpModel,
-  opts: { timeLimitSec?: number; mipGap?: number } = {},
+  opts: { timeLimitSec?: number; mipGap?: number; objectiveBound?: number } = {},
 ): Promise<LpSolution> {
   const highs = await getHighs();
   const res = highs.solve(toLp(m), {
     output_flag: false,
     time_limit: opts.timeLimitSec ?? 10,
     mip_rel_gap: opts.mipGap ?? 0.001,
+    // Primal bound: solutions no better than this are cut off (solver reports "infeasible").
+    ...(opts.objectiveBound !== undefined ? { objective_bound: opts.objectiveBound } : {}),
   });
   const values = new Map<string, number>();
   for (const [name, col] of Object.entries(res.Columns ?? {}))

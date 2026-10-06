@@ -52,6 +52,10 @@ export interface SolveInput {
   maxGilda?: number;
   /** Solver time limit in seconds. */
   timeLimitSec?: number;
+  /** Relative optimality gap for exact solves (default 0.001). ~0.01 is far faster for high-tier chains. */
+  mipGap?: number;
+  /** Primal bound in objective units: solutions no better than this are pruned (used to skip chains). */
+  objectiveBound?: number;
   /** Solve the continuous relaxation only (fast; used to pick candidate templates). */
   relax?: boolean;
 }
@@ -64,8 +68,13 @@ export interface SolveResult {
 }
 
 const itemGain = (it: SynthSource, k: StatKey) => it.gains[k] ?? 0;
-/** Weight of the secondary cost; small enough never to override the primary objective. */
-const EPS = 1e-3;
+/**
+ * Objective coefficients are scaled by this so every coefficient stays an integer (all game costs are
+ * integers). HiGHS then knows the objective itself is integer-valued and can round its bounds up, which
+ * is what makes the exact solves fast. `solveChain` unscales the reported value, so the secondary cost
+ * keeps its 1/1000 tie-break weight from outside.
+ */
+const SCALE = 1000;
 
 export function buildModel(input: SolveInput) {
   const { start, chain, objective, spBonus, items, templates } = input;
@@ -86,11 +95,11 @@ export function buildModel(input: SolveInput) {
     const m = rows.get(r)!.coeffs;
     m.set(v, (m.get(v) ?? 0) + n);
   };
-  // Primary objective plus a tiny weight on the other costs so ties resolve sensibly.
+  // Primary objective plus a 1/SCALE weight on the other costs so ties resolve sensibly.
   const cost = (v: string, abs: number, gilda: number, steps = 0) => {
     const primary = objective === "abs" ? abs : objective === "gilda" ? gilda : steps;
     const secondary = objective === "abs" ? gilda : abs;
-    model.objective.set(v, primary + EPS * secondary);
+    model.objective.set(v, SCALE * primary + secondary);
   };
 
   const gildaRow =
@@ -201,7 +210,11 @@ export function buildModel(input: SolveInput) {
 export async function solveChain(input: SolveInput): Promise<SolveResult> {
   const { model, nStages, hasFinal } = buildModel(input);
   if (input.relax) model.integers = [];
-  const sol = await solveLp(model, { timeLimitSec: input.timeLimitSec });
+  const sol = await solveLp(model, {
+    timeLimitSec: input.timeLimitSec,
+    mipGap: input.mipGap,
+    objectiveBound: input.objectiveBound === undefined ? undefined : input.objectiveBound * SCALE,
+  });
   if (sol.status === "infeasible" || sol.status === "error") return { status: sol.status };
   if (!sol.values.size) return { status: sol.status };
 
@@ -221,5 +234,7 @@ export async function solveChain(input: SolveInput): Promise<SolveResult> {
     stages.push({ weaponId: chain[j], levelTo: get(`vL${j}`), synths });
   }
   if (!hasFinal) stages.push({ weaponId: chain[chain.length - 1], levelTo: 0, synths: [] });
-  return { status: sol.status, plan: { stages }, value: sol.value };
+  // Undo the objective scaling (see SCALE); the value keeps the 1/1000 secondary tie-break weight.
+  const value = sol.value === undefined ? undefined : sol.value / SCALE;
+  return { status: sol.status, plan: { stages }, value };
 }

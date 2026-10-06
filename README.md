@@ -30,6 +30,31 @@ Requires Node ≥ 22.12 and pnpm. `PUBLIC_SITE_URL` sets Astro's `site`; the app
 
 `pnpm build` produces a static `dist/`. Any static host works; set `PUBLIC_SITE_URL` to the final URL. Recommended headers: `Cache-Control: no-cache` for `/sw.js`, long-lived caching for `/_astro/*` (hashed), and `application/wasm` for the HiGHS solver file. The service worker precaches the whole site after the first visit.
 
+### Profiling the planner
+
+`scripts/planner/profile.ts` times the planner's heaviest realistic request: the final weapon of each build-up line (Island King, Love, Grade Zero, LEGEND, Supernova, Last Resort, Sigma Bazooka, Dark Cloud, Griffon Fork, Five-Star Armlet), planned from its line's root weapon (the "optimal start point") through the full build-up chain, with the max-stats goal, chapter 8, support bonus, buyable-only items and least-ABS objective.
+
+```sh
+pnpm exec vite-node --config vitest.config.ts scripts/planner/profile.ts
+```
+
+Measured with warm sphere templates (as in the app, which pre-warms them from the planner form); every plan below is simulator-verified. Indicative numbers from a developer machine (Node 26) — re-run after touching the solver settings:
+
+| Type    | Final weapon     | Start (root)        | Build-ups | Time   |
+| ------- | ---------------- | ------------------- | --------- | ------ |
+| sword   | Island King      | Holy Daedalus Blade | 4         | 0.50 s |
+| armband | Love             | Magic Brassard      | 7         | 7.77 s |
+| wrench  | Grade Zero       | Battle Wrench       | 7         | 3.25 s |
+| wrench  | LEGEND           | Battle Wrench       | 7         | 3.25 s |
+| gun     | Supernova        | Jurak Gun           | 3         | 1.03 s |
+| gun     | Last Resort      | Dryer Gun           | 6         | 2.34 s |
+| gun     | Sigma Bazooka    | Classic Gun         | 5         | 1.75 s |
+| sword   | Dark Cloud       | Baselard            | 6         | 1.75 s |
+| sword   | Griffon Fork     | Baselard            | 6         | 2.85 s |
+| armband | Five-Star Armlet | Magic Brassard      | 6         | 2.19 s |
+
+Sphere templates are generated once (~1.3 s) and cached per option set in the worker. The worst case stays bounded by the solver settings in `src/lib/planner/plan.ts`: every exact solve accepts a 1 % optimality gap and a 3 s cap (`EXACT_GAP`), later chains are pruned by the incumbent's cost (`objective_bound`), and chains whose LP bound cannot beat the incumbent are skipped. Shorter requests (e.g. only the final build-up into a top-tier weapon) finish in well under a second.
+
 ## Data pipeline
 
 The structured data in `src/data/` was extracted once from two community guides that are **not** part of this repository (they live in the git-ignored `.local/guides/`):
@@ -43,6 +68,7 @@ The structured data in `src/data/` was extracted once from two community guides 
 | `scripts/extract/weapons-walkthrough.ts`, `weapons.ts` | weapons, build-up, synth items, shops, recipes (FAQ + walkthrough, cross-checked)                            |
 | `scripts/extract/crosscheck.ts`                        | `src/data/INCONSISTENCIES.md` – every difference between the two guides (run `pnpm fmt` after)               |
 | `scripts/planner/curated.ts`                           | built-in weapon guides, produced by the planner itself (~20 min); `convert-guides.ts` is a one-off converter |
+| `scripts/planner/profile.ts`                           | planner timings: final weapons, root → full build-up chain, max stats                                        |
 | `scripts/icons.ts`                                     | PNG app icons from `public/favicon.svg`                                                                      |
 
 Run extractors with `node scripts/extract/<name>.ts` (Node ≥ 22.18 or 24+ for TypeScript); planner scripts with `pnpm exec vite-node --config vitest.config.ts scripts/planner/<name>.ts`. Only facts (names, numbers, recipes, locations) are kept — no guide prose. Tests under `src/data/` cross-check the sources against each other.

@@ -16,8 +16,8 @@ import {
 import { startToState } from "@/lib/guide/derive";
 import { $draft } from "@/lib/guide/draft";
 import { planResultToGuide, stateToBuildStart } from "@/lib/guide/fromPlan";
-import { cancelPlanner, runPlanner } from "@/lib/planner/client";
-import { ancestorsOf, rootWeaponIds } from "@/lib/planner/graph";
+import { cancelPlanner, loadTemplates, runPlanner } from "@/lib/planner/client";
+import { ancestorsOf, finalWeaponIds, rootWeaponIds } from "@/lib/planner/graph";
 import { earliestChapter, type PlanProgress, type PlanResult } from "@/lib/planner/plan";
 import type { Objective } from "@/lib/planner/solve";
 import { getWeapon, weaponById, weaponData } from "@/lib/planner/sources";
@@ -34,12 +34,17 @@ function defaultStart(targetId: string): string {
   return anc.find((id) => rootWeaponIds.has(id)) ?? targetId;
 }
 
-/** The default target of a type: the alphabetically first weapon of its highest SP tier (e.g. Grade Zero). */
+/**
+ * The default target of a type: the alphabetically first final weapon (e.g. Grade Zero), or — for
+ * types without one (clubs) — the alphabetically first weapon of the highest SP tier.
+ */
 function defaultTargetOf(type: WeaponType): string {
+  const first = (ws: Weapon[]) => [...ws].sort((a, b) => a.name.localeCompare(b.name))[0]?.id;
+  const finals = weaponData.weapons.filter((w) => w.type === type && finalWeaponIds.includes(w.id));
+  if (finals.length) return first(finals)!;
   const ws = weaponData.weapons.filter((w) => w.type === type);
   const top = Math.max(...ws.map((w) => w.spPerLevel));
-  return [...ws].filter((w) => w.spPerLevel === top).sort((a, b) => a.name.localeCompare(b.name))[0]
-    .id;
+  return first(ws.filter((w) => w.spPerLevel === top))!;
 }
 
 const isZero = (s: Stats) => STAT_KEYS.every((k) => s[k] === 0);
@@ -183,19 +188,22 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     return () => clearInterval(timer);
   }, [running]);
 
-  // The target dropdown is grouped by SP tier (the game's low/mid/high weapon tiers), highest first, so
-  // endgame weapons like LEGEND sit at the top and starter weapons like the Battle Wrench at the bottom.
+  // The target dropdown puts the final weapons of the line in their own tier at the top, then groups
+  // the rest by SP tier (the game's low/mid/high weapon tiers), highest first, so endgame weapons
+  // sit above starter weapons like the Battle Wrench.
   const typeWeapons = useMemo(() => {
+    const ofType = weaponData.weapons.filter((x) => x.type === typeTab);
+    const name = (a: Weapon, b: Weapon) => a.name.localeCompare(b.name);
+    const finals = ofType.filter((w) => finalWeaponIds.includes(w.id)).sort(name);
     const byTier = new Map<number, Weapon[]>();
-    for (const w of weaponData.weapons.filter((x) => x.type === typeTab)) {
+    for (const w of ofType.filter((x) => !finals.includes(x)))
       byTier.set(w.spPerLevel, [...(byTier.get(w.spPerLevel) ?? []), w]);
-    }
-    return [...byTier.entries()]
-      .sort(([a], [b]) => b - a)
-      .map(([sp, weapons]) => ({
-        sp,
-        weapons: [...weapons].sort((a, b) => a.name.localeCompare(b.name)),
-      }));
+    return [
+      ...(finals.length ? [{ sp: "final" as const, weapons: finals }] : []),
+      ...[...byTier.entries()]
+        .sort(([a], [b]) => b - a)
+        .map(([sp, weapons]) => ({ sp, weapons: [...weapons].sort(name) })),
+    ];
   }, [typeTab]);
   const startOptions = useMemo(() => ancestorsOf(targetId), [targetId]);
   const target = getWeapon(targetId);
@@ -234,6 +242,13 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
     // Run once on mount.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Warm the sphere-template cache for the current option set while the user fills in the form,
+  // so the first "generate plan" doesn't pay for it (it all runs in the planner worker).
+  useEffect(() => {
+    loadTemplates({ maxChapter, spBonus: support ? 1 : 0, allowFound }).catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [maxChapter, support, allowFound]);
 
   const goalLabel = STAT_KEYS.every((k) => endStats[k] >= target.maxStats[k])
     ? t("planner.goal.max")
@@ -308,7 +323,12 @@ export function GeneratorSection({ onOpenEditor }: { onOpenEditor: () => void })
                   onChange={(e) => selectTarget(e.target.value)}
                 >
                   {typeWeapons.map((g) => (
-                    <optgroup key={g.sp} label={t("planner.spTier", { n: g.sp })}>
+                    <optgroup
+                      key={g.sp}
+                      label={
+                        g.sp === "final" ? t("planner.finalTier") : t("planner.spTier", { n: g.sp })
+                      }
+                    >
                       {g.weapons.map((w) => (
                         <option key={w.id} value={w.id}>
                           {w.name}

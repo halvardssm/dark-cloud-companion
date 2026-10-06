@@ -90,6 +90,7 @@ export const en = {
   "planner.startPoint.custom": "Custom start point",
   "planner.pickStart": "Choose the start weapon",
   "planner.pickTarget": "Choose the end weapon",
+  "planner.finalTier": "Final weapons",
   "planner.spTier": "{n} SP per level",
   "planner.weaponType": "Weapon type",
   "planner.minMaxSpecs": "Base and maximum stats",

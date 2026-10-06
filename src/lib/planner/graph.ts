@@ -24,3 +24,22 @@ export const rootWeaponIds = new Set(
     .filter((w) => !weaponData.weapons.some((o) => o.buildsUpTo.includes(w.id)))
     .map((w) => w.id),
 );
+
+/**
+ * The final weapon of each build-up line — the weapon FAQ's endgame targets. They get their own
+ * tier above the SP tiers in the planner's target dropdown, and tab defaults prefer them. Not all
+ * are leaves of the build-up tree: Griffon Fork builds up into Island King, yet the FAQ treats
+ * both as endgame targets.
+ */
+export const finalWeaponIds: string[] = [
+  "island-king",
+  "love",
+  "grade-zero",
+  "legend",
+  "supernova",
+  "last-resort",
+  "sigma-bazooka",
+  "dark-cloud",
+  "griffon-fork",
+  "five-star-armlet",
+];

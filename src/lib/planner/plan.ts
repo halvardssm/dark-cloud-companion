@@ -61,6 +61,13 @@ export interface PlanResult {
 
 const enemyChapter = new Map(weaponData.killEnemies.map((e) => [e.name, e.chapter ?? 8]));
 
+/**
+ * Relative gap accepted by the exact solves. High-tier chains prove optimality to 0.1% only after tens
+ * of seconds; at 1% the same plans come back in well under a second each. Costs are in-game estimates,
+ * so a sub-1% difference is not player-visible.
+ */
+const EXACT_GAP = 0.01;
+
 /** All build-up chains start→target whose kill requirements are reachable by `maxChapter`. */
 export function findChains(
   startId: string,
@@ -177,7 +184,14 @@ export async function planPath(
       o.status = o.bound === undefined ? o.status : "skipped";
       continue;
     }
+    // The LP bound is a lower bound for this chain's exact cost: it cannot beat the best plan so far.
+    if (bestKey < Infinity && o.bound >= bestKey) {
+      o.status = "skipped";
+      continue;
+    }
     onProgress?.({ phase: "solve", done: i, total: Math.min(exact, ranked.length) });
+    // The incumbent best cost prunes every branch that is not an improvement.
+    const cutoff = bestKey < Infinity ? bestKey : undefined;
     // If the coins don't fit in the SP left over, retry with a larger reserve.
     let r: Awaited<ReturnType<typeof solveChain>> | undefined;
     let plan: Plan | undefined;
@@ -188,10 +202,18 @@ export async function planPath(
         ...base,
         reserveSp: baseReserve + extra,
         chain: o.chain,
-        timeLimitSec: req.timeLimitSec ?? 30,
+        // HiGHS finds a near-optimal incumbent early and spends minutes proving the last 1%:
+        // cap the proof instead and keep whatever incumbent it has (still simulator-verified).
+        timeLimitSec: req.timeLimitSec ?? 3,
+        mipGap: EXACT_GAP,
+        ...(cutoff !== undefined ? { objectiveBound: cutoff } : {}),
       });
       o.status = r.status;
-      if (!r.plan) break;
+      if (!r.plan) {
+        // "Infeasible" under a cutoff only means "no improvement on the best chain already solved".
+        if (cutoff !== undefined && r.status === "infeasible") o.status = "skipped";
+        break;
+      }
       plan = r.plan;
       missing = [];
       if (wanted.length) {
